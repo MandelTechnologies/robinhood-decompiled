@@ -127,3 +127,5 @@ Note: names here are inferred from package paths; decompiled code is not always 
 - Decompilers are not fully deterministic; naming/numbering differences can exist across runs even when behavior is unchanged.
 
 "Codex, extract the trading api from the java code, only the trading api and write it in [whatever language]."
+
+HINT: If you don't want to implement auth, grab an `Authorization: Bearer ...` header from the Robinhood Chrome web app (DevTools -> Network), paste it into a local `.env` as something like `ROBINHOOD_AUTH_TOKEN=Bearer ...`, and have your generated fetch client read and reuse that header for requests.
