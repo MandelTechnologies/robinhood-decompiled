@@ -65,6 +65,51 @@ High-level breakdown (approximate, by file count):
 - `audit/sources/com/robinhood/networking/`: networking utilities/interceptors/annotations.
 - `audit/sources/com/robinhood/websocket/`: websocket clients and message handling.
 
+More detail on the biggest areas (names inferred from package paths; decompiler sometimes inserts
+numeric package segments like `p271ui`):
+
+- `audit/sources/com/robinhood/android/` (app/feature surface)
+  - `.../transfers/*` (money movement flows; subpackages often end in `.../ui`).
+  - `.../creditcard/*`, `.../equitydetail/*`, `.../crypto/*`, `.../futures/*`, `.../options/*` (major product areas).
+  - `.../deeplink/targets/*` (deep link routing targets).
+  - `.../navigation/app/*` (navigation shell / app-level routing).
+  - `.../idl/*` (a very large set of generated proto/IDL models and service contracts; useful for API surfaces).
+
+- `audit/sources/com/robinhood/shared/` (shared domain + UI primitives)
+  - `.../trade/crypto/*` and `.../crypto/transfer/*` (crypto trading + transfer flows show up heavily here).
+  - `.../tradeladder/*` (trade ladder UI + related helpers).
+  - `.../order/type/*` (order type models/utilities).
+  - `.../support/*`, `.../security/*`, `.../documents/*` (shared support/security/document flows).
+
+- `audit/sources/com/robinhood/librobinhood/` (core libraries, especially data/store)
+  - `.../data/store/*` (dominant subtree): \"store\" pattern for fetching/caching backend data.
+  - `.../data/prefs/*` (preference-backed storage).
+  - `.../logging/*`, `.../experiments/*` (cross-cutting concerns).
+
+- `audit/sources/com/robinhood/rosetta/` (schemas + event logging)
+  - `.../eventlogging/*` (event DTOs/schemas; many generated-looking classes).
+  - `.../cashier/*` (cashier/payment related DTOs).
+  - `.../converters/*` (type conversion glue between domains).
+  - `.../midas/*`, `.../blockchain/*` (service-versioned model trees).
+
+- `audit/sources/com/robinhood/store/` (feature-scoped stores)
+  - `.../futures/*` (futures stores + marketdata + DI).
+  - `.../supportchat/*` (support chat store/integration).
+  - `.../paymentinstrument/*` (payment instrument/debit card).
+  - `.../stripe/*` (Stripe-related resource/store wiring).
+
+- `audit/sources/com/robinhood/compose/` (Compose UI)
+  - `.../bento/component/*` (largest Compose component subtree).
+  - `.../theme/*` (styles/themes).
+
+- `audit/sources/com/robinhood/utils/` (shared utilities)
+  - `.../moshi/jsonadapter/*` (JSON adapters).
+  - `.../retrofit/*`, `.../room/*`, `.../datetime/*` (common infra helpers).
+
+- `audit/sources/com/robinhood/networking/` and `audit/sources/com/robinhood/websocket/`
+  - `.../networking/annotation/*` + `.../networking/interceptor/*` + `.../networking/util/*` (wiring and helpers).
+  - `.../websocket/gateway/*` and versioned impls (e.g. `p410dx`, `p413md`) for different websocket feeds.
+
 Smaller but notable modules you may care about:
 
 - `audit/sources/com/robinhood/crypto/`, `audit/sources/com/robinhood/futures/`, `audit/sources/com/robinhood/options/`,
