@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularLarge"
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginBottom="@dimen/rds_spacing_xsmall"
+        android:text="@string/news_feed_recommendation_browse_card_title"
+        android:layout_marginStart="@dimen/rds_spacing_default"
+        android:layout_marginEnd="@dimen/rds_spacing_small"
+        app:layout_constraintBottom_toTopOf="@+id/cta"
+        app:layout_constraintEnd_toStartOf="@+id/img"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:id="@+id/cta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:drawablePadding="@dimen/rds_spacing_xsmall"
+        android:drawableEnd="?attr/iconArrowRight16dp"
+        android:layout_marginStart="@dimen/rds_spacing_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/news_feed_recs_browse_card"/>
+</merge>

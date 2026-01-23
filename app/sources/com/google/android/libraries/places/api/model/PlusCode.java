@@ -1,0 +1,39 @@
+package com.google.android.libraries.places.api.model;
+
+import android.os.Parcelable;
+import androidx.annotation.RecentlyNonNull;
+import androidx.annotation.RecentlyNullable;
+
+/* compiled from: com.google.android.libraries.places:places@@3.5.0 */
+/* loaded from: classes27.dex */
+public abstract class PlusCode implements Parcelable {
+
+    /* compiled from: com.google.android.libraries.places:places@@3.5.0 */
+    public static abstract class Builder {
+        @RecentlyNonNull
+        public abstract PlusCode build();
+
+        @RecentlyNullable
+        public abstract String getCompoundCode();
+
+        @RecentlyNullable
+        public abstract String getGlobalCode();
+
+        @RecentlyNonNull
+        public abstract Builder setCompoundCode(String str);
+
+        @RecentlyNonNull
+        public abstract Builder setGlobalCode(String str);
+    }
+
+    @RecentlyNonNull
+    public static Builder builder() {
+        return new zzz();
+    }
+
+    @RecentlyNullable
+    public abstract String getCompoundCode();
+
+    @RecentlyNullable
+    public abstract String getGlobalCode();
+}

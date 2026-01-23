@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_rds_question_24dp"
+        android:id="@+id/education_item"
+        android:title="@null"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/empty"
+        android:id="@+id/action_option_chain_customization_settings"
+        android:title="@null"
+        app:showAsAction="always"/>
+</menu>

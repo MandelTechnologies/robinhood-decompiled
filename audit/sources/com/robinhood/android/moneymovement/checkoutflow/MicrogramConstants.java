@@ -1,0 +1,11 @@
+package com.robinhood.android.moneymovement.checkoutflow;
+
+import kotlin.Metadata;
+
+/* compiled from: MicrogramConstants.kt */
+@Metadata(m3635d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u000e\n\u0000\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000¨\u0006\u0002"}, m3636d2 = {"PAYMENT_PREFERENCE_MICROGRAM_APP", "", "lib-money-movements-checkout-flow_externalDebug"}, m3637k = 2, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* renamed from: com.robinhood.android.moneymovement.checkoutflow.MicrogramConstantsKt, reason: use source file name */
+/* loaded from: classes8.dex */
+public final class MicrogramConstants {
+    public static final String PAYMENT_PREFERENCE_MICROGRAM_APP = "app-transfer-account-selection";
+}

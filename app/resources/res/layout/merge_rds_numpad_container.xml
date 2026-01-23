@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/numpad_container_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/numpad_top_space_height"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"
+        style="?attr/primaryButtonStyle"/>
+    <com.robinhood.android.designsystem.numpad.RdsNumpadView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/numpad_container_numpad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?attr/numpadStyle"/>
+</merge>

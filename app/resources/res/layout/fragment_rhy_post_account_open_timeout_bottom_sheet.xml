@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?attr/bottomSheetStyle">
+    <com.robinhood.android.designsystem.pog.RdsPogView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/rhy_timeout_pog_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:backgroundTint="?attr/colorForeground1"
+        app:pictogram="@drawable/pict_mono_rds_clipboard"
+        app:pictogramTint="?attr/colorBackground1"
+        style="?attr/heroPogStyle"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:gravity="center_horizontal"
+        android:id="@+id/rhy_timeout_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:text="@string/rhy_timeout_bottom_sheet_title"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"
+        app:useLinkMovementMethod="true"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:gravity="center_horizontal"
+        android:id="@+id/rhy_timeout_description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_small"
+        android:text="@string/rhy_timeout_bottom_sheet_description"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"
+        app:useLinkMovementMethod="true"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/rhy_timeout_primary_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/rds_spacing_medium"
+        android:text="@string/general_label_done"
+        style="?attr/primaryMonochromeButtonStyle"/>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_gravity="center"
+        android:background="@drawable/circle_background"
+        android:layout_width="@dimen/voice_survey_rating_chip_size"
+        android:layout_height="@dimen/voice_survey_rating_chip_size"
+        android:foreground="@drawable/survey_rating_chip_view_foreground"
+        android:backgroundTint="@drawable/survey_rating_chip_background_color_selector">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularMedium"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/survey_rating_chip_view_value_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.robinhood.android.designsystem.progress.RdsProgressBar
+            android:id="@+id/survey_rating_chip_view_progress_bar"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true"
+            android:indeterminateTint="?attr/colorBackground1"/>
+    </FrameLayout>
+</merge>

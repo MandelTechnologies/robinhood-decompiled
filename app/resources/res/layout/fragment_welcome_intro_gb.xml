@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorTransparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/welcome_animation_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/max_welcome_lottie"/>
+    <include layout="@layout/merge_max_welcome_guidelines"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceBookCoverSmall"
+        android:gravity="center"
+        android:id="@+id/welcome_intro_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:text="@string/welcome_gb_title"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_welcome_top_guideline"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:gravity="center"
+        android:id="@+id/welcome_intro_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_intro_title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

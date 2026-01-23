@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.android.common.p088ui.CuratedListChipRecyclerView
+        android:id="@+id/rh_list_curated_list_chip_carousel"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/list_rh_spacing_semi_small"
+        android:layout_marginBottom="@dimen/rds_spacing_xsmall"
+        android:paddingStart="@dimen/rds_spacing_medium"/>
+</merge>

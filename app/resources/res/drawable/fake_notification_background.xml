@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/rds_spacing_medium"/>
+    <solid android:color="#fff"/>
+    <padding
+        android:left="@dimen/rds_spacing_default"
+        android:top="@dimen/rds_spacing_medium"
+        android:right="@dimen/rds_spacing_default"
+        android:bottom="@dimen/rds_spacing_default"/>
+</shape>

@@ -1,0 +1,112 @@
+package com.robinhood.transfers.disclosures.contracts;
+
+import kotlin.Deprecated;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.SerializationExceptions3;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoding;
+import kotlinx.serialization.encoding.Decoding2;
+import kotlinx.serialization.encoding.Encoding3;
+import kotlinx.serialization.encoding.Encoding4;
+import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
+import kotlinx.serialization.internal.PluginHelperInterfaces;
+import kotlinx.serialization.internal.StringSerializer;
+
+/* compiled from: ServiceFee.kt */
+@Metadata(m3635d1 = {"\u00006\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u0015\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00070\u0006¢\u0006\u0002\u0010\bJ\u000e\u0010\t\u001a\u00020\u00022\u0006\u0010\n\u001a\u00020\u000bJ\u0016\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0002R\u0011\u0010\u0011\u001a\u00020\u0012¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014¨\u0006\u0015"}, m3636d2 = {"com/robinhood/transfers/disclosures/contracts/ServiceFee.$serializer", "Lkotlinx/serialization/internal/GeneratedSerializer;", "Lcom/robinhood/transfers/disclosures/contracts/ServiceFee;", "<init>", "()V", "childSerializers", "", "Lkotlinx/serialization/KSerializer;", "()[Lkotlinx/serialization/KSerializer;", "deserialize", "decoder", "Lkotlinx/serialization/encoding/Decoder;", "serialize", "", "encoder", "Lkotlinx/serialization/encoding/Encoder;", "value", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "contracts"}, m3637k = 1, m3638mv = {2, 0, 0}, m3640xi = 48)
+@Deprecated
+/* renamed from: com.robinhood.transfers.disclosures.contracts.ServiceFee$$serializer, reason: use source file name */
+/* loaded from: classes12.dex */
+public /* synthetic */ class ServiceFee2 implements PluginHelperInterfaces<ServiceFee> {
+    public static final ServiceFee2 INSTANCE;
+    private static final SerialDescriptor descriptor;
+
+    private ServiceFee2() {
+    }
+
+    @Override // kotlinx.serialization.KSerializer, kotlinx.serialization.KSerializer3, kotlinx.serialization.KSerializer2
+    public final SerialDescriptor getDescriptor() {
+        return descriptor;
+    }
+
+    static {
+        ServiceFee2 serviceFee2 = new ServiceFee2();
+        INSTANCE = serviceFee2;
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.robinhood.transfers.disclosures.contracts.ServiceFee", serviceFee2, 3);
+        pluginGeneratedSerialDescriptor.addElement("fee_rate", false);
+        pluginGeneratedSerialDescriptor.addElement("max_fee", false);
+        pluginGeneratedSerialDescriptor.addElement("min_fee", false);
+        descriptor = pluginGeneratedSerialDescriptor;
+    }
+
+    @Override // kotlinx.serialization.internal.PluginHelperInterfaces
+    public final KSerializer<?>[] childSerializers() {
+        StringSerializer stringSerializer = StringSerializer.INSTANCE;
+        return new KSerializer[]{stringSerializer, stringSerializer, stringSerializer};
+    }
+
+    @Override // kotlinx.serialization.KSerializer2
+    public final ServiceFee deserialize(Decoding2 decoder) {
+        String strDecodeStringElement;
+        String strDecodeStringElement2;
+        String str;
+        int i;
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        SerialDescriptor serialDescriptor = descriptor;
+        Decoding decodingBeginStructure = decoder.beginStructure(serialDescriptor);
+        if (decodingBeginStructure.decodeSequentially()) {
+            strDecodeStringElement = decodingBeginStructure.decodeStringElement(serialDescriptor, 0);
+            String strDecodeStringElement3 = decodingBeginStructure.decodeStringElement(serialDescriptor, 1);
+            strDecodeStringElement2 = decodingBeginStructure.decodeStringElement(serialDescriptor, 2);
+            str = strDecodeStringElement3;
+            i = 7;
+        } else {
+            strDecodeStringElement = null;
+            String strDecodeStringElement4 = null;
+            String strDecodeStringElement5 = null;
+            boolean z = true;
+            int i2 = 0;
+            while (z) {
+                int iDecodeElementIndex = decodingBeginStructure.decodeElementIndex(serialDescriptor);
+                if (iDecodeElementIndex == -1) {
+                    z = false;
+                } else if (iDecodeElementIndex == 0) {
+                    strDecodeStringElement = decodingBeginStructure.decodeStringElement(serialDescriptor, 0);
+                    i2 |= 1;
+                } else if (iDecodeElementIndex == 1) {
+                    strDecodeStringElement5 = decodingBeginStructure.decodeStringElement(serialDescriptor, 1);
+                    i2 |= 2;
+                } else {
+                    if (iDecodeElementIndex != 2) {
+                        throw new SerializationExceptions3(iDecodeElementIndex);
+                    }
+                    strDecodeStringElement4 = decodingBeginStructure.decodeStringElement(serialDescriptor, 2);
+                    i2 |= 4;
+                }
+            }
+            strDecodeStringElement2 = strDecodeStringElement4;
+            str = strDecodeStringElement5;
+            i = i2;
+        }
+        String str2 = strDecodeStringElement;
+        decodingBeginStructure.endStructure(serialDescriptor);
+        return new ServiceFee(i, str2, str, strDecodeStringElement2, null);
+    }
+
+    @Override // kotlinx.serialization.KSerializer3
+    public final void serialize(Encoding4 encoder, ServiceFee value) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        Intrinsics.checkNotNullParameter(value, "value");
+        SerialDescriptor serialDescriptor = descriptor;
+        Encoding3 encoding3BeginStructure = encoder.beginStructure(serialDescriptor);
+        ServiceFee.write$Self$contracts(value, encoding3BeginStructure, serialDescriptor);
+        encoding3BeginStructure.endStructure(serialDescriptor);
+    }
+
+    @Override // kotlinx.serialization.internal.PluginHelperInterfaces
+    public KSerializer<?>[] typeParametersSerializers() {
+        return PluginHelperInterfaces.DefaultImpls.typeParametersSerializers(this);
+    }
+}

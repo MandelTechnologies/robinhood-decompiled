@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/info_view_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/rds_spacing_medium">
+        <com.robinhood.android.designsystem.infotag.RdsInfoTag
+            android:id="@+id/read_time_info_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/rds_spacing_small"
+            app:tagIcon="@drawable/ic_rds_clock_16dp"
+            app:tagType="inline"/>
+        <com.robinhood.shared.education.p377ui.info.EducationInfoView
+            android:id="@+id/info_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:displayAsCard="false"/>
+    </LinearLayout>
+</merge>

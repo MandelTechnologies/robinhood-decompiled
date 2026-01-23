@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.common.view.AnimatedRhTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textAppearance="?attr/textAppearanceRegularMedium"
+    android:textColor="?attr/colorBackground1"
+    android:id="@+id/filled_detail_txt"
+    android:background="@drawable/instrument_row_rounded_background_fill"
+    android:paddingLeft="@dimen/rds_spacing_small"
+    android:paddingTop="@dimen/rds_spacing_small"
+    android:paddingRight="@dimen/rds_spacing_small"
+    android:paddingBottom="@dimen/rds_spacing_small"
+    android:visibility="gone"
+    android:paddingHorizontal="@dimen/rds_spacing_small"
+    android:paddingVertical="@dimen/rds_spacing_small"
+    app:scarlet_childContext="notAnimatedAndInherit"
+    style="@style/RhTickerView"/>

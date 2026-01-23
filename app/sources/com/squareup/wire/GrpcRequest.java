@@ -1,0 +1,10 @@
+package com.squareup.wire;
+
+import kotlin.Metadata;
+
+/* compiled from: GrpcRequest.kt */
+@Metadata(m3635d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\n\u0010\u0000\"\u00020\u00012\u00020\u0001*\n\u0010\u0002\"\u00020\u00032\u00020\u0003¨\u0006\u0004"}, m3636d2 = {"GrpcRequest", "Lokhttp3/Request;", "GrpcRequestBuilder", "Lokhttp3/Request$Builder;", "wire-grpc-client"}, m3637k = 2, m3638mv = {2, 0, 0}, m3640xi = 48)
+/* renamed from: com.squareup.wire.GrpcRequestKt, reason: use source file name */
+/* loaded from: classes12.dex */
+public final class GrpcRequest {
+}

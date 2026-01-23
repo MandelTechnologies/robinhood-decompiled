@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:id="@+id/subtitle_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:layout_marginBottom="@dimen/rds_spacing_medium"
+        android:layout_marginStart="@dimen/rds_spacing_default"
+        android:layout_marginEnd="@dimen/rds_spacing_default"
+        android:transitionName="@string/ach_transition_manual_ach_subtitle"/>
+    <com.robinhood.android.designsystem.textinput.RdsTextInputContainerView
+        android:id="@+id/routing_number_text_input"
+        android:paddingLeft="@dimen/rds_spacing_default"
+        android:paddingRight="@dimen/rds_spacing_default"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/rds_spacing_default"
+        style="?attr/inputContainerStyle">
+        <com.robinhood.android.designsystem.textinput.RdsTextInputEditText
+            android:id="@+id/routing_number_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ach_create_routing_number_hint"
+            android:lines="1"
+            android:maxLength="9"
+            android:inputType="number"
+            app:useCustomNumpad="true"
+            style="?attr/inputStyle"/>
+    </com.robinhood.android.designsystem.textinput.RdsTextInputContainerView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <include layout="@layout/include_numpad_with_fab"/>
+</LinearLayout>

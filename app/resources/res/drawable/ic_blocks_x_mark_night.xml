@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="240dp"
+    android:width="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+    <path
+        android:pathData="M15.93 129.33v51.82L68 218.14l52.06-36.99v-51.82m-104.13 0L68 166.31l52.06-36.98m-104.13 0L68 92.35l52.06 36.98m0 0l52.06-36.98-52.06-36.99 52.06-36.98 52.07 36.98v51.82l-15.59 11.08M68 218.14v-51.83m0-73.96l52.06-36.99m104.13 0l-52.06 36.99M68 92.35l52.06-36.99m104.13 73.97v51.82l-52.06 36.99"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="0.72"
+        android:strokeLineJoin="round"/>
+    <path
+        android:pathData="M31.52 118.26l-15.59-11.08V55.36m156.19 36.99l52.07 36.98-52.07 36.98m0-73.96l-52.06 36.98m52.06-36.98l-52.06-36.99L68 18.38 15.93 55.36 68 92.35l52.06 36.98m52.06 36.98v51.83l-52.06-36.99v-51.82m52.06 36.98l-52.06-36.98"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="0.72"
+        android:strokeLineJoin="round"/>
+</vector>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group android:name="_R_G">
+        <group android:name="_R_G_L_3_G">
+            <path
+                android:name="_R_G_L_3_G_D_0_P_0"
+                android:pathData=" M18 3 C18,3 6,3 6,3 C4.34,3 3,4.34 3,6 C3,6 3,18 3,18 C3,19.66 4.34,21 6,21 C6,21 18,21 18,21 C19.66,21 21,19.66 21,18 C21,18 21,6 21,6 C21,4.34 19.66,3 18,3c "
+                android:strokeColor="@color/selection_control_unchecked_color_selector"
+                android:strokeWidth="2"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:strokeAlpha="1"/>
+        </group>
+        <group
+            android:name="_R_G_L_2_G"
+            android:pivotX="12"
+            android:pivotY="12"
+            android:scaleX="1"
+            android:scaleY="1">
+            <path
+                android:name="_R_G_L_2_G_D_0_P_0"
+                android:fillColor="@color/selection_control_checked_color_selector"
+                android:pathData=" M18 2 C18,2 6,2 6,2 C3.79,2 2,3.79 2,6 C2,6 2,18 2,18 C2,20.21 3.79,22 6,22 C6,22 18,22 18,22 C20.21,22 22,20.21 22,18 C22,18 22,6 22,6 C22,3.79 20.21,2 18,2c M10.5 16.91 C10.5,16.91 6.29,12.71 6.29,12.71 C6.29,12.71 7.71,11.29 7.71,11.29 C7.71,11.29 10.5,14.09 10.5,14.09 C10.5,14.09 16.79,7.79 16.79,7.79 C16.79,7.79 18.21,9.21 18.21,9.21 C18.21,9.21 10.5,16.91 10.5,16.91c "
+                android:fillAlpha="1"
+                android:fillType="nonZero"/>
+        </group>
+        <group
+            android:name="_R_G_L_1_G"
+            android:pivotX="12"
+            android:pivotY="12"
+            android:scaleX="0"
+            android:scaleY="0">
+            <path
+                android:name="_R_G_L_1_G_D_0_P_0"
+                android:fillColor="@color/selection_control_checked_color_selector"
+                android:pathData=" M18 2 C18,2 6,2 6,2 C3.79,2 2,3.79 2,6 C2,6 2,18 2,18 C2,20.21 3.79,22 6,22 C6,22 18,22 18,22 C20.21,22 22,20.21 22,18 C22,18 22,6 22,6 C22,3.79 20.21,2 18,2c  M12 13 C12,13 12,13 12,13 C12,13 12,11 12,11 C12,11 12,11 12,11 C12,11 12,13 12,13c "
+                android:fillAlpha="1"
+                android:fillType="nonZero"/>
+        </group>
+        <group
+            android:name="_R_G_L_0_G"
+            android:scaleY="0">
+            <path
+                android:name="_R_G_L_0_G_D_0_P_0"
+                android:fillColor="@color/selection_control_checked_color_selector"
+                android:pathData=" M18 2 C18,2 6,2 6,2 C3.79,2 2,3.79 2,6 C2,6 2,18 2,18 C2,20.21 3.79,22 6,22 C6,22 18,22 18,22 C20.21,22 22,20.21 22,18 C22,18 22,6 22,6 C22,3.79 20.21,2 18,2c  M10.5 16.91 C10.5,16.91 6.29,12.71 6.29,12.71 C6.29,12.71 7.71,11.29 7.71,11.29 C7.71,11.29 10.5,14.09 10.5,14.09 C10.5,14.09 16.79,7.79 16.79,7.79 C16.79,7.79 18.21,9.21 18.21,9.21 C18.21,9.21 10.5,16.91 10.5,16.91c "
+                android:fillAlpha="1"
+                android:fillType="nonZero"/>
+        </group>
+    </group>
+</vector>

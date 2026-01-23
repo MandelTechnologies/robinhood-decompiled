@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/emoji_item_txt"
+        android:paddingTop="@dimen/rds_spacing_small"
+        android:paddingBottom="@dimen/rds_spacing_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_xxsmall"
+        android:layout_marginBottom="@dimen/rds_spacing_xxsmall"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+</FrameLayout>

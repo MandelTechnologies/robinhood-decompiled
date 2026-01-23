@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/product_marketing_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_default"
+        android:layout_marginRight="@dimen/rds_spacing_default"
+        android:layout_marginBottom="@dimen/rds_spacing_large"
+        android:layout_marginHorizontal="@dimen/rds_spacing_default"
+        app:cardBackgroundColor="?attr/colorBackground2"
+        app:cardCornerRadius="@dimen/rds_spacing_default"
+        app:cardElevation="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/product_marketing_card_contents"
+            android:paddingTop="@dimen/rds_spacing_medium"
+            android:paddingBottom="@dimen/rds_spacing_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/rds_spacing_medium">
+            <com.robinhood.android.designsystem.text.RhTextView
+                android:textAppearance="?attr/textAppearanceDisplaySmall"
+                android:id="@+id/product_marketing_card_title"
+                android:paddingLeft="@dimen/rds_spacing_medium"
+                android:paddingRight="@dimen/rds_spacing_medium"
+                android:paddingBottom="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/rds_spacing_medium"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product_marketing_card_value_props"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</merge>

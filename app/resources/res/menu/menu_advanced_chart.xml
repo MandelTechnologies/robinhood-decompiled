@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_rds_info_24dp"
+        android:id="@+id/action_advanced_chart_learn_more"
+        android:title="@string/general_action_learn_more"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/svg_ic_create_alert"
+        android:id="@+id/action_alert"
+        android:visible="false"
+        android:title="@string/instrument_detail_menu_alert_label"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_rds_search_24dp"
+        android:id="@+id/action_advanced_chart_search"
+        android:title="@string/general_action_search"
+        app:showAsAction="always"/>
+</menu>

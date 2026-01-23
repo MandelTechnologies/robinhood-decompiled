@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.android.designsystem.selectioncontrol.LegacyRdsRadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?attr/radioButtonStyle"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/rds_spacing_default"
+        android:layout_marginEnd="@dimen/rds_spacing_default"
+        layout="@layout/include_rds_divider"/>
+</merge>

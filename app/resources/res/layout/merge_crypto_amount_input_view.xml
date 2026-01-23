@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:textColor="?attr/colorForeground1"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/front_symbol_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.robinhood.shared.trade.crypto.views.edittext.CryptoAmountEditText
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:textColor="?attr/colorForeground1"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/amount_edit_text"
+        android:background="@null"
+        android:longClickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:digits="1234567890.,  "
+        android:inputType="numberDecimal"
+        android:textCursorDrawable="@null"
+        app:scarlet_affectedAttributes="!textCursorDrawable"
+        app:useCustomNumpad="true">
+        <requestFocus/>
+    </com.robinhood.shared.trade.crypto.views.edittext.CryptoAmountEditText>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:textColor="?attr/colorForeground1"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/rear_symbol_text"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</merge>

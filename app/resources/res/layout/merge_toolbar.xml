@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.common.p088ui.view.DynamicallyThemableToolbar
+        android:theme="?attr/toolbarOverlayTheme"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_marginEnd="@dimen/rds_spacing_small"
+        app:popupTheme="?android:attr/popupTheme"
+        app:subtitleTextAppearance="@style/TextAppearance.Legacy.Toolbar.Subtitle"
+        app:titleTextAppearance="@style/TextAppearance.Legacy.Toolbar.Title"/>
+    <ViewStub
+        android:id="@+id/toolbar_progress_bar_view_stub"
+        android:layout="@layout/include_rds_progress_bar_segmented"
+        android:inflatedId="@+id/toolbar_progress_bar_inflated"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/progress_bar_horizontal_height"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    <FrameLayout
+        android:id="@+id/toolbar_loading_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rds_spacing_xsmall"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar">
+        <com.robinhood.android.designsystem.progress.RdsProgressBar
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rds_spacing_default"
+            style="@style/ProgressBar"/>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.settings.p254ui.drip.DripSettingsDisclaimer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="?attr/textAppearanceRegularSmall"
+    android:textColor="?android:attr/textColorSecondary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/rds_spacing_medium"
+    android:text="@string/drip_settings_disclaimer"/>

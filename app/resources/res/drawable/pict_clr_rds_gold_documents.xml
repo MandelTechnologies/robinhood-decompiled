@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="80dp"
+    android:width="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    <path
+        android:fillColor="@drawable/_pict_clr_rds_gold_documents__0_res_0x7f0800cf"
+        android:pathData="M50.001 53.833h-5.167V30.666H29.667V25.5h20.334v28.333z"/>
+    <path
+        android:fillColor="#00c805"
+        android:pathData="M37.333 17.834h20.334v28.333h-5V22.834H37.333v-5z"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M22 33.333h20.333V61.5H22V33.333zm4.333 10.417h11.5v-2.5h-11.5v2.5zm11.5 5.167h-11.5v-2.5h11.5v2.5zm-11.5 5h11.5v-2.5h-11.5v2.5z"
+        android:fillType="evenOdd"/>
+</vector>

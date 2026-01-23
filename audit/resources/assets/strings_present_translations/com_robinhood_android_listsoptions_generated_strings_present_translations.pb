@@ -1,0 +1,57 @@
+
+
+option_watchlist_title
+.
+(option_watchlist_empty_state_description
+,
+&option_watchlist_find_contracts_button
+!
+option_watchlist_added_date
+&
+ option_watchlist_expiration_date
+5
+/option_watchlist_expiration_date_settle_on_open
+
+option_watchlist_now
+(
+"option_watchlist_label_since_added
+$
+option_watchlist_active_header
+%
+option_watchlist_expired_header
+)
+#option_watchlist_expired_disclosure
++
+%option_watchlist_expired_dialog_title
+-
+'option_watchlist_expired_dialog_message
+&
+ option_watchlist_sort_by_company
+)
+#option_watchlist_sort_by_expiration
+$
+option_watchlist_sort_by_price
+6
+0option_watchlist_sort_by_total_return_percentage
+-
+'option_watchlist_sort_by_company_detail
+0
+*option_watchlist_sort_by_expiration_detail
++
+%option_watchlist_sort_by_price_detail
+=
+7option_watchlist_sort_by_total_return_percentage_detail
+(
+"option_watchlist_onboarding_title1
+*
+$option_watchlist_onboarding_message1
+(
+"option_watchlist_onboarding_title2
+*
+$option_watchlist_onboarding_message2
+(
+"option_watchlist_onboarding_title3
+*
+$option_watchlist_onboarding_message3
+%
+option_watchlist_onboarding_cta

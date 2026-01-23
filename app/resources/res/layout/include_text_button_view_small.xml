@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.settings.p254ui.TextButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/rds_spacing_medium"
+    android:paddingTop="@dimen/rds_spacing_default"
+    android:paddingRight="@dimen/rds_spacing_medium"
+    android:paddingBottom="@dimen/rds_spacing_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/rds_spacing_medium"
+    android:paddingVertical="@dimen/rds_spacing_default"
+    style="?attr/rowContainerStyle">
+    <com.robinhood.android.designsystem.button.RdsTextButton
+        android:layout_gravity="start"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?attr/smallTextButtonStyle"/>
+</com.robinhood.android.settings.p254ui.TextButtonView>

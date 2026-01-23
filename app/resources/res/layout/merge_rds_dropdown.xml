@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/Theme.Robinhood.DesignSystem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:id="@+id/dropdown_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?attr/dropdownTextViewStyle"/>
+</merge>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_rds_picture_in_picture_24dp"
+        android:id="@+id/action_picture_in_picture"
+        android:visible="false"
+        android:title="@string/lists_menu_open_picture_in_picture"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/svg_ic_create_alert"
+        android:id="@+id/action_alert"
+        android:visible="false"
+        android:title="@string/instrument_detail_menu_alert_label"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/svg_ic_action_add_24dp"
+        android:id="@+id/action_add_to_list"
+        android:visible="false"
+        android:title="@string/lists_menu_add_to_list"
+        app:showAsAction="always"/>
+</menu>

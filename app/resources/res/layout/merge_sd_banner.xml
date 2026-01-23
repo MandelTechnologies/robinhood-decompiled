@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/banner_background"
+    android:paddingTop="@dimen/rds_spacing_default"
+    android:paddingBottom="@dimen/rds_spacing_default"
+    android:clickable="false"
+    android:paddingStart="0dp"
+    android:paddingEnd="@dimen/rds_spacing_default"
+    android:paddingVertical="@dimen/rds_spacing_default">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/banner_image"
+        android:layout_width="@dimen/sd_banner_image_width"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="14dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularMediumBold"
+            android:textColor="?android:attr/textColorPrimary"
+            android:id="@+id/banner_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularSmall"
+            android:textColor="?android:attr/textColorPrimary"
+            android:id="@+id/banner_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rds_spacing_xsmall"
+            app:useLinkMovementMethod="true"/>
+    </LinearLayout>
+</merge>

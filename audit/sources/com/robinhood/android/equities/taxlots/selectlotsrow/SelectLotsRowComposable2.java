@@ -1,0 +1,61 @@
+package com.robinhood.android.equities.taxlots.selectlotsrow;
+
+import androidx.compose.foundation.layout.SizeKt;
+import androidx.compose.p011ui.Modifier;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import com.robinhood.shared.trading.tradeflow.OrderForm6;
+import com.robinhood.utils.resource.StringResource;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* compiled from: SelectLotsRowComposable.kt */
+@Metadata(m3637k = 3, m3638mv = {2, 1, 0}, m3640xi = 48)
+@SourceDebugExtension
+/* renamed from: com.robinhood.android.equities.taxlots.selectlotsrow.ComposableSingletons$SelectLotsRowComposableKt$lambda$-635631414$1, reason: use source file name */
+/* loaded from: classes3.dex */
+final class SelectLotsRowComposable2 implements Function2<Composer, Integer, Unit> {
+    public static final SelectLotsRowComposable2 INSTANCE = new SelectLotsRowComposable2();
+
+    SelectLotsRowComposable2() {
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public /* bridge */ /* synthetic */ Unit invoke(Composer composer, Integer num) {
+        invoke(composer, num.intValue());
+        return Unit.INSTANCE;
+    }
+
+    public final void invoke(Composer composer, int i) {
+        if ((i & 3) == 2 && composer.getSkipping()) {
+            composer.skipToGroupEnd();
+            return;
+        }
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(-635631414, i, -1, "com.robinhood.android.equities.taxlots.selectlotsrow.ComposableSingletons$SelectLotsRowComposableKt.lambda$-635631414.<anonymous> (SelectLotsRowComposable.kt:131)");
+        }
+        Modifier modifierFillMaxWidth$default = SizeKt.fillMaxWidth$default(Modifier.INSTANCE, 0.0f, 1, null);
+        OrderForm6 orderForm6 = OrderForm6.EDITING;
+        StringResource.Companion companion = StringResource.INSTANCE;
+        SelectLotsRowViewState selectLotsRowViewState = new SelectLotsRowViewState(companion.invoke("Tax lots"), companion.invoke("Subtitle"), companion.invoke("Select lots"), companion.invoke("Meta Subtitle"), true);
+        composer.startReplaceGroup(1849434622);
+        Object objRememberedValue = composer.rememberedValue();
+        if (objRememberedValue == Composer.INSTANCE.getEmpty()) {
+            objRememberedValue = new Function0() { // from class: com.robinhood.android.equities.taxlots.selectlotsrow.ComposableSingletons$SelectLotsRowComposableKt$lambda$-635631414$1$$ExternalSyntheticLambda0
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    return Unit.INSTANCE;
+                }
+            };
+            composer.updateRememberedValue(objRememberedValue);
+        }
+        composer.endReplaceGroup();
+        SelectLotsRowComposable3.SelectLotsRow((Function0) objRememberedValue, selectLotsRowViewState, orderForm6, modifierFillMaxWidth$default, composer, (StringResource.$stable << 3) | 3462, 0);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+    }
+}

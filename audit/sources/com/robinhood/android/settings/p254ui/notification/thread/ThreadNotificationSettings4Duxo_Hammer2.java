@@ -1,0 +1,21 @@
+package com.robinhood.android.settings.p254ui.notification.thread;
+
+import com.robinhood.hammer.android.internal.HammerViewModels;
+import kotlin.Metadata;
+
+/* compiled from: ThreadNotificationSettings4Duxo_Hammer.kt */
+@Metadata(m3635d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\b\u0010\u0004\u001a\u00020\u0005H\u0007¨\u0006\u0006"}, m3636d2 = {"Lcom/robinhood/android/settings/ui/notification/thread/ThreadNotificationSettings4DuxoKeysModule;", "", "<init>", "()V", "provideViewModelMapKey", "", "feature-settings_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* renamed from: com.robinhood.android.settings.ui.notification.thread.ThreadNotificationSettings4DuxoKeysModule, reason: use source file name */
+/* loaded from: classes20.dex */
+public final class ThreadNotificationSettings4Duxo_Hammer2 {
+    public static final int $stable = 0;
+    public static final ThreadNotificationSettings4Duxo_Hammer2 INSTANCE = new ThreadNotificationSettings4Duxo_Hammer2();
+
+    private ThreadNotificationSettings4Duxo_Hammer2() {
+    }
+
+    @HammerViewModels
+    public final String provideViewModelMapKey() {
+        return "com.robinhood.android.settings.ui.notification.thread.ThreadNotificationSettings4Duxo";
+    }
+}

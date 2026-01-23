@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplaySmall"
+        android:id="@+id/lockscreen_timeout_title_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:text="@string/device_security_timeout_action"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lockscreen_timeout_recycler_view"
+        android:paddingBottom="@dimen/rds_spacing_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

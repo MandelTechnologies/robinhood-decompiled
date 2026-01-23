@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:id="@+id/new_history_pending_crypto_order_row"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBottomDivider="true"
+        app:trailingIconTint="?attr/colorForeground3"
+        style="?attr/rowCryptoPendingOrderHistoryContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:id="@+id/new_history_primary_row"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBottomDivider="true"
+        app:trailingIconTint="?attr/colorForeground3"
+        style="?attr/rowContainerStyle"/>
+    <include
+        android:id="@+id/new_history_loading_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/include_history_row_loading"/>
+</merge>

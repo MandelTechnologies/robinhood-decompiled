@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:ellipsize="end"
+        android:id="@+id/recurring_chips_title_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_xsmall"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.robinhood.android.common.p088ui.CuratedListChipRecyclerView
+        android:id="@+id/recurring_chips_recycler_view"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:paddingStart="@dimen/rds_spacing_medium"
+        android:paddingEnd="@dimen/rds_spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recurring_chips_title_txt"/>
+</merge>

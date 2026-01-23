@@ -1,0 +1,50 @@
+package com.withpersona.sdk2.inquiry.resources;
+
+/* loaded from: classes18.dex */
+public final class R$string {
+    public static int pi2_camera_error = 2131961166;
+    public static int pi2_document_camera_permission_denied_rationale = 2131961174;
+    public static int pi2_document_camera_permission_rationale = 2131961175;
+    public static int pi2_document_error_disabled_file_type = 2131961177;
+    public static int pi2_document_error_file_limit_exceeded = 2131961178;
+    public static int pi2_document_error_government_id_min_dimension_size = 2131961179;
+    public static int pi2_document_error_malformed_image_or_file = 2131961180;
+    public static int pi2_document_error_malformed_pdf = 2131961181;
+    public static int pi2_document_error_page_limit_exceeded = 2131961182;
+    public static int pi2_document_error_unable_to_add_file = 2131961183;
+    public static int pi2_error_image_capture_failed = 2131961185;
+    public static int pi2_governmentid_camera_permission_denied_rationale = 2131961187;
+    public static int pi2_governmentid_camera_permission_rationale = 2131961188;
+    public static int pi2_governmentid_choose_capture_method_body_default = 2131961189;
+    public static int pi2_governmentid_choose_capture_method_title_default = 2131961190;
+    public static int pi2_governmentid_error_min_dimension_size = 2131961191;
+    public static int pi2_governmentid_error_unable_to_upload_file = 2131961192;
+    public static int pi2_governmentid_review_selected_image_body_default = 2131961196;
+    public static int pi2_governmentid_review_selected_image_title_default = 2131961197;
+    public static int pi2_governmentid_talkback_dl_back_hint = 2131961198;
+    public static int pi2_governmentid_talkback_dl_barcode_hint = 2131961199;
+    public static int pi2_governmentid_talkback_front_hint = 2131961200;
+    public static int pi2_governmentid_talkback_hold_hint = 2131961201;
+    public static int pi2_network_connection_error = 2131961206;
+    public static int pi2_permissions_cancel = 2131961208;
+    public static int pi2_permissions_continue = 2131961209;
+    public static int pi2_permissions_settings = 2131961210;
+    public static int pi2_retry = 2131961211;
+    public static int pi2_selfie_camera_permission_denied_rationale = 2131961213;
+    public static int pi2_selfie_camera_permission_rationale = 2131961214;
+    public static int pi2_selfie_check_page_description = 2131961215;
+    public static int pi2_selfie_check_page_label_btn_retake = 2131961216;
+    public static int pi2_selfie_check_page_label_btn_submit = 2131961217;
+    public static int pi2_selfie_check_page_label_front = 2131961218;
+    public static int pi2_selfie_check_page_label_left = 2131961219;
+    public static int pi2_selfie_check_page_label_right = 2131961220;
+    public static int pi2_selfie_check_page_title = 2131961221;
+    public static int pi2_selfie_mic_permission_denied_rationale = 2131961222;
+    public static int pi2_selfie_mic_permission_rationale = 2131961223;
+    public static int pi2_selfie_talkback_center_pose_hint = 2131961224;
+    public static int pi2_selfie_talkback_hold_still_hint = 2131961225;
+    public static int pi2_selfie_talkback_left_pose_hint = 2131961226;
+    public static int pi2_selfie_talkback_right_pose_hint = 2131961227;
+    public static int pi2_toggle_secure_button = 2131961228;
+    public static int pi2_ui_gps_permission_denied_rationale = 2131961229;
+}

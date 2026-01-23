@@ -1,0 +1,29 @@
+package bff_crypto_trading.service.p018v1;
+
+import com.robinhood.idl.Request;
+import com.robinhood.idl.Response;
+import com.robinhood.idl.RhGenerated;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+
+/* compiled from: BffCryptoTradingService.kt */
+@RhGenerated
+@Metadata(m3635d1 = {"\u0000r\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bg\u0018\u00002\u00020\u0001J\u0018\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H¦@¢\u0006\u0004\b\u0005\u0010\u0006J\u0018\u0010\t\u001a\u00020\b2\u0006\u0010\u0003\u001a\u00020\u0007H¦@¢\u0006\u0004\b\t\u0010\nJ\u0018\u0010\r\u001a\u00020\f2\u0006\u0010\u0003\u001a\u00020\u000bH¦@¢\u0006\u0004\b\r\u0010\u000eJ\u0018\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u0003\u001a\u00020\u000fH¦@¢\u0006\u0004\b\u0011\u0010\u0012J\u0018\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0003\u001a\u00020\u0013H¦@¢\u0006\u0004\b\u0015\u0010\u0016J$\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u001a0\u00192\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00180\u0017H\u0096@¢\u0006\u0004\b\u001b\u0010\u001cJ\u0018\u0010\u001f\u001a\u00020\u001e2\u0006\u0010\u0003\u001a\u00020\u001dH¦@¢\u0006\u0004\b\u001f\u0010 J\u0018\u0010#\u001a\u00020\"2\u0006\u0010\u0003\u001a\u00020!H¦@¢\u0006\u0004\b#\u0010$¨\u0006%"}, m3636d2 = {"Lbff_crypto_trading/service/v1/BffCryptoTradingService;", "", "Lbff_crypto_trading/service/v1/GetCryptoI18NRegionsRequestDto;", "request", "Lbff_crypto_trading/service/v1/GetCryptoI18NRegionsResponseDto;", "GetCryptoI18NRegions", "(Lbff_crypto_trading/service/v1/GetCryptoI18NRegionsRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbff_crypto_trading/service/v1/GetCryptoExploreStateRequestDto;", "Lbff_crypto_trading/service/v1/GetCryptoExploreStateResponseDto;", "GetCryptoExploreState", "(Lbff_crypto_trading/service/v1/GetCryptoExploreStateRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbff_crypto_trading/service/v1/GetCryptoDetailPageStateRequestDto;", "Lbff_crypto_trading/service/v1/GetCryptoDetailPageStateResponseDto;", "GetCryptoDetailPageState", "(Lbff_crypto_trading/service/v1/GetCryptoDetailPageStateRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbff_crypto_trading/service/v1/GetCryptoDetailPageStateLoggedOutRequestDto;", "Lbff_crypto_trading/service/v1/GetCryptoDetailPageStateLoggedOutResponseDto;", "GetCryptoDetailPageStateLoggedOut", "(Lbff_crypto_trading/service/v1/GetCryptoDetailPageStateLoggedOutRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbff_crypto_trading/service/v1/GetCryptoExploreStateLoggedOutRequestDto;", "Lbff_crypto_trading/service/v1/GetCryptoExploreStateLoggedOutResponseDto;", "GetCryptoExploreStateLoggedOut", "(Lbff_crypto_trading/service/v1/GetCryptoExploreStateLoggedOutRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lcom/robinhood/idl/Request;", "Lbff_crypto_trading/service/v1/GetCryptoTokenizedStocksOrderEntryConfigRequestDto;", "Lcom/robinhood/idl/Response;", "Lbff_crypto_trading/service/v1/GetCryptoTokenizedStocksOrderEntryConfigResponseDto;", "GetCryptoTokenizedStocksOrderEntryConfig", "(Lcom/robinhood/idl/Request;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbff_crypto_trading/service/v1/PostRHWTokenRequestDto;", "Lbff_crypto_trading/service/v1/PostRHWTokenResponseDto;", "PostRHWToken", "(Lbff_crypto_trading/service/v1/PostRHWTokenRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbff_crypto_trading/service/v1/GetWatchlistExplainerRequestDto;", "Lbff_crypto_trading/service/v1/GetWatchlistExplainerResponseDto;", "GetWatchlistExplainer", "(Lbff_crypto_trading/service/v1/GetWatchlistExplainerRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "bff_crypto_trading.service.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes16.dex */
+public interface BffCryptoTradingService {
+    Object GetCryptoDetailPageState(GetCryptoDetailPageStateRequestDto getCryptoDetailPageStateRequestDto, Continuation<? super GetCryptoDetailPageStateResponseDto> continuation);
+
+    Object GetCryptoDetailPageStateLoggedOut(GetCryptoDetailPageStateLoggedOutRequestDto getCryptoDetailPageStateLoggedOutRequestDto, Continuation<? super GetCryptoDetailPageStateLoggedOutResponseDto> continuation);
+
+    Object GetCryptoExploreState(GetCryptoExploreStateRequestDto getCryptoExploreStateRequestDto, Continuation<? super GetCryptoExploreStateResponseDto> continuation);
+
+    Object GetCryptoExploreStateLoggedOut(GetCryptoExploreStateLoggedOutRequestDto getCryptoExploreStateLoggedOutRequestDto, Continuation<? super GetCryptoExploreStateLoggedOutResponseDto> continuation);
+
+    Object GetCryptoI18NRegions(GetCryptoI18NRegionsRequestDto getCryptoI18NRegionsRequestDto, Continuation<? super GetCryptoI18NRegionsResponseDto> continuation);
+
+    Object GetCryptoTokenizedStocksOrderEntryConfig(Request<GetCryptoTokenizedStocksOrderEntryConfigRequestDto> request, Continuation<? super Response<GetCryptoTokenizedStocksOrderEntryConfigResponseDto>> continuation);
+
+    Object GetWatchlistExplainer(GetWatchlistExplainerRequestDto getWatchlistExplainerRequestDto, Continuation<? super GetWatchlistExplainerResponseDto> continuation);
+
+    Object PostRHWToken(PostRHWTokenRequestDto postRHWTokenRequestDto, Continuation<? super PostRHWTokenResponseDto> continuation);
+}

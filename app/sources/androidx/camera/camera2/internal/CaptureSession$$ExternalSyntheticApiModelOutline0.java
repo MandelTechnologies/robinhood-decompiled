@@ -1,0 +1,12 @@
+package androidx.camera.camera2.internal;
+
+import android.hardware.camera2.params.MultiResolutionStreamInfo;
+
+/* compiled from: R8$$SyntheticClass */
+/* loaded from: classes4.dex */
+public final /* synthetic */ class CaptureSession$$ExternalSyntheticApiModelOutline0 {
+    /* renamed from: m */
+    public static /* synthetic */ MultiResolutionStreamInfo m28m(int i, int i2, String str) {
+        return new MultiResolutionStreamInfo(i, i2, str);
+    }
+}

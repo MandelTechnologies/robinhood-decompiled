@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.text.RhTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="?attr/textAppearanceRegularMedium"
+    android:gravity="center"
+    android:id="@+id/transfer_toolbar_centered_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>

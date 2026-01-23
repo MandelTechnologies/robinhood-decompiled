@@ -1,0 +1,106 @@
+package com.robinhood.android.advisory.portfolio.holdings;
+
+import androidx.lifecycle.SavedStateHandle;
+import com.robinhood.android.brokeragecontent.BrokerageResourceManager;
+import com.robinhood.android.common.util.analytics.AnalyticsStrings;
+import com.robinhood.android.feature.lib.sweep.interest.SweepInterestContextFactory;
+import com.robinhood.android.udf.DuxoBundle;
+import com.robinhood.store.advisory.AdvisoryPortfolioBreakdownStore;
+import dagger.internal.Factory;
+import javax.inject.Provider;
+import kotlin.Metadata;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: HoldingsDrillDownDuxo_Factory.kt */
+@Metadata(m3635d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0007\u0018\u0000 \u00132\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0013B[\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00070\u0004\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u0004\u0012\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0004\u0012\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u0004\u0012\f\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u000f0\u0004¢\u0006\u0004\b\u0010\u0010\u0011J\b\u0010\u0012\u001a\u00020\u0002H\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00070\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u000f0\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"}, m3636d2 = {"Lcom/robinhood/android/advisory/portfolio/holdings/HoldingsDrillDownDuxo_Factory;", "Ldagger/internal/Factory;", "Lcom/robinhood/android/advisory/portfolio/holdings/HoldingsDrillDownDuxo;", "duxoBundle", "Ljavax/inject/Provider;", "Lcom/robinhood/android/udf/DuxoBundle;", "stateProvider", "Lcom/robinhood/android/advisory/portfolio/holdings/HoldingsDrillDownStateProvider;", "brokerageResourceManager", "Lcom/robinhood/android/brokeragecontent/BrokerageResourceManager;", "portfolioBreakdownStore", "Lcom/robinhood/store/advisory/AdvisoryPortfolioBreakdownStore;", "sweepInterestContextFactory", "Lcom/robinhood/android/feature/lib/sweep/interest/SweepInterestContextFactory;", "savedStateHandle", "Landroidx/lifecycle/SavedStateHandle;", "<init>", "(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V", "get", "Companion", "feature-advisory-portfolio_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes17.dex */
+public final class HoldingsDrillDownDuxo_Factory implements Factory<HoldingsDrillDownDuxo> {
+    private final Provider<BrokerageResourceManager> brokerageResourceManager;
+    private final Provider<DuxoBundle> duxoBundle;
+    private final Provider<AdvisoryPortfolioBreakdownStore> portfolioBreakdownStore;
+    private final Provider<SavedStateHandle> savedStateHandle;
+    private final Provider<HoldingsDrillDownStateProvider> stateProvider;
+    private final Provider<SweepInterestContextFactory> sweepInterestContextFactory;
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    public static final int $stable = 8;
+
+    @JvmStatic
+    public static final HoldingsDrillDownDuxo_Factory create(Provider<DuxoBundle> provider, Provider<HoldingsDrillDownStateProvider> provider2, Provider<BrokerageResourceManager> provider3, Provider<AdvisoryPortfolioBreakdownStore> provider4, Provider<SweepInterestContextFactory> provider5, Provider<SavedStateHandle> provider6) {
+        return INSTANCE.create(provider, provider2, provider3, provider4, provider5, provider6);
+    }
+
+    @JvmStatic
+    public static final HoldingsDrillDownDuxo newInstance(DuxoBundle duxoBundle, HoldingsDrillDownStateProvider holdingsDrillDownStateProvider, BrokerageResourceManager brokerageResourceManager, AdvisoryPortfolioBreakdownStore advisoryPortfolioBreakdownStore, SweepInterestContextFactory sweepInterestContextFactory, SavedStateHandle savedStateHandle) {
+        return INSTANCE.newInstance(duxoBundle, holdingsDrillDownStateProvider, brokerageResourceManager, advisoryPortfolioBreakdownStore, sweepInterestContextFactory, savedStateHandle);
+    }
+
+    public HoldingsDrillDownDuxo_Factory(Provider<DuxoBundle> duxoBundle, Provider<HoldingsDrillDownStateProvider> stateProvider, Provider<BrokerageResourceManager> brokerageResourceManager, Provider<AdvisoryPortfolioBreakdownStore> portfolioBreakdownStore, Provider<SweepInterestContextFactory> sweepInterestContextFactory, Provider<SavedStateHandle> savedStateHandle) {
+        Intrinsics.checkNotNullParameter(duxoBundle, "duxoBundle");
+        Intrinsics.checkNotNullParameter(stateProvider, "stateProvider");
+        Intrinsics.checkNotNullParameter(brokerageResourceManager, "brokerageResourceManager");
+        Intrinsics.checkNotNullParameter(portfolioBreakdownStore, "portfolioBreakdownStore");
+        Intrinsics.checkNotNullParameter(sweepInterestContextFactory, "sweepInterestContextFactory");
+        Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
+        this.duxoBundle = duxoBundle;
+        this.stateProvider = stateProvider;
+        this.brokerageResourceManager = brokerageResourceManager;
+        this.portfolioBreakdownStore = portfolioBreakdownStore;
+        this.sweepInterestContextFactory = sweepInterestContextFactory;
+        this.savedStateHandle = savedStateHandle;
+    }
+
+    @Override // javax.inject.Provider
+    public HoldingsDrillDownDuxo get() {
+        Companion companion = INSTANCE;
+        DuxoBundle duxoBundle = this.duxoBundle.get();
+        Intrinsics.checkNotNullExpressionValue(duxoBundle, "get(...)");
+        HoldingsDrillDownStateProvider holdingsDrillDownStateProvider = this.stateProvider.get();
+        Intrinsics.checkNotNullExpressionValue(holdingsDrillDownStateProvider, "get(...)");
+        BrokerageResourceManager brokerageResourceManager = this.brokerageResourceManager.get();
+        Intrinsics.checkNotNullExpressionValue(brokerageResourceManager, "get(...)");
+        AdvisoryPortfolioBreakdownStore advisoryPortfolioBreakdownStore = this.portfolioBreakdownStore.get();
+        Intrinsics.checkNotNullExpressionValue(advisoryPortfolioBreakdownStore, "get(...)");
+        SweepInterestContextFactory sweepInterestContextFactory = this.sweepInterestContextFactory.get();
+        Intrinsics.checkNotNullExpressionValue(sweepInterestContextFactory, "get(...)");
+        SavedStateHandle savedStateHandle = this.savedStateHandle.get();
+        Intrinsics.checkNotNullExpressionValue(savedStateHandle, "get(...)");
+        return companion.newInstance(duxoBundle, holdingsDrillDownStateProvider, brokerageResourceManager, advisoryPortfolioBreakdownStore, sweepInterestContextFactory, savedStateHandle);
+    }
+
+    /* compiled from: HoldingsDrillDownDuxo_Factory.kt */
+    @Metadata(m3635d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\\\u0010\u0004\u001a\u00020\u00052\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\n0\u00072\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\f0\u00072\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000e0\u00072\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00100\u00072\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00120\u0007H\u0007J8\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0006\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012H\u0007¨\u0006\u0015"}, m3636d2 = {"Lcom/robinhood/android/advisory/portfolio/holdings/HoldingsDrillDownDuxo_Factory$Companion;", "", "<init>", "()V", AnalyticsStrings.BUTTON_NEW_LIST_CREATE, "Lcom/robinhood/android/advisory/portfolio/holdings/HoldingsDrillDownDuxo_Factory;", "duxoBundle", "Ljavax/inject/Provider;", "Lcom/robinhood/android/udf/DuxoBundle;", "stateProvider", "Lcom/robinhood/android/advisory/portfolio/holdings/HoldingsDrillDownStateProvider;", "brokerageResourceManager", "Lcom/robinhood/android/brokeragecontent/BrokerageResourceManager;", "portfolioBreakdownStore", "Lcom/robinhood/store/advisory/AdvisoryPortfolioBreakdownStore;", "sweepInterestContextFactory", "Lcom/robinhood/android/feature/lib/sweep/interest/SweepInterestContextFactory;", "savedStateHandle", "Landroidx/lifecycle/SavedStateHandle;", "newInstance", "Lcom/robinhood/android/advisory/portfolio/holdings/HoldingsDrillDownDuxo;", "feature-advisory-portfolio_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        @JvmStatic
+        public final HoldingsDrillDownDuxo_Factory create(Provider<DuxoBundle> duxoBundle, Provider<HoldingsDrillDownStateProvider> stateProvider, Provider<BrokerageResourceManager> brokerageResourceManager, Provider<AdvisoryPortfolioBreakdownStore> portfolioBreakdownStore, Provider<SweepInterestContextFactory> sweepInterestContextFactory, Provider<SavedStateHandle> savedStateHandle) {
+            Intrinsics.checkNotNullParameter(duxoBundle, "duxoBundle");
+            Intrinsics.checkNotNullParameter(stateProvider, "stateProvider");
+            Intrinsics.checkNotNullParameter(brokerageResourceManager, "brokerageResourceManager");
+            Intrinsics.checkNotNullParameter(portfolioBreakdownStore, "portfolioBreakdownStore");
+            Intrinsics.checkNotNullParameter(sweepInterestContextFactory, "sweepInterestContextFactory");
+            Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
+            return new HoldingsDrillDownDuxo_Factory(duxoBundle, stateProvider, brokerageResourceManager, portfolioBreakdownStore, sweepInterestContextFactory, savedStateHandle);
+        }
+
+        @JvmStatic
+        public final HoldingsDrillDownDuxo newInstance(DuxoBundle duxoBundle, HoldingsDrillDownStateProvider stateProvider, BrokerageResourceManager brokerageResourceManager, AdvisoryPortfolioBreakdownStore portfolioBreakdownStore, SweepInterestContextFactory sweepInterestContextFactory, SavedStateHandle savedStateHandle) {
+            Intrinsics.checkNotNullParameter(duxoBundle, "duxoBundle");
+            Intrinsics.checkNotNullParameter(stateProvider, "stateProvider");
+            Intrinsics.checkNotNullParameter(brokerageResourceManager, "brokerageResourceManager");
+            Intrinsics.checkNotNullParameter(portfolioBreakdownStore, "portfolioBreakdownStore");
+            Intrinsics.checkNotNullParameter(sweepInterestContextFactory, "sweepInterestContextFactory");
+            Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
+            return new HoldingsDrillDownDuxo(duxoBundle, stateProvider, brokerageResourceManager, portfolioBreakdownStore, sweepInterestContextFactory, savedStateHandle);
+        }
+    }
+}

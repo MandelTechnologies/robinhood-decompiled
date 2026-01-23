@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegular"
+            android:id="@+id/crypto_learn_and_earn_terms_text"
+            android:padding="@dimen/rds_spacing_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:useLinkMovementMethod="true"/>
+    </androidx.core.widget.NestedScrollView>
+    <com.robinhood.android.common.p088ui.ShimmerLoadingView
+        android:id="@+id/crypto_learn_and_earn_terms_loading"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

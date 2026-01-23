@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="80dp"
+    android:width="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    <path
+        android:fillColor="#00c805"
+        android:pathData="M48.171 13h-16.83v4.739h16.83V13z"/>
+    <path
+        android:fillColor="@drawable/_pict_clr_rds_gold_stopwatch__0_res_0x7f0800d5"
+        android:pathData="M40.002 22.477c-11.112 0-20.262 8.987-20.262 20.262C19.74 54.013 28.89 63 40.002 63c11.111 0 20.261-8.987 20.261-20.261 0-11.275-9.15-20.262-20.261-20.262zm0 36.275c-8.824 0-16.177-7.19-16.177-16.176 0-8.987 7.19-16.177 16.177-16.177 8.986 0 16.176 7.19 16.176 16.177 0 8.986-7.19 16.176-16.176 16.176z"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M40.001 55.974c7.31 0 13.236-5.926 13.236-13.235 0-7.31-5.926-13.236-13.236-13.236-7.309 0-13.235 5.926-13.235 13.236 0 7.309 5.926 13.235 13.235 13.235zM41 33.3h-2.5v10.667h8.167v-2.5H41V33.3z"
+        android:fillType="evenOdd"/>
+</vector>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.accountcenter.views.AccountCenterErrorView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/rds_spacing_medium"
+    android:paddingTop="@dimen/rds_spacing_small"
+    android:paddingRight="@dimen/rds_spacing_medium"
+    android:paddingBottom="@dimen/rds_spacing_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/rds_spacing_medium">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:textColor="?attr/colorForeground2"
+        android:gravity="center"
+        android:id="@+id/error_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/error_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColor="?attr/colorForeground2"
+        android:gravity="center"
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/error_action"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_title"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/error_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/rds_spacing_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_message"
+        style="?attr/secondaryMonochromeButtonStyle"/>
+</com.robinhood.android.accountcenter.views.AccountCenterErrorView>

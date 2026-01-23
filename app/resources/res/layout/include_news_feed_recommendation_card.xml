@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.search.newsfeed.NewsFeedRecommendationsCard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/news_feed_recs_browse_card_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/rds_spacing_medium"
+    android:layout_marginTop="@dimen/rds_spacing_default"
+    android:layout_marginRight="@dimen/rds_spacing_medium"
+    android:layout_marginBottom="@dimen/rds_spacing_default"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+    android:layout_marginVertical="@dimen/rds_spacing_default"/>

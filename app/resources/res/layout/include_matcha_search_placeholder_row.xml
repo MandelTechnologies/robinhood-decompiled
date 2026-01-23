@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?attr/rowContainerStyle">
+    <View
+        android:background="@drawable/search_placeholder_background"
+        android:layout_width="200dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:backgroundTint="?attr/colorBackground3"/>
+    <View
+        android:background="@drawable/search_placeholder_background"
+        android:layout_width="80dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="@dimen/rds_spacing_small"
+        android:backgroundTint="?attr/colorBackground3"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        layout="@layout/include_rds_divider"/>
+</LinearLayout>

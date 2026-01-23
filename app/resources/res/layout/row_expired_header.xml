@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplaySmall"
+        android:background="#fff"
+        android:paddingLeft="@dimen/rds_spacing_medium"
+        android:paddingTop="@dimen/rds_spacing_default"
+        android:paddingRight="@dimen/rds_spacing_medium"
+        android:paddingBottom="@dimen/rds_spacing_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/option_watchlist_expired_header"
+        android:backgroundTint="?attr/colorBackground1"
+        android:paddingHorizontal="@dimen/rds_spacing_medium"
+        android:paddingVertical="@dimen/rds_spacing_default"/>
+    <View
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:backgroundTint="?attr/colorBackground3"/>
+</LinearLayout>

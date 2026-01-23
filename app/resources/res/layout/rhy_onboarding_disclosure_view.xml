@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.text.RhTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textAppearance="?attr/textAppearanceRegularSmall"
+    android:textColor="?attr/colorForeground2"
+    android:textColorLink="?attr/colorForeground1"
+    android:id="@+id/merchantrewards_disclosure"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/rds_spacing_medium"
+    android:text="@string/rhy_onboarding_disclosure"/>

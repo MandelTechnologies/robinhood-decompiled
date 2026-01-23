@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="16dp"
+    android:width="22dp"
+    android:viewportWidth="22"
+    android:viewportHeight="16">
+    <path
+        android:fillColor="#bf0a30"
+        android:pathData="M0 0v1.455h22V0H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M0 1.455v1.454h22V1.455H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#bf0a30"
+        android:pathData="M0 2.909v1.455h22V2.909H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M0 4.364v1.454h22V4.364H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#bf0a30"
+        android:pathData="M0 5.818v1.455h22V5.818H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M0 7.273v1.454h22V7.273H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#bf0a30"
+        android:pathData="M0 8.727v1.455h22V8.727H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M0 10.182v1.454h22v-1.454H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#bf0a30"
+        android:pathData="M0 11.636v1.455h22v-1.455H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M0 13.091v1.454h22v-1.454H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#bf0a30"
+        android:pathData="M0 14.545V16h22v-1.455H0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#002868"
+        android:pathData="M0 0h7.25v7.25H0z"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M3.75 1.25l0.561 1.727h1.817l-1.47 1.068 0.561 1.728L3.75 4.705 2.281 5.773l0.561-1.728-1.47-1.068h1.817L3.75 1.25z"/>
+</vector>

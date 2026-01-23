@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_gravity="end"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/referral_cta_icon"
+        android:layout_width="11dp"
+        android:layout_height="11dp"
+        android:tint="?attr/colorPrimary"
+        android:contentDescription="@string/referral_call_to_action_label"
+        app:srcCompat="@drawable/ic_referral_gift"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmallBold"
+        android:textSize="10sp"
+        android:textColor="?attr/colorPrimary"
+        android:id="@+id/referral_cta_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/referral_call_to_action_label"
+        android:layout_marginStart="6dp"/>
+</merge>

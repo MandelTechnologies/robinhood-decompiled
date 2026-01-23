@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="140dp"
+    android:width="200dp"
+    android:viewportWidth="341"
+    android:viewportHeight="238">
+    <path
+        android:fillColor="#202226"
+        android:pathData="M201.479 45.402L7.63 157.319c-8.033 4.64-7.021 12.738 2.251 18.096l100.076 57.777c9.272 5.35 23.299 5.937 31.331 1.297l193.85-111.918c8.032-4.64 7.021-12.738-2.251-18.095L232.81 46.69c-9.272-5.341-23.298-5.928-31.331-1.288z"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:fillColor="#039503"
+        android:pathData="M261.247 32.615l59.856 34.879c4.078 2.348 5.962 5.488 5.652 8.57l-0.302 4.494c-0.139 2.756-2.031 5.496-5.708 7.6L143.384 190.559c-7.584 4.379-19.881 4.379-27.457 0l-59.824-34.854-49.419-28.216c-3.499-2.014-5.374-4.616-5.643-7.266H1v-6.149c0.245-2.674 2.129-5.309 5.66-7.339L184.028 4.334c7.584-4.379 19.874-4.379 27.458 0l49.41 28.216-0.555 0.318 0.743-0.228-0.188 4.811 0.351-4.836z"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.8155"/>
+    <path
+        android:fillColor="@drawable/_svg_debit_card_rhy__0_res_0x7f080295"
+        android:pathData="M261.059 32.525L211.657 4.284c-7.584-4.379-19.882-4.379-27.458 0L6.831 106.685c-7.584 4.379-7.584 11.474 0 15.853l49.418 28.216 0.18 0.09 59.865 34.878c7.576 4.371 19.873 4.371 27.449 0l177.36-102.335c7.584-4.38 7.584-11.474 0-15.853l-59.856-34.879-0.188-0.13z"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.8155"/>
+    <path
+        android:fillColor="#cdf4cd"
+        android:pathData="M239.669 72.859l16.383 9.459c1.688 0.979 4.648 0.816 6.605-0.269L285.776 68.7c1.958-1.134 2.17-2.838 0.473-3.817l-16.383-9.459c-1.688-0.979-4.648-0.816-6.605 0.277l-23.119 13.35c-1.957 1.125-2.169 2.837-0.473 3.808z"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.8155"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M251.974 69.825l9.338 5.39 13.178-7.608-9.337-5.39-13.179 7.608z"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.8155"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M258.295 66.18l-6.59-3.8m22.239 12.836l-6.589-3.801"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.8155"/>
+</vector>

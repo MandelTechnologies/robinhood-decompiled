@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.textinput.RdsTextInputContainerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/uar_phone_edit_input_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:alwaysShowErrorText="true"
+    style="?attr/inputContainerHeroStyle">
+    <com.robinhood.android.designsystem.textinput.RdsFormattedEditText
+        android:id="@+id/uar_phone_edit_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:lines="1"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        app:preFormattedCharacterTextColor="?attr/colorForeground1"
+        app:useCustomNumpad="true"
+        style="?attr/inputHeroStyle">
+        <requestFocus/>
+    </com.robinhood.android.designsystem.textinput.RdsFormattedEditText>
+</com.robinhood.android.designsystem.textinput.RdsTextInputContainerView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/rds_spacing_xlarge"
+    android:paddingBottom="@dimen/rds_spacing_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/rds_spacing_medium"
+    android:layout_marginRight="@dimen/rds_spacing_medium"
+    android:layout_marginHorizontal="@dimen/rds_spacing_medium">
+    <View
+        android:background="?attr/colorBackground3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_xlarge"
+        android:text="@string/question_list_your_questions"
+        style="?attr/textAppearanceRegularMediumBold"/>
+</LinearLayout>

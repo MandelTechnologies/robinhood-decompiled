@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="110dp"
+    android:minHeight="110dp"
+    android:updatePeriodMillis="900000"
+    android:initialLayout="@layout/widget_portfolio_day"
+    android:configure="com.robinhood.android.widget.ui.PortfolioWidgetConfigurationActivity"
+    android:previewImage="@drawable/widget_preview"
+    android:resizeMode="vertical|horizontal"
+    android:widgetCategory="home_screen"/>

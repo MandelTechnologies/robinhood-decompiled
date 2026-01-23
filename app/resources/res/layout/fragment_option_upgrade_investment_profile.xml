@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:text="@string/option_upgrade_investment_profile_review_title"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColor="?android:attr/textColorSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:text="@string/option_upgrade_investment_profile_review_detail"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"/>
+    <FrameLayout
+        android:id="@+id/option_upgrade_investment_profile_child_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        layout="@layout/include_rds_divider"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/option_upgrade_investment_profile_done_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/rds_spacing_medium"
+        android:text="@string/general_label_confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="?attr/primaryMonochromeButtonStyle"/>
+</LinearLayout>

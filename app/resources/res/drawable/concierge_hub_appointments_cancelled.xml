@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="193dp"
+    android:width="200dp"
+    android:autoMirrored="true"
+    android:viewportWidth="245"
+    android:viewportHeight="236">
+    <path
+        android:pathData="M1.09 130.88v60.47l60.74 43.14M1.09 130.88l60.74 43.15M1.09 130.88l60.74-43.14m0 146.75l60.74-43.14m-60.74 43.14v-60.46m60.74 17.32v-60.47m0 60.47l60.74 43.14m-60.74-103.61l-60.74 43.15m60.74-43.15L61.83 87.74m60.74 43.14l60.74-43.14m-60.74 43.14l60.74 43.15M61.83 87.74l60.74-43.15M61.83 87.74L1.09 44.59m182.22 43.15l-60.74-43.15m60.74 43.15l60.74-43.15m-60.74 43.15l60.74 43.14M122.57 44.59l60.74-43.15 60.74 43.15m-121.48 0L61.83 1.44 1.09 44.59m242.96 0v60.46l-18.18 12.92m18.18 12.91v60.47l-60.74 43.14m60.74-103.61l-60.74 43.15m0 60.46v-60.46M19.27 117.97L1.09 105.05V44.59"
+        android:strokeColor="#ffffff"
+        android:strokeWidth="1.25"
+        android:strokeLineJoin="round"/>
+</vector>

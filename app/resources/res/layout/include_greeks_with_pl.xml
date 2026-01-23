@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.trade.options.profitloss.OptionsProfitLossView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="?attr/surfaceTheme"
+    android:id="@+id/shopping_cart_profit_loss"
+    android:background="#fff"
+    android:paddingTop="@dimen/rds_spacing_default"
+    android:visibility="visible"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="?attr/colorBackground1"
+    app:allowSmallLayout="false"
+    app:spacerLayout="@layout/include_greeks_with_header"/>

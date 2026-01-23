@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/expanded_toolbar"
+    android:paddingBottom="@dimen/rds_spacing_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/rds_spacing_medium"
+    android:layout_marginEnd="@dimen/rds_spacing_default"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceDisplayMedium"
+            android:id="@+id/expanded_toolbar_title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"/>
+        <ImageView
+            android:id="@+id/expanded_toolbar_icon"
+            android:paddingLeft="@dimen/rds_spacing_small"
+            android:paddingRight="@dimen/rds_spacing_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:paddingHorizontal="@dimen/rds_spacing_small"/>
+    </LinearLayout>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:id="@+id/expanded_toolbar_subtitle_txt"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"/>
+</LinearLayout>

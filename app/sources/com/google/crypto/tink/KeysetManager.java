@@ -1,0 +1,111 @@
+package com.google.crypto.tink;
+
+import com.google.crypto.tink.proto.KeyData;
+import com.google.crypto.tink.proto.KeyStatusType;
+import com.google.crypto.tink.proto.Keyset;
+import com.google.crypto.tink.proto.OutputPrefixType;
+import java.security.GeneralSecurityException;
+import java.security.SecureRandom;
+import java.util.Iterator;
+
+/* loaded from: classes27.dex */
+public final class KeysetManager {
+    private final Keyset.Builder keysetBuilder;
+
+    private KeysetManager(Keyset.Builder val) {
+        this.keysetBuilder = val;
+    }
+
+    public static KeysetManager withKeysetHandle(KeysetHandle val) {
+        return new KeysetManager(val.getKeyset().toBuilder());
+    }
+
+    public static KeysetManager withEmptyKeyset() {
+        return new KeysetManager(Keyset.newBuilder());
+    }
+
+    public synchronized KeysetHandle getKeysetHandle() throws GeneralSecurityException {
+        return KeysetHandle.fromKeyset(this.keysetBuilder.build());
+    }
+
+    public synchronized KeysetManager add(KeyTemplate keyTemplate) throws GeneralSecurityException {
+        addNewKey(keyTemplate.getProto(), false);
+        return this;
+    }
+
+    @Deprecated
+    public synchronized int addNewKey(com.google.crypto.tink.proto.KeyTemplate keyTemplate, boolean asPrimary) throws GeneralSecurityException {
+        Keyset.Key keyNewKey;
+        try {
+            keyNewKey = newKey(keyTemplate);
+            this.keysetBuilder.addKey(keyNewKey);
+            if (asPrimary) {
+                this.keysetBuilder.setPrimaryKeyId(keyNewKey.getKeyId());
+            }
+        } catch (Throwable th) {
+            throw th;
+        }
+        return keyNewKey.getKeyId();
+    }
+
+    public synchronized KeysetManager setPrimary(int keyId) throws GeneralSecurityException {
+        for (int i = 0; i < this.keysetBuilder.getKeyCount(); i++) {
+            Keyset.Key key = this.keysetBuilder.getKey(i);
+            if (key.getKeyId() == keyId) {
+                if (!key.getStatus().equals(KeyStatusType.ENABLED)) {
+                    throw new GeneralSecurityException("cannot set key as primary because it's not enabled: " + keyId);
+                }
+                this.keysetBuilder.setPrimaryKeyId(keyId);
+            }
+        }
+        throw new GeneralSecurityException("key not found: " + keyId);
+        return this;
+    }
+
+    private synchronized Keyset.Key newKey(com.google.crypto.tink.proto.KeyTemplate keyTemplate) throws GeneralSecurityException {
+        KeyData keyDataNewKeyData;
+        int iNewKeyId;
+        OutputPrefixType outputPrefixType;
+        try {
+            keyDataNewKeyData = Registry.newKeyData(keyTemplate);
+            iNewKeyId = newKeyId();
+            outputPrefixType = keyTemplate.getOutputPrefixType();
+            if (outputPrefixType == OutputPrefixType.UNKNOWN_PREFIX) {
+                outputPrefixType = OutputPrefixType.TINK;
+            }
+        } catch (Throwable th) {
+            throw th;
+        }
+        return Keyset.Key.newBuilder().setKeyData(keyDataNewKeyData).setKeyId(iNewKeyId).setStatus(KeyStatusType.ENABLED).setOutputPrefixType(outputPrefixType).build();
+    }
+
+    private synchronized boolean keyIdExists(int keyId) {
+        Iterator<Keyset.Key> it = this.keysetBuilder.getKeyList().iterator();
+        while (it.hasNext()) {
+            if (it.next().getKeyId() == keyId) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private synchronized int newKeyId() {
+        int iRandPositiveInt;
+        iRandPositiveInt = randPositiveInt();
+        while (keyIdExists(iRandPositiveInt)) {
+            iRandPositiveInt = randPositiveInt();
+        }
+        return iRandPositiveInt;
+    }
+
+    private static int randPositiveInt() {
+        SecureRandom secureRandom = new SecureRandom();
+        byte[] bArr = new byte[4];
+        int i = 0;
+        while (i == 0) {
+            secureRandom.nextBytes(bArr);
+            i = ((bArr[0] & 127) << 24) | ((bArr[1] & 255) << 16) | ((bArr[2] & 255) << 8) | (bArr[3] & 255);
+        }
+        return i;
+    }
+}

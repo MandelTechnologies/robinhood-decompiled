@@ -1,0 +1,39 @@
+
+'
+!investment_schedule_history_title
+3
+-investment_schedule_history_empty_description
+3
+-investment_schedule_history_error_description
+4
+.investment_schedule_recurring_flow_button_text
+.
+(investment_schedule_total_invested_label
+4
+.investment_schedule_next_investment_date_label
+&
+ investment_schedule_active_label
+&
+ investment_schedule_paused_label
+&
+ investment_schedule_stock_header
+5
+/gated_investment_schedule_stocks_and_etf_header
+.
+(investment_schedule_equity_empty_message
+'
+!investment_schedule_crypto_header
+.
+(investment_schedule_crypto_empty_message
+7
+1investment_schedule_help_icon_content_description
+'
+!recurring_account_selection_title
+ 
+recurring_account_type_all
+.
+(recurring_account_type_joint_description
+(
+"recurring_account_type_joint_title
+.
+(recurring_account_selection_buying_power

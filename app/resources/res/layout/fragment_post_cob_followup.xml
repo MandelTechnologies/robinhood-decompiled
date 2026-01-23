@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?attr/bottomSheetStyle">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_post_cob_followup_section_recycler_view"
+        android:paddingTop="@dimen/rds_spacing_medium"
+        android:paddingBottom="@dimen/rds_spacing_medium"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingVertical="@dimen/rds_spacing_medium"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_post_cob_followup_button_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginBottom="@dimen/rds_spacing_medium"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_underneathToolbar="true">
+    <com.robinhood.shared.common.agreementview.RdsAgreementView
+        android:id="@+id/rhy_agreement_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:acceptButtonText="@string/rhy_agreement_confirm_button_text"
+        app:reviewButtonText="@string/general_label_continue"/>
+</FrameLayout>

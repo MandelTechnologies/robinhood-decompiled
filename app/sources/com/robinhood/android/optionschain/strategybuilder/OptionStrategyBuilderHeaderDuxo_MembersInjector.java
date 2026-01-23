@@ -1,0 +1,32 @@
+package com.robinhood.android.optionschain.strategybuilder;
+
+import com.robinhood.android.udf.OldBaseDuxo_MembersInjector;
+import com.robinhood.coroutines.p287rx.RxFactory;
+import com.robinhood.utils.RxGlobalErrorHandler;
+import dagger.MembersInjector;
+import dagger.internal.Provider;
+import dispatch.core.DispatcherProvider;
+
+/* loaded from: classes11.dex */
+public final class OptionStrategyBuilderHeaderDuxo_MembersInjector implements MembersInjector<OptionStrategyBuilderHeaderDuxo> {
+    private final Provider<DispatcherProvider> dispatcherProvider;
+    private final Provider<RxFactory> rxFactoryProvider;
+    private final Provider<RxGlobalErrorHandler> rxGlobalErrorHandlerProvider;
+
+    private OptionStrategyBuilderHeaderDuxo_MembersInjector(Provider<DispatcherProvider> provider, Provider<RxFactory> provider2, Provider<RxGlobalErrorHandler> provider3) {
+        this.dispatcherProvider = provider;
+        this.rxFactoryProvider = provider2;
+        this.rxGlobalErrorHandlerProvider = provider3;
+    }
+
+    @Override // dagger.MembersInjector
+    public void injectMembers(OptionStrategyBuilderHeaderDuxo optionStrategyBuilderHeaderDuxo) {
+        OldBaseDuxo_MembersInjector.injectDispatcherProvider(optionStrategyBuilderHeaderDuxo, this.dispatcherProvider.get());
+        OldBaseDuxo_MembersInjector.injectRxFactory(optionStrategyBuilderHeaderDuxo, this.rxFactoryProvider.get());
+        OldBaseDuxo_MembersInjector.injectRxGlobalErrorHandler(optionStrategyBuilderHeaderDuxo, this.rxGlobalErrorHandlerProvider.get());
+    }
+
+    public static MembersInjector<OptionStrategyBuilderHeaderDuxo> create(Provider<DispatcherProvider> provider, Provider<RxFactory> provider2, Provider<RxGlobalErrorHandler> provider3) {
+        return new OptionStrategyBuilderHeaderDuxo_MembersInjector(provider, provider2, provider3);
+    }
+}

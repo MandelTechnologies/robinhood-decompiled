@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.utils.p409ui.view.NestedScrollableHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.common.p088ui.CuratedListChipRecyclerView
+            android:id="@+id/related_industry_curated_list_recycler_view"
+            android:paddingTop="@dimen/rds_spacing_default"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/rds_spacing_medium"/>
+    </com.robinhood.utils.p409ui.view.NestedScrollableHost>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.banner.RdsInfoBannerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/rds_spacing_medium"
+    android:layout_marginTop="@dimen/rds_spacing_default"
+    android:layout_marginRight="@dimen/rds_spacing_medium"
+    android:layout_marginBottom="@dimen/rds_spacing_default"
+    android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+    android:layout_marginVertical="@dimen/rds_spacing_default"
+    app:icon="@drawable/ic_rds_alert_24dp"
+    style="?attr/infoBannerStyle"/>

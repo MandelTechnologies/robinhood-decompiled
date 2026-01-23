@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.shared.cards.NotificationViewWithImage xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:scarlet_childContext="animatedAndInherit"
+    app:tintValue="?attr/notificationImageTint">
+    <com.robinhood.android.designsystem.card.RdsCardView
+        android:id="@+id/notificationview_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_small"
+        android:minHeight="@dimen/card_height"
+        android:layout_marginStart="@dimen/rds_spacing_small"
+        android:layout_marginEnd="@dimen/rds_spacing_small"
+        style="?attr/cardStyle">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/card_height">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/notification_view_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"/>
+            <Space
+                android:id="@+id/notification_view_content_padding"
+                android:layout_width="@dimen/rds_spacing_default"
+                android:layout_height="wrap_content"/>
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/rds_spacing_small"
+                android:layout_marginBottom="@dimen/rds_spacing_small"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="@dimen/rds_spacing_default"
+                layout="@layout/include_notification_view_content"/>
+        </LinearLayout>
+    </com.robinhood.android.designsystem.card.RdsCardView>
+</com.robinhood.shared.cards.NotificationViewWithImage>

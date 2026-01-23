@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/rds_spacing_medium"
+        android:paddingEnd="12dp">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularMedium"
+            android:ellipsize="end"
+            android:id="@+id/recent_search_display_title"
+            android:paddingTop="@dimen/rds_spacing_default"
+            android:paddingBottom="@dimen/rds_spacing_default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:layout_marginEnd="@dimen/rds_spacing_small"
+            android:paddingVertical="@dimen/rds_spacing_default"
+            app:layout_constraintEnd_toStartOf="@+id/recent_search_row_delete_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/recent_search_row_delete_btn"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/rds_spacing_default"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:tint="?attr/colorForeground3"
+            android:contentDescription="@string/general_label_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_rds_close_12dp"/>
+        <include
+            android:id="@+id/row_bottom_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/recent_search_display_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            layout="@layout/include_rds_divider"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

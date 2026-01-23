@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_rds_picture_in_picture_24dp"
+        android:id="@+id/action_picture_in_picture"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/svg_ic_create_alert"
+        android:id="@+id/action_alert"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/svg_ic_action_add_24dp"
+        android:id="@+id/action_add_to_list"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_rds_bubble_checked_24dp"
+        android:id="@+id/action_update_lists"
+        android:visible="false"
+        app:showAsAction="always"/>
+</menu>

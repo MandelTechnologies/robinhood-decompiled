@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.optionsstrategybuilder.pickers.DatePickerTabLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/rh_white_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/transparent"
+    app:invalidateOnIndicatorColorUpdate="true"
+    app:tabIconTint="@color/selector_chain_tab_text_color"
+    app:tabIndicatorColor="?attr/colorPrimary"
+    app:tabInlineLabel="true"
+    app:tabMode="scrollable"
+    app:tabPadding="@dimen/rds_spacing_small"
+    app:tabTextAppearance="?attr/textAppearanceRegularSmallBold"
+    app:tabTextColor="@color/selector_chain_tab_text_color"/>

@@ -1,0 +1,26 @@
+package kotlinx.serialization.internal;
+
+import com.robinhood.contentful.model.ContentTypeResource;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+
+/* compiled from: CollectionDescriptors.kt */
+@Metadata(m3635d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\b\u0000\u0018\u00002\u00020\u0001B\u0011\b\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005R\u0014\u0010\u0006\u001a\u00020\u0007X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\t¨\u0006\n"}, m3636d2 = {"Lkotlinx/serialization/internal/PrimitiveArrayDescriptor;", "Lkotlinx/serialization/internal/ListLikeDescriptor;", "primitive", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "<init>", "(Lkotlinx/serialization/descriptors/SerialDescriptor;)V", "serialName", "", "getSerialName", "()Ljava/lang/String;", "kotlinx-serialization-core"}, m3637k = 1, m3638mv = {2, 0, 0}, m3640xi = 48)
+/* renamed from: kotlinx.serialization.internal.PrimitiveArrayDescriptor, reason: use source file name */
+/* loaded from: classes23.dex */
+public final class CollectionDescriptors9 extends CollectionDescriptors7 {
+    private final String serialName;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public CollectionDescriptors9(SerialDescriptor primitive) {
+        super(primitive, null);
+        Intrinsics.checkNotNullParameter(primitive, "primitive");
+        this.serialName = primitive.getSerialName() + ContentTypeResource.Field.Type.Array.identifier;
+    }
+
+    @Override // kotlinx.serialization.descriptors.SerialDescriptor
+    public String getSerialName() {
+        return this.serialName;
+    }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.utils.p409ui.view.FocusSafeNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/dispute_reason_selection_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceDisplayMedium"
+            android:id="@+id/dispute_reason_selection_title"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rds_spacing_medium"
+            android:layout_marginRight="@dimen/rds_spacing_medium"
+            android:layout_marginHorizontal="@dimen/rds_spacing_medium"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dispute_reason_selection_recycler_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rds_spacing_small"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <com.robinhood.android.common.p088ui.ShimmerLoadingView
+            android:id="@+id/dispute_reason_selection_loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</com.robinhood.utils.p409ui.view.FocusSafeNestedScrollView>

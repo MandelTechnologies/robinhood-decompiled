@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="?attr/surfaceTheme"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:gravity="center"
+        android:id="@+id/title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+        style="?attr/textAppearanceDisplaySmall"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegular"
+        android:gravity="center"
+        android:id="@+id/message_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginTop="@dimen/rds_spacing_small"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginBottom="@dimen/rds_spacing_medium"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/okay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginBottom="@dimen/rds_spacing_medium"
+        android:text="@string/sweep_paused_info_okay"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+        app:useLinkMovementMethod="true"
+        style="?attr/primaryButtonStyle"/>
+</LinearLayout>

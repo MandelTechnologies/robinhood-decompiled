@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.selectioncontrol.RdsToggleView
+        android:id="@+id/header_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:primaryText="@string/drip_settings_toggle_title"
+        style="?attr/toggleStyle"/>
+    <include layout="@layout/include_rds_divider"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:textColor="?android:attr/textColorSecondary"
+        android:id="@+id/header_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:text="@string/drip_settings_toggle_description"
+        android:layout_marginStart="@dimen/rds_row_horizontal_spacing"
+        android:layout_marginEnd="@dimen/rds_row_horizontal_spacing"/>
+</merge>

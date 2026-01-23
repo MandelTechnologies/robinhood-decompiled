@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="48dp"
+    android:width="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="#f5f5f5"
+        android:pathData="M46 24a22 22 0 0 1-22 22A22 22 0 0 1 2 24 22 22 0 0 1 24 2a22 22 0 0 1 22 22z"/>
+    <path
+        android:fillColor="@color/mobius_prime"
+        android:pathData="M14 30h20v2H14zm3-8h2v8h-2v-8m4 0h2v8h-2v-8m4 0h2v8h-2v-8m4 0h2v8h-2v-8m-14.551-3.45c-0.736 0.318-0.514 1.441 0.284 1.441h18.535c0.798 0 1.02-1.124 0.284-1.441l-9.322-4.242c-0.182-0.078-0.386-0.078-0.568 0l-9.213 4.242z"/>
+</vector>

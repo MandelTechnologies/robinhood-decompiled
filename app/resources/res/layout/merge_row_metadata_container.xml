@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:id="@+id/row_metadata_primary_text"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/rowMetadataPrimaryTextStyle"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:id="@+id/row_metadata_secondary_text"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/rowMetadataSecondaryTextStyle"/>
+</merge>

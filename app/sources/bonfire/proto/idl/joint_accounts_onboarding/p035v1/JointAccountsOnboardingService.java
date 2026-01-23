@@ -1,0 +1,25 @@
+package bonfire.proto.idl.joint_accounts_onboarding.p035v1;
+
+import com.robinhood.idl.RhGenerated;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+
+/* compiled from: JointAccountsOnboardingService.kt */
+@RhGenerated
+@Metadata(m3635d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bg\u0018\u00002\u00020\u0001J\u0018\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H¦@¢\u0006\u0004\b\u0005\u0010\u0006J\u0018\u0010\t\u001a\u00020\b2\u0006\u0010\u0003\u001a\u00020\u0007H¦@¢\u0006\u0004\b\t\u0010\nJ\u0018\u0010\f\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u000bH¦@¢\u0006\u0004\b\f\u0010\rJ\u0018\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0003\u001a\u00020\u000eH¦@¢\u0006\u0004\b\u0010\u0010\u0011J\u0018\u0010\u0014\u001a\u00020\u00132\u0006\u0010\u0003\u001a\u00020\u0012H¦@¢\u0006\u0004\b\u0014\u0010\u0015J\u0018\u0010\u0017\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0016H¦@¢\u0006\u0004\b\u0017\u0010\u0018J\u0018\u0010\u001a\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0019H¦@¢\u0006\u0004\b\u001a\u0010\u001b¨\u0006\u001c"}, m3636d2 = {"Lbonfire/proto/idl/joint_accounts_onboarding/v1/JointAccountsOnboardingService;", "", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/FetchSecondaryPostAgreementsRequestDto;", "request", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/FetchSecondaryPostAgreementsResponseDto;", "FetchSecondaryPostAgreements", "(Lbonfire/proto/idl/joint_accounts_onboarding/v1/FetchSecondaryPostAgreementsRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/FetchJointAccountCreatedRequestDto;", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/FetchJointAccountCreatedResponseDto;", "FetchJointAccountCreated", "(Lbonfire/proto/idl/joint_accounts_onboarding/v1/FetchJointAccountCreatedRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/SignSweepAgreementsRequestDto;", "SignSweepAgreements", "(Lbonfire/proto/idl/joint_accounts_onboarding/v1/SignSweepAgreementsRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/GetGoldFeaturesRequestDto;", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/GetGoldFeaturesResponseDto;", "GetGoldFeatures", "(Lbonfire/proto/idl/joint_accounts_onboarding/v1/GetGoldFeaturesRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/JointAccountCoOwnerQuestionnaireCompletedRequestDto;", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/JointAccountCoOwnerQuestionnaireCompletedResponseDto;", "JointAccountCoOwnerQuestionnaireCompleted", "(Lbonfire/proto/idl/joint_accounts_onboarding/v1/JointAccountCoOwnerQuestionnaireCompletedRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/SignMarginAgreementsRequestDto;", "SignMarginAgreements", "(Lbonfire/proto/idl/joint_accounts_onboarding/v1/SignMarginAgreementsRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/joint_accounts_onboarding/v1/SendCoOwnerIpEmailRequestDto;", "SendCoOwnerIpEmail", "(Lbonfire/proto/idl/joint_accounts_onboarding/v1/SendCoOwnerIpEmailRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "bonfire.joint_accounts_onboarding.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes16.dex */
+public interface JointAccountsOnboardingService {
+    Object FetchJointAccountCreated(FetchJointAccountCreatedRequestDto fetchJointAccountCreatedRequestDto, Continuation<? super FetchJointAccountCreatedResponseDto> continuation);
+
+    Object FetchSecondaryPostAgreements(FetchSecondaryPostAgreementsRequestDto fetchSecondaryPostAgreementsRequestDto, Continuation<? super FetchSecondaryPostAgreementsResponseDto> continuation);
+
+    Object GetGoldFeatures(GetGoldFeaturesRequestDto getGoldFeaturesRequestDto, Continuation<? super GetGoldFeaturesResponseDto> continuation);
+
+    Object JointAccountCoOwnerQuestionnaireCompleted(JointAccountCoOwnerQuestionnaireCompletedRequestDto jointAccountCoOwnerQuestionnaireCompletedRequestDto, Continuation<? super JointAccountCoOwnerQuestionnaireCompletedResponseDto> continuation);
+
+    Object SendCoOwnerIpEmail(SendCoOwnerIpEmailRequestDto sendCoOwnerIpEmailRequestDto, Continuation<Object> continuation);
+
+    Object SignMarginAgreements(SignMarginAgreementsRequestDto signMarginAgreementsRequestDto, Continuation<Object> continuation);
+
+    Object SignSweepAgreements(SignSweepAgreementsRequestDto signSweepAgreementsRequestDto, Continuation<Object> continuation);
+}

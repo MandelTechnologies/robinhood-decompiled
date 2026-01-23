@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_underneathToolbar="true">
+    <WebView
+        android:id="@+id/atomic_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.robinhood.android.common.p088ui.ShimmerLoadingView
+        android:id="@+id/atomic_loading_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

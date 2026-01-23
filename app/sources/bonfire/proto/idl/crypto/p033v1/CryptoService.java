@@ -1,0 +1,27 @@
+package bonfire.proto.idl.crypto.p033v1;
+
+import com.robinhood.idl.RhGenerated;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+
+/* compiled from: CryptoService.kt */
+@RhGenerated
+@Metadata(m3635d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bg\u0018\u00002\u00020\u0001J\u0018\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H¦@¢\u0006\u0004\b\u0005\u0010\u0006J\u0018\u0010\t\u001a\u00020\b2\u0006\u0010\u0003\u001a\u00020\u0007H¦@¢\u0006\u0004\b\t\u0010\nJ\u0018\u0010\r\u001a\u00020\f2\u0006\u0010\u0003\u001a\u00020\u000bH¦@¢\u0006\u0004\b\r\u0010\u000eJ\u0018\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u0003\u001a\u00020\u000fH¦@¢\u0006\u0004\b\u0011\u0010\u0012J\u0018\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0003\u001a\u00020\u0013H¦@¢\u0006\u0004\b\u0015\u0010\u0016J\u0018\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u0003\u001a\u00020\u0017H¦@¢\u0006\u0004\b\u0019\u0010\u001aJ\u0018\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u0003\u001a\u00020\u001bH¦@¢\u0006\u0004\b\u001d\u0010\u001eJ\u0018\u0010!\u001a\u00020 2\u0006\u0010\u0003\u001a\u00020\u001fH¦@¢\u0006\u0004\b!\u0010\"¨\u0006#"}, m3636d2 = {"Lbonfire/proto/idl/crypto/v1/CryptoService;", "", "Lbonfire/proto/idl/crypto/v1/NewsfeedRequestDto;", "request", "Lbonfire/proto/idl/crypto/v1/NewsfeedResponseDto;", "Newsfeed", "(Lbonfire/proto/idl/crypto/v1/NewsfeedRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/crypto/v1/GetCryptoCategoriesRequestDto;", "Lbonfire/proto/idl/crypto/v1/GetCryptoCategoriesResponseDto;", "GetCryptoCategories", "(Lbonfire/proto/idl/crypto/v1/GetCryptoCategoriesRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/crypto/v1/GetNonCurrencyPairAccountSwitcherRequestDto;", "Lbonfire/proto/idl/crypto/v1/GetNonCurrencyPairAccountSwitcherResponseDto;", "GetNonCurrencyPairAccountSwitcher", "(Lbonfire/proto/idl/crypto/v1/GetNonCurrencyPairAccountSwitcherRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/crypto/v1/GetCurrencyPairAccountSwitcherRequestDto;", "Lbonfire/proto/idl/crypto/v1/GetCurrencyPairAccountSwitcherResponseDto;", "GetCurrencyPairAccountSwitcher", "(Lbonfire/proto/idl/crypto/v1/GetCurrencyPairAccountSwitcherRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/crypto/v1/GetCryptoUserAgreementsRequestDto;", "Lbonfire/proto/idl/crypto/v1/GetCryptoUserAgreementsResponseDto;", "GetCryptoUserAgreements", "(Lbonfire/proto/idl/crypto/v1/GetCryptoUserAgreementsRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/crypto/v1/GetCryptoPulsePreviewRequestDto;", "Lbonfire/proto/idl/crypto/v1/GetCryptoPulsePreviewResponseDto;", "GetCryptoPulsePreview", "(Lbonfire/proto/idl/crypto/v1/GetCryptoPulsePreviewRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/crypto/v1/GetCryptoPulseFeedRequestDto;", "Lbonfire/proto/idl/crypto/v1/GetCryptoPulseFeedResponseDto;", "GetCryptoPulseFeed", "(Lbonfire/proto/idl/crypto/v1/GetCryptoPulseFeedRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lbonfire/proto/idl/crypto/v1/GetCryptoPulseFeedRefreshRequestDto;", "Lbonfire/proto/idl/crypto/v1/GetCryptoPulseFeedRefreshResponseDto;", "GetCryptoPulseFeedRefresh", "(Lbonfire/proto/idl/crypto/v1/GetCryptoPulseFeedRefreshRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "bonfire.proto.idl.crypto.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes16.dex */
+public interface CryptoService {
+    Object GetCryptoCategories(GetCryptoCategoriesRequestDto getCryptoCategoriesRequestDto, Continuation<? super GetCryptoCategoriesResponseDto> continuation);
+
+    Object GetCryptoPulseFeed(GetCryptoPulseFeedRequestDto getCryptoPulseFeedRequestDto, Continuation<? super GetCryptoPulseFeedResponseDto> continuation);
+
+    Object GetCryptoPulseFeedRefresh(GetCryptoPulseFeedRefreshRequestDto getCryptoPulseFeedRefreshRequestDto, Continuation<? super GetCryptoPulseFeedRefreshResponseDto> continuation);
+
+    Object GetCryptoPulsePreview(GetCryptoPulsePreviewRequestDto getCryptoPulsePreviewRequestDto, Continuation<? super GetCryptoPulsePreviewResponseDto> continuation);
+
+    Object GetCryptoUserAgreements(GetCryptoUserAgreementsRequestDto getCryptoUserAgreementsRequestDto, Continuation<? super GetCryptoUserAgreementsResponseDto> continuation);
+
+    Object GetCurrencyPairAccountSwitcher(GetCurrencyPairAccountSwitcherRequestDto getCurrencyPairAccountSwitcherRequestDto, Continuation<? super GetCurrencyPairAccountSwitcherResponseDto> continuation);
+
+    Object GetNonCurrencyPairAccountSwitcher(GetNonCurrencyPairAccountSwitcherRequestDto getNonCurrencyPairAccountSwitcherRequestDto, Continuation<? super GetNonCurrencyPairAccountSwitcherResponseDto> continuation);
+
+    Object Newsfeed(NewsfeedRequestDto newsfeedRequestDto, Continuation<? super NewsfeedResponseDto> continuation);
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.card.RdsCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/upsell_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/rds_spacing_default"
+    android:elevation="@dimen/rds_elevation_tight">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/rds_spacing_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="30dp"
+            android:layout_height="57dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/svg_option_hook_bull"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularMedium"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rds_spacing_small"
+            android:text="@string/gated_options_order_options_hook_title"
+            android:layout_marginStart="@dimen/rds_spacing_default"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularSmall"
+            android:textColor="?attr/colorPrimary"
+            android:gravity="start"
+            android:id="@+id/cta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rds_spacing_small"
+            android:layout_marginStart="@dimen/rds_spacing_default"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/title"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.robinhood.android.designsystem.card.RdsCardView>

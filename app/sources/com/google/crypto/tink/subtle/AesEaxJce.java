@@ -1,0 +1,164 @@
+package com.google.crypto.tink.subtle;
+
+import com.google.crypto.tink.Aead;
+import com.plaid.internal.EnumC7081g;
+import com.robinhood.android.authlock.biometric.BiometricChangeManager;
+import java.security.GeneralSecurityException;
+import java.util.Arrays;
+import javax.crypto.AEADBadTagException;
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
+
+/* loaded from: classes27.dex */
+public final class AesEaxJce implements Aead {
+
+    /* renamed from: b */
+    private final byte[] f901b;
+    private final int ivSizeInBytes;
+    private final SecretKeySpec keySpec;
+
+    /* renamed from: p */
+    private final byte[] f902p;
+    private static final ThreadLocal<Cipher> localEcbCipher = new ThreadLocal<Cipher>() { // from class: com.google.crypto.tink.subtle.AesEaxJce.1
+        /* JADX INFO: Access modifiers changed from: protected */
+        @Override // java.lang.ThreadLocal
+        public Cipher initialValue() {
+            try {
+                return EngineFactory.CIPHER.getInstance("AES/ECB/NOPADDING");
+            } catch (GeneralSecurityException e) {
+                throw new IllegalStateException(e);
+            }
+        }
+    };
+    private static final ThreadLocal<Cipher> localCtrCipher = new ThreadLocal<Cipher>() { // from class: com.google.crypto.tink.subtle.AesEaxJce.2
+        /* JADX INFO: Access modifiers changed from: protected */
+        @Override // java.lang.ThreadLocal
+        public Cipher initialValue() {
+            try {
+                return EngineFactory.CIPHER.getInstance("AES/CTR/NOPADDING");
+            } catch (GeneralSecurityException e) {
+                throw new IllegalStateException(e);
+            }
+        }
+    };
+
+    public AesEaxJce(final byte[] key, int ivSizeInBytes) throws GeneralSecurityException {
+        if (ivSizeInBytes != 12 && ivSizeInBytes != 16) {
+            throw new IllegalArgumentException("IV size should be either 12 or 16 bytes");
+        }
+        this.ivSizeInBytes = ivSizeInBytes;
+        Validators.validateAesKeySize(key.length);
+        SecretKeySpec secretKeySpec = new SecretKeySpec(key, BiometricChangeManager.ALGORITHM);
+        this.keySpec = secretKeySpec;
+        Cipher cipher = localEcbCipher.get();
+        cipher.init(1, secretKeySpec);
+        byte[] bArrMultiplyByX = multiplyByX(cipher.doFinal(new byte[16]));
+        this.f901b = bArrMultiplyByX;
+        this.f902p = multiplyByX(bArrMultiplyByX);
+    }
+
+    private static byte[] xor(final byte[] x, final byte[] y) {
+        int length = x.length;
+        byte[] bArr = new byte[length];
+        for (int i = 0; i < length; i++) {
+            bArr[i] = (byte) (x[i] ^ y[i]);
+        }
+        return bArr;
+    }
+
+    private static byte[] multiplyByX(final byte[] block) {
+        byte[] bArr = new byte[16];
+        int i = 0;
+        while (i < 15) {
+            int i2 = i + 1;
+            bArr[i] = (byte) (((block[i] << 1) ^ ((block[i2] & 255) >>> 7)) & 255);
+            i = i2;
+        }
+        bArr[15] = (byte) ((block[15] << 1) ^ ((block[0] & 128) != 0 ? EnumC7081g.SDK_ASSET_ILLUSTRATION_DEV_RAISE_INSTITUTION_VALUE : 0));
+        return bArr;
+    }
+
+    private byte[] pad(final byte[] data) {
+        if (data.length == 16) {
+            return xor(data, this.f901b);
+        }
+        byte[] bArrCopyOf = Arrays.copyOf(this.f902p, 16);
+        for (int i = 0; i < data.length; i++) {
+            bArrCopyOf[i] = (byte) (bArrCopyOf[i] ^ data[i]);
+        }
+        bArrCopyOf[data.length] = (byte) (bArrCopyOf[data.length] ^ 128);
+        return bArrCopyOf;
+    }
+
+    private byte[] omac(Cipher ecb, int tag, final byte[] data, int offset, int length) throws BadPaddingException, IllegalBlockSizeException {
+        byte[] bArr = new byte[16];
+        bArr[15] = (byte) tag;
+        if (length == 0) {
+            return ecb.doFinal(xor(bArr, this.f901b));
+        }
+        byte[] bArrDoFinal = ecb.doFinal(bArr);
+        int i = 0;
+        while (length - i > 16) {
+            for (int i2 = 0; i2 < 16; i2++) {
+                bArrDoFinal[i2] = (byte) (bArrDoFinal[i2] ^ data[(offset + i) + i2]);
+            }
+            bArrDoFinal = ecb.doFinal(bArrDoFinal);
+            i += 16;
+        }
+        return ecb.doFinal(xor(bArrDoFinal, pad(Arrays.copyOfRange(data, i + offset, offset + length))));
+    }
+
+    @Override // com.google.crypto.tink.Aead
+    public byte[] encrypt(final byte[] plaintext, final byte[] associatedData) throws GeneralSecurityException {
+        int length = plaintext.length;
+        int i = this.ivSizeInBytes;
+        if (length > 2147483631 - i) {
+            throw new GeneralSecurityException("plaintext too long");
+        }
+        byte[] bArr = new byte[plaintext.length + i + 16];
+        byte[] bArrRandBytes = Random.randBytes(i);
+        System.arraycopy(bArrRandBytes, 0, bArr, 0, this.ivSizeInBytes);
+        Cipher cipher = localEcbCipher.get();
+        cipher.init(1, this.keySpec);
+        byte[] bArrOmac = omac(cipher, 0, bArrRandBytes, 0, bArrRandBytes.length);
+        byte[] bArr2 = associatedData == null ? new byte[0] : associatedData;
+        byte[] bArrOmac2 = omac(cipher, 1, bArr2, 0, bArr2.length);
+        Cipher cipher2 = localCtrCipher.get();
+        cipher2.init(1, this.keySpec, new IvParameterSpec(bArrOmac));
+        cipher2.doFinal(plaintext, 0, plaintext.length, bArr, this.ivSizeInBytes);
+        byte[] bArrOmac3 = omac(cipher, 2, bArr, this.ivSizeInBytes, plaintext.length);
+        int length2 = plaintext.length + this.ivSizeInBytes;
+        for (int i2 = 0; i2 < 16; i2++) {
+            bArr[length2 + i2] = (byte) ((bArrOmac2[i2] ^ bArrOmac[i2]) ^ bArrOmac3[i2]);
+        }
+        return bArr;
+    }
+
+    @Override // com.google.crypto.tink.Aead
+    public byte[] decrypt(final byte[] ciphertext, final byte[] associatedData) throws GeneralSecurityException {
+        int length = (ciphertext.length - this.ivSizeInBytes) - 16;
+        if (length < 0) {
+            throw new GeneralSecurityException("ciphertext too short");
+        }
+        Cipher cipher = localEcbCipher.get();
+        cipher.init(1, this.keySpec);
+        byte[] bArrOmac = omac(cipher, 0, ciphertext, 0, this.ivSizeInBytes);
+        byte[] bArr = associatedData == null ? new byte[0] : associatedData;
+        byte[] bArrOmac2 = omac(cipher, 1, bArr, 0, bArr.length);
+        byte[] bArrOmac3 = omac(cipher, 2, ciphertext, this.ivSizeInBytes, length);
+        int length2 = ciphertext.length - 16;
+        byte b = 0;
+        for (int i = 0; i < 16; i++) {
+            b = (byte) (b | (((ciphertext[length2 + i] ^ bArrOmac2[i]) ^ bArrOmac[i]) ^ bArrOmac3[i]));
+        }
+        if (b != 0) {
+            throw new AEADBadTagException("tag mismatch");
+        }
+        Cipher cipher2 = localCtrCipher.get();
+        cipher2.init(1, this.keySpec, new IvParameterSpec(bArrOmac));
+        return cipher2.doFinal(ciphertext, this.ivSizeInBytes, length);
+    }
+}

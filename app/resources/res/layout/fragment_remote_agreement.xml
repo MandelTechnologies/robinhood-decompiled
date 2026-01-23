@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/remote_agreement_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/remote_agreement_button"
+            app:layout_constraintTop_toTopOf="parent">
+            <com.robinhood.android.designsystem.text.RhTextView
+                android:id="@+id/remote_agreement_txt"
+                android:padding="@dimen/rds_spacing_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?attr/textAppearanceRegularMedium"/>
+        </ScrollView>
+        <com.robinhood.android.designsystem.button.RdsButton
+            android:id="@+id/remote_agreement_button"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rds_spacing_medium"
+            android:layout_marginTop="@dimen/rds_spacing_default"
+            android:layout_marginRight="@dimen/rds_spacing_medium"
+            android:layout_marginBottom="@dimen/rds_spacing_default"
+            android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+            android:layout_marginVertical="@dimen/rds_spacing_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/remote_agreement_scroll_view"
+            style="?attr/primaryButtonStyle"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.robinhood.android.common.p088ui.ShimmerLoadingView
+        android:id="@+id/remote_agreement_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

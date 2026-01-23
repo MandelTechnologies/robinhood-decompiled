@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.compose.p011ui.platform.ComposeView
+        android:id="@+id/available_coins_header_compose_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_xlarge"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColorLink="?attr/colorPrimary"
+        android:id="@+id/available_coins_description"
+        android:paddingLeft="@dimen/rds_spacing_medium"
+        android:paddingRight="@dimen/rds_spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_small"
+        android:text="@string/available_coins_description"
+        android:paddingHorizontal="@dimen/rds_spacing_medium"
+        app:useLinkMovementMethod="true"/>
+    <com.robinhood.utils.p409ui.view.NestedScrollableHost
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.crypto.p094ui.view.CryptoInstrumentCarousel
+            android:id="@+id/instrument_carousel"
+            android:paddingLeft="@dimen/rds_spacing_medium"
+            android:paddingTop="@dimen/rds_spacing_default"
+            android:paddingRight="@dimen/rds_spacing_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/rds_spacing_medium"
+            style="@style/InstrumentCarousel"/>
+    </com.robinhood.utils.p409ui.view.NestedScrollableHost>
+</merge>

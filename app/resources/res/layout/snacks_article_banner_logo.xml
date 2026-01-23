@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/snacks_article_logo_img"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        app:srcCompat="0x7f08056f"/>
+</FrameLayout>

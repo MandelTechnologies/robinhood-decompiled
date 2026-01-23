@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:id="@+id/data_row_label_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?attr/dataRowLabelTextStyle"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:id="@+id/data_row_value_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?attr/dataRowValueTextStyle"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textColorLink="?android:attr/textColorSecondary"
+            android:id="@+id/data_row_description_text"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rds_spacing_xsmall"
+            style="?attr/dataRowDescriptionTextStyle"/>
+    </LinearLayout>
+</merge>

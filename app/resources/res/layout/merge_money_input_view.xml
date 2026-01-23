@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:gravity="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/money_input_view_front_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"/>
+    <com.robinhood.android.common.p088ui.view.RhEditText
+        android:gravity="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/money_input_view_edit_text"
+        android:background="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:inputType="numberDecimal"
+        app:useCustomNumpad="true"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/money_input_view_rear_symbol"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"/>
+</merge>

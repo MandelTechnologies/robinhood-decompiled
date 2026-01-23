@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/numbered_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+        android:layout_marginVertical="@dimen/rds_spacing_default"/>
+</merge>

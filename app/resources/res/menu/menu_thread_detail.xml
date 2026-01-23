@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_rds_settings_16dp"
+        android:id="@+id/action_thread_detail_notification_settings"
+        android:visible="false"
+        android:title="@string/inbox_thread_detail_menu_settings"
+        app:showAsAction="ifRoom"/>
+</menu>

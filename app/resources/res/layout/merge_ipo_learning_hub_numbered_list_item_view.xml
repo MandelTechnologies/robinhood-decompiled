@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:textColor="?android:attr/textColorPrimaryInverse"
+        android:gravity="center"
+        android:id="@+id/learning_hub_section_number"
+        android:background="@drawable/inversed_circle_background"
+        android:layout_width="@dimen/learning_hub_section_number_size"
+        android:layout_height="@dimen/learning_hub_section_number_size"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:id="@+id/learning_hub_section_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rds_spacing_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/learning_hub_section_number"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColor="?android:attr/textColorPrimary"
+        android:id="@+id/learning_hub_section_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/learning_hub_section_title"
+        app:layout_constraintTop_toBottomOf="@+id/learning_hub_section_title"/>
+</merge>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sweep_onboarding_toolbar_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.container.RdsRippleContainerView
+        android:id="@+id/sweep_onboarding_skip"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/rds_spacing_default"
+        android:paddingEnd="@dimen/rds_spacing_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="?attr/colorRipple">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:id="@+id/sweep_onboarding_skip_txt"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/general_label_skip"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="?attr/textButtonStyle"/>
+    </com.robinhood.android.designsystem.container.RdsRippleContainerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+        motion:constraintSetEnd="@+id/rhy_hide_btn_state"
+        motion:constraintSetStart="@+id/rhy_show_down_arrow_state"/>
+    <Transition
+        motion:constraintSetEnd="@+id/rhy_show_open_btn_state"
+        motion:constraintSetStart="@+id/rhy_hide_btn_state"/>
+    <ConstraintSet android:id="@+id/rhy_show_down_arrow_state">
+        <Constraint
+            android:id="@+id/rhy_intro_review_changes_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rds_spacing_small"
+            android:layout_marginBottom="@dimen/rds_spacing_default"
+            android:layout_marginStart="@dimen/rhy_content_horizontal_inset"
+            android:layout_marginEnd="@dimen/rhy_content_horizontal_inset"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/rhy_hide_btn_state"
+        motion:deriveConstraintsFrom="@+id/rhy_show_down_arrow_state">
+        <Constraint
+            android:id="@+id/rhy_intro_down_btn"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rds_spacing_default"
+            android:layout_marginBottom="@dimen/rds_spacing_default"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/rhy_show_open_btn_state"
+        motion:deriveConstraintsFrom="@+id/rhy_hide_btn_state">
+        <Constraint
+            android:id="@+id/rhy_intro_review_changes_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rds_button_top_spacing"
+            android:layout_marginBottom="@dimen/rds_spacing_default"
+            android:layout_marginStart="@dimen/rhy_content_horizontal_inset"
+            android:layout_marginEnd="@dimen/rhy_content_horizontal_inset"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"/>
+    </ConstraintSet>
+</MotionScene>

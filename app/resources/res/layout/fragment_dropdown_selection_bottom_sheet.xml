@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="?attr/colorForeground1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplaySmall"
+        android:gravity="center"
+        android:id="@+id/dropdown_selection_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:text="@string/question_dropdown_sheet_filter_title"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dropdown_selection_recycler_view"
+        android:paddingBottom="@dimen/rds_spacing_medium"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

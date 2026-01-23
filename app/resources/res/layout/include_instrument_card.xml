@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/SelectableFrameLayout.Wrap">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="@dimen/rds_spacing_default"
+        android:layout_width="@dimen/instrument_card_width"
+        android:layout_height="@dimen/instrument_card_height"
+        android:backgroundTint="?attr/colorBackground1">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularSmall"
+            android:ellipsize="end"
+            android:id="@+id/instrument_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:maxLines="3"
+            android:layout_weight="1"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularLargeBold"
+            android:textColor="?attr/colorPrimary"
+            android:id="@+id/instrument_symbol_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.robinhood.android.common.view.AnimatedRhTextView
+            android:textAppearance="?attr/textAppearanceRegularLargeBold"
+            android:textColor="?attr/colorPrimary"
+            android:id="@+id/instrument_change_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

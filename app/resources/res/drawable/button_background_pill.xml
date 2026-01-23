@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/colorControlHighlight">
+    <item>
+        <inset
+            android:insetLeft="4dp"
+            android:insetRight="4dp"
+            android:insetTop="6dp"
+            android:insetBottom="6dp">
+            <shape
+                android:tint="?attr/colorAccent"
+                android:shape="rectangle">
+                <corners android:radius="9000dp"/>
+                <solid android:color="@android:color/white"/>
+                <padding
+                    android:left="@dimen/rds_spacing_medium"
+                    android:top="12dp"
+                    android:right="@dimen/rds_spacing_medium"
+                    android:bottom="12dp"/>
+            </shape>
+        </inset>
+    </item>
+</ripple>

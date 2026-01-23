@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_radio_button_off_to_on_animation__1_res_0x7f0800d7"
+        android:duration="200"
+        android:startOffset="17"
+        android:valueFrom="0"
+        android:valueTo="0.3338"
+        android:valueType="floatType"
+        android:propertyName="scaleX"/>
+    <objectAnimator
+        android:interpolator="@drawable/_radio_button_off_to_on_animation__2_res_0x7f0800d8"
+        android:duration="200"
+        android:startOffset="17"
+        android:valueFrom="0"
+        android:valueTo="0.3338"
+        android:valueType="floatType"
+        android:propertyName="scaleY"/>
+</set>

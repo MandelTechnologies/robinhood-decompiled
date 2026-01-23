@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceDisplaySmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rds_spacing_large"
+            android:text="@string/avg_cost_warning_header"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rds_spacing_default"
+            android:layout_marginBottom="@dimen/rds_spacing_large"
+            android:text="@string/avg_cost_warning_body"/>
+    </LinearLayout>
+</ScrollView>

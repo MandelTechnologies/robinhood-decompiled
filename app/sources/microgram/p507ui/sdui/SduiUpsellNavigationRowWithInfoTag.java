@@ -1,0 +1,124 @@
+package microgram.p507ui.sdui;
+
+import kotlin.Deprecated;
+import kotlin.Metadata;
+import kotlin.jvm.JvmField;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.SerialName;
+import kotlinx.serialization.Serializable;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Encoding3;
+import kotlinx.serialization.internal.PluginExceptions;
+import kotlinx.serialization.internal.SerializationConstructorMarker;
+import kotlinx.serialization.internal.StringSerializer;
+
+/* compiled from: SDUIGenerated.kt */
+@Metadata(m3635d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0016\b\u0087\b\u0018\u0000 62\u00020\u0001:\u000276Bc\b\u0011\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u000e\u0010\u0006\u001a\n\u0018\u00010\u0004j\u0004\u0018\u0001`\u0005\u0012\n\b\u0001\u0010\b\u001a\u0004\u0018\u00010\u0007\u0012\n\b\u0001\u0010\n\u001a\u0004\u0018\u00010\t\u0012\n\b\u0001\u0010\f\u001a\u0004\u0018\u00010\u000b\u0012\b\u0010\r\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\t\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u000f¢\u0006\u0004\b\u0011\u0010\u0012J(\u0010\u001b\u001a\u00020\u00182\u0006\u0010\u0013\u001a\u00020\u00002\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0017\u001a\u00020\u0016HÁ\u0001¢\u0006\u0004\b\u0019\u0010\u001aJ\u0010\u0010\u001c\u001a\u00020\tHÖ\u0001¢\u0006\u0004\b\u001c\u0010\u001dJ\u0010\u0010\u001e\u001a\u00020\u0002HÖ\u0001¢\u0006\u0004\b\u001e\u0010\u001fJ\u001a\u0010#\u001a\u00020\"2\b\u0010!\u001a\u0004\u0018\u00010 HÖ\u0003¢\u0006\u0004\b#\u0010$R\u001f\u0010\u0006\u001a\n\u0018\u00010\u0004j\u0004\u0018\u0001`\u00058\u0006¢\u0006\f\n\u0004\b\u0006\u0010%\u001a\u0004\b&\u0010'R\"\u0010\b\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\u0012\n\u0004\b\b\u0010(\u0012\u0004\b+\u0010,\u001a\u0004\b)\u0010*R \u0010\n\u001a\u00020\t8\u0006X\u0087\u0004¢\u0006\u0012\n\u0004\b\n\u0010-\u0012\u0004\b/\u0010,\u001a\u0004\b.\u0010\u001dR \u0010\f\u001a\u00020\u000b8\u0006X\u0087\u0004¢\u0006\u0012\n\u0004\b\f\u00100\u0012\u0004\b3\u0010,\u001a\u0004\b1\u00102R\u0019\u0010\r\u001a\u0004\u0018\u00010\t8\u0006¢\u0006\f\n\u0004\b\r\u0010-\u001a\u0004\b4\u0010\u001dR\u0017\u0010\u000e\u001a\u00020\t8\u0006¢\u0006\f\n\u0004\b\u000e\u0010-\u001a\u0004\b5\u0010\u001d¨\u00068"}, m3636d2 = {"Lmicrogram/ui/sdui/SduiUpsellNavigationRowWithInfoTag;", "Lmicrogram/ui/sdui/SduiComponent;", "", "seen1", "Lmicrogram/ui/sdui/SduiAction;", "Lmicrogram/ui/sdui/SduiActionType;", "action", "Lmicrogram/ui/sdui/SduiInfoTag;", "infoTag", "", "loggingIdentifier", "Lmicrogram/ui/sdui/SduiComponentType;", "sduiComponentType", "subtitle", "title", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "serializationConstructorMarker", "<init>", "(ILmicrogram/ui/sdui/SduiAction;Lmicrogram/ui/sdui/SduiInfoTag;Ljava/lang/String;Lmicrogram/ui/sdui/SduiComponentType;Ljava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "self", "Lkotlinx/serialization/encoding/CompositeEncoder;", "output", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "serialDesc", "", "write$Self$microgram_ui", "(Lmicrogram/ui/sdui/SduiUpsellNavigationRowWithInfoTag;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V", "write$Self", "toString", "()Ljava/lang/String;", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Lmicrogram/ui/sdui/SduiAction;", "getAction", "()Lmicrogram/ui/sdui/SduiAction;", "Lmicrogram/ui/sdui/SduiInfoTag;", "getInfoTag", "()Lmicrogram/ui/sdui/SduiInfoTag;", "getInfoTag$annotations", "()V", "Ljava/lang/String;", "getLoggingIdentifier", "getLoggingIdentifier$annotations", "Lmicrogram/ui/sdui/SduiComponentType;", "getSduiComponentType", "()Lmicrogram/ui/sdui/SduiComponentType;", "getSduiComponentType$annotations", "getSubtitle", "getTitle", "Companion", "$serializer", "microgram-ui"}, m3637k = 1, m3638mv = {1, 9, 0}, m3640xi = 48)
+@Serializable
+/* loaded from: classes14.dex */
+public final /* data */ class SduiUpsellNavigationRowWithInfoTag extends SduiComponent {
+    private final SduiAction action;
+    private final SduiInfoTag infoTag;
+    private final String loggingIdentifier;
+    private final SduiComponentType sduiComponentType;
+    private final String subtitle;
+    private final String title;
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+
+    @JvmField
+    private static final KSerializer<Object>[] $childSerializers = {null, null, null, SduiComponentType.INSTANCE.serializer(), null, null};
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof SduiUpsellNavigationRowWithInfoTag)) {
+            return false;
+        }
+        SduiUpsellNavigationRowWithInfoTag sduiUpsellNavigationRowWithInfoTag = (SduiUpsellNavigationRowWithInfoTag) other;
+        return Intrinsics.areEqual(this.action, sduiUpsellNavigationRowWithInfoTag.action) && Intrinsics.areEqual(this.infoTag, sduiUpsellNavigationRowWithInfoTag.infoTag) && Intrinsics.areEqual(this.loggingIdentifier, sduiUpsellNavigationRowWithInfoTag.loggingIdentifier) && this.sduiComponentType == sduiUpsellNavigationRowWithInfoTag.sduiComponentType && Intrinsics.areEqual(this.subtitle, sduiUpsellNavigationRowWithInfoTag.subtitle) && Intrinsics.areEqual(this.title, sduiUpsellNavigationRowWithInfoTag.title);
+    }
+
+    public int hashCode() {
+        SduiAction sduiAction = this.action;
+        int iHashCode = (sduiAction == null ? 0 : sduiAction.hashCode()) * 31;
+        SduiInfoTag sduiInfoTag = this.infoTag;
+        int iHashCode2 = (((((iHashCode + (sduiInfoTag == null ? 0 : sduiInfoTag.hashCode())) * 31) + this.loggingIdentifier.hashCode()) * 31) + this.sduiComponentType.hashCode()) * 31;
+        String str = this.subtitle;
+        return ((iHashCode2 + (str != null ? str.hashCode() : 0)) * 31) + this.title.hashCode();
+    }
+
+    public String toString() {
+        return "SduiUpsellNavigationRowWithInfoTag(action=" + this.action + ", infoTag=" + this.infoTag + ", loggingIdentifier=" + this.loggingIdentifier + ", sduiComponentType=" + this.sduiComponentType + ", subtitle=" + this.subtitle + ", title=" + this.title + ")";
+    }
+
+    /* compiled from: SDUIGenerated.kt */
+    @Metadata(m3635d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, m3636d2 = {"Lmicrogram/ui/sdui/SduiUpsellNavigationRowWithInfoTag$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lmicrogram/ui/sdui/SduiUpsellNavigationRowWithInfoTag;", "microgram-ui"}, m3637k = 1, m3638mv = {1, 9, 0}, m3640xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        public final KSerializer<SduiUpsellNavigationRowWithInfoTag> serializer() {
+            return SduiUpsellNavigationRowWithInfoTag$$serializer.INSTANCE;
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    @Deprecated
+    public /* synthetic */ SduiUpsellNavigationRowWithInfoTag(int i, SduiAction sduiAction, @SerialName("info_tag") SduiInfoTag sduiInfoTag, @SerialName("logging_identifier") String str, @SerialName("sdui_component_type") SduiComponentType sduiComponentType, String str2, String str3, SerializationConstructorMarker serializationConstructorMarker) {
+        super(null);
+        if (36 != (i & 36)) {
+            PluginExceptions.throwMissingFieldException(i, 36, SduiUpsellNavigationRowWithInfoTag$$serializer.INSTANCE.getDescriptor());
+        }
+        if ((i & 1) == 0) {
+            this.action = null;
+        } else {
+            this.action = sduiAction;
+        }
+        if ((i & 2) == 0) {
+            this.infoTag = null;
+        } else {
+            this.infoTag = sduiInfoTag;
+        }
+        this.loggingIdentifier = str;
+        if ((i & 8) == 0) {
+            this.sduiComponentType = SduiComponentType.UPSELL_NAVIGATION_ROW_WITH_INFO_TAG;
+        } else {
+            this.sduiComponentType = sduiComponentType;
+        }
+        if ((i & 16) == 0) {
+            this.subtitle = null;
+        } else {
+            this.subtitle = str2;
+        }
+        this.title = str3;
+    }
+
+    @JvmStatic
+    public static final /* synthetic */ void write$Self$microgram_ui(SduiUpsellNavigationRowWithInfoTag self, Encoding3 output, SerialDescriptor serialDesc) {
+        KSerializer<Object>[] kSerializerArr = $childSerializers;
+        if (output.shouldEncodeElementDefault(serialDesc, 0) || self.action != null) {
+            output.encodeNullableSerializableElement(serialDesc, 0, SduiAction2.INSTANCE, self.action);
+        }
+        if (output.shouldEncodeElementDefault(serialDesc, 1) || self.infoTag != null) {
+            output.encodeNullableSerializableElement(serialDesc, 1, SduiInfoTag$$serializer.INSTANCE, self.infoTag);
+        }
+        output.encodeStringElement(serialDesc, 2, self.loggingIdentifier);
+        if (output.shouldEncodeElementDefault(serialDesc, 3) || self.sduiComponentType != SduiComponentType.UPSELL_NAVIGATION_ROW_WITH_INFO_TAG) {
+            output.encodeSerializableElement(serialDesc, 3, kSerializerArr[3], self.sduiComponentType);
+        }
+        if (output.shouldEncodeElementDefault(serialDesc, 4) || self.subtitle != null) {
+            output.encodeNullableSerializableElement(serialDesc, 4, StringSerializer.INSTANCE, self.subtitle);
+        }
+        output.encodeStringElement(serialDesc, 5, self.title);
+    }
+}

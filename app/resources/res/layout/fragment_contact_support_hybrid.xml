@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ThemeOverlay.Robinhood.DesignSystem.Achromatic"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1">
+    <FrameLayout
+        android:id="@+id/pathfinder_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.robinhood.android.common.view.ErrorView
+        android:id="@+id/contact_support_error_view"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="?attr/colorBackground1"
+        app:errorDescriptionText="@string/web_error_description_email"
+        app:errorTitleText="@string/web_error_header_generic"
+        app:primaryButtonText="@string/web_error_cta_got_it"/>
+    <com.robinhood.android.designsystem.progress.RdsProgressBar
+        android:layout_gravity="top"
+        android:id="@+id/inquiry_loading_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ProgressBar"/>
+</FrameLayout>

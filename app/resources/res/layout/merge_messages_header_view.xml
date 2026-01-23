@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:id="@+id/header_view_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inbox_messages_header_title"
+        style="@style/PageHeader.DesignSystem"/>
+</merge>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.robinhood.android.designsystem.row.RdsHeaderRowView
+        android:id="@+id/rhy_settings_fragment_support_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:inTopPosition="true"
+        app:primaryText="@string/rewards_overview_settings_title"
+        app:useDisplayStyle="true"/>
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:id="@+id/rewards_overview_asset_selection_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:primaryText="@string/rewards_overview_asset_selection"
+        app:showBottomDivider="true"
+        style="?attr/rowContainerStyle"/>
+    <com.robinhood.android.designsystem.selectioncontrol.RdsToggleView
+        android:id="@+id/rewards_overview_roundup_toggle_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:primaryText="@string/rewards_overview_roundup_settings"
+        app:showBottomDivider="true"
+        style="?attr/toggleStyle"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.odyssey.lib.view.SdInputRow xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sd_input_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/rds_spacing_small"
+    app:alwaysShowErrorText="true"
+    style="?attr/inputContainerHeroStyle">
+    <com.robinhood.android.designsystem.textinput.RdsFormattedEditText
+        android:id="@+id/sd_input_row_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        app:focusedPlaceholderCharacterTextColor="?attr/colorForeground2"
+        style="?attr/inputHeroStyle"/>
+</com.robinhood.android.odyssey.lib.view.SdInputRow>

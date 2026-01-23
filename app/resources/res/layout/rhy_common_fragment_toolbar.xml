@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rhy_common_toolbar_container"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+    <com.robinhood.android.common.p088ui.view.TopNavButtonView
+        android:id="@+id/rhy_common_toolbar_search_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_small"
+        android:layout_marginBottom="@dimen/rds_spacing_small"
+        android:contentDescription="@string/general_action_search"
+        android:layout_marginVertical="@dimen/rds_spacing_small"
+        app:buttonSrcCompat="@drawable/ic_rds_search_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rhy_common_toolbar_inbox_button"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.robinhood.android.common.p088ui.TopNavInboxButtonView
+        android:id="@+id/rhy_common_toolbar_inbox_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_small"
+        android:layout_marginBottom="@dimen/rds_spacing_small"
+        android:layout_marginEnd="@dimen/rds_spacing_small"
+        android:layout_marginVertical="@dimen/rds_spacing_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

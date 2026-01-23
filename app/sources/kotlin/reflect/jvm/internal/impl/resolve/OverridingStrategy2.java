@@ -1,0 +1,25 @@
+package kotlin.reflect.jvm.internal.impl.resolve;
+
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor;
+
+/* compiled from: OverridingStrategy.kt */
+/* renamed from: kotlin.reflect.jvm.internal.impl.resolve.NonReportingOverrideStrategy, reason: use source file name */
+/* loaded from: classes21.dex */
+public abstract class OverridingStrategy2 extends OverridingStrategy {
+    protected abstract void conflict(CallableMemberDescriptor callableMemberDescriptor, CallableMemberDescriptor callableMemberDescriptor2);
+
+    @Override // kotlin.reflect.jvm.internal.impl.resolve.OverridingStrategy
+    public void overrideConflict(CallableMemberDescriptor fromSuper, CallableMemberDescriptor fromCurrent) {
+        Intrinsics.checkNotNullParameter(fromSuper, "fromSuper");
+        Intrinsics.checkNotNullParameter(fromCurrent, "fromCurrent");
+        conflict(fromSuper, fromCurrent);
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.resolve.OverridingStrategy
+    public void inheritanceConflict(CallableMemberDescriptor first, CallableMemberDescriptor second) {
+        Intrinsics.checkNotNullParameter(first, "first");
+        Intrinsics.checkNotNullParameter(second, "second");
+        conflict(first, second);
+    }
+}

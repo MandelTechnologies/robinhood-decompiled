@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/equity_order_toolbar_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/equity_order_toolbar_content"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.robinhood.android.designsystem.container.RdsRippleContainerView
+            android:layout_gravity="end"
+            android:id="@+id/action_order_types"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/rds_spacing_default"
+            android:paddingEnd="@dimen/rds_spacing_default"
+            app:rippleColor="?attr/colorRipple">
+            <com.robinhood.android.designsystem.text.RhTextView
+                android:textAppearance="?attr/textAppearanceRegularMediumBold"
+                android:textColor="?attr/colorForeground1"
+                android:gravity="center_vertical"
+                android:id="@+id/action_order_types_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawablePadding="@dimen/rds_spacing_small"
+                android:drawableEnd="@drawable/svg_ic_caret_down_8dp"
+                android:drawableTint="?attr/colorForeground1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </com.robinhood.android.designsystem.container.RdsRippleContainerView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

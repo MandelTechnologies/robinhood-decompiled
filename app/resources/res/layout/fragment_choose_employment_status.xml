@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:gravity="center_horizontal"
+        android:id="@+id/employment_status_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:text="@string/employment_status_title"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:gravity="center_horizontal"
+        android:id="@+id/employment_status_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:text="@string/employment_status_subtitle"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/employment_status_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:layout_weight="1"
+        android:layout_marginVertical="@dimen/rds_spacing_default"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</LinearLayout>

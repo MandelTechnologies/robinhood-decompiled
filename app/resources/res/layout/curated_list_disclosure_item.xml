@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:textColor="?attr/colorForeground2"
+        android:id="@+id/curated_list_disclosure_text"
+        android:padding="@dimen/rds_spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:useLinkMovementMethod="true"/>
+</FrameLayout>

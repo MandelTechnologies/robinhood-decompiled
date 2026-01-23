@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.accountcenter.views.AccountCenterProfileHeaderView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/rds_spacing_medium"
+    android:paddingTop="@dimen/rds_spacing_default"
+    android:paddingRight="@dimen/rds_spacing_medium"
+    android:paddingBottom="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/rds_spacing_medium">
+    <com.robinhood.android.profiles.p218ui.view.ProfilePictureView
+        android:id="@+id/profile_picture_view"
+        android:layout_width="@dimen/account_center_profile_picture_size"
+        android:layout_height="@dimen/account_center_profile_picture_size"
+        android:layout_marginBottom="@dimen/rds_spacing_default"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/user_name_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/user_name_at_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="?attr/colorForeground1"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/ic_rds_at_symbol_16dp"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularMedium"
+            android:id="@+id/user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmallBold"
+        android:id="@+id/edit_profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_center_edit_profile_underline"/>
+</com.robinhood.android.accountcenter.views.AccountCenterProfileHeaderView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingTop="@dimen/rds_spacing_default"
+        android:paddingBottom="@dimen/rds_spacing_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/rds_spacing_default">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:id="@+id/settings_row_label_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_row_value_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_min="@dimen/row_text_min_width"
+            style="?attr/rowPrimaryTextStyle"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:id="@+id/settings_row_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/rds_spacing_default"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_row_trailing_icon"
+            app:layout_constraintStart_toEndOf="@+id/settings_row_label_text"
+            app:layout_constraintTop_toTopOf="parent"
+            style="?attr/rowMetadataPrimaryTextStyle"/>
+        <ImageView
+            android:id="@+id/settings_row_trailing_icon"
+            android:tint="?android:attr/textColorPrimary"
+            android:contentDescription="@null"
+            android:layout_marginStart="@dimen/rds_spacing_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/settings_row_value_text"
+            app:layout_constraintTop_toTopOf="parent"
+            style="?attr/rowCondensedTrailingIconStyle"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include
+        android:layout_gravity="bottom"
+        android:id="@+id/settings_row_bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        layout="@layout/include_rds_divider"/>
+</merge>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="80dp"
+    android:width="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    <path
+        android:fillColor="@drawable/_pict_clr_rds_gold_money__0_res_0x7f0800d2"
+        android:pathData="M18 25.334h45.166v28.833H18V25.334zm2.5 2.5h40.166v23.833H20.5V27.834z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ffffff"
+        android:pathData="M58.166 30.334v18.833H23V30.334h35.166zm-23.999 9.333c0-3.667 3-6.5 6.5-6.5s6.5 3 6.5 6.5c0 3.666-3 6.5-6.5 6.5-3.667 0-6.5-3-6.5-6.5z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#00c805"
+        android:pathData="M44.667 39.667c0-2.167-1.834-4-4-4-2.167 0-4 1.833-4 4 0 2.166 1.833 4 4 4 2.166 0 4-1.834 4-4z"/>
+</vector>

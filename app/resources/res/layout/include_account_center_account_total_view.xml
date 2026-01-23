@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.accountcenter.views.AccountCenterAccountTotalView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/rds_spacing_medium"
+    android:paddingTop="@dimen/rds_spacing_xsmall"
+    android:paddingRight="@dimen/rds_spacing_medium"
+    android:paddingBottom="@dimen/rds_spacing_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/rds_spacing_medium">
+    <com.robinhood.android.common.view.AnimatedRhTextView
+        android:textAppearance="?attr/textAppearanceDisplayLarge"
+        android:id="@+id/total_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/fx_tooltip_button"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/PageHeader.DesignSystem.Ticker"/>
+    <androidx.compose.p011ui.platform.ComposeView
+        android:id="@+id/fx_tooltip_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/total_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/total_text"
+        app:layout_constraintTop_toTopOf="@+id/total_text"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColor="?attr/colorForeground2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_xsmall"
+        android:text="@string/account_center_total_in_robinhood"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_text"/>
+</com.robinhood.android.accountcenter.views.AccountCenterAccountTotalView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:textColor="?android:attr/textColorSecondary"
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/stat_label_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/rds_spacing_xsmall"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColor="?android:attr/textColorPrimary"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/stat_value_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"/>
+</merge>

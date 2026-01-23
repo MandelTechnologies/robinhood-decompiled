@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:layout_marginBottom="@dimen/rds_spacing_medium"
+        android:tint="?attr/colorForeground3"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/svg_ic_checkmark_24dp"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularLargeBold"
+        android:textColor="?attr/colorForeground3"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:text="@string/video_viewer_footer_item_title"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColor="?attr/colorForeground3"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/video_viewer_footer_item_message"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"/>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.designsystem.row.component.RdsRowTextContainerView
+            android:id="@+id/row_text_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/row_edit_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="?attr/rowTextContainerStyle"/>
+        <ImageView
+            android:id="@+id/row_edit_icon"
+            android:padding="16dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="?attr/colorForeground2"
+            android:contentDescription="@string/advanced_alert_edit_btn_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/row_toggle_switch"
+            app:layout_constraintStart_toEndOf="@+id/row_text_container"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_rds_edit_12dp"
+            style="?attr/rowLeadingIconStyle"/>
+        <com.robinhood.android.designsystem.selectioncontrol.RdsSwitch
+            android:id="@+id/row_toggle_switch"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/row_edit_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            style="?attr/switchStyle"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include
+        android:layout_gravity="bottom"
+        android:id="@+id/row_bottom_divider"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        layout="@layout/include_rds_divider"/>
+</merge>

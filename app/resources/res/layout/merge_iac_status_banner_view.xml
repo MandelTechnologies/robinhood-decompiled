@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularLarge"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/iac_status_banner_txt"
+        android:paddingLeft="@dimen/rds_spacing_medium"
+        android:paddingTop="@dimen/rds_spacing_default"
+        android:paddingRight="@dimen/rds_spacing_medium"
+        android:paddingBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:drawablePadding="@dimen/rds_spacing_small"
+        android:paddingHorizontal="@dimen/rds_spacing_medium"
+        app:autoSizeMinTextSize="@dimen/auto_size_min_text_size_mobius_regular_large"
+        app:autoSizeTextType="uniform"/>
+    <View
+        android:id="@+id/iac_status_banner_rule_line"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rule_line_height"/>
+</merge>

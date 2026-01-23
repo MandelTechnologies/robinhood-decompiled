@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:ellipsize="end"
+        android:id="@+id/news_feed_education_carousel_title_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        app:layout_constraintEnd_toStartOf="@+id/news_feed_education_entry_point_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.robinhood.android.designsystem.button.RdsTextButton
+        android:id="@+id/news_feed_education_entry_point_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:text="@string/news_feed_education_entry_point_see_all"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?attr/textButtonStyle"/>
+    <com.robinhood.shared.education.p377ui.EducationSeriesLessonsCarouselView
+        android:id="@+id/series_carousel_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/news_feed_education_carousel_title_txt"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/series_carousel_view"
+        layout="@layout/include_rds_divider"/>
+</merge>

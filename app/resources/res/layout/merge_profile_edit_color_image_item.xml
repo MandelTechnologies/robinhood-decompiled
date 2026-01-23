@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/profile_edit_user_image_container"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/profile_edit_color_img"
+            android:background="@drawable/circle_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:contentDescription="@null"
+            android:backgroundTint="?attr/colorPrimary"
+            app:scarlet_childContext="neverAnimated"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/profile_edit_user_image_select_ring_img"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            app:scarlet_affectedAttributes="srcCompat"
+            app:srcCompat="@drawable/user_image_selector_ring_background"/>
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/profile_edit_user_image_select_checkmark_img"
+        android:background="@drawable/circle_background"
+        android:visibility="gone"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:scaleType="center"
+        android:tint="?attr/colorPrimary"
+        android:contentDescription="@null"
+        android:backgroundTint="?attr/colorBackground1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/svg_ic_circle_checkmark_22dp"/>
+</merge>

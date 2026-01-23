@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <CheckedTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColor="@color/themed_question_selector"
+        android:ellipsize="end"
+        android:layout_gravity="center"
+        android:id="@android:id/text1"
+        android:paddingTop="@dimen/rds_spacing_default"
+        android:paddingBottom="@dimen/rds_spacing_default"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:textAllCaps="true"/>
+</FrameLayout>

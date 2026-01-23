@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/colorBackground1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:backgroundTint="?attr/colorBackground1">
+    <View
+        android:background="?attr/colorForeground1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:backgroundTint="?attr/colorForeground1"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceBookCoverSmall"
+        android:id="@+id/max_welcome_feature_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:id="@+id/max_welcome_feature_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:textColor="?attr/colorForeground2"
+        android:textColorLink="?attr/colorForeground2"
+        android:id="@+id/max_welcome_feature_disclosure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/welcome_max_bottom_sheet_bottom_margin"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"
+        app:useLinkMovementMethod="true"/>
+</LinearLayout>

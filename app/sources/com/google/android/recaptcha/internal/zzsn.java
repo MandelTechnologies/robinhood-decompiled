@@ -1,0 +1,59 @@
+package com.google.android.recaptcha.internal;
+
+/* compiled from: com.google.android.recaptcha:recaptcha@@18.6.0 */
+/* loaded from: classes27.dex */
+public final class zzsn extends zznl implements zzor {
+    private static final zzsn zzb;
+    private static volatile zzoy zzd;
+    private zzlg zze = zzlg.zzb;
+
+    static {
+        zzsn zzsnVar = new zzsn();
+        zzb = zzsnVar;
+        zznl.zzH(zzsn.class, zzsnVar);
+    }
+
+    private zzsn() {
+    }
+
+    @Override // com.google.android.recaptcha.internal.zznl
+    protected final Object zzh(int i, Object obj, Object obj2) {
+        zzoy zzngVar;
+        int i2 = i - 1;
+        if (i2 == 0) {
+            return (byte) 1;
+        }
+        if (i2 == 2) {
+            return zznl.zzE(zzb, "\u0000\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0000\u0000\u0001\n", new Object[]{"zze"});
+        }
+        if (i2 == 3) {
+            return new zzsn();
+        }
+        zzsl zzslVar = null;
+        if (i2 == 4) {
+            return new zzsm(zzslVar);
+        }
+        if (i2 == 5) {
+            return zzb;
+        }
+        if (i2 != 6) {
+            return null;
+        }
+        zzoy zzoyVar = zzd;
+        if (zzoyVar != null) {
+            return zzoyVar;
+        }
+        synchronized (zzsn.class) {
+            try {
+                zzngVar = zzd;
+                if (zzngVar == null) {
+                    zzngVar = new zzng(zzb);
+                    zzd = zzngVar;
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+        return zzngVar;
+    }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/profile_picture_image_container"
+        android:background="@drawable/circle_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="?attr/colorBackground1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.robinhood.android.designsystem.sparkle.SparkleImageView
+            android:id="@+id/profile_picture_default_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/profiles_photo_content_description"
+            app:sparkleGradient="?attr/colorBackground3Sparkle"
+            app:srcCompat="@drawable/svg_ic_profile_photo_happy"/>
+        <ImageView
+            android:id="@+id/profile_picture_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/profiles_photo_content_description"/>
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/profile_picture_plus_img"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:scarlet_affectedAttributes="srcCompat"/>
+</merge>

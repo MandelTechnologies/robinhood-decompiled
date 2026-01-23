@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularLarge"
+        android:ellipsize="end"
+        android:id="@+id/fragment_beneficiary_detail_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/rds_spacing_small"/>
+    <com.robinhood.android.designsystem.button.RdsTextButton
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/fragment_beneficiary_detail_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/general_action_edit"
+        android:layout_marginEnd="@dimen/rds_spacing_default"
+        style="?attr/textButtonStyle"/>
+</LinearLayout>

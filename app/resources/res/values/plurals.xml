@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="acats_in_build_partial_equity_plural_numerical_shares">
+        <item quantity="one">%d share</item>
+        <item quantity="other">%d shares</item>
+    </plurals>
+    <plurals name="acats_in_review_assets_count">
+        <item quantity="one">%1$d asset</item>
+        <item quantity="other">%1$d assets</item>
+    </plurals>
+    <plurals name="acats_plaid_partial_title">
+        <item quantity="one">We found %d asset eligible for transfer</item>
+        <item quantity="other">We found %d assets eligible for transfer</item>
+    </plurals>
+    <plurals name="analyst_ratings_label_with_count">
+        <item quantity="one">%1$d Analyst rating</item>
+        <item quantity="other">%1$d Analyst ratings</item>
+    </plurals>
+    <plurals name="ask_question_toolbar_text">
+        <item quantity="one">%1$d of %2$d question asked</item>
+        <item quantity="other">%1$d of %2$d questions asked</item>
+    </plurals>
+    <plurals name="atm_finder_atms_found">
+        <item quantity="one">%1$s ATM Found</item>
+        <item quantity="other">%1$s ATMs Found</item>
+    </plurals>
+    <plurals name="benchmark_search_title">
+        <item quantity="one">Select up to %d asset</item>
+        <item quantity="other">Select up to %d assets</item>
+    </plurals>
+    <plurals name="buy_call_gfd_stop_limit">
+        <item quantity="one">You are placing a good for day stop limit order to buy %1$s contract of %2$s %3$s call %4$s. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+        <item quantity="other">You are placing a good for day stop limit order to buy %1$s contracts of %2$s %3$s call %4$s. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+    </plurals>
+    <plurals name="buy_call_gfd_stop_limit_cancel_new">
+        <item quantity="one">You are placing a good for day stop limit order to buy %1$s contract of %2$s %3$s call %4$s. Your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good for day stop limit order to buy %1$s contracts of %2$s %3$s call %4$s. Your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="buy_call_gfd_stop_limit_cancel_new_partially_filled">
+        <item quantity="one">You are placing a good for day stop limit order to buy %1$s contract of %2$s %3$s call %4$s. The remainder of your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good for day stop limit order to buy %1$s contracts of %2$s %3$s call %4$s. The remainder of your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="buy_call_gtc_stop_limit">
+        <item quantity="one">You are placing a good till canceled stop limit order to buy %1$s contract of %2$s %3$s call %4$s. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to buy %1$s contracts of %2$s %3$s call %4$s. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+    </plurals>
+    <plurals name="buy_call_gtc_stop_limit_cancel_new">
+        <item quantity="one">You are placing a good till canceled stop limit order to buy %1$s contract of %2$s %3$s call %4$s. Your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to buy %1$s contracts of %2$s %3$s call %4$s. Your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="buy_call_gtc_stop_limit_cancel_new_partially_filled">
+        <item quantity="one">You are placing a good till canceled stop limit order to buy %1$s contract of %2$s %3$s call %4$s. The remainder of your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to buy %1$s contracts of %2$s %3$s call %4$s. The remainder of your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="buy_put_gfd_stop_limit">
+        <item quantity="one">You are placing a good for day stop limit order to buy %1$s contract of %2$s %3$s put %4$s. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+        <item quantity="other">You are placing a good for day stop limit order to buy %1$s contracts of %2$s %3$s put %4$s. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+    </plurals>
+    <plurals name="buy_put_gfd_stop_limit_cancel_new">
+        <item quantity="one">You are placing a good for day stop limit order to buy %1$s contract of %2$s %3$s put %4$s. Your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good for day stop limit order to buy %1$s contracts of %2$s %3$s put %4$s. Your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="buy_put_gfd_stop_limit_cancel_new_partially_filled">
+        <item quantity="one">You are placing a good for day stop limit order to buy %1$s contract of %2$s %3$s put %4$s. The remainder of your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good for day stop limit order to buy %1$s contracts of %2$s %3$s put %4$s. The remainder of your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="buy_put_gtc_stop_limit">
+        <item quantity="one">You are placing a good till canceled stop limit order to buy %1$s contract of %2$s %3$s put %4$s. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to buy %1$s contracts of %2$s %3$s put %4$s. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+    </plurals>
+    <plurals name="buy_put_gtc_stop_limit_cancel_new">
+        <item quantity="one">You are placing a good till canceled stop limit order to buy %1$s contract of %2$s %3$s put %4$s. Your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to buy %1$s contracts of %2$s %3$s put %4$s. Your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="buy_put_gtc_stop_limit_cancel_new_partially_filled">
+        <item quantity="one">You are placing a good till canceled stop limit order to buy %1$s contract of %2$s %3$s put %4$s. The remainder of your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to buy %1$s contracts of %2$s %3$s put %4$s. The remainder of your previous order will be canceled. When the bid price rises to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="buy_to_close_call_limit_multi_underlying">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_close_call_limit_multi_underlying_cancel_new">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. %6$s Your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. %6$s Your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_call_limit_multi_underlying_cancel_new_partially_filled">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_call_limit_single_underlying">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_close_call_limit_single_underlying_cancel_new">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. %6$s Your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. %6$s Your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_call_limit_single_underlying_cancel_new_partially_filled">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_call_market_multi_underlying">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_close_call_market_multi_underlying_cancel_new">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. %6$s Your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. %6$s Your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_call_market_multi_underlying_cancel_new_partially_filled">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to sell %3$s for %4$s on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_call_market_single_underlying">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_close_call_market_single_underlying_cancel_new">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. %6$s Your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. %6$s Your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_call_market_single_underlying_cancel_new_partially_filled">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to sell %3$s for %4$s each on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_put_limit_multi_underlying">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_close_put_limit_multi_underlying_cancel_new">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. %6$s Your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. %6$s Your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_put_limit_multi_underlying_cancel_new_partially_filled">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_put_limit_single_underlying">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_close_put_limit_single_underlying_cancel_new">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. %6$s Your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. %6$s Your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_put_limit_single_underlying_cancel_new_partially_filled">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$d contract which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$d contracts which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_put_market_multi_underlying">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_close_put_market_multi_underlying_cancel_new">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. %6$s Your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. %6$s Your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_put_market_multi_underlying_cancel_new_partially_filled">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to buy %3$s for %4$s on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_put_market_single_underlying">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_close_put_market_single_underlying_cancel_new">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. %6$s Your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. %6$s Your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_close_put_market_single_underlying_cancel_new_partially_filled">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$d open contract, which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$d open contracts, which will release collateral and remove your obligation to buy %3$s for %4$s each on or before %5$s. %6$s The remainder of your previous order will be canceled.</item>
+    </plurals>
+    <plurals name="buy_to_open_call_limit">
+        <item quantity="one">You&apos;re paying %1$s for the right to buy %2$s for %3$s each by %4$s. If %5$s shares aren&apos;t %3$s or higher on %4$s, this option will expire worthless. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying %1$s for the right to buy %2$s for %3$s each by %4$s. If %5$s shares aren&apos;t %3$s or higher on %4$s, these options will expire worthless. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_open_call_market">
+        <item quantity="one">You&apos;re paying an estimated %1$s for the right to buy %2$s for %3$s per share by %4$s. If %5$s shares aren&apos;t %3$s or higher on %4$s, this option will expire worthless. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s for the right to buy %2$s for %3$s per share by %4$s. If %5$s shares aren&apos;t %3$s or higher on %4$s, these options will expire worthless. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_open_put_limit">
+        <item quantity="one">You&apos;re paying %1$s for the right to sell %2$s for %3$s each by %4$s. If %5$s shares aren&apos;t %3$s or lower on %4$s, this option will expire worthless. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying %1$s for the right to sell %2$s for %3$s each by %4$s. If %5$s shares aren&apos;t %3$s or lower on %4$s, these options will expire worthless. Note: %6$s</item>
+    </plurals>
+    <plurals name="buy_to_open_put_market">
+        <item quantity="one">You&apos;re paying an estimated %1$s for the right to sell %2$s for %3$s per share by %4$s. If %5$s shares aren&apos;t %3$s or lower on %4$s, this option will expire worthless. Note: %6$s</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s for the right to sell %2$s for %3$s per share by %4$s. If %5$s shares aren&apos;t %3$s or lower on %4$s, these options will expire worthless. Note: %6$s</item>
+    </plurals>
+    <plurals name="cancel_order_dialog_subtitle_buy">
+        <item quantity="one">You are cancelling your request to buy %1$s share of %2$s</item>
+        <item quantity="other">You are cancelling your request to buy %1$s shares of %2$s</item>
+    </plurals>
+    <plurals name="cancel_order_dialog_subtitle_sell">
+        <item quantity="one">You are cancelling your request to sell %1$s share of %3$s</item>
+        <item quantity="other">You are cancelling your request to sell %1$s shares of %3$s</item>
+    </plurals>
+    <plurals name="cart_primary_text">
+        <item quantity="one">%1$s item</item>
+        <item quantity="other">%1$s items</item>
+    </plurals>
+    <plurals name="cash_merchant_rewards_more_offers">
+        <item quantity="one">%1$d more offer</item>
+        <item quantity="other">%1$d more offers</item>
+    </plurals>
+    <plurals name="characters_entered">
+        <item quantity="one">%1$d/%2$d character entered</item>
+        <item quantity="other">%1$d/%2$d characters entered</item>
+    </plurals>
+    <plurals name="contracts">
+        <item quantity="one">%d contract</item>
+        <item quantity="other">%d contracts</item>
+    </plurals>
+    <plurals name="copilot_digest_source_count">
+        <item quantity="one">%1$s source</item>
+        <item quantity="other">%1$s sources</item>
+    </plurals>
+    <plurals name="credit_card_app_plaid_underwriting_number_accounts">
+        <item quantity="one">%1$d account</item>
+        <item quantity="other">%1$d accounts</item>
+    </plurals>
+    <plurals name="crypto_tax_lot_long_term_lots_label">
+        <item quantity="one">%1$d long-term lot</item>
+        <item quantity="other">%1$d long-term lots</item>
+    </plurals>
+    <plurals name="crypto_tax_lot_selection_order_precision_check_message">
+        <item quantity="one">Increase or decrease your order size so it has %1$d decimal place or fewer. For example:\n\n**Supported:** %2$s\n**Unsupported:** %3$s</item>
+        <item quantity="other">Increase or decrease your order size so it has %1$d decimal places or fewer. For example:\n\n**Supported:** %2$s\n**Unsupported:** %3$s</item>
+    </plurals>
+    <plurals name="crypto_tax_lot_short_term_lots_label">
+        <item quantity="one">%1$d short-term lot</item>
+        <item quantity="other">%1$d short-term lots</item>
+    </plurals>
+    <plurals name="crypto_tax_lot_unknown_term_lots_label">
+        <item quantity="one">%1$d unknown term lot</item>
+        <item quantity="other">%1$d unknown term lots</item>
+    </plurals>
+    <plurals name="days_remaining">
+        <item quantity="one">in %1$d day</item>
+        <item quantity="other">in %1$d days</item>
+    </plurals>
+    <plurals name="device_settings_list_subtitle">
+        <item quantity="one">You are currently logged in to Robinhood on %1$d device.</item>
+        <item quantity="other">You are currently logged in to Robinhood on %1$d devices.</item>
+    </plurals>
+    <plurals name="dispute_review_selected_transactions">
+        <item quantity="one">Review selected transaction</item>
+        <item quantity="other">Review selected transactions</item>
+    </plurals>
+    <plurals name="dispute_review_title">
+        <item quantity="one">Review your dispute</item>
+        <item quantity="other">Review your disputes</item>
+    </plurals>
+    <plurals name="dispute_transaction_review_title">
+        <item quantity="one">Selected transaction</item>
+        <item quantity="other">Selected transactions</item>
+    </plurals>
+    <plurals name="earnings_instrument_num_shares_label">
+        <item quantity="one">%1$d Share</item>
+        <item quantity="other">%1$d Shares</item>
+    </plurals>
+    <plurals name="event_filled_description">
+        <item quantity="one">%1$s contract @%2$s</item>
+        <item quantity="other">%1$s contracts @%2$s</item>
+    </plurals>
+    <plurals name="events_order_form_estimated_credit_explainer">
+        <item quantity="one">%1$s x %2$s contract</item>
+        <item quantity="other">%1$s x %2$s contracts</item>
+    </plurals>
+    <plurals name="events_order_form_summary_notional">
+        <item quantity="one">You&apos;re placing %1$s to %2$s approximately %3$s worth of %4$s. Based on the lowest ask price of %5$s, you will receive approximately %6$s contract. If executed, the estimated cost is %7$s including fees and commissions. You agree that you&apos;re not prohibited from trading this contract.</item>
+        <item quantity="other">You&apos;re placing %1$s to %2$s approximately %3$s worth of %4$s. Based on the lowest ask price of %5$s, you will receive approximately %6$s contracts. If executed, the estimated cost is %7$s including fees and commissions. You agree that you&apos;re not prohibited from trading this contract.</item>
+    </plurals>
+    <plurals name="events_order_form_summary_qty_gtd">
+        <item quantity="one">You&apos;re placing %1$s to %2$s %3$s contract of %4$s that expires %5$s. You agree that you&apos;re not prohibited from trading this contract.</item>
+        <item quantity="other">You&apos;re placing %1$s to %2$s %3$s contracts of %4$s that expires %5$s. You agree that you&apos;re not prohibited from trading this contract.</item>
+    </plurals>
+    <plurals name="events_order_form_summary_qty_ioc">
+        <item quantity="one">You&apos;re placing %1$s to %2$s %3$s contract of %4$s. You agree that you&apos;re not prohibited from trading this contract.</item>
+        <item quantity="other">You&apos;re placing %1$s to %2$s %3$s contracts of %4$s. You agree that you&apos;re not prohibited from trading this contract.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Fast forward %d second</item>
+        <item quantity="other">Fast forward %d seconds</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Rewind %d second</item>
+        <item quantity="other">Rewind %d seconds</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_limit_buy_gfd">
+        <item quantity="one">You&apos;re placing a limit order to buy %1$s contract of %2$s that&apos;s good until %3$s. Your pending order, if executed, will execute at %4$s per contract or better.</item>
+        <item quantity="other">You&apos;re placing a limit order to buy %1$s contracts of %2$s that&apos;s good until %3$s. Your pending order, if executed, will execute at %4$s per contract or better.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_limit_buy_gtc">
+        <item quantity="one">You&apos;re placing a limit order to buy %1$s contract of %2$s that&apos;s good til canceled. Your pending order, if executed, will execute at %3$s per contract or better.</item>
+        <item quantity="other">You&apos;re placing a limit order to buy %1$s contracts of %2$s that&apos;s good til canceled. Your pending order, if executed, will execute at %3$s per contract or better.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_limit_buy_ioc">
+        <item quantity="one">You&apos;re placing an immediate or cancel limit order to buy %1$s contract of %2$s. Your pending order, if executed, will execute at %3$s per contract or better.</item>
+        <item quantity="other">You&apos;re placing a limit order to buy %1$s contracts of %2$s that&apos;s good til canceled. Your pending order, if executed, will execute at %3$s per contract or better.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_limit_sell_gfd">
+        <item quantity="one">You&apos;re placing a limit order to sell %1$s contract of %2$s that&apos;s good until %3$s. Your pending order, if executed, will execute at %4$s per contract or better.</item>
+        <item quantity="other">You&apos;re placing a limit order to sell %1$s contracts of %2$s that&apos;s good until %3$s. Your pending order, if executed, will execute at %4$s per contract or better.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_limit_sell_gtc">
+        <item quantity="one">You&apos;re placing a limit order to sell %1$s contract of %2$s that&apos;s good until canceled. Your pending order, if executed, will execute at %3$s per contract or better.</item>
+        <item quantity="other">You&apos;re placing a limit order to sell %1$s contracts of %2$s that&apos;s good until canceled. Your pending order, if executed, will execute at %3$s per contract or better.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_limit_sell_ioc">
+        <item quantity="one">You&apos;re placing an immediate or cancel limit order to sell %1$s contract of %2$s. Your pending order, if executed, will execute at %3$s per contract or better.</item>
+        <item quantity="other">You&apos;re placing a limit order to sell %1$s contracts of %2$s that&apos;s good until canceled. Your pending order, if executed, will execute at %3$s per contract or better.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_market_buy">
+        <item quantity="one">You&apos;re buying %1$s contract of %2$s at the current market price.</item>
+        <item quantity="other">You&apos;re buying %1$s contracts of %2$s at the current market price.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_market_sell">
+        <item quantity="one">You&apos;re selling %1$s contract of %2$s at the current market price.</item>
+        <item quantity="other">You&apos;re selling %1$s contracts of %2$s at the current market price.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_stop_buy_gfd">
+        <item quantity="one">You&apos;re placing a stop order to buy %1$s contract of %2$s that&apos;s good until %3$s. Your order will trigger when %2$s trades at %4$s or higher.</item>
+        <item quantity="other">You&apos;re placing a stop order to buy %1$s contracts of %2$s that&apos;s good until %3$s. Your order will trigger when %2$s trades at %4$s or higher.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_stop_buy_gtc">
+        <item quantity="one">You&apos;re placing a stop order to buy %1$s contract of %2$s that&apos;s good until canceled. Your order will trigger when %2$s trades at %3$s or higher.</item>
+        <item quantity="other">You&apos;re placing a stop order to buy %1$s contracts of %2$s that&apos;s good until canceled. Your order will trigger when %2$s trades at %3$s or higher.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_stop_buy_ioc">
+        <item quantity="one">You&apos;re placing an immediate or cancel stop order to buy %1$s contract of %2$s. Your order will trigger when %2$s trades at %3$s or higher.</item>
+        <item quantity="other">You&apos;re placing an immediate or cancel stop order to buy %1$s contracts of %2$s. Your order will trigger when %2$s trades at %3$s or higher.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_stop_sell_gfd">
+        <item quantity="one">You&apos;re placing a stop order to sell %1$s contract of %2$s that&apos;s good until %3$s. Your order will trigger when %2$s trades at %4$s or lower.</item>
+        <item quantity="other">You&apos;re placing a stop order to sell %1$s contracts of %2$s that&apos;s good until %3$s. Your order will trigger when %2$s trades at %4$s or lower.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_stop_sell_gtc">
+        <item quantity="one">You&apos;re placing a stop order to sell %1$s contract of %2$s that&apos;s good until canceled. Your order will trigger when %2$s trades at %3$s or lower.</item>
+        <item quantity="other">You&apos;re placing a stop order to sell %1$s contracts of %2$s that&apos;s good until canceled. Your order will trigger when %2$s trades at %3$s or lower.</item>
+    </plurals>
+    <plurals name="futures_order_form_summary_stop_sell_ioc">
+        <item quantity="one">You&apos;re placing an immediate or cancel stop order to sell %1$s contract of %2$s. Your order will trigger when %2$s trades at %3$s or lower.</item>
+        <item quantity="other">You&apos;re placing an immediate or cancel stop order to sell %1$s contracts of %2$s. Your order will trigger when %2$s trades at %3$s or lower.</item>
+    </plurals>
+    <plurals name="futures_quantity_display">
+        <item quantity="one">%1$d quantity</item>
+        <item quantity="other">%1$d quantities</item>
+    </plurals>
+    <plurals name="gbp_display_name">
+        <item quantity="one">pound sterling</item>
+        <item quantity="other">pounds sterling</item>
+    </plurals>
+    <plurals name="general_number_of_contracts">
+        <item quantity="one">%1$s contract</item>
+        <item quantity="other">%1$s contracts</item>
+    </plurals>
+    <plurals name="general_number_of_shares">
+        <item quantity="one">%1$s share</item>
+        <item quantity="other">%1$s shares</item>
+    </plurals>
+    <plurals name="general_number_of_shares_with_price">
+        <item quantity="one">%1$s share at %2$s</item>
+        <item quantity="other">%1$s shares at %2$s</item>
+    </plurals>
+    <plurals name="index_options_limit_order_buy_to_close">
+        <item quantity="one">You&apos;re paying %1$s to buy back %2$s contract of %3$s. %5$s%4$s</item>
+        <item quantity="other">You&apos;re paying %1$s to buy back %2$s contracts of %3$s. %5$s%4$s</item>
+    </plurals>
+    <plurals name="index_options_limit_order_buy_to_open">
+        <item quantity="one">You&apos;re paying %1$s to buy %2$s contract of %3$s, which expires at %4$s on %5$s. %10$s%6$s If the settlement value is %7$s than %8$s at expiration, this option will be automatically exercised; for each contract, you&apos;ll get the difference between the settlement value and %8$s multiplied by %9$s. If not, this option will expire worthless.</item>
+        <item quantity="other">You&apos;re paying %1$s to buy %2$s contracts of %3$s, which expire at %4$s on %5$s. %10$s%6$s If the settlement value is %7$s than %8$s at expiration, these options will be automatically exercised; for each contract, you&apos;ll get the difference between the settlement value and %8$s multiplied by %9$s. If not, these options will expire worthless.</item>
+    </plurals>
+    <plurals name="index_options_limit_order_buy_to_open_shorten">
+        <item quantity="one">You&apos;re paying %1$s to buy %2$s contract of %3$s, which expires at %4$s on %5$s. %9$s%6$s If the settlement value is %7$s than %8$s at expiration, this option will be automatically exercised. If not, this option will expire worthless.</item>
+        <item quantity="other">You&apos;re paying %1$s to buy %2$s contracts of %3$s, which expire at %4$s on %5$s. %9$s%6$s If the settlement value is %7$s than %8$s at expiration, these options will be automatically exercised. If not, these options will expire worthless.</item>
+    </plurals>
+    <plurals name="index_options_limit_order_sell_to_close">
+        <item quantity="one">You&apos;re selling %1$s contract of %2$s for a total credit of %3$s. %5$s%4$s</item>
+        <item quantity="other">You&apos;re selling %1$s contracts of %2$s for a total credit of %3$s. %5$s%4$s</item>
+    </plurals>
+    <plurals name="index_options_limit_order_sell_to_open">
+        <item quantity="one">You&apos;re selling %1$s contract of %2$s, which expires at %3$s on %4$s.%8$s If the settlement value isn&apos;t %5$s than %6$s at expiration, you&apos;ll keep the full %7$s credit. %9$s</item>
+        <item quantity="other">You&apos;re selling %1$s contracts of %2$s, which expire at %3$s on %4$s.%8$s If the settlement value isn&apos;t %5$s than %6$s at expiration, you&apos;ll keep the full %7$s credit. %9$s</item>
+    </plurals>
+    <plurals name="index_options_market_order_buy_to_close">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy back %2$s contract of %3$s. %5$s%4$s</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy back %2$s contracts of %3$s. %5$s%4$s</item>
+    </plurals>
+    <plurals name="index_options_market_order_buy_to_open">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy %2$s contract of %3$s, which expires at %4$s on %5$s. %10$s%6$s If the settlement value is %7$s than %8$s at expiration, this option will be automatically exercised; for each contract, you&apos;ll get the difference between the settlement value and %8$s multiplied by %9$s. If not, this option will expire worthless.</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy %2$s contracts of %3$s, which expire at %4$s on %5$s. %10$s%6$s If the settlement value is %7$s than %8$s at expiration, these options will be automatically exercised; for each contract, you&apos;ll get the difference between the settlement value and %8$s multiplied by %9$s. If not, these options will expire worthless.</item>
+    </plurals>
+    <plurals name="index_options_market_order_buy_to_open_shorten">
+        <item quantity="one">You&apos;re paying an estimated %1$s to buy %2$s contract of %3$s, which expires at %4$s on %5$s. %9$s%6$s If the settlement value is %7$s than %8$s at expiration, this option will be automatically exercised. If not, this option will expire worthless.</item>
+        <item quantity="other">You&apos;re paying an estimated %1$s to buy %2$s contracts of %3$s, which expire at %4$s on %5$s. %9$s%6$s If the settlement value is %7$s than %8$s at expiration, these options will be automatically exercised. If not, these options will expire worthless.</item>
+    </plurals>
+    <plurals name="index_options_market_order_sell_to_close">
+        <item quantity="one">You&apos;re selling %1$s contract of %2$s for an estimated credit of %3$s. %5$s%4$s</item>
+        <item quantity="other">You&apos;re selling %1$s contracts of %2$s for an estimated credit of %3$s. %5$s%4$s</item>
+    </plurals>
+    <plurals name="index_options_market_order_sell_to_open">
+        <item quantity="one">You&apos;re selling %1$s contract of %2$s, which expires at %3$s on %4$s.%8$s If the settlement value isn&apos;t %5$s than %6$s at expiration, you&apos;ll keep the full %7$s credit. %9$s</item>
+        <item quantity="other">You&apos;re selling %1$s contracts of %2$s, which expire at %3$s on %4$s.%8$s If the settlement value isn&apos;t %5$s than %6$s at expiration, you&apos;ll keep the full %7$s credit. %9$s</item>
+    </plurals>
+    <plurals name="index_options_stop_limit_order_buy">
+        <item quantity="one">You&apos;re placing a %1$s stop limit order to buy %2$s contract of %3$s, which expires at %4$s on %5$s.%6$s When the bid price rises to %7$s, your order will be converted to a limit order at %8$s per contract.</item>
+        <item quantity="other">You&apos;re placing a %1$s stop limit order to buy %2$s contracts of %3$s, which expire at %4$s on %5$s.%6$s When the bid price rises to %7$s, your order will be converted to a limit order at %8$s per contract.</item>
+    </plurals>
+    <plurals name="index_options_stop_limit_order_sell">
+        <item quantity="one">You&apos;re placing a %1$s stop limit order to sell %2$s contract of %3$s, which expires at %4$s on %5$s.%6$s When the ask price falls to %7$s, your order will be converted to a limit order at %8$s per contract.</item>
+        <item quantity="other">You&apos;re placing a %1$s stop limit order to sell %2$s contracts of %3$s, which expire at %4$s on %5$s.%6$s When the ask price falls to %7$s, your order will be converted to a limit order at %8$s per contract.</item>
+    </plurals>
+    <plurals name="index_options_stop_market_order_summary">
+        <item quantity="one">You&apos;re selling %1$s contract of %2$s, which expires at %3$s on %4$s.%5$s If the stop price of %6$s is triggered, your%7$s order will become a market order.</item>
+        <item quantity="other">You&apos;re selling %1$s contracts of %2$s, which expire at %3$s on %4$s.%5$s If the stop price of %6$s is triggered, your%7$s order will become a market order.</item>
+    </plurals>
+    <plurals name="indicator_settings_plot_title">
+        <item quantity="one">Plot</item>
+        <item quantity="other">Plots</item>
+    </plurals>
+    <plurals name="internal_asset_transfer_review_assets_value_text">
+        <item quantity="one">%1$d asset</item>
+        <item quantity="other">%1$d assets</item>
+    </plurals>
+    <plurals name="internal_asset_transfer_review_info_banner_has_uneligible_assets_text">
+        <item quantity="one">%1$d asset isn&apos;t eligible to transfer.</item>
+        <item quantity="other">%1$d assets aren&apos;t eligible to transfer.</item>
+    </plurals>
+    <plurals name="items">
+        <item quantity="one">%1$d item</item>
+        <item quantity="other">%1$d items</item>
+    </plurals>
+    <plurals name="lists_number_of_items">
+        <item quantity="one">%1$s item</item>
+        <item quantity="other">%1$s items</item>
+    </plurals>
+    <plurals name="matcha_search_toolbar_subtitle">
+        <item quantity="one">1 person selected</item>
+        <item quantity="other">%1$s people selected</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="num_of_shares">
+        <item quantity="one">1 share</item>
+        <item quantity="other">%1$d shares</item>
+    </plurals>
+    <plurals name="number_of_shares_with_symbol">
+        <item quantity="one">%1$s share of %2$s</item>
+        <item quantity="other">%1$s shares of %2$s</item>
+    </plurals>
+    <plurals name="option_contract_type_call">
+        <item quantity="one">@string/option_contract_type_call</item>
+        <item quantity="other">@string/option_contract_type_calls</item>
+    </plurals>
+    <plurals name="option_contract_type_put">
+        <item quantity="one">@string/option_contract_type_put</item>
+        <item quantity="other">@string/option_contract_type_puts</item>
+    </plurals>
+    <plurals name="option_exercise_description_short_position">
+        <item quantity="one">Your position is %1$s share</item>
+        <item quantity="other">Your position is %1$s shares</item>
+    </plurals>
+    <plurals name="option_exercise_summary_call_after_hours">
+        <item quantity="one">You&apos;re exercising a contract to buy %2$s shares of %3$s for %4$s each.</item>
+        <item quantity="other">You&apos;re exercising %1$s contracts to buy %2$s shares of %3$s for %4$s each.</item>
+    </plurals>
+    <plurals name="option_exercise_summary_call_market_hours">
+        <item quantity="one">You&apos;re exercising a contract to buy %2$s shares of %3$s for %4$s each. Please note that you won&apos;t be able to cancel this exercise once submitted.</item>
+        <item quantity="other">You&apos;re exercising %1$s contracts to buy %2$s shares of %3$s for %4$s each. Please note that you won&apos;t be able to cancel this exercise once submitted.</item>
+    </plurals>
+    <plurals name="option_exercise_summary_put_after_hours">
+        <item quantity="one">You&apos;re exercising a contract to sell %2$s shares of %3$s for %4$s each.</item>
+        <item quantity="other">You&apos;re exercising %1$s contracts to sell %2$s shares of %3$s for %4$s each.</item>
+    </plurals>
+    <plurals name="option_exercise_summary_put_market_hours">
+        <item quantity="one">You&apos;re exercising a contract to sell %2$s shares of %3$s for %4$s each. Please note that you won&apos;t be able to cancel this exercise once submitted.</item>
+        <item quantity="other">You&apos;re exercising %1$s contracts to sell %2$s shares of %3$s for %4$s each. Please note that you won&apos;t be able to cancel this exercise once submitted.</item>
+    </plurals>
+    <plurals name="option_order_available_number_of_contracts">
+        <item quantity="one">%1$s contract available</item>
+        <item quantity="other">%1$s contracts available</item>
+    </plurals>
+    <plurals name="option_order_available_number_of_shares">
+        <item quantity="one">%1$s share</item>
+        <item quantity="other">%1$s shares</item>
+    </plurals>
+    <plurals name="option_order_detail_contract_quantity_value">
+        <item quantity="one">%1$s contract at %2$s</item>
+        <item quantity="other">%1$s contracts at %2$s</item>
+    </plurals>
+    <plurals name="option_order_leg_side_buy">
+        <item quantity="one">buy</item>
+        <item quantity="other">buys</item>
+    </plurals>
+    <plurals name="option_order_leg_side_sell">
+        <item quantity="one">sell</item>
+        <item quantity="other">sells</item>
+    </plurals>
+    <plurals name="option_order_new_position_value">
+        <item quantity="one">%1$d contract</item>
+        <item quantity="other">%1$d contracts</item>
+    </plurals>
+    <plurals name="option_order_shares_per_contracts_label">
+        <item quantity="one">%1$s × %2$s multiplier × %3$s contract</item>
+        <item quantity="other">%1$s × %2$s multiplier × %3$s contracts</item>
+    </plurals>
+    <plurals name="option_position_instrument_detail_buy_quantity_label">
+        <item quantity="one">%1$s buy %2$s</item>
+        <item quantity="other">%1$s buys %2$s</item>
+    </plurals>
+    <plurals name="option_position_instrument_detail_sell_quantity_label">
+        <item quantity="one">%1$s sell %2$s</item>
+        <item quantity="other">%1$s sells %2$s</item>
+    </plurals>
+    <plurals name="option_strategy_calendar">
+        <item quantity="one">Calendar</item>
+        <item quantity="other">Calendars</item>
+    </plurals>
+    <plurals name="option_strategy_custom_order">
+        <item quantity="one">Order</item>
+        <item quantity="other">Orders</item>
+    </plurals>
+    <plurals name="option_strategy_iron_butterfly">
+        <item quantity="one">Iron butterfly</item>
+        <item quantity="other">Iron butterflies</item>
+    </plurals>
+    <plurals name="option_strategy_iron_condor">
+        <item quantity="one">Iron condor</item>
+        <item quantity="other">Iron condors</item>
+    </plurals>
+    <plurals name="option_strategy_roll">
+        <item quantity="one">Roll</item>
+        <item quantity="other">Rolls</item>
+    </plurals>
+    <plurals name="option_strategy_side_buy">
+        <item quantity="one">Buy</item>
+        <item quantity="other">Buys</item>
+    </plurals>
+    <plurals name="option_strategy_side_sell">
+        <item quantity="one">Sell</item>
+        <item quantity="other">Sells</item>
+    </plurals>
+    <plurals name="option_strategy_spread">
+        <item quantity="one">Spread</item>
+        <item quantity="other">Spreads</item>
+    </plurals>
+    <plurals name="option_strategy_type_credit">
+        <item quantity="one">Credit</item>
+        <item quantity="other">Credits</item>
+    </plurals>
+    <plurals name="option_strategy_type_debit">
+        <item quantity="one">Debit</item>
+        <item quantity="other">Debits</item>
+    </plurals>
+    <plurals name="options_history_detail_subtitle">
+        <item quantity="one">%1$d contract at %2$s</item>
+        <item quantity="other">%1$d contracts at %2$s</item>
+    </plurals>
+    <plurals name="options_history_detail_subtitle_no_price">
+        <item quantity="one">%1$d contract</item>
+        <item quantity="other">%1$d contracts</item>
+    </plurals>
+    <plurals name="options_pra_number_of_positions">
+        <item quantity="one">%1$s · %2$s position</item>
+        <item quantity="other">%1$s · %2$s positions</item>
+    </plurals>
+    <plurals name="options_rolling_time_left_text">
+        <item quantity="one">%1$s Day</item>
+        <item quantity="other">%1$s Days</item>
+    </plurals>
+    <plurals name="options_simulated_return_time_slider_secondary_text_num_of_position">
+        <item quantity="one">%d position</item>
+        <item quantity="other">%d positions</item>
+    </plurals>
+    <plurals name="order_create_available_shares">
+        <item quantity="one">%1$s share available</item>
+        <item quantity="other">%1$s shares available</item>
+    </plurals>
+    <plurals name="order_create_error_sell_some_shares_multiple_reasons">
+        <item quantity="one">You can only sell %1$s share of %2$s.</item>
+        <item quantity="other">You can only sell %1$s shares of %2$s.</item>
+    </plurals>
+    <plurals name="order_create_error_sell_some_shares_options_events">
+        <item quantity="one">You can only sell %1$s share of %2$s. %3$s are pending confirmation from the Options Clearing Corporation. They should be available to sell by %4$s before market open.</item>
+        <item quantity="other">You can only sell %1$s shares of %2$s. %3$s are pending confirmation from the Options Clearing Corporation. They should be available to sell by %4$s before market open.</item>
+    </plurals>
+    <plurals name="order_create_error_sell_some_shares_pending_orders">
+        <item quantity="one">You can only sell %1$s share of %2$s. %3$s are held for pending orders. You can cancel your pending orders to sell more shares.</item>
+        <item quantity="other">You can only sell %1$s shares of %2$s. %3$s are held for pending orders. You can cancel your pending orders to sell more shares.</item>
+    </plurals>
+    <plurals name="order_create_error_sell_some_shares_stock_grants">
+        <item quantity="one">You can only sell %1$s share of %2$s. %3$s share(s) can&apos;t be sold because stock rewards must be held for at least 3 trading days.</item>
+        <item quantity="other">You can only sell %1$s shares of %2$s. %3$s share(s) can&apos;t be sold because stock rewards must be held for at least 3 trading days.</item>
+    </plurals>
+    <plurals name="order_create_up_to_shares">
+        <item quantity="one">Your position is %1$s share</item>
+        <item quantity="other">Your position is %1$s shares</item>
+    </plurals>
+    <plurals name="order_detail_filled_quantity_message">
+        <item quantity="one">%1$s share at %2$s</item>
+        <item quantity="other">%1$s shares at %2$s</item>
+    </plurals>
+    <plurals name="order_form_notional_review_subtext">
+        <item quantity="one">%1$s contract · </item>
+        <item quantity="other">%1$s contracts · </item>
+    </plurals>
+    <plurals name="order_receipt_detail_notional">
+        <item quantity="one">Your order to %1$s %2$s worth of **%3$s** at %4$s %5$s.</item>
+        <item quantity="other">Your order to %1$s %2$s worth of **%3$s** at %4$s %5$s.</item>
+    </plurals>
+    <plurals name="order_receipt_detail_qty">
+        <item quantity="one">Your order to %1$s %2$s contract of **%3$s** at %4$s %5$s.</item>
+        <item quantity="other">Your order to %1$s %2$s contracts of **%3$s** at %4$s %5$s.</item>
+    </plurals>
+    <plurals name="pnl_hub_trade_equity_price_calculation">
+        <item quantity="one">%1$s avg x %2$s share</item>
+        <item quantity="other">%1$s avg x %2$s shares</item>
+    </plurals>
+    <plurals name="pnl_hub_trade_option_price_calculation">
+        <item quantity="one">%1$s avg x %2$s x %3$s contract</item>
+        <item quantity="other">%1$s avg x %2$s x %3$s contracts</item>
+    </plurals>
+    <plurals name="profiles_invite_amount">
+        <item quantity="one">%1$s Invite</item>
+        <item quantity="other">%1$s Invites</item>
+    </plurals>
+    <plurals name="projection_screen_years_suffix">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+    <plurals name="question_response_row_file_count">
+        <item quantity="one">%1$d media upload</item>
+        <item quantity="other">%1$d media uploads</item>
+    </plurals>
+    <plurals name="recurring_backup_payment_method_order">
+        <item quantity="one">order</item>
+        <item quantity="other">orders</item>
+    </plurals>
+    <plurals name="recurring_backup_payment_method_use">
+        <item quantity="one">uses</item>
+        <item quantity="other">use</item>
+    </plurals>
+    <plurals name="recurring_investment_graph_column_label_month">
+        <item quantity="one">%1$d month</item>
+        <item quantity="other">%1$d months</item>
+    </plurals>
+    <plurals name="recurring_investment_graph_column_label_year">
+        <item quantity="one">%1$d year</item>
+        <item quantity="other">%1$d years</item>
+    </plurals>
+    <plurals name="replace_order_new_canceled_buy">
+        <item quantity="one">Your %1$s to buy %2$s share of %3$s was canceled.</item>
+        <item quantity="other">Your %1$s to buy %2$s shares of %3$s was canceled.</item>
+    </plurals>
+    <plurals name="replace_order_new_canceled_buy_to_close">
+        <item quantity="one">Your %1$s to buy to close %2$s share of %3$s was canceled.</item>
+        <item quantity="other">Your %1$s to buy to close %2$s shares of %3$s was canceled.</item>
+    </plurals>
+    <plurals name="replace_order_new_canceled_sell">
+        <item quantity="one">Your %1$s to sell %2$s share of %3$s was canceled.</item>
+        <item quantity="other">Your %1$s to sell %2$s shares of %3$s was canceled.</item>
+    </plurals>
+    <plurals name="replace_order_new_canceled_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s was canceled.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s was canceled.</item>
+    </plurals>
+    <plurals name="replace_order_new_confirmed_buy">
+        <item quantity="one">Your %1$s to buy %2$s share of %3$s has been placed.</item>
+        <item quantity="other">Your %1$s to buy %2$s shares of %3$s has been placed.</item>
+    </plurals>
+    <plurals name="replace_order_new_confirmed_buy_to_close">
+        <item quantity="one">Your %1$s to buy to close %2$s share of %3$s has been placed.</item>
+        <item quantity="other">Your %1$s to buy to close %2$s shares of %3$s has been placed.</item>
+    </plurals>
+    <plurals name="replace_order_new_confirmed_sell">
+        <item quantity="one">Your %1$s to sell %2$s share of %3$s has been placed.</item>
+        <item quantity="other">Your %1$s to sell %2$s shares of %3$s has been placed.</item>
+    </plurals>
+    <plurals name="replace_order_new_confirmed_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s has been placed.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s has been placed.</item>
+    </plurals>
+    <plurals name="replace_order_new_failed_buy">
+        <item quantity="one">Your %1$s to buy %2$s share of %3$s has failed.</item>
+        <item quantity="other">Your %1$s to buy %2$s shares of %3$s has failed.</item>
+    </plurals>
+    <plurals name="replace_order_new_failed_buy_to_close">
+        <item quantity="one">Your %1$s to buy to close %2$s share of %3$s has failed.</item>
+        <item quantity="other">Your %1$s to buy to close %2$s shares of %3$s has failed.</item>
+    </plurals>
+    <plurals name="replace_order_new_failed_sell">
+        <item quantity="one">Your %1$s to sell %2$s share of %3$s has failed.</item>
+        <item quantity="other">Your %1$s to sell %2$s shares of %3$s has failed.</item>
+    </plurals>
+    <plurals name="replace_order_new_failed_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s has failed.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s has failed.</item>
+    </plurals>
+    <plurals name="replace_order_new_filled_buy">
+        <item quantity="one">Your %1$s to buy %2$s share of %3$s is complete.</item>
+        <item quantity="other">Your %1$s to buy %2$s shares of %3$s is complete.</item>
+    </plurals>
+    <plurals name="replace_order_new_filled_buy_to_close">
+        <item quantity="one">Your %1$s to buy to close %2$s share of %3$s is complete.</item>
+        <item quantity="other">Your %1$s to buy to close %2$s shares of %3$s is complete.</item>
+    </plurals>
+    <plurals name="replace_order_new_filled_sell">
+        <item quantity="one">Your %1$s to sell %2$s share of %3$s is complete.</item>
+        <item quantity="other">Your %1$s to sell %2$s shares of %3$s is complete.</item>
+    </plurals>
+    <plurals name="replace_order_new_filled_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s is complete.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s is complete.</item>
+    </plurals>
+    <plurals name="replace_order_new_locate_failed_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s has failed to locate.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s has failed to locate.</item>
+    </plurals>
+    <plurals name="replace_order_new_locating_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s is locating.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s is locating.</item>
+    </plurals>
+    <plurals name="replace_order_new_partially_filled_buy">
+        <item quantity="one">Your %1$s to buy %2$s share of %3$s is partially filled.</item>
+        <item quantity="other">Your %1$s to buy %2$s shares of %3$s is partially filled.</item>
+    </plurals>
+    <plurals name="replace_order_new_partially_filled_buy_to_close">
+        <item quantity="one">Your %1$s to buy to close %2$s share of %3$s is partially filled.</item>
+        <item quantity="other">Your %1$s to buy to close %2$s shares of %3$s is partially filled.</item>
+    </plurals>
+    <plurals name="replace_order_new_partially_filled_sell">
+        <item quantity="one">Your %1$s to sell %2$s share of %3$s is partially filled.</item>
+        <item quantity="other">Your %1$s to sell %2$s shares of %3$s is partially filled.</item>
+    </plurals>
+    <plurals name="replace_order_new_partially_filled_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s is partially filled.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s is partially filled.</item>
+    </plurals>
+    <plurals name="replace_order_new_pending_cancel_buy">
+        <item quantity="one">Your %1$s to buy %2$s share of %3$s is pending cancellation.</item>
+        <item quantity="other">Your %1$s to buy %2$s shares of %3$s is pending cancellation.</item>
+    </plurals>
+    <plurals name="replace_order_new_pending_cancel_buy_to_close">
+        <item quantity="one">Your %1$s to buy to close %2$s share of %3$s is pending cancellation.</item>
+        <item quantity="other">Your %1$s to buy to close %2$s shares of %3$s is pending cancellation.</item>
+    </plurals>
+    <plurals name="replace_order_new_pending_cancel_sell">
+        <item quantity="one">Your %1$s to sell %2$s share of %3$s is pending cancellation.</item>
+        <item quantity="other">Your %1$s to sell %2$s shares of %3$s is pending cancellation.</item>
+    </plurals>
+    <plurals name="replace_order_new_pending_cancel_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s is pending cancellation.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s is pending cancellation.</item>
+    </plurals>
+    <plurals name="replace_order_new_queued_buy">
+        <item quantity="one">Your %1$s to buy %2$s share of %3$s is queued for market open.</item>
+        <item quantity="other">Your %1$s to buy %2$s shares of %3$s is queued for market open.</item>
+    </plurals>
+    <plurals name="replace_order_new_queued_buy_to_close">
+        <item quantity="one">Your %1$s to buy to close %2$s share of %3$s is queued for market open.</item>
+        <item quantity="other">Your %1$s to buy to close %2$s shares of %3$s is queued for market open.</item>
+    </plurals>
+    <plurals name="replace_order_new_queued_sell">
+        <item quantity="one">Your %1$s to sell %2$s share of %3$s is queued for market open.</item>
+        <item quantity="other">Your %1$s to sell %2$s shares of %3$s is queued for market open.</item>
+    </plurals>
+    <plurals name="replace_order_new_queued_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s is queued for market open.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s is queued for market open.</item>
+    </plurals>
+    <plurals name="replace_order_new_rejected_buy">
+        <item quantity="one">Your %1$s to buy %2$s share of %3$s was rejected.</item>
+        <item quantity="other">Your %1$s to buy %2$s shares of %3$s was rejected.</item>
+    </plurals>
+    <plurals name="replace_order_new_rejected_buy_to_close">
+        <item quantity="one">Your %1$s to buy to close %2$s share of %3$s was rejected.</item>
+        <item quantity="other">Your %1$s to buy to close %2$s shares of %3$s was rejected.</item>
+    </plurals>
+    <plurals name="replace_order_new_rejected_sell">
+        <item quantity="one">Your %1$s to sell %2$s share of %3$s was rejected.</item>
+        <item quantity="other">Your %1$s to sell %2$s shares of %3$s was rejected.</item>
+    </plurals>
+    <plurals name="replace_order_new_rejected_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s was rejected.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s was rejected.</item>
+    </plurals>
+    <plurals name="replace_order_new_unconfirmed_buy">
+        <item quantity="one">Your %1$s to buy %2$s share of %3$s is pending.</item>
+        <item quantity="other">Your %1$s to buy %2$s shares of %3$s is pending.</item>
+    </plurals>
+    <plurals name="replace_order_new_unconfirmed_buy_to_close">
+        <item quantity="one">Your %1$s to buy to close %2$s share of %3$s is pending.</item>
+        <item quantity="other">Your %1$s to buy to close %2$s shares of %3$s is pending.</item>
+    </plurals>
+    <plurals name="replace_order_new_unconfirmed_sell">
+        <item quantity="one">Your %1$s to sell %2$s share of %3$s is pending.</item>
+        <item quantity="other">Your %1$s to sell %2$s shares of %3$s is pending.</item>
+    </plurals>
+    <plurals name="replace_order_new_unconfirmed_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s is pending.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s is pending.</item>
+    </plurals>
+    <plurals name="replace_order_new_voided_buy">
+        <item quantity="one">Your %1$s to buy %2$s share of %3$s was voided.</item>
+        <item quantity="other">Your %1$s to buy %2$s shares of %3$s was voided.</item>
+    </plurals>
+    <plurals name="replace_order_new_voided_buy_to_close">
+        <item quantity="one">Your %1$s to buy to close %2$s share of %3$s was voided.</item>
+        <item quantity="other">Your %1$s to buy to close %2$s shares of %3$s was voided.</item>
+    </plurals>
+    <plurals name="replace_order_new_voided_sell">
+        <item quantity="one">Your %1$s to sell %2$s share of %3$s was voided.</item>
+        <item quantity="other">Your %1$s to sell %2$s shares of %3$s was voided.</item>
+    </plurals>
+    <plurals name="replace_order_new_voided_sell_short">
+        <item quantity="one">Your %1$s to short %2$s share of %3$s was voided.</item>
+        <item quantity="other">Your %1$s to short %2$s shares of %3$s was voided.</item>
+    </plurals>
+    <plurals name="replace_order_remaining">
+        <item quantity="one">The remaining %1$s share is still pending.</item>
+        <item quantity="other">The remaining %1$s shares are still pending.</item>
+    </plurals>
+    <plurals name="rhy_overview_pending_matcha_transactions_title">
+        <item quantity="one">Pending payment (%1$s)</item>
+        <item quantity="other">Pending payments (%1$s)</item>
+    </plurals>
+    <plurals name="screener_table_updated_subheader">
+        <item quantity="one">%1$d item • Updated %2$s</item>
+        <item quantity="other">%1$,d items • Updated %2$s</item>
+    </plurals>
+    <plurals name="search_copilot_disclosure_sheet_message">
+        <item quantity="one">The %1$s stock shown is the most frequently viewed on Robinhood. The list is updated periodically. All investments involve risks, including the loss of principal.</item>
+        <item quantity="other">The %1$s stocks shown are the most frequently viewed on Robinhood. The list is updated periodically. All investments involve risks, including the loss of principal.</item>
+    </plurals>
+    <plurals name="sections">
+        <item quantity="one">%1$d section</item>
+        <item quantity="other">%1$d sections</item>
+    </plurals>
+    <plurals name="sell_call_gfd_stop_limit">
+        <item quantity="one">You are placing a good for day stop limit order to sell %1$s contract of %2$s %3$s call %4$s. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+        <item quantity="other">You are placing a good for day stop limit order to sell %1$s contracts of %2$s %3$s call %4$s. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+    </plurals>
+    <plurals name="sell_call_gfd_stop_limit_cancel_new">
+        <item quantity="one">You are placing a good for day stop limit order to sell %1$s contract of %2$s %3$s call %4$s. Your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good for day stop limit order to sell %1$s contracts of %2$s %3$s call %4$s. Your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="sell_call_gfd_stop_limit_cancel_new_partially_filled">
+        <item quantity="one">You are placing a good for day stop limit order to sell %1$s contract of %2$s %3$s call %4$s. The remainder of your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good for day stop limit order to sell %1$s contracts of %2$s %3$s call %4$s. The remainder of your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="sell_call_gtc_stop_limit">
+        <item quantity="one">You are placing a good till canceled stop limit order to sell %1$s contract of %2$s %3$s call %4$s. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to sell %1$s contracts of %2$s %3$s call %4$s. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+    </plurals>
+    <plurals name="sell_call_gtc_stop_limit_cancel_new">
+        <item quantity="one">You are placing a good till canceled stop limit order to sell %1$s contract of %2$s %3$s call %4$s. Your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to sell %1$s contracts of %2$s %3$s call %4$s. Your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="sell_call_gtc_stop_limit_cancel_new_partially_filled">
+        <item quantity="one">You are placing a good till canceled stop limit order to sell %1$s contract of %2$s %3$s call %4$s. The remainder of your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to sell %1$s contracts of %2$s %3$s call %4$s. The remainder of your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="sell_put_gfd_stop_limit">
+        <item quantity="one">You are placing a good for day stop limit order to sell %1$s contract of %2$s %3$s put %4$s. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+        <item quantity="other">You are placing a good for day stop limit order to sell %1$s contracts of %2$s %3$s put %4$s. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+    </plurals>
+    <plurals name="sell_put_gfd_stop_limit_cancel_new">
+        <item quantity="one">You are placing a good for day stop limit order to sell %1$s contract of %2$s %3$s put %4$s. Your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good for day stop limit order to sell %1$s contracts of %2$s %3$s put %4$s. Your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="sell_put_gfd_stop_limit_cancel_new_partially_filled">
+        <item quantity="one">You are placing a good for day stop limit order to sell %1$s contract of %2$s %3$s put %4$s. The remainder of your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good for day stop limit order to sell %1$s contracts of %2$s %3$s put %4$s. The remainder of your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="sell_put_gtc_stop_limit">
+        <item quantity="one">You are placing a good till canceled stop limit order to sell %1$s contract of %2$s %3$s put %4$s. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to sell %1$s contracts of %2$s %3$s put %4$s. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract. Note: This doesn&apos;t include regulatory fees.</item>
+    </plurals>
+    <plurals name="sell_put_gtc_stop_limit_cancel_new">
+        <item quantity="one">You are placing a good till canceled stop limit order to sell %1$s contract of %2$s %3$s put %4$s. Your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to sell %1$s contracts of %2$s %3$s put %4$s. Your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="sell_put_gtc_stop_limit_cancel_new_partially_filled">
+        <item quantity="one">You are placing a good till canceled stop limit order to sell %1$s contract of %2$s %3$s put %4$s. The remainder of your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+        <item quantity="other">You are placing a good till canceled stop limit order to sell %1$s contracts of %2$s %3$s put %4$s. The remainder of your previous order will be canceled. When the ask price falls to %5$s, your order will be converted to a limit order at %6$s per contract.</item>
+    </plurals>
+    <plurals name="settings_multiple_choice_bottom_sheet_selected_and_more">
+        <item quantity="other">%1$s + %2$d more</item>
+    </plurals>
+    <plurals name="sgd_display_name">
+        <item quantity="one">Singapore dollar</item>
+        <item quantity="other">Singapore dollars</item>
+    </plurals>
+    <plurals name="shares">
+        <item quantity="one">%s share</item>
+        <item quantity="other">%s shares</item>
+    </plurals>
+    <plurals name="support_call_text_desc_char_limit_error">
+        <item quantity="one">Maximum %1$d character</item>
+        <item quantity="other">Maximum %1$d characters</item>
+    </plurals>
+    <plurals name="support_call_text_desc_char_limit_warning">
+        <item quantity="one">%1$d character left</item>
+        <item quantity="other">%1$d characters left</item>
+    </plurals>
+    <plurals name="support_chat_row_subtitle_with_unread_message">
+        <item quantity="one">You have %1$d new message</item>
+        <item quantity="other">You have %1$d new messages</item>
+    </plurals>
+    <plurals name="symmetric_referral_contacts_recommended_subtitle">
+        <item quantity="one">%1$d Friend on Robinhood</item>
+        <item quantity="other">%1$d Friends on Robinhood</item>
+    </plurals>
+    <plurals name="tax_lot_selected_lots">
+        <item quantity="one">%1$s lot</item>
+        <item quantity="other">%1$s lots</item>
+    </plurals>
+    <plurals name="tins_overview_subtitle">
+        <item quantity="one">You can add up to %d more TIN to your profile.</item>
+        <item quantity="other">You can add up to %d more TINs to your profile.</item>
+    </plurals>
+    <plurals name="tokenized_label_with_prefix">
+        <item quantity="one">%1$s token</item>
+        <item quantity="other">%1$s tokens</item>
+    </plurals>
+    <plurals name="tokenized_label_with_symbol">
+        <item quantity="one">%1$s token</item>
+        <item quantity="other">%1$s tokens</item>
+    </plurals>
+    <plurals name="total_breakdown_notional">
+        <item quantity="one">(%1$s payout - %2$s) x %3$s contract</item>
+        <item quantity="other">(%1$s payout - %2$s) x %3$s contracts</item>
+    </plurals>
+    <plurals name="usd_display_name">
+        <item quantity="one">US dollar</item>
+        <item quantity="other">US dollars</item>
+    </plurals>
+    <plurals name="watchlist_options_number_of_items">
+        <item quantity="one">%1$s active contract</item>
+        <item quantity="other">%1$s active contracts</item>
+    </plurals>
+</resources>

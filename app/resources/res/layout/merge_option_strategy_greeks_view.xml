@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.row.RdsDataRowView
+        android:id="@+id/delta_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:labelText="@string/option_detail_greeks_delta_label"
+        app:layout_columnWeight="1"
+        style="?attr/dataRowContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsDataRowView
+        android:id="@+id/gamma_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:labelText="@string/option_detail_greeks_gamma_label"
+        app:layout_columnWeight="1"
+        style="?attr/dataRowContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsDataRowView
+        android:id="@+id/theta_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:labelText="@string/option_detail_greeks_theta_label"
+        app:layout_columnWeight="1"
+        style="?attr/dataRowContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsDataRowView
+        android:id="@+id/vega_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:labelText="@string/option_detail_greeks_vega_label"
+        app:layout_columnWeight="1"
+        style="?attr/dataRowContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsDataRowView
+        android:id="@+id/rho_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:labelText="@string/option_detail_greeks_rho_label"
+        app:layout_columnWeight="1"
+        style="?attr/dataRowContainerStyle"/>
+</merge>

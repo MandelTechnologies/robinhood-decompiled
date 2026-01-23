@@ -1,0 +1,6 @@
+package androidx.compose.p011ui.autofill;
+
+/* compiled from: R8$$SyntheticClass */
+/* loaded from: classes.dex */
+public final /* synthetic */ class AutofillCallback$$ExternalSyntheticApiModelOutline2 {
+}

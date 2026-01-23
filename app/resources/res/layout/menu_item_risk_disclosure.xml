@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.text.RhTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="?attr/textAppearanceRegularSmallBold"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground"
+    android:paddingLeft="@dimen/rds_spacing_default"
+    android:paddingRight="@dimen/rds_spacing_default"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="@string/options_rolling_menu_disclosure_text"
+    android:drawablePadding="@dimen/rds_spacing_small"
+    android:drawableEnd="@drawable/ic_rds_alert_16dp"
+    android:drawableTint="?android:attr/textColorPrimary"
+    android:paddingHorizontal="@dimen/rds_spacing_default"/>

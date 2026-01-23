@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.container.RdsRippleContainerView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="?attr/surfaceTheme"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="48dp"
+    android:minHeight="@dimen/chip_min_height"
+    android:layout_marginEnd="@dimen/rds_spacing_xsmall"
+    style="?attr/iconChipStyle">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/chip_image_view"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:tint="?attr/colorForeground1"
+        app:srcCompat="@drawable/ic_rds_tuner_24dp"/>
+</com.robinhood.android.designsystem.container.RdsRippleContainerView>

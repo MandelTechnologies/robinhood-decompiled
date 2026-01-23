@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.odyssey.lib.view.SdMarkdownView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textAppearance="?attr/textAppearanceRegularSmall"
+    android:textColor="?android:attr/textColorPrimary"
+    android:textColorLink="?attr/colorPrimary"
+    android:id="@+id/sd_markdown_sub_component_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:useLinkMovementMethod="true"/>

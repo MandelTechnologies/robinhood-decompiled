@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical">
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="center"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_rds_dot_16dp"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmallBold"
+        android:id="@+id/agreement_link"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/rds_spacing_default"/>
+</merge>

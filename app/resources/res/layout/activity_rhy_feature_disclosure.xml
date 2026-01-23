@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/include_toolbar"/>
+    <ScrollView
+        android:id="@+id/rhy_feature_disclosure_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/rhy_feature_disclosure_ok_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_wrapper">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:id="@+id/rhy_feature_disclosure_txt"
+            android:paddingLeft="@dimen/rds_spacing_medium"
+            android:paddingTop="@dimen/rds_spacing_default"
+            android:paddingRight="@dimen/rds_spacing_medium"
+            android:paddingBottom="@dimen/rds_spacing_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/rds_spacing_medium"
+            android:paddingVertical="@dimen/rds_spacing_default"
+            app:useLinkMovementMethod="true"
+            style="?attr/textAppearanceRegularMedium"/>
+    </ScrollView>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/rhy_feature_disclosure_ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rhy_content_horizontal_inset"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginRight="@dimen/rhy_content_horizontal_inset"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:text="@string/general_label_ok"
+        android:layout_marginHorizontal="@dimen/rhy_content_horizontal_inset"
+        android:layout_marginVertical="@dimen/rds_spacing_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="?attr/primaryMonochromeButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+package io.ktor.utils.p478io.streams;
+
+import io.ktor.utils.p478io.core.Input;
+import io.ktor.utils.p478io.core.internal.ChunkBuffer;
+import io.ktor.utils.p478io.pool.Pool3;
+import java.io.InputStream;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: Input.kt */
+@Metadata(m3635d1 = {"\u0000\u0016\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u001a\u001a\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u000e\b\u0002\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¨\u0006\u0006"}, m3636d2 = {"asInput", "Lio/ktor/utils/io/core/Input;", "Ljava/io/InputStream;", "pool", "Lio/ktor/utils/io/pool/ObjectPool;", "Lio/ktor/utils/io/core/internal/ChunkBuffer;", "ktor-io"}, m3637k = 2, m3638mv = {1, 8, 0}, m3640xi = 48)
+/* renamed from: io.ktor.utils.io.streams.InputKt, reason: use source file name */
+/* loaded from: classes14.dex */
+public final class Input4 {
+    public static final Input asInput(InputStream inputStream, Pool3<ChunkBuffer> pool) {
+        Intrinsics.checkNotNullParameter(inputStream, "<this>");
+        Intrinsics.checkNotNullParameter(pool, "pool");
+        return new Input5(inputStream, pool);
+    }
+
+    public static /* synthetic */ Input asInput$default(InputStream inputStream, Pool3 pool3, int i, Object obj) {
+        if ((i & 1) != 0) {
+            pool3 = ChunkBuffer.INSTANCE.getPool();
+        }
+        return asInput(inputStream, pool3);
+    }
+}

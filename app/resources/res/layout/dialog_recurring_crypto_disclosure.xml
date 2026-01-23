@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="@dimen/rds_spacing_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?attr/dialogContainerStyle">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplaySmall"
+        android:gravity="center"
+        android:id="@+id/dialog_fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/general_label_disclosure"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColorLink="?attr/colorPrimary"
+        android:gravity="center"
+        android:id="@+id/dialog_fragment_message"
+        android:paddingTop="@dimen/rds_spacing_small"
+        android:paddingBottom="@dimen/rds_spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:layout_gravity="center"
+        android:id="@+id/dialog_fragment_positive_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/general_label_dismiss"
+        style="?attr/primaryButtonStyle"/>
+</LinearLayout>

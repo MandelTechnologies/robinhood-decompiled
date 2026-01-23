@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WebView_Dark" parent="@style/ThemeOverlay_Robinhood_DesignSystem_Night">
+        <item name="android:isLightTheme">false</item>
+    </style>
+    <style name="WebView_Light" parent="@style/ThemeOverlay_Robinhood_DesignSystem_Day">
+        <item name="android:isLightTheme">true</item>
+    </style>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/rds_spacing_default"
+    android:paddingTop="@dimen/rds_spacing_xlarge"
+    android:paddingRight="@dimen/rds_spacing_default"
+    android:paddingBottom="@dimen/rds_spacing_xlarge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/rds_spacing_default"
+    android:paddingVertical="@dimen/rds_spacing_xlarge">
+    <ImageView
+        android:id="@+id/feature_image"
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:id="@+id/feature_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_small"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:id="@+id/feature_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mobius_black"
+    android:paddingTop="@dimen/rds_spacing_small"
+    android:paddingBottom="@dimen/rds_spacing_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/rds_spacing_medium"
+    android:paddingEnd="@dimen/rds_spacing_medium">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/analyst_report_hint_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/mobius_gold"
+        android:contentDescription="@null"
+        app:layout_constraintBaseline_toBaselineOf="@+id/analyst_report_hint_text"
+        app:layout_constraintEnd_toStartOf="@+id/analyst_report_hint_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/svg_ic_analyst_report_hint_arrow"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmallBold"
+        android:textColor="@color/mobius_gold"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/analyst_report_hint_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rds_spacing_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/analyst_report_hint_icon"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

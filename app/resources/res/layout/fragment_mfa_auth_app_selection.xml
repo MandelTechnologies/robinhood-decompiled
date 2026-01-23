@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:text="@string/setting_mfa_auth_app_selection_title"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mfa_auth_app_selection_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_xlarge"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/rds_spacing_default"
+        android:text="@string/setting_mfa_auth_app_selection_footer"
+        app:useLinkMovementMethod="true"/>
+</LinearLayout>

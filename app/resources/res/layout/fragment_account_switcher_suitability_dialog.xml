@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/rds_spacing_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_small"
+        style="?attr/textAppearanceDisplaySmall"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_medium"
+        android:text="@string/account_switcher_suitability_dialog_subtitle"
+        style="?attr/textAppearanceRegularMedium"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/complete_suitability_cta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_small"
+        android:text="@string/account_switcher_suitability_dialog_cta_complete_profile"
+        style="?attr/primaryMonochromeButtonStyle"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/dismiss_cta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/account_switcher_suitability_dialog_cta_dismiss"
+        style="?attr/secondaryMonochromeButtonStyle"/>
+</LinearLayout>

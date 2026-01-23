@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/rds_spacing_medium"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/rds_spacing_medium"
+    android:paddingEnd="@dimen/rds_spacing_medium">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        app:layout_constraintBottom_toTopOf="@+id/done_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.robinhood.android.designsystem.text.RhTextView
+                android:textAppearance="?attr/textAppearanceDisplaySmall"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.robinhood.android.designsystem.text.RhTextView
+                android:textAppearance="?attr/textAppearanceRegularMedium"
+                android:gravity="start"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/description_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rds_spacing_default"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/done_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/general_label_done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="?attr/primaryPositiveButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

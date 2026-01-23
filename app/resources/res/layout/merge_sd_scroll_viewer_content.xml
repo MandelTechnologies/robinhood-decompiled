@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.android.odyssey.lib.view.SdScrollViewerContainer
+        android:orientation="vertical"
+        android:id="@+id/sd_scroll_viewer_content_container"
+        android:padding="@dimen/rds_spacing_medium"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"/>
+</merge>

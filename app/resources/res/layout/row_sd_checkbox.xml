@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.odyssey.lib.view.SdCheckboxRow xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/sd_checkbox_sub_component_view"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="@dimen/rds_spacing_small"
+    android:paddingBottom="@dimen/rds_spacing_small"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.selectioncontrol.NewRdsCheckBox
+        android:id="@+id/sd_checkbox_widget"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/rds_spacing_small"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:textColor="?attr/colorForeground2"
+        android:id="@+id/sd_checkbox_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:useLinkMovementMethod="true"/>
+</com.robinhood.android.odyssey.lib.view.SdCheckboxRow>

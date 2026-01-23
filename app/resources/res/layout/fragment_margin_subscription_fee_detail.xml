@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="@dimen/rds_spacing_medium"
+        android:paddingBottom="@dimen/rds_spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.designsystem.row.RdsDataRowView
+            android:id="@+id/fee_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/margin_subscription_fee_detail_date_label"
+            style="?attr/dataRowContainerStyle"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/fee_has_credit_wrapper"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.robinhood.android.designsystem.row.RdsDataRowView
+                android:id="@+id/fee_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="@string/margin_subscription_fee_detail_cost_label"
+                style="?attr/dataRowContainerStyle"/>
+            <com.robinhood.android.designsystem.row.RdsDataRowView
+                android:id="@+id/fee_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="@string/margin_subscription_fee_detail_credit_label"
+                style="?attr/dataRowContainerStyle"/>
+        </LinearLayout>
+        <com.robinhood.android.designsystem.row.RdsDataRowView
+            android:id="@+id/fee_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:labelText="@string/margin_subscription_fee_detail_total_label"
+            style="?attr/dataRowContainerStyle"/>
+    </LinearLayout>
+</ScrollView>

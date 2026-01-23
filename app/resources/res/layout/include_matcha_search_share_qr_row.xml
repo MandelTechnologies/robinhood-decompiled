@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/rds_spacing_default"
+    style="?attr/rowContainerStyle">
+    <ImageView
+        android:background="@drawable/circle_gray_outline"
+        android:layout_width="@dimen/row_avatar_size"
+        android:layout_height="@dimen/row_avatar_size"
+        android:scaleType="center"
+        android:tint="?attr/colorForeground1"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_rds_qr_16dp"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:id="@+id/share_qr_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/rds_spacing_medium"
+        android:text="@string/matcha_qr_amount_share_detail"/>
+</LinearLayout>

@@ -1,0 +1,124 @@
+package com.robinhood.android.equitytradeladder.bottombar;
+
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.SnapshotState;
+import androidx.compose.runtime.SnapshotState3;
+import com.robinhood.android.equitytradeladder.EquityTradeLadderViewState;
+import com.robinhood.models.util.Money;
+import com.robinhood.models.util.Money3;
+import com.robinhood.nbbo.models.p359db.NbboSummary;
+import java.math.BigDecimal;
+import java.util.UUID;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import p479j$.time.Instant;
+
+/* compiled from: EquityTradeLadderBottomBar.kt */
+@Metadata(m3637k = 3, m3638mv = {2, 1, 0}, m3640xi = 48)
+@SourceDebugExtension
+/* renamed from: com.robinhood.android.equitytradeladder.bottombar.ComposableSingletons$EquityTradeLadderBottomBarKt$lambda$1622439405$1 */
+/* loaded from: classes3.dex */
+final class C15917x40bb9589 implements Function2<Composer, Integer, Unit> {
+    public static final C15917x40bb9589 INSTANCE = new C15917x40bb9589();
+
+    C15917x40bb9589() {
+    }
+
+    private static final EquityTradeLadderViewState.BottomBarData.NbboData invoke$lambda$1(SnapshotState<EquityTradeLadderViewState.BottomBarData.NbboData> snapshotState) {
+        return snapshotState.getValue();
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public /* bridge */ /* synthetic */ Unit invoke(Composer composer, Integer num) {
+        invoke(composer, num.intValue());
+        return Unit.INSTANCE;
+    }
+
+    public final void invoke(Composer composer, int i) {
+        if ((i & 3) == 2 && composer.getSkipping()) {
+            composer.skipToGroupEnd();
+            return;
+        }
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(1622439405, i, -1, "com.robinhood.android.equitytradeladder.bottombar.ComposableSingletons$EquityTradeLadderBottomBarKt.lambda$1622439405.<anonymous> (EquityTradeLadderBottomBar.kt:530)");
+        }
+        composer.startReplaceGroup(1849434622);
+        Object objRememberedValue = composer.rememberedValue();
+        Composer.Companion companion = Composer.INSTANCE;
+        if (objRememberedValue == companion.getEmpty()) {
+            UUID uuidRandomUUID = UUID.randomUUID();
+            Intrinsics.checkNotNullExpressionValue(uuidRandomUUID, "randomUUID(...)");
+            Instant instant = Instant.parse("2023-10-01T12:00:00Z");
+            Intrinsics.checkNotNullExpressionValue(instant, "parse(...)");
+            BigDecimal bigDecimalValueOf = BigDecimal.valueOf(100);
+            Intrinsics.checkNotNullExpressionValue(bigDecimalValueOf, "valueOf(...)");
+            Money money$default = Money3.toMoney$default(bigDecimalValueOf, null, 1, null);
+            BigDecimal bigDecimalValueOf2 = BigDecimal.valueOf(101);
+            Intrinsics.checkNotNullExpressionValue(bigDecimalValueOf2, "valueOf(...)");
+            objRememberedValue = SnapshotState3.mutableStateOf$default(new EquityTradeLadderViewState.BottomBarData.NbboData(false, new NbboSummary(uuidRandomUUID, "Bid 126.00 x 350 Q * Ask 126.00 x 158 P \n Last sale 126.00 x 193 X * 9:57AM PT", "", "Refresh", instant, "100.00", "101.00", money$default, Money3.toMoney$default(bigDecimalValueOf2, null, 1, null), new NbboSummary.NbboSummaryMarketDialog("Last Sale: $100.50", "Last Sale Size: 100", "Best Bid: $100.00", "Best Bid Size: 200", "Best Ask: $101.00", "Best Ask Size: 150", "Market Summary", "This is a summary of the market data."))), null, 2, null);
+            composer.updateRememberedValue(objRememberedValue);
+        }
+        composer.endReplaceGroup();
+        EquityTradeLadderViewState.BottomBarData.NbboData nbboDataInvoke$lambda$1 = invoke$lambda$1((SnapshotState) objRememberedValue);
+        composer.startReplaceGroup(1849434622);
+        Object objRememberedValue2 = composer.rememberedValue();
+        if (objRememberedValue2 == companion.getEmpty()) {
+            objRememberedValue2 = new Function0() { // from class: com.robinhood.android.equitytradeladder.bottombar.ComposableSingletons$EquityTradeLadderBottomBarKt$lambda$1622439405$1$$ExternalSyntheticLambda0
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    return Unit.INSTANCE;
+                }
+            };
+            composer.updateRememberedValue(objRememberedValue2);
+        }
+        Function0 function0 = (Function0) objRememberedValue2;
+        composer.endReplaceGroup();
+        composer.startReplaceGroup(1849434622);
+        Object objRememberedValue3 = composer.rememberedValue();
+        if (objRememberedValue3 == companion.getEmpty()) {
+            objRememberedValue3 = new Function0() { // from class: com.robinhood.android.equitytradeladder.bottombar.ComposableSingletons$EquityTradeLadderBottomBarKt$lambda$1622439405$1$$ExternalSyntheticLambda1
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    return Unit.INSTANCE;
+                }
+            };
+            composer.updateRememberedValue(objRememberedValue3);
+        }
+        Function0 function02 = (Function0) objRememberedValue3;
+        composer.endReplaceGroup();
+        composer.startReplaceGroup(1849434622);
+        Object objRememberedValue4 = composer.rememberedValue();
+        if (objRememberedValue4 == companion.getEmpty()) {
+            objRememberedValue4 = new Function0() { // from class: com.robinhood.android.equitytradeladder.bottombar.ComposableSingletons$EquityTradeLadderBottomBarKt$lambda$1622439405$1$$ExternalSyntheticLambda2
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    return Unit.INSTANCE;
+                }
+            };
+            composer.updateRememberedValue(objRememberedValue4);
+        }
+        Function0 function03 = (Function0) objRememberedValue4;
+        composer.endReplaceGroup();
+        composer.startReplaceGroup(1849434622);
+        Object objRememberedValue5 = composer.rememberedValue();
+        if (objRememberedValue5 == companion.getEmpty()) {
+            objRememberedValue5 = new Function0() { // from class: com.robinhood.android.equitytradeladder.bottombar.ComposableSingletons$EquityTradeLadderBottomBarKt$lambda$1622439405$1$$ExternalSyntheticLambda3
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    return Unit.INSTANCE;
+                }
+            };
+            composer.updateRememberedValue(objRememberedValue5);
+        }
+        composer.endReplaceGroup();
+        EquityTradeLadderBottomBarKt.EquityTradeLadderBottomBar(nbboDataInvoke$lambda$1, function0, function02, function03, (Function0) objRememberedValue5, null, composer, 28080, 32);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ira_contribution_celebration_toolbar_button_container"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+    <com.robinhood.android.designsystem.button.RdsTextButton
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/ira_contribution_celebration_toolbar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/rds_spacing_default"
+        style="?attr/textButtonStyle"/>
+</FrameLayout>

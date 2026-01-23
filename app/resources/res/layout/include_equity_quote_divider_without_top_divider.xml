@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:focusable="true"
+    android:clickable="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="?attr/colorBackground1">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:gravity="center"
+        android:id="@+id/section_header_txt"
+        android:background="@drawable/row_background"
+        android:padding="@dimen/rds_spacing_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        layout="@layout/include_rds_divider"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical">
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:id="@+id/header_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:useLinkMovementMethod="true"
+        style="?attr/textAppearanceRegularSmall"/>
+</merge>

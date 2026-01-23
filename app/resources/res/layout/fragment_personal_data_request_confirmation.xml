@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:paddingLeft="@dimen/rds_spacing_medium"
+    android:paddingRight="@dimen/rds_spacing_medium"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1"
+    android:paddingHorizontal="@dimen/rds_spacing_medium">
+    <ImageView
+        android:id="@+id/personal_data_request_confirmation_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toTopOf="@+id/personal_data_request_confirmation_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/svg_ic_data_request_success_illustration"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:gravity="center"
+        android:id="@+id/personal_data_request_confirmation_title"
+        android:paddingTop="@dimen/rds_spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/personal_data_request_confirmation_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/personal_data_request_confirmation_img"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:gravity="center"
+        android:id="@+id/personal_data_request_confirmation_subtitle"
+        android:paddingTop="@dimen/rds_spacing_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/personal_data_request_confirmation_cta"
+        app:layout_constraintTop_toBottomOf="@+id/personal_data_request_confirmation_title"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/personal_data_request_confirmation_cta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="?attr/primaryButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

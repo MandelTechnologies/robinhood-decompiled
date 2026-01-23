@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseStripe3DS2Theme" parent="@style/Theme_MaterialComponents">
+        <item name="android:colorBackground">@color/stripe_3ds2_background</item>
+        <item name="android:textColorPrimary">@color/stripe_3ds2_text_color_primary</item>
+        <item name="android:textColor">@color/stripe_3ds2_text_color</item>
+        <item name="android:editTextColor">@color/stripe_3ds2_text_edit</item>
+        <item name="actionBarStyle">@style/Stripe3DS2ActionBar</item>
+        <item name="actionBarTheme">@style/Stripe3DS2Theme</item>
+        <item name="colorAccent">@color/stripe_3ds2_accent</item>
+        <item name="colorControlActivated">@color/stripe_3ds2_control_activated</item>
+        <item name="colorPrimary">@color/stripe_3ds2_primary</item>
+        <item name="colorPrimaryDark">@color/stripe_3ds2_primary_dark</item>
+        <item name="textInputStyle">@style/Stripe3DS2TextInputLayout</item>
+    </style>
+    <style name="TapAndPayTheme" parent="">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/tapandpay_sdk_default_color_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="backgroundColor">@color/tapandpay_sdk_default_color_background</item>
+        <item name="colorPrimaryVariantGoogle">@color/tapandpay_sdk_default_color_primary_variant</item>
+        <item name="colorSecondary">@color/tapandpay_sdk_default_color_secondary</item>
+    </style>
+    <style name="Theme_AppCompat_DayNight" parent="@style/Theme_AppCompat">
+    </style>
+    <style name="Theme_AppCompat_DayNight_DarkActionBar" parent="@style/Theme_AppCompat">
+    </style>
+    <style name="Theme_AppCompat_DayNight_Dialog" parent="@style/Theme_AppCompat_Dialog">
+    </style>
+    <style name="Theme_AppCompat_DayNight_Dialog_Alert" parent="@style/Theme_AppCompat_Dialog_Alert">
+    </style>
+    <style name="Theme_AppCompat_DayNight_Dialog_MinWidth" parent="@style/Theme_AppCompat_Dialog_MinWidth">
+    </style>
+    <style name="Theme_AppCompat_DayNight_DialogWhenLarge" parent="@style/Theme_AppCompat_DialogWhenLarge">
+    </style>
+    <style name="Theme_AppCompat_DayNight_NoActionBar" parent="@style/Theme_AppCompat_NoActionBar">
+    </style>
+    <style name="Theme_Material3_DayNight" parent="@style/Theme_Material3_Dark">
+    </style>
+    <style name="Theme_Material3_DayNight_BottomSheetDialog" parent="@style/Theme_Material3_Dark_BottomSheetDialog">
+    </style>
+    <style name="Theme_Material3_DayNight_Dialog" parent="@style/Theme_Material3_Dark_Dialog">
+    </style>
+    <style name="Theme_Material3_DayNight_Dialog_Alert" parent="@style/Theme_Material3_Dark_Dialog_Alert">
+    </style>
+    <style name="Theme_Material3_DayNight_Dialog_MinWidth" parent="@style/Theme_Material3_Dark_Dialog_MinWidth">
+    </style>
+    <style name="Theme_Material3_DayNight_DialogWhenLarge" parent="@style/Theme_Material3_Dark_DialogWhenLarge">
+    </style>
+    <style name="Theme_Material3_DayNight_NoActionBar" parent="@style/Theme_Material3_Dark_NoActionBar">
+    </style>
+    <style name="Theme_Material3_DayNight_SideSheetDialog" parent="@style/Theme_Material3_Dark_SideSheetDialog">
+    </style>
+    <style name="Theme_Material3_DynamicColors_DayNight" parent="@style/Theme_Material3_DynamicColors_Dark">
+    </style>
+    <style name="Theme_Material3_DynamicColors_DayNight_NoActionBar" parent="@style/Theme_Material3_DynamicColors_Dark_NoActionBar">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight" parent="@style/Theme_MaterialComponents">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_BottomSheetDialog" parent="@style/Theme_MaterialComponents_BottomSheetDialog">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_Bridge" parent="@style/Theme_MaterialComponents_Bridge">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_DarkActionBar" parent="@style/Theme_MaterialComponents">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_DarkActionBar_Bridge" parent="@style/Theme_MaterialComponents_Bridge">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_Dialog" parent="@style/Theme_MaterialComponents_Dialog">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_Dialog_Alert" parent="@style/Theme_MaterialComponents_Dialog_Alert">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_Dialog_Alert_Bridge" parent="@style/Theme_MaterialComponents_Dialog_Alert_Bridge">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_Dialog_Bridge" parent="@style/Theme_MaterialComponents_Dialog_Bridge">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_Dialog_FixedSize" parent="@style/Theme_MaterialComponents_Dialog_FixedSize">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge" parent="@style/Theme_MaterialComponents_Dialog_FixedSize_Bridge">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_Dialog_MinWidth" parent="@style/Theme_MaterialComponents_Dialog_MinWidth">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge" parent="@style/Theme_MaterialComponents_Dialog_MinWidth_Bridge">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_DialogWhenLarge" parent="@style/Theme_MaterialComponents_DialogWhenLarge">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_NoActionBar" parent="@style/Theme_MaterialComponents_NoActionBar">
+    </style>
+    <style name="Theme_MaterialComponents_DayNight_NoActionBar_Bridge" parent="@style/Theme_MaterialComponents_NoActionBar_Bridge">
+    </style>
+    <style name="ThemeOverlay_AppCompat_DayNight" parent="@style/ThemeOverlay_AppCompat_Dark">
+    </style>
+    <style name="ThemeOverlay_Material3_DynamicColors_DayNight" parent="@style/ThemeOverlay_Material3_DynamicColors_Dark">
+    </style>
+    <style name="Widget_MaterialComponents_ActionBar_PrimarySurface" parent="@style/Widget_MaterialComponents_ActionBar_Surface">
+    </style>
+    <style name="Widget_MaterialComponents_AppBarLayout_PrimarySurface" parent="@style/Widget_MaterialComponents_AppBarLayout_Surface">
+    </style>
+    <style name="Widget_MaterialComponents_BottomAppBar_PrimarySurface" parent="@style/Widget_MaterialComponents_BottomAppBar">
+    </style>
+    <style name="Widget_MaterialComponents_BottomNavigationView_PrimarySurface" parent="@style/Widget_MaterialComponents_BottomNavigationView">
+    </style>
+    <style name="Widget_MaterialComponents_NavigationRailView_PrimarySurface" parent="@style/Widget_MaterialComponents_NavigationRailView">
+    </style>
+    <style name="Widget_MaterialComponents_TabLayout_PrimarySurface" parent="@style/Widget_MaterialComponents_TabLayout">
+    </style>
+    <style name="Widget_MaterialComponents_Toolbar_PrimarySurface" parent="@style/Widget_MaterialComponents_Toolbar_Surface">
+    </style>
+</resources>

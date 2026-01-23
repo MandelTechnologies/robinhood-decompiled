@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.accountcenter.views.AccountCenterMarkdownView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="?attr/textAppearanceRegularSmall"
+    android:textColor="?android:attr/textColorSecondary"
+    android:paddingLeft="@dimen/rds_spacing_medium"
+    android:paddingRight="@dimen/rds_spacing_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/rds_spacing_medium"
+    android:paddingHorizontal="@dimen/rds_spacing_medium"/>

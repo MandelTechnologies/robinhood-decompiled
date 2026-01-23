@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="education_card_content_padding">20dp</dimen>
+    <dimen name="education_card_stack_card_height">324dp</dimen>
+    <dimen name="education_lesson_section_horizontal_margin">24dp</dimen>
+    <dimen name="new_product_card_illustration_width">114dp</dimen>
+    <dimen name="option_order_after_hour_disclosure_padding">12dp</dimen>
+    <dimen name="option_order_vertical_margin">@dimen/rds_spacing_default</dimen>
+    <dimen name="order_header_bottom_margin">@dimen/rds_spacing_large</dimen>
+    <dimen name="order_header_internal_margin">@dimen/rds_spacing_small</dimen>
+    <dimen name="order_price_top_margin">@dimen/rds_spacing_medium</dimen>
+    <dimen name="trade_on_expiration_learn_more_image_height">200dp</dimen>
+    <dimen name="trade_on_expiration_learn_more_title_margin">@dimen/rds_spacing_medium</dimen>
+</resources>

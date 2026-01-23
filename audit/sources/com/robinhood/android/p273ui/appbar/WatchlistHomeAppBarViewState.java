@@ -1,0 +1,79 @@
+package com.robinhood.android.p273ui.appbar;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* compiled from: WatchlistHomeAppBarViewState.kt */
+@Metadata(m3635d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\f\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001B\u001b\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\t\u0010\n\u001a\u00020\u0003HÆ\u0003J\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\u001d\u0010\f\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\r\u001a\u00020\u00032\b\u0010\u000e\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u000f\u001a\u00020\u0010HÖ\u0001J\t\u0010\u0011\u001a\u00020\u0012HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\b¨\u0006\u0013"}, m3636d2 = {"Lcom/robinhood/android/ui/appbar/WatchlistHomeAppBarViewState;", "", "shouldShowInboxBadge", "", "inboxBadgeIsCritical", "<init>", "(ZZ)V", "getShouldShowInboxBadge", "()Z", "getInboxBadgeIsCritical", "component1", "component2", "copy", "equals", "other", "hashCode", "", "toString", "", "feature-watchlist-tab_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes9.dex */
+public final /* data */ class WatchlistHomeAppBarViewState {
+    public static final int $stable = 0;
+    private final boolean inboxBadgeIsCritical;
+    private final boolean shouldShowInboxBadge;
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    public WatchlistHomeAppBarViewState() {
+        boolean z = false;
+        this(z, z, 3, null);
+    }
+
+    public static /* synthetic */ WatchlistHomeAppBarViewState copy$default(WatchlistHomeAppBarViewState watchlistHomeAppBarViewState, boolean z, boolean z2, int i, Object obj) {
+        if ((i & 1) != 0) {
+            z = watchlistHomeAppBarViewState.shouldShowInboxBadge;
+        }
+        if ((i & 2) != 0) {
+            z2 = watchlistHomeAppBarViewState.inboxBadgeIsCritical;
+        }
+        return watchlistHomeAppBarViewState.copy(z, z2);
+    }
+
+    /* renamed from: component1, reason: from getter */
+    public final boolean getShouldShowInboxBadge() {
+        return this.shouldShowInboxBadge;
+    }
+
+    /* renamed from: component2, reason: from getter */
+    public final boolean getInboxBadgeIsCritical() {
+        return this.inboxBadgeIsCritical;
+    }
+
+    public final WatchlistHomeAppBarViewState copy(boolean shouldShowInboxBadge, boolean inboxBadgeIsCritical) {
+        return new WatchlistHomeAppBarViewState(shouldShowInboxBadge, inboxBadgeIsCritical);
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof WatchlistHomeAppBarViewState)) {
+            return false;
+        }
+        WatchlistHomeAppBarViewState watchlistHomeAppBarViewState = (WatchlistHomeAppBarViewState) other;
+        return this.shouldShowInboxBadge == watchlistHomeAppBarViewState.shouldShowInboxBadge && this.inboxBadgeIsCritical == watchlistHomeAppBarViewState.inboxBadgeIsCritical;
+    }
+
+    public int hashCode() {
+        return (Boolean.hashCode(this.shouldShowInboxBadge) * 31) + Boolean.hashCode(this.inboxBadgeIsCritical);
+    }
+
+    public String toString() {
+        return "WatchlistHomeAppBarViewState(shouldShowInboxBadge=" + this.shouldShowInboxBadge + ", inboxBadgeIsCritical=" + this.inboxBadgeIsCritical + ")";
+    }
+
+    public WatchlistHomeAppBarViewState(boolean z, boolean z2) {
+        this.shouldShowInboxBadge = z;
+        this.inboxBadgeIsCritical = z2;
+    }
+
+    public /* synthetic */ WatchlistHomeAppBarViewState(boolean z, boolean z2, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i & 1) != 0 ? false : z, (i & 2) != 0 ? false : z2);
+    }
+
+    public final boolean getShouldShowInboxBadge() {
+        return this.shouldShowInboxBadge;
+    }
+
+    public final boolean getInboxBadgeIsCritical() {
+        return this.inboxBadgeIsCritical;
+    }
+}

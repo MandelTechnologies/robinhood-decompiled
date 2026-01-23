@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?attr/colorWhite"/>
+    <padding
+        android:left="@dimen/pdf_preview_border_padding"
+        android:top="@dimen/pdf_preview_border_padding"
+        android:right="@dimen/pdf_preview_border_padding"
+        android:bottom="@dimen/pdf_preview_border_padding"/>
+    <stroke
+        android:width="@dimen/pdf_preview_border_width"
+        android:color="?attr/colorBackground3"/>
+</shape>

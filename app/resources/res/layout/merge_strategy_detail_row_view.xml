@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularLargeBold"
+        android:id="@+id/strategy_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:linksClickable="true"
+        android:id="@+id/strategy_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_xsmall"
+        app:useLinkMovementMethod="true"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/strategy_visualization_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:adjustViewBounds="true"
+        app:lottie_autoPlay="true"/>
+</merge>

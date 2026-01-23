@@ -1,0 +1,212 @@
+package eoy_giveaway.p456v1;
+
+import com.robinhood.android.car.result.CarResultComposable2;
+import com.robinhood.idl.RhGenerated;
+import eoy_giveaway.p456v1.EndOfYearGiveawayService_Adapter;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.serialization.json.Json;
+import kotlinx.serialization.json.JsonElement;
+import messaging.proto.badge.p484v1.GetBadgeDataRequestDto;
+import messaging.proto.badge.p484v1.GetBadgeDataResponseDto;
+import microgram.service.bridge.ClientBridge;
+import microgram.service.managed.ClientCallAdapters;
+import microgram.service.managed.ImplementationCallAdapters;
+import microgram.service.protocol.ServiceCallable;
+
+/* compiled from: EndOfYearGiveawayService_Adapter.kt */
+@RhGenerated
+@Metadata(m3635d1 = {"\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\r\b\u0003\u0018\u00002\u00020\u00012\u00020\u0002:\u0006'()*+,B\u0017\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005¢\u0006\u0004\b\u0007\u0010\bJ\u001d\u0010\r\u001a\b\u0012\u0004\u0012\u00020\f0\u000b2\u0006\u0010\n\u001a\u00020\tH\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u001d\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00100\u000b2\u0006\u0010\n\u001a\u00020\u000fH\u0016¢\u0006\u0004\b\u0011\u0010\u0012J\u0018\u0010\u0015\u001a\u00020\u00142\u0006\u0010\n\u001a\u00020\u0013H\u0096@¢\u0006\u0004\b\u0015\u0010\u0016J\u0018\u0010\u0019\u001a\u00020\u00182\u0006\u0010\n\u001a\u00020\u0017H\u0096@¢\u0006\u0004\b\u0019\u0010\u001aJ\u0018\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\n\u001a\u00020\u001bH\u0096@¢\u0006\u0004\b\u001d\u0010\u001eJ\u0018\u0010!\u001a\u00020 2\u0006\u0010\n\u001a\u00020\u001fH\u0096@¢\u0006\u0004\b!\u0010\"R\u001a\u0010\u0004\u001a\u00020\u00038\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0004\u0010#\u001a\u0004\b$\u0010%R\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0006\u0010&¨\u0006-"}, m3636d2 = {"Leoy_giveaway/v1/EndOfYearGiveawayService_Adapter;", "Leoy_giveaway/v1/EndOfYearGiveawayService;", "", "Lmicrogram/service/bridge/ClientBridge;", "__bridge", "Lkotlinx/serialization/json/Json;", "json", "<init>", "(Lmicrogram/service/bridge/ClientBridge;Lkotlinx/serialization/json/Json;)V", "Lmessaging/proto/badge/v1/GetBadgeDataRequestDto;", "request", "Lkotlinx/coroutines/flow/Flow;", "Lmessaging/proto/badge/v1/GetBadgeDataResponseDto;", "GetBadgeData", "(Lmessaging/proto/badge/v1/GetBadgeDataRequestDto;)Lkotlinx/coroutines/flow/Flow;", "Leoy_giveaway/v1/GetProgramViewModelRequestDto;", "Leoy_giveaway/v1/GetProgramViewModelResponseDto;", "GetProgramViewModel", "(Leoy_giveaway/v1/GetProgramViewModelRequestDto;)Lkotlinx/coroutines/flow/Flow;", "Leoy_giveaway/v1/UpdateProgramViewVisibilityRequestDto;", "Leoy_giveaway/v1/UpdateProgramViewVisibilityResponseDto;", "UpdateProgramViewVisibility", "(Leoy_giveaway/v1/UpdateProgramViewVisibilityRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Leoy_giveaway/v1/UpdateAppStateRequestDto;", "Leoy_giveaway/v1/UpdateAppStateResponseDto;", "UpdateAppState", "(Leoy_giveaway/v1/UpdateAppStateRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Leoy_giveaway/v1/HandleCanvasMessageRequestDto;", "Leoy_giveaway/v1/HandleCanvasMessageResponseDto;", "HandleCanvasMessage", "(Leoy_giveaway/v1/HandleCanvasMessageRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Leoy_giveaway/v1/ShowHolidayHubViewRequestDto;", "Leoy_giveaway/v1/ShowHolidayHubViewResponseDto;", "ShowHolidayHubView", "(Leoy_giveaway/v1/ShowHolidayHubViewRequestDto;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Lmicrogram/service/bridge/ClientBridge;", "get__bridge", "()Lmicrogram/service/bridge/ClientBridge;", "Lkotlinx/serialization/json/Json;", "GetBadgeDataEndpoint", "GetProgramViewModelEndpoint", "UpdateProgramViewVisibilityEndpoint", "UpdateAppStateEndpoint", "HandleCanvasMessageEndpoint", "ShowHolidayHubViewEndpoint", "eoy_giveaway.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes18.dex */
+final class EndOfYearGiveawayService_Adapter implements EndOfYearGiveawayService {
+    private final ClientBridge __bridge;
+    private final Json json;
+
+    public EndOfYearGiveawayService_Adapter(ClientBridge __bridge, Json json) {
+        Intrinsics.checkNotNullParameter(__bridge, "__bridge");
+        Intrinsics.checkNotNullParameter(json, "json");
+        this.__bridge = __bridge;
+        this.json = json;
+    }
+
+    public ClientBridge get__bridge() {
+        return this.__bridge;
+    }
+
+    @Override // eoy_giveaway.p456v1.EndOfYearGiveawayService
+    public Flow<GetBadgeDataResponseDto> GetBadgeData(GetBadgeDataRequestDto request) {
+        Intrinsics.checkNotNullParameter(request, "request");
+        return ClientCallAdapters.callFlow$default(get__bridge(), this.json, GetBadgeDataRequestDto.INSTANCE.getBinaryBase64Serializer(), GetBadgeDataResponseDto.INSTANCE.getBinaryBase64Serializer(), "GetBadgeData", request, null, 32, null);
+    }
+
+    @Override // eoy_giveaway.p456v1.EndOfYearGiveawayService
+    public Flow<GetProgramViewModelResponseDto> GetProgramViewModel(GetProgramViewModelRequestDto request) {
+        Intrinsics.checkNotNullParameter(request, "request");
+        return ClientCallAdapters.callFlow$default(get__bridge(), this.json, GetProgramViewModelRequestDto.INSTANCE.getBinaryBase64Serializer(), GetProgramViewModelResponseDto.INSTANCE.getBinaryBase64Serializer(), "GetProgramViewModel", request, null, 32, null);
+    }
+
+    @Override // eoy_giveaway.p456v1.EndOfYearGiveawayService
+    public Object UpdateProgramViewVisibility(UpdateProgramViewVisibilityRequestDto updateProgramViewVisibilityRequestDto, Continuation<? super UpdateProgramViewVisibilityResponseDto> continuation) {
+        return ClientCallAdapters.callSuspendFunction(get__bridge(), this.json, UpdateProgramViewVisibilityRequestDto.INSTANCE.getBinaryBase64Serializer(), UpdateProgramViewVisibilityResponseDto.INSTANCE.getBinaryBase64Serializer(), "UpdateProgramViewVisibility", updateProgramViewVisibilityRequestDto, continuation);
+    }
+
+    @Override // eoy_giveaway.p456v1.EndOfYearGiveawayService
+    public Object UpdateAppState(UpdateAppStateRequestDto updateAppStateRequestDto, Continuation<? super UpdateAppStateResponseDto> continuation) {
+        return ClientCallAdapters.callSuspendFunction(get__bridge(), this.json, UpdateAppStateRequestDto.INSTANCE.getBinaryBase64Serializer(), UpdateAppStateResponseDto.INSTANCE.getBinaryBase64Serializer(), "UpdateAppState", updateAppStateRequestDto, continuation);
+    }
+
+    @Override // eoy_giveaway.p456v1.EndOfYearGiveawayService
+    public Object HandleCanvasMessage(HandleCanvasMessageRequestDto handleCanvasMessageRequestDto, Continuation<? super HandleCanvasMessageResponseDto> continuation) {
+        return ClientCallAdapters.callSuspendFunction(get__bridge(), this.json, HandleCanvasMessageRequestDto.INSTANCE.getBinaryBase64Serializer(), HandleCanvasMessageResponseDto.INSTANCE.getBinaryBase64Serializer(), "HandleCanvasMessage", handleCanvasMessageRequestDto, continuation);
+    }
+
+    @Override // eoy_giveaway.p456v1.EndOfYearGiveawayService
+    public Object ShowHolidayHubView(ShowHolidayHubViewRequestDto showHolidayHubViewRequestDto, Continuation<? super ShowHolidayHubViewResponseDto> continuation) {
+        return ClientCallAdapters.callSuspendFunction(get__bridge(), this.json, ShowHolidayHubViewRequestDto.INSTANCE.getBinaryBase64Serializer(), ShowHolidayHubViewResponseDto.INSTANCE.getBinaryBase64Serializer(), "ShowHolidayHubView", showHolidayHubViewRequestDto, continuation);
+    }
+
+    /* compiled from: EndOfYearGiveawayService_Adapter.kt */
+    @Metadata(m3635d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\u0016\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000b\u001a\u00020\nH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m3636d2 = {"Leoy_giveaway/v1/EndOfYearGiveawayService_Adapter$GetBadgeDataEndpoint;", "Lmicrogram/service/protocol/ServiceCallable;", "service", "Leoy_giveaway/v1/EndOfYearGiveawayService;", "json", "Lkotlinx/serialization/json/Json;", "<init>", "(Leoy_giveaway/v1/EndOfYearGiveawayService;Lkotlinx/serialization/json/Json;)V", "call", "Lkotlinx/coroutines/flow/Flow;", "Lkotlinx/serialization/json/JsonElement;", CarResultComposable2.BODY, "eoy_giveaway.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class GetBadgeDataEndpoint implements ServiceCallable {
+        private final Json json;
+        private final EndOfYearGiveawayService service;
+
+        public GetBadgeDataEndpoint(EndOfYearGiveawayService service, Json json) {
+            Intrinsics.checkNotNullParameter(service, "service");
+            Intrinsics.checkNotNullParameter(json, "json");
+            this.service = service;
+            this.json = json;
+        }
+
+        @Override // microgram.service.protocol.ServiceCallable
+        public Flow<JsonElement> call(JsonElement body) {
+            Intrinsics.checkNotNullParameter(body, "body");
+            return ImplementationCallAdapters.adaptFlow(this.json, GetBadgeDataRequestDto.INSTANCE.getBinaryBase64Serializer(), GetBadgeDataResponseDto.INSTANCE.getBinaryBase64Serializer(), body, new Function1() { // from class: eoy_giveaway.v1.EndOfYearGiveawayService_Adapter$GetBadgeDataEndpoint$$ExternalSyntheticLambda0
+                @Override // kotlin.jvm.functions.Function1
+                public final Object invoke(Object obj) {
+                    return EndOfYearGiveawayService_Adapter.GetBadgeDataEndpoint.call$lambda$0(this.f$0, (GetBadgeDataRequestDto) obj);
+                }
+            });
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final Flow call$lambda$0(GetBadgeDataEndpoint getBadgeDataEndpoint, GetBadgeDataRequestDto request) {
+            Intrinsics.checkNotNullParameter(request, "request");
+            return getBadgeDataEndpoint.service.GetBadgeData(request);
+        }
+    }
+
+    /* compiled from: EndOfYearGiveawayService_Adapter.kt */
+    @Metadata(m3635d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\u0016\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000b\u001a\u00020\nH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m3636d2 = {"Leoy_giveaway/v1/EndOfYearGiveawayService_Adapter$GetProgramViewModelEndpoint;", "Lmicrogram/service/protocol/ServiceCallable;", "service", "Leoy_giveaway/v1/EndOfYearGiveawayService;", "json", "Lkotlinx/serialization/json/Json;", "<init>", "(Leoy_giveaway/v1/EndOfYearGiveawayService;Lkotlinx/serialization/json/Json;)V", "call", "Lkotlinx/coroutines/flow/Flow;", "Lkotlinx/serialization/json/JsonElement;", CarResultComposable2.BODY, "eoy_giveaway.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class GetProgramViewModelEndpoint implements ServiceCallable {
+        private final Json json;
+        private final EndOfYearGiveawayService service;
+
+        public GetProgramViewModelEndpoint(EndOfYearGiveawayService service, Json json) {
+            Intrinsics.checkNotNullParameter(service, "service");
+            Intrinsics.checkNotNullParameter(json, "json");
+            this.service = service;
+            this.json = json;
+        }
+
+        @Override // microgram.service.protocol.ServiceCallable
+        public Flow<JsonElement> call(JsonElement body) {
+            Intrinsics.checkNotNullParameter(body, "body");
+            return ImplementationCallAdapters.adaptFlow(this.json, GetProgramViewModelRequestDto.INSTANCE.getBinaryBase64Serializer(), GetProgramViewModelResponseDto.INSTANCE.getBinaryBase64Serializer(), body, new Function1() { // from class: eoy_giveaway.v1.EndOfYearGiveawayService_Adapter$GetProgramViewModelEndpoint$$ExternalSyntheticLambda0
+                @Override // kotlin.jvm.functions.Function1
+                public final Object invoke(Object obj) {
+                    return EndOfYearGiveawayService_Adapter.GetProgramViewModelEndpoint.call$lambda$0(this.f$0, (GetProgramViewModelRequestDto) obj);
+                }
+            });
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final Flow call$lambda$0(GetProgramViewModelEndpoint getProgramViewModelEndpoint, GetProgramViewModelRequestDto request) {
+            Intrinsics.checkNotNullParameter(request, "request");
+            return getProgramViewModelEndpoint.service.GetProgramViewModel(request);
+        }
+    }
+
+    /* compiled from: EndOfYearGiveawayService_Adapter.kt */
+    @Metadata(m3635d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\u0016\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000b\u001a\u00020\nH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m3636d2 = {"Leoy_giveaway/v1/EndOfYearGiveawayService_Adapter$UpdateProgramViewVisibilityEndpoint;", "Lmicrogram/service/protocol/ServiceCallable;", "service", "Leoy_giveaway/v1/EndOfYearGiveawayService;", "json", "Lkotlinx/serialization/json/Json;", "<init>", "(Leoy_giveaway/v1/EndOfYearGiveawayService;Lkotlinx/serialization/json/Json;)V", "call", "Lkotlinx/coroutines/flow/Flow;", "Lkotlinx/serialization/json/JsonElement;", CarResultComposable2.BODY, "eoy_giveaway.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class UpdateProgramViewVisibilityEndpoint implements ServiceCallable {
+        private final Json json;
+        private final EndOfYearGiveawayService service;
+
+        public UpdateProgramViewVisibilityEndpoint(EndOfYearGiveawayService service, Json json) {
+            Intrinsics.checkNotNullParameter(service, "service");
+            Intrinsics.checkNotNullParameter(json, "json");
+            this.service = service;
+            this.json = json;
+        }
+
+        @Override // microgram.service.protocol.ServiceCallable
+        public Flow<JsonElement> call(JsonElement body) {
+            Intrinsics.checkNotNullParameter(body, "body");
+            return ImplementationCallAdapters.adaptSuspendFunction(this.json, UpdateProgramViewVisibilityRequestDto.INSTANCE.getBinaryBase64Serializer(), UpdateProgramViewVisibilityResponseDto.INSTANCE.getBinaryBase64Serializer(), body, new EndOfYearGiveawayService_Adapter5(this, null));
+        }
+    }
+
+    /* compiled from: EndOfYearGiveawayService_Adapter.kt */
+    @Metadata(m3635d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\u0016\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000b\u001a\u00020\nH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m3636d2 = {"Leoy_giveaway/v1/EndOfYearGiveawayService_Adapter$UpdateAppStateEndpoint;", "Lmicrogram/service/protocol/ServiceCallable;", "service", "Leoy_giveaway/v1/EndOfYearGiveawayService;", "json", "Lkotlinx/serialization/json/Json;", "<init>", "(Leoy_giveaway/v1/EndOfYearGiveawayService;Lkotlinx/serialization/json/Json;)V", "call", "Lkotlinx/coroutines/flow/Flow;", "Lkotlinx/serialization/json/JsonElement;", CarResultComposable2.BODY, "eoy_giveaway.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class UpdateAppStateEndpoint implements ServiceCallable {
+        private final Json json;
+        private final EndOfYearGiveawayService service;
+
+        public UpdateAppStateEndpoint(EndOfYearGiveawayService service, Json json) {
+            Intrinsics.checkNotNullParameter(service, "service");
+            Intrinsics.checkNotNullParameter(json, "json");
+            this.service = service;
+            this.json = json;
+        }
+
+        @Override // microgram.service.protocol.ServiceCallable
+        public Flow<JsonElement> call(JsonElement body) {
+            Intrinsics.checkNotNullParameter(body, "body");
+            return ImplementationCallAdapters.adaptSuspendFunction(this.json, UpdateAppStateRequestDto.INSTANCE.getBinaryBase64Serializer(), UpdateAppStateResponseDto.INSTANCE.getBinaryBase64Serializer(), body, new EndOfYearGiveawayService_Adapter4(this, null));
+        }
+    }
+
+    /* compiled from: EndOfYearGiveawayService_Adapter.kt */
+    @Metadata(m3635d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\u0016\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000b\u001a\u00020\nH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m3636d2 = {"Leoy_giveaway/v1/EndOfYearGiveawayService_Adapter$HandleCanvasMessageEndpoint;", "Lmicrogram/service/protocol/ServiceCallable;", "service", "Leoy_giveaway/v1/EndOfYearGiveawayService;", "json", "Lkotlinx/serialization/json/Json;", "<init>", "(Leoy_giveaway/v1/EndOfYearGiveawayService;Lkotlinx/serialization/json/Json;)V", "call", "Lkotlinx/coroutines/flow/Flow;", "Lkotlinx/serialization/json/JsonElement;", CarResultComposable2.BODY, "eoy_giveaway.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class HandleCanvasMessageEndpoint implements ServiceCallable {
+        private final Json json;
+        private final EndOfYearGiveawayService service;
+
+        public HandleCanvasMessageEndpoint(EndOfYearGiveawayService service, Json json) {
+            Intrinsics.checkNotNullParameter(service, "service");
+            Intrinsics.checkNotNullParameter(json, "json");
+            this.service = service;
+            this.json = json;
+        }
+
+        @Override // microgram.service.protocol.ServiceCallable
+        public Flow<JsonElement> call(JsonElement body) {
+            Intrinsics.checkNotNullParameter(body, "body");
+            return ImplementationCallAdapters.adaptSuspendFunction(this.json, HandleCanvasMessageRequestDto.INSTANCE.getBinaryBase64Serializer(), HandleCanvasMessageResponseDto.INSTANCE.getBinaryBase64Serializer(), body, new EndOfYearGiveawayService_Adapter2(this, null));
+        }
+    }
+
+    /* compiled from: EndOfYearGiveawayService_Adapter.kt */
+    @Metadata(m3635d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\u0016\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000b\u001a\u00020\nH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m3636d2 = {"Leoy_giveaway/v1/EndOfYearGiveawayService_Adapter$ShowHolidayHubViewEndpoint;", "Lmicrogram/service/protocol/ServiceCallable;", "service", "Leoy_giveaway/v1/EndOfYearGiveawayService;", "json", "Lkotlinx/serialization/json/Json;", "<init>", "(Leoy_giveaway/v1/EndOfYearGiveawayService;Lkotlinx/serialization/json/Json;)V", "call", "Lkotlinx/coroutines/flow/Flow;", "Lkotlinx/serialization/json/JsonElement;", CarResultComposable2.BODY, "eoy_giveaway.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class ShowHolidayHubViewEndpoint implements ServiceCallable {
+        private final Json json;
+        private final EndOfYearGiveawayService service;
+
+        public ShowHolidayHubViewEndpoint(EndOfYearGiveawayService service, Json json) {
+            Intrinsics.checkNotNullParameter(service, "service");
+            Intrinsics.checkNotNullParameter(json, "json");
+            this.service = service;
+            this.json = json;
+        }
+
+        @Override // microgram.service.protocol.ServiceCallable
+        public Flow<JsonElement> call(JsonElement body) {
+            Intrinsics.checkNotNullParameter(body, "body");
+            return ImplementationCallAdapters.adaptSuspendFunction(this.json, ShowHolidayHubViewRequestDto.INSTANCE.getBinaryBase64Serializer(), ShowHolidayHubViewResponseDto.INSTANCE.getBinaryBase64Serializer(), body, new EndOfYearGiveawayService_Adapter3(this, null));
+        }
+    }
+}

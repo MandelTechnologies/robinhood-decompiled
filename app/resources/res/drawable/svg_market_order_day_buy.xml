@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="48dp"
+    android:width="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="@color/mobius_black"
+        android:pathData="M24 48C10.745 48 0 37.255 0 24c0-1.91 0.232-3.766 0.654-5.549l9.368 9.368 8.44-8.44 12.406 12.406c-0.174 0.449-0.275 0.934-0.275 1.446 0 2.183 1.773 3.956 3.957 3.956 2.183 0 3.956-1.773 3.956-3.956 0-2.184-1.773-3.956-3.956-3.956-0.512 0-0.997 0.1-1.446 0.274L18.462 14.906l-8.44 8.44-8.292-8.292C5.28 6.23 13.91 0 24 0c13.255 0 24 10.745 24 24S37.255 48 24 48z"/>
+    <path
+        android:fillColor="?attr/colorPositive"
+        android:pathData="M18.462 14.906L33.103 29.55c-1.023 0.4-1.835 1.213-2.236 2.236L18.462 19.38l-8.44 8.44-9.368-9.368c0.274-1.166 0.638-2.305 1.076-3.397l8.292 8.292 8.44-8.44z"/>
+    <path
+        android:fillColor="?attr/colorPositive"
+        android:pathData="M33.104 29.549c0.449-0.174 0.934-0.274 1.446-0.274 2.183 0 3.956 1.772 3.956 3.956 0 2.183-1.773 3.956-3.956 3.956-2.184 0-3.957-1.773-3.957-3.956 0-0.512 0.1-0.997 0.275-1.446 0.4-1.018 1.218-1.835 2.236-2.236z"/>
+</vector>

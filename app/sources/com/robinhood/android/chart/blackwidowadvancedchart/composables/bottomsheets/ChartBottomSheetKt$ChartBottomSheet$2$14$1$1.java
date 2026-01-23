@@ -1,0 +1,30 @@
+package com.robinhood.android.chart.blackwidowadvancedchart.composables.bottomsheets;
+
+import black_widow.contracts.mobile_app_chart.proto.p024v1.SetChartSetting;
+import com.robinhood.android.chart.blackwidowadvancedchart.BlackWidowAdvanceChartCallbacks;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: ChartBottomSheet.kt */
+@Metadata(m3637k = 3, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes7.dex */
+/* synthetic */ class ChartBottomSheetKt$ChartBottomSheet$2$14$1$1 extends FunctionReferenceImpl implements Function1<SetChartSetting, Unit> {
+    ChartBottomSheetKt$ChartBottomSheet$2$14$1$1(Object obj) {
+        super(1, obj, BlackWidowAdvanceChartCallbacks.class, "onSetChartSetting", "onSetChartSetting(Lblack_widow/contracts/mobile_app_chart/proto/v1/SetChartSetting;)V", 0);
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public /* bridge */ /* synthetic */ Unit invoke(SetChartSetting setChartSetting) {
+        invoke2(setChartSetting);
+        return Unit.INSTANCE;
+    }
+
+    /* renamed from: invoke, reason: avoid collision after fix types in other method */
+    public final void invoke2(SetChartSetting p0) {
+        Intrinsics.checkNotNullParameter(p0, "p0");
+        ((BlackWidowAdvanceChartCallbacks) this.receiver).onSetChartSetting(p0);
+    }
+}

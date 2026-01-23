@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.robinhood.android.common.p088ui.ShimmerLoadingView
+        android:id="@+id/image_loading_view"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/rds_spacing_medium"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/support_chat_image_viewer_content_description"/>
+    <com.robinhood.android.common.view.ErrorView
+        android:theme="@style/ThemeOverlay.Robinhood.DesignSystem.Achromatic"
+        android:id="@+id/image_error"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="?attr/colorBackground1"
+        app:errorDescriptionText="@string/support_chat_thread_original_image_fail_description"
+        app:errorIconImage="@drawable/svg_caution_tube_white_with_shadow"
+        app:errorTitleText="@string/support_chat_thread_original_image_fail_title"
+        app:primaryButtonText="@string/error_try_again"/>
+</FrameLayout>

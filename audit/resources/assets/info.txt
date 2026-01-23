@@ -1,0 +1,7 @@
+name: Singular-v12.9.0-9009a02d.master
+env: release
+git_commit: 9009a02d
+git_branch: master
+version_name: 12.9.0
+version_code:1
+build_date: Thu, 22 May 2025 13:52:36 +0530

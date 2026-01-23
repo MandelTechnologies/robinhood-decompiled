@@ -1,0 +1,27 @@
+
+&
+ card_activation_set_pin_subtitle
+/
+)card_activation_confirm_your_pin_subtitle
+/
+)card_activation_activate_debit_card_title
+2
+,card_activation_activate_debit_card_subtitle
+2
+,card_activation_location_protection_subtitle
+C
+=card_activation_location_protection_fake_notification_title_1
+E
+?card_activation_location_protection_fake_notification_message_1
+C
+=card_activation_location_protection_fake_notification_title_2
+E
+?card_activation_location_protection_fake_notification_message_2
+*
+$card_activation_card_activated_title
+-
+'card_activation_card_activated_subtitle
+C
+=card_activation_card_activated_google_pay_content_description
+*
+$card_activation_card_activated_later

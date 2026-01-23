@@ -1,0 +1,19 @@
+
+c
+%general_error_intent_no_browser_found:
+pl-rPL
+nl-rNL
+lt-rLT
+it-rIT
+fr-rFR
+es-rES
+de-rDE
+^
+ general_error_external_app_crash:
+pl-rPL
+nl-rNL
+lt-rLT
+it-rIT
+fr-rFR
+es-rES
+de-rDE

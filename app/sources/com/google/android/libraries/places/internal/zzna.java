@@ -1,0 +1,96 @@
+package com.google.android.libraries.places.internal;
+
+import com.robinhood.android.eventcontracts.sharedeventui.PlaceholderUtils;
+import com.singular.sdk.internal.Constants;
+import java.util.Locale;
+import java.util.concurrent.TimeUnit;
+
+/* compiled from: com.google.android.libraries.places:places@@3.5.0 */
+/* loaded from: classes27.dex */
+public final class zzna {
+    private final zznf zza = zznf.zza();
+    private boolean zzb;
+    private long zzc;
+
+    zzna() {
+    }
+
+    public static zzna zzb() {
+        return new zzna();
+    }
+
+    private final long zze() {
+        if (this.zzb) {
+            return System.nanoTime() - this.zzc;
+        }
+        return 0L;
+    }
+
+    public final String toString() {
+        String str;
+        long jZze = zze();
+        TimeUnit timeUnit = TimeUnit.DAYS;
+        TimeUnit timeUnit2 = TimeUnit.NANOSECONDS;
+        if (timeUnit.convert(jZze, timeUnit2) <= 0) {
+            timeUnit = TimeUnit.HOURS;
+            if (timeUnit.convert(jZze, timeUnit2) <= 0) {
+                timeUnit = TimeUnit.MINUTES;
+                if (timeUnit.convert(jZze, timeUnit2) <= 0) {
+                    timeUnit = TimeUnit.SECONDS;
+                    if (timeUnit.convert(jZze, timeUnit2) <= 0) {
+                        timeUnit = TimeUnit.MILLISECONDS;
+                        if (timeUnit.convert(jZze, timeUnit2) <= 0) {
+                            timeUnit = TimeUnit.MICROSECONDS;
+                            if (timeUnit.convert(jZze, timeUnit2) <= 0) {
+                                timeUnit = timeUnit2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        String str2 = String.format(Locale.ROOT, "%.4g", Double.valueOf(jZze / timeUnit2.convert(1L, timeUnit)));
+        switch (zzmz.zza[timeUnit.ordinal()]) {
+            case 1:
+                str = "ns";
+                break;
+            case 2:
+                str = "μs";
+                break;
+            case 3:
+                str = "ms";
+                break;
+            case 4:
+                str = Constants.RequestParamsKeys.SESSION_ID_KEY;
+                break;
+            case 5:
+                str = "min";
+                break;
+            case 6:
+                str = "h";
+                break;
+            case 7:
+                str = "d";
+                break;
+            default:
+                throw new AssertionError();
+        }
+        return str2 + PlaceholderUtils.XXShortPlaceholderText + str;
+    }
+
+    public final long zza(TimeUnit timeUnit) {
+        return timeUnit.convert(zze(), TimeUnit.NANOSECONDS);
+    }
+
+    public final zzna zzc() {
+        this.zzb = false;
+        return this;
+    }
+
+    public final zzna zzd() {
+        zzmt.zzp(!this.zzb, "This stopwatch is already running.");
+        this.zzb = true;
+        this.zzc = System.nanoTime();
+        return this;
+    }
+}

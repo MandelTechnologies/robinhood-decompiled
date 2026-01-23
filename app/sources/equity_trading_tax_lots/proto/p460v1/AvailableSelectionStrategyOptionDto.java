@@ -1,0 +1,294 @@
+package equity_trading_tax_lots.proto.p460v1;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.robinhood.android.idl.common.MultibindingShard;
+import com.robinhood.idl.Dto3;
+import com.robinhood.idl.DtoParcelableCreator;
+import com.robinhood.idl.DtoParcelableCreator2;
+import com.robinhood.idl.RhGenerated;
+import com.robinhood.idl.serialization.BinaryBase64DtoSerializer;
+import com.squareup.wire.ProtoAdapter;
+import equity_trading_tax_lots.proto.p460v1.SelectionStrategyDto;
+import kotlin.Lazy;
+import kotlin.LazyKt;
+import kotlin.Metadata;
+import kotlin.jvm.JvmField;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.Serializable;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.descriptors.SerialDescriptors3;
+import kotlinx.serialization.encoding.Decoding2;
+import kotlinx.serialization.encoding.Encoding3;
+import kotlinx.serialization.encoding.Encoding4;
+import kotlinx.serialization.internal.SerializationConstructorMarker;
+
+/* compiled from: AvailableSelectionStrategyOptionDto.kt */
+@Metadata(m3635d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\t\b\u0007\u0018\u0000 !2\b\u0012\u0004\u0012\u00020\u00020\u00012\u00020\u0003:\u0004\"!#$B\u0011\b\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007B\u001d\b\u0016\u0012\b\b\u0002\u0010\t\u001a\u00020\b\u0012\b\b\u0002\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b\u0006\u0010\fJ\u000f\u0010\r\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u000f\u0010\u000f\u001a\u00020\bH\u0016¢\u0006\u0004\b\u000f\u0010\u0010J\u001a\u0010\u0014\u001a\u00020\u00132\b\u0010\u0012\u001a\u0004\u0018\u00010\u0011H\u0096\u0002¢\u0006\u0004\b\u0014\u0010\u0015J\u000f\u0010\u0017\u001a\u00020\u0016H\u0016¢\u0006\u0004\b\u0017\u0010\u0018J\u001f\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u001b\u001a\u00020\u0016H\u0016¢\u0006\u0004\b\u001d\u0010\u001eJ\u000f\u0010\u001f\u001a\u00020\u0016H\u0016¢\u0006\u0004\b\u001f\u0010\u0018R\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010 ¨\u0006%"}, m3636d2 = {"Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto;", "Lcom/robinhood/idl/MessageDto;", "Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOption;", "Landroid/os/Parcelable;", "Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$Surrogate;", "surrogate", "<init>", "(Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$Surrogate;)V", "", "title", "Lequity_trading_tax_lots/proto/v1/SelectionStrategyDto;", "selection_strategy", "(Ljava/lang/String;Lequity_trading_tax_lots/proto/v1/SelectionStrategyDto;)V", "toProto", "()Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOption;", "toString", "()Ljava/lang/String;", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "hashCode", "()I", "Landroid/os/Parcel;", "dest", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$Surrogate;", "Companion", "Surrogate", "Serializer", "MultibindingModule", "equity_trading_tax_lots.proto.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+@Serializable(with = Serializer.class)
+@RhGenerated
+/* loaded from: classes21.dex */
+public final class AvailableSelectionStrategyOptionDto implements Dto3<AvailableSelectionStrategyOption>, Parcelable {
+
+    @JvmField
+    public static final Parcelable.Creator<AvailableSelectionStrategyOptionDto> CREATOR;
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE;
+    private static final Lazy<BinaryBase64DtoSerializer<AvailableSelectionStrategyOptionDto, AvailableSelectionStrategyOption>> binaryBase64Serializer$delegate;
+    private static final AvailableSelectionStrategyOptionDto zeroValue;
+    private final Surrogate surrogate;
+
+    public /* synthetic */ AvailableSelectionStrategyOptionDto(Surrogate surrogate, DefaultConstructorMarker defaultConstructorMarker) {
+        this(surrogate);
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    private AvailableSelectionStrategyOptionDto(Surrogate surrogate) {
+        this.surrogate = surrogate;
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public AvailableSelectionStrategyOptionDto(String title, SelectionStrategyDto selection_strategy) {
+        this(new Surrogate(title, selection_strategy));
+        Intrinsics.checkNotNullParameter(title, "title");
+        Intrinsics.checkNotNullParameter(selection_strategy, "selection_strategy");
+    }
+
+    public /* synthetic */ AvailableSelectionStrategyOptionDto(String str, SelectionStrategyDto selectionStrategyDto, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i & 1) != 0 ? "" : str, (i & 2) != 0 ? SelectionStrategyDto.INSTANCE.getZeroValue() : selectionStrategyDto);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // com.robinhood.idl.Dto
+    public AvailableSelectionStrategyOption toProto() {
+        return new AvailableSelectionStrategyOption(this.surrogate.getTitle(), (SelectionStrategy) this.surrogate.getSelection_strategy().toProto(), null, 4, null);
+    }
+
+    public String toString() {
+        return "[AvailableSelectionStrategyOptionDto]:" + toProto();
+    }
+
+    public boolean equals(Object other) {
+        if (other != this) {
+            return (other instanceof AvailableSelectionStrategyOptionDto) && Intrinsics.areEqual(((AvailableSelectionStrategyOptionDto) other).surrogate, this.surrogate);
+        }
+        return true;
+    }
+
+    public int hashCode() {
+        return this.surrogate.hashCode();
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel dest, int flags) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        DtoParcelableCreator2.writeToParcel(INSTANCE, this, dest);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* compiled from: AvailableSelectionStrategyOptionDto.kt */
+    @Metadata(m3635d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\b\n\u0002\u0010\u000b\n\u0002\b\r\b\u0083\b\u0018\u0000 &2\u00020\u0001:\u0002'&B\u001b\u0012\b\b\u0002\u0010\u0003\u001a\u00020\u0002\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007B/\b\u0010\u0012\u0006\u0010\t\u001a\u00020\b\u0012\b\u0010\u0003\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\n¢\u0006\u0004\b\u0006\u0010\fJ'\u0010\u0015\u001a\u00020\u00122\u0006\u0010\r\u001a\u00020\u00002\u0006\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u0010H\u0001¢\u0006\u0004\b\u0013\u0010\u0014J\u0010\u0010\u0016\u001a\u00020\u0002HÖ\u0001¢\u0006\u0004\b\u0016\u0010\u0017J\u0010\u0010\u0018\u001a\u00020\bHÖ\u0001¢\u0006\u0004\b\u0018\u0010\u0019J\u001a\u0010\u001c\u001a\u00020\u001b2\b\u0010\u001a\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\u001c\u0010\u001dR \u0010\u0003\u001a\u00020\u00028\u0006X\u0087\u0004¢\u0006\u0012\n\u0004\b\u0003\u0010\u001e\u0012\u0004\b \u0010!\u001a\u0004\b\u001f\u0010\u0017R \u0010\u0005\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u0012\n\u0004\b\u0005\u0010\"\u0012\u0004\b%\u0010!\u001a\u0004\b#\u0010$¨\u0006("}, m3636d2 = {"Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$Surrogate;", "", "", "title", "Lequity_trading_tax_lots/proto/v1/SelectionStrategyDto;", "selection_strategy", "<init>", "(Ljava/lang/String;Lequity_trading_tax_lots/proto/v1/SelectionStrategyDto;)V", "", "seen0", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "serializationConstructorMarker", "(ILjava/lang/String;Lequity_trading_tax_lots/proto/v1/SelectionStrategyDto;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "self", "Lkotlinx/serialization/encoding/CompositeEncoder;", "output", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "serialDesc", "", "write$Self$equity_trading_tax_lots_proto_v1_externalRelease", "(Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$Surrogate;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V", "write$Self", "toString", "()Ljava/lang/String;", "hashCode", "()I", "other", "", "equals", "(Ljava/lang/Object;)Z", "Ljava/lang/String;", "getTitle", "getTitle$annotations", "()V", "Lequity_trading_tax_lots/proto/v1/SelectionStrategyDto;", "getSelection_strategy", "()Lequity_trading_tax_lots/proto/v1/SelectionStrategyDto;", "getSelection_strategy$annotations", "Companion", "$serializer", "equity_trading_tax_lots.proto.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    @Serializable
+    static final /* data */ class Surrogate {
+
+        /* renamed from: Companion, reason: from kotlin metadata */
+        public static final Companion INSTANCE = new Companion(null);
+        private final SelectionStrategyDto selection_strategy;
+        private final String title;
+
+        /* JADX WARN: Multi-variable type inference failed */
+        public Surrogate() {
+            this((String) null, (SelectionStrategyDto) (0 == true ? 1 : 0), 3, (DefaultConstructorMarker) (0 == true ? 1 : 0));
+        }
+
+        public boolean equals(Object other) {
+            if (this == other) {
+                return true;
+            }
+            if (!(other instanceof Surrogate)) {
+                return false;
+            }
+            Surrogate surrogate = (Surrogate) other;
+            return Intrinsics.areEqual(this.title, surrogate.title) && this.selection_strategy == surrogate.selection_strategy;
+        }
+
+        public int hashCode() {
+            return (this.title.hashCode() * 31) + this.selection_strategy.hashCode();
+        }
+
+        public String toString() {
+            return "Surrogate(title=" + this.title + ", selection_strategy=" + this.selection_strategy + ")";
+        }
+
+        /* compiled from: AvailableSelectionStrategyOptionDto.kt */
+        @Metadata(m3635d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, m3636d2 = {"Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$Surrogate$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$Surrogate;", "equity_trading_tax_lots.proto.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+        public static final class Companion {
+            private Companion() {
+            }
+
+            public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+
+            public final KSerializer<Surrogate> serializer() {
+                return AvailableSelectionStrategyOptionDto2.INSTANCE;
+            }
+        }
+
+        public /* synthetic */ Surrogate(int i, String str, SelectionStrategyDto selectionStrategyDto, SerializationConstructorMarker serializationConstructorMarker) {
+            this.title = (i & 1) == 0 ? "" : str;
+            if ((i & 2) == 0) {
+                this.selection_strategy = SelectionStrategyDto.INSTANCE.getZeroValue();
+            } else {
+                this.selection_strategy = selectionStrategyDto;
+            }
+        }
+
+        @JvmStatic
+        public static final /* synthetic */ void write$Self$equity_trading_tax_lots_proto_v1_externalRelease(Surrogate self, Encoding3 output, SerialDescriptor serialDesc) {
+            if (!Intrinsics.areEqual(self.title, "")) {
+                output.encodeStringElement(serialDesc, 0, self.title);
+            }
+            if (self.selection_strategy != SelectionStrategyDto.INSTANCE.getZeroValue()) {
+                output.encodeSerializableElement(serialDesc, 1, SelectionStrategyDto.Serializer.INSTANCE, self.selection_strategy);
+            }
+        }
+
+        public Surrogate(String title, SelectionStrategyDto selection_strategy) {
+            Intrinsics.checkNotNullParameter(title, "title");
+            Intrinsics.checkNotNullParameter(selection_strategy, "selection_strategy");
+            this.title = title;
+            this.selection_strategy = selection_strategy;
+        }
+
+        public final String getTitle() {
+            return this.title;
+        }
+
+        public /* synthetic */ Surrogate(String str, SelectionStrategyDto selectionStrategyDto, int i, DefaultConstructorMarker defaultConstructorMarker) {
+            this((i & 1) != 0 ? "" : str, (i & 2) != 0 ? SelectionStrategyDto.INSTANCE.getZeroValue() : selectionStrategyDto);
+        }
+
+        public final SelectionStrategyDto getSelection_strategy() {
+            return this.selection_strategy;
+        }
+    }
+
+    /* compiled from: AvailableSelectionStrategyOptionDto.kt */
+    @Metadata(m3635d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\t\b\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\u0017\u001a\u00020\u00022\u0006\u0010\u0018\u001a\u00020\u0003H\u0016J\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00020\u0007R\u001a\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00020\u00078VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR!\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00020\u00078VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\f\u0010\r\u001a\u0004\b\u000b\u0010\tR\u001a\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00030\u000f8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\u00020\u0002X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0016\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00020\u00168\u0006X\u0087\u0004¢\u0006\u0002\n\u0000¨\u0006\u001a"}, m3636d2 = {"Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$Companion;", "Lcom/robinhood/idl/MessageDto$Creator;", "Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto;", "Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOption;", "<init>", "()V", "defaultSerializer", "Lkotlinx/serialization/KSerializer;", "getDefaultSerializer", "()Lkotlinx/serialization/KSerializer;", "binaryBase64Serializer", "getBinaryBase64Serializer", "binaryBase64Serializer$delegate", "Lkotlin/Lazy;", "protoAdapter", "Lcom/squareup/wire/ProtoAdapter;", "getProtoAdapter", "()Lcom/squareup/wire/ProtoAdapter;", "zeroValue", "getZeroValue", "()Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto;", "CREATOR", "Landroid/os/Parcelable$Creator;", "fromProto", "proto", "serializer", "equity_trading_tax_lots.proto.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class Companion implements Dto3.Creator<AvailableSelectionStrategyOptionDto, AvailableSelectionStrategyOption> {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        public final KSerializer<AvailableSelectionStrategyOptionDto> serializer() {
+            return Serializer.INSTANCE;
+        }
+
+        @Override // com.robinhood.idl.Dto.SerializableCreator
+        public KSerializer<AvailableSelectionStrategyOptionDto> getDefaultSerializer() {
+            return serializer();
+        }
+
+        @Override // com.robinhood.idl.Dto.SerializableCreator
+        public KSerializer<AvailableSelectionStrategyOptionDto> getBinaryBase64Serializer() {
+            return (KSerializer) AvailableSelectionStrategyOptionDto.binaryBase64Serializer$delegate.getValue();
+        }
+
+        @Override // com.robinhood.idl.Dto.Creator
+        public ProtoAdapter<AvailableSelectionStrategyOption> getProtoAdapter() {
+            return AvailableSelectionStrategyOption.ADAPTER;
+        }
+
+        @Override // com.robinhood.idl.Dto.Creator
+        public AvailableSelectionStrategyOptionDto getZeroValue() {
+            return AvailableSelectionStrategyOptionDto.zeroValue;
+        }
+
+        @Override // com.robinhood.idl.Dto.Creator
+        public AvailableSelectionStrategyOptionDto fromProto(AvailableSelectionStrategyOption proto) {
+            Intrinsics.checkNotNullParameter(proto, "proto");
+            return new AvailableSelectionStrategyOptionDto(new Surrogate(proto.getTitle(), SelectionStrategyDto.INSTANCE.fromProto(proto.getSelection_strategy())), (DefaultConstructorMarker) null);
+        }
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    static {
+        Companion companion = new Companion(null);
+        INSTANCE = companion;
+        binaryBase64Serializer$delegate = LazyKt.lazy(new Function0() { // from class: equity_trading_tax_lots.proto.v1.AvailableSelectionStrategyOptionDto$$ExternalSyntheticLambda0
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                return AvailableSelectionStrategyOptionDto.binaryBase64Serializer_delegate$lambda$0();
+            }
+        });
+        zeroValue = new AvailableSelectionStrategyOptionDto(0 == true ? 1 : 0, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        CREATOR = new DtoParcelableCreator(companion);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final BinaryBase64DtoSerializer binaryBase64Serializer_delegate$lambda$0() {
+        return new BinaryBase64DtoSerializer(INSTANCE);
+    }
+
+    /* compiled from: AvailableSelectionStrategyOptionDto.kt */
+    @Metadata(m3635d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\bÀ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0002H\u0016J\u0010\u0010\u0010\u001a\u00020\u00022\u0006\u0010\u0011\u001a\u00020\u0012H\u0016R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00060\u0001X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\u00020\bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n¨\u0006\u0013"}, m3636d2 = {"Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$Serializer;", "Lkotlinx/serialization/KSerializer;", "Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto;", "<init>", "()V", "surrogateSerializer", "Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$Surrogate;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "serialize", "", "encoder", "Lkotlinx/serialization/encoding/Encoder;", "value", "deserialize", "decoder", "Lkotlinx/serialization/encoding/Decoder;", "equity_trading_tax_lots.proto.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class Serializer implements KSerializer<AvailableSelectionStrategyOptionDto> {
+        public static final Serializer INSTANCE = new Serializer();
+        private static final SerialDescriptor descriptor;
+        private static final KSerializer<Surrogate> surrogateSerializer;
+
+        private Serializer() {
+        }
+
+        static {
+            KSerializer<Surrogate> kSerializerSerializer = Surrogate.INSTANCE.serializer();
+            surrogateSerializer = kSerializerSerializer;
+            descriptor = SerialDescriptors3.SerialDescriptor("type.googleapis.com/equity_trading_tax_lots.proto.v1.AvailableSelectionStrategyOption", kSerializerSerializer.getDescriptor());
+        }
+
+        @Override // kotlinx.serialization.KSerializer, kotlinx.serialization.KSerializer3, kotlinx.serialization.KSerializer2
+        public SerialDescriptor getDescriptor() {
+            return descriptor;
+        }
+
+        @Override // kotlinx.serialization.KSerializer3
+        public void serialize(Encoding4 encoder, AvailableSelectionStrategyOptionDto value) {
+            Intrinsics.checkNotNullParameter(encoder, "encoder");
+            Intrinsics.checkNotNullParameter(value, "value");
+            encoder.encodeSerializableValue(surrogateSerializer, value.surrogate);
+        }
+
+        @Override // kotlinx.serialization.KSerializer2
+        public AvailableSelectionStrategyOptionDto deserialize(Decoding2 decoder) {
+            Intrinsics.checkNotNullParameter(decoder, "decoder");
+            return new AvailableSelectionStrategyOptionDto((Surrogate) decoder.decodeSerializableValue(surrogateSerializer), (DefaultConstructorMarker) null);
+        }
+    }
+
+    /* compiled from: AvailableSelectionStrategyOptionDto.kt */
+    @Metadata(m3635d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\b\u0010\u0004\u001a\u00020\u0005H\u0007¨\u0006\u0006"}, m3636d2 = {"Lequity_trading_tax_lots/proto/v1/AvailableSelectionStrategyOptionDto$MultibindingModule;", "", "<init>", "()V", "provideIntoMap", "", "equity_trading_tax_lots.proto.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class MultibindingModule {
+        public static final MultibindingModule INSTANCE = new MultibindingModule();
+
+        private MultibindingModule() {
+        }
+
+        @MultibindingShard(number = MultibindingShard.Number.f4184_0)
+        public final String provideIntoMap() {
+            return "equity_trading_tax_lots.proto.v1.AvailableSelectionStrategyOptionDto";
+        }
+    }
+}

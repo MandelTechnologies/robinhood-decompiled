@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/rds_spacing_xlarge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:gravity="center"
+        android:paddingTop="@dimen/rds_spacing_xlarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/curated_list_user_list_empty_title"
+        android:paddingStart="@dimen/rds_spacing_xlarge"
+        android:paddingEnd="@dimen/rds_spacing_xlarge"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:gravity="center"
+        android:paddingTop="@dimen/rds_spacing_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/curated_list_user_list_empty_subtitle"
+        android:paddingStart="@dimen/rds_spacing_xlarge"
+        android:paddingEnd="@dimen/rds_spacing_xlarge"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:layout_gravity="center"
+        android:id="@+id/curated_list_empty_search_btn"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:text="@string/curated_list_search"
+        android:paddingStart="@dimen/rds_spacing_default"
+        android:paddingEnd="@dimen/rds_spacing_default"
+        style="?attr/primaryButtonStyle"/>
+</LinearLayout>

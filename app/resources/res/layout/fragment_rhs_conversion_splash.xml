@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/rds_spacing_large"
+    android:paddingEnd="@dimen/rds_spacing_large">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/svg_rhs_conversion_splash"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textColor="?android:attr/textColorPrimary"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:text="@string/rhs_conversion_splash_title"
+        style="?attr/textAppearanceDisplayMedium"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textColor="?android:attr/textColorSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rhs_conversion_splash_body"
+        style="?attr/textAppearanceRegularSmall"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:gravity="center"
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:text="@string/rhs_conversion_splash_continue"
+        style="?attr/primaryButtonStyle"/>
+</LinearLayout>

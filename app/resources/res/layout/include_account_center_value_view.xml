@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.accountcenter.views.AccountCenterValueView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:id="@+id/value_row"
+    android:paddingLeft="@dimen/rds_spacing_medium"
+    android:paddingRight="@dimen/rds_spacing_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="32dp"
+    android:paddingHorizontal="@dimen/rds_spacing_medium">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:id="@+id/description_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="?attr/textAppearanceRegularMedium"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:id="@+id/value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/textAppearanceRegularMedium"/>
+</com.robinhood.android.accountcenter.views.AccountCenterValueView>

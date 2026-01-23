@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option java_package = "com.truelayer.payments.core";
+option java_multiple_files = true;
+
+message PaymentsCoreStore {
+    message RecentSingleImmediateProvider {
+        string provider_id = 1;
+        int64 last_used_date = 2;
+    }
+
+    message RecentAdditionalInputPerProvider {
+        string provider_id = 1;
+        repeated RecentAdditionalInput additional_inputs = 2;
+    }
+
+    message RecentAdditionalInput {
+        int64 last_used_date = 1;
+        string input_id = 2;
+        string value = 3;
+    }
+
+    map<string, RecentSingleImmediateProvider> providers = 1;
+
+    string last_used_country_code = 2;
+
+    map<string, RecentAdditionalInputPerProvider> additionalInputs = 3;
+}

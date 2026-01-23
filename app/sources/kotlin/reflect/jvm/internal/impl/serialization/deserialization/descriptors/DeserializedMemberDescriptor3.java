@@ -1,0 +1,142 @@
+package kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors;
+
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.ConstructorDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.SourceElement;
+import kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations;
+import kotlin.reflect.jvm.internal.impl.descriptors.impl.ClassConstructorDescriptorImpl;
+import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf;
+import kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver;
+import kotlin.reflect.jvm.internal.impl.metadata.deserialization.TypeTable;
+import kotlin.reflect.jvm.internal.impl.metadata.deserialization.VersionRequirement2;
+import kotlin.reflect.jvm.internal.impl.name.Name;
+
+/* compiled from: DeserializedMemberDescriptor.kt */
+/* renamed from: kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedClassConstructorDescriptor, reason: use source file name */
+/* loaded from: classes21.dex */
+public final class DeserializedMemberDescriptor3 extends ClassConstructorDescriptorImpl implements DeserializedMemberDescriptor2 {
+    private final DeserializedContainerSource containerSource;
+    private final NameResolver nameResolver;
+    private final ProtoBuf.Constructor proto;
+    private final TypeTable typeTable;
+    private final VersionRequirement2 versionRequirementTable;
+
+    @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.FunctionDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
+    public boolean isExternal() {
+        return false;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.FunctionDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
+    public boolean isInline() {
+        return false;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.FunctionDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
+    public boolean isSuspend() {
+        return false;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.FunctionDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.FunctionDescriptor
+    public boolean isTailrec() {
+        return false;
+    }
+
+    public /* synthetic */ DeserializedMemberDescriptor3(ClassDescriptor classDescriptor, ConstructorDescriptor constructorDescriptor, Annotations annotations, boolean z, CallableMemberDescriptor.Kind kind, ProtoBuf.Constructor constructor, NameResolver nameResolver, TypeTable typeTable, VersionRequirement2 versionRequirement2, DeserializedContainerSource deserializedContainerSource, SourceElement sourceElement, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this(classDescriptor, constructorDescriptor, annotations, z, kind, constructor, nameResolver, typeTable, versionRequirement2, deserializedContainerSource, (i & 1024) != 0 ? null : sourceElement);
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
+    public ProtoBuf.Constructor getProto() {
+        return this.proto;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
+    public NameResolver getNameResolver() {
+        return this.nameResolver;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
+    public TypeTable getTypeTable() {
+        return this.typeTable;
+    }
+
+    public VersionRequirement2 getVersionRequirementTable() {
+        return this.versionRequirementTable;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
+    public DeserializedContainerSource getContainerSource() {
+        return this.containerSource;
+    }
+
+    /*  JADX ERROR: NullPointerException in pass: InitCodeVariables
+        java.lang.NullPointerException
+        */
+    public DeserializedMemberDescriptor3(kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor r12, kotlin.reflect.jvm.internal.impl.descriptors.ConstructorDescriptor r13, kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations r14, boolean r15, kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor.Kind r16, kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf.Constructor r17, kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver r18, kotlin.reflect.jvm.internal.impl.metadata.deserialization.TypeTable r19, kotlin.reflect.jvm.internal.impl.metadata.deserialization.VersionRequirement2 r20, kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedContainerSource r21, kotlin.reflect.jvm.internal.impl.descriptors.SourceElement r22) {
+        /*
+            r11 = this;
+            r7 = r17
+            r8 = r18
+            r9 = r19
+            r10 = r20
+            java.lang.String r0 = "containingDeclaration"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r12, r0)
+            java.lang.String r0 = "annotations"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r14, r0)
+            java.lang.String r0 = "kind"
+            r5 = r16
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
+            java.lang.String r0 = "proto"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r7, r0)
+            java.lang.String r0 = "nameResolver"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r8, r0)
+            java.lang.String r0 = "typeTable"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r9, r0)
+            java.lang.String r0 = "versionRequirementTable"
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r10, r0)
+            if (r22 != 0) goto L38
+            kotlin.reflect.jvm.internal.impl.descriptors.SourceElement r0 = kotlin.reflect.jvm.internal.impl.descriptors.SourceElement.NO_SOURCE
+            r6 = r0
+            r1 = r12
+            r2 = r13
+            r3 = r14
+            r4 = r15
+            r0 = r11
+            goto L3f
+        L38:
+            r6 = r22
+            r0 = r11
+            r1 = r12
+            r2 = r13
+            r3 = r14
+            r4 = r15
+        L3f:
+            r0.<init>(r1, r2, r3, r4, r5, r6)
+            r11.proto = r7
+            r11.nameResolver = r8
+            r11.typeTable = r9
+            r11.versionRequirementTable = r10
+            r1 = r21
+            r11.containerSource = r1
+            return
+        */
+        throw new UnsupportedOperationException("Method not decompiled: kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor3.<init>(kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.ConstructorDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations, boolean, kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor$Kind, kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$Constructor, kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver, kotlin.reflect.jvm.internal.impl.metadata.deserialization.TypeTable, kotlin.reflect.jvm.internal.impl.metadata.deserialization.VersionRequirementTable, kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedContainerSource, kotlin.reflect.jvm.internal.impl.descriptors.SourceElement):void");
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.ClassConstructorDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.FunctionDescriptorImpl
+    public DeserializedMemberDescriptor3 createSubstitutedCopy(DeclarationDescriptor newOwner, FunctionDescriptor functionDescriptor, CallableMemberDescriptor.Kind kind, Name name, Annotations annotations, SourceElement source) {
+        Intrinsics.checkNotNullParameter(newOwner, "newOwner");
+        Intrinsics.checkNotNullParameter(kind, "kind");
+        Intrinsics.checkNotNullParameter(annotations, "annotations");
+        Intrinsics.checkNotNullParameter(source, "source");
+        DeserializedMemberDescriptor3 deserializedMemberDescriptor3 = new DeserializedMemberDescriptor3((ClassDescriptor) newOwner, (ConstructorDescriptor) functionDescriptor, annotations, this.isPrimary, kind, getProto(), getNameResolver(), getTypeTable(), getVersionRequirementTable(), getContainerSource(), source);
+        deserializedMemberDescriptor3.setHasStableParameterNames(hasStableParameterNames());
+        return deserializedMemberDescriptor3;
+    }
+}

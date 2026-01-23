@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base_Theme_AppCompat" parent="@style/Base_V28_Theme_AppCompat">
+    </style>
+    <style name="Base_Theme_AppCompat_Light" parent="@style/Base_V28_Theme_AppCompat_Light">
+    </style>
+    <style name="Base_V14_ThemeOverlay_MaterialComponents_MaterialAlertDialog" parent="@style/ThemeOverlay_AppCompat_Dialog_Alert">
+        <item name="android:backgroundDimAmount">@dimen/m3_comp_scrim_container_opacity</item>
+        <item name="android:checkedTextViewStyle">@style/Widget_MaterialComponents_CheckedTextView</item>
+        <item name="android:dialogCornerRadius">@null</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog_MaterialComponents</item>
+        <item name="buttonBarButtonStyle">@style/Widget_MaterialComponents_Button_TextButton_Dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget_MaterialComponents_Button_TextButton_Dialog</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget_MaterialComponents_Button_TextButton_Dialog_Flush</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget_MaterialComponents_Button_TextButton_Dialog</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog_MaterialComponents_Body_Text</item>
+        <item name="materialAlertDialogButtonSpacerVisibility">@integer/mtrl_view_invisible</item>
+    </style>
+    <style name="Base_V28_Theme_AppCompat" parent="@style/Base_V26_Theme_AppCompat">
+        <item name="dialogCornerRadius">?android:attr/dialogCornerRadius</item>
+    </style>
+    <style name="Base_V28_Theme_AppCompat_Light" parent="@style/Base_V26_Theme_AppCompat_Light">
+        <item name="dialogCornerRadius">?android:attr/dialogCornerRadius</item>
+    </style>
+    <style name="EdgeToEdgeFloatingDialogTheme" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowElevation">0dp</item>
+        <item name="android:windowClipToOutline">false</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">@integer/m3c_window_layout_in_display_cutout_mode</item>
+    </style>
+    <style name="PlaidText_B1_Regular" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b1_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBPrimary</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern</item>
+        <item name="android:lineHeight">@dimen/plaid_b1_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b1_line_size</item>
+    </style>
+    <style name="PlaidText_B1_Semibold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b1_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_semibold</item>
+        <item name="android:lineHeight">@dimen/plaid_b1_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b1_line_size</item>
+    </style>
+    <style name="PlaidText_B2_Regular" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b2_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBSecondary</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_inconsolata</item>
+        <item name="android:lineHeight">@dimen/plaid_b2_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b2_line_size</item>
+    </style>
+    <style name="PlaidText_B2_RegularUpperCase" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b2_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBSecondary</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/plaid_inconsolata</item>
+        <item name="android:lineHeight">@dimen/plaid_b2_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b2_line_size</item>
+    </style>
+    <style name="PlaidText_B3_Extrabold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b3_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBSecondary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_extrabold</item>
+        <item name="android:lineHeight">@dimen/plaid_b3_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b3_line_size</item>
+    </style>
+    <style name="PlaidText_B3_Regular" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b3_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBSecondary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:fontFamily">@font/plaid_cern</item>
+        <item name="android:lineHeight">@dimen/plaid_b3_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b3_line_size</item>
+    </style>
+    <style name="PlaidText_B3_Semibold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b3_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBSecondary</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_semibold</item>
+        <item name="android:lineHeight">@dimen/plaid_b3_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b3_line_size</item>
+    </style>
+    <style name="PlaidText_B4_Extrabold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b4_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBPrimary</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_extrabold</item>
+        <item name="android:lineHeight">@dimen/plaid_b4_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b4_line_size</item>
+    </style>
+    <style name="PlaidText_B4_Regular" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b4_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBPrimary</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/plaid_cern</item>
+        <item name="android:lineHeight">@dimen/plaid_b4_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b4_line_size</item>
+    </style>
+    <style name="PlaidText_B4_RegularUnderline" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b4_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBPrimary</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/plaid_cern</item>
+        <item name="android:lineHeight">@dimen/plaid_b4_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b4_line_size</item>
+    </style>
+    <style name="PlaidText_B4_Semibold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b4_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBPrimary</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_semibold</item>
+        <item name="android:lineHeight">@dimen/plaid_b4_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b4_line_size</item>
+    </style>
+    <style name="PlaidText_B5_Extrabold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b5_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBPrimary</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_extrabold</item>
+        <item name="android:lineHeight">@dimen/plaid_b5_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b5_line_size</item>
+    </style>
+    <style name="PlaidText_B5_Regular" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b5_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBPrimary</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:fontFamily">@font/plaid_cern</item>
+        <item name="android:lineHeight">@dimen/plaid_b5_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b5_line_size</item>
+    </style>
+    <style name="PlaidText_B5_Semibold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_b5_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorBPrimary</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_semibold</item>
+        <item name="android:lineHeight">@dimen/plaid_b5_line_size</item>
+        <item name="lineHeight">@dimen/plaid_b5_line_size</item>
+    </style>
+    <style name="PlaidText_H1_ExtraBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h1_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_extrabold</item>
+        <item name="android:lineHeight">@dimen/plaid_h1_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h1_line_size</item>
+    </style>
+    <style name="PlaidText_H1_Regular" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h1_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern</item>
+        <item name="android:lineHeight">@dimen/plaid_h1_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h1_line_size</item>
+    </style>
+    <style name="PlaidText_H1_SemiBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h1_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_semibold</item>
+        <item name="android:lineHeight">@dimen/plaid_h1_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h1_line_size</item>
+    </style>
+    <style name="PlaidText_H2_ExtraBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h2_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_extrabold</item>
+        <item name="android:lineHeight">@dimen/plaid_h2_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h2_line_size</item>
+    </style>
+    <style name="PlaidText_H2_Regular" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h2_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern</item>
+        <item name="android:lineHeight">@dimen/plaid_h2_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h2_line_size</item>
+    </style>
+    <style name="PlaidText_H2_SemiBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h2_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_semibold</item>
+        <item name="android:lineHeight">@dimen/plaid_h2_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h2_line_size</item>
+    </style>
+    <style name="PlaidText_H3_ExtraBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h3_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_extrabold</item>
+        <item name="android:lineHeight">@dimen/plaid_h3_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h3_line_size</item>
+    </style>
+    <style name="PlaidText_H3_Regular" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h3_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern</item>
+        <item name="android:lineHeight">@dimen/plaid_h3_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h3_line_size</item>
+    </style>
+    <style name="PlaidText_H3_SemiBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h3_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_semibold</item>
+        <item name="android:lineHeight">@dimen/plaid_h3_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h3_line_size</item>
+    </style>
+    <style name="PlaidText_H4_ExtraBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h4_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_extrabold</item>
+        <item name="android:lineHeight">@dimen/plaid_h4_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h4_line_size</item>
+    </style>
+    <style name="PlaidText_H4_Regular" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h4_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/plaid_cern</item>
+        <item name="android:lineHeight">@dimen/plaid_h4_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h4_line_size</item>
+    </style>
+    <style name="PlaidText_H4_Semibold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h4_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_semibold</item>
+        <item name="android:lineHeight">@dimen/plaid_h4_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h4_line_size</item>
+    </style>
+    <style name="PlaidText_H5_ExtraBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h5_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_extrabold</item>
+        <item name="android:lineHeight">@dimen/plaid_h5_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h5_line_size</item>
+    </style>
+    <style name="PlaidText_H5_Regular" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h5_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern</item>
+        <item name="android:lineHeight">@dimen/plaid_h5_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h5_line_size</item>
+    </style>
+    <style name="PlaidText_H5_SemiBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h5_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_semibold</item>
+        <item name="android:lineHeight">@dimen/plaid_h5_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h5_line_size</item>
+    </style>
+    <style name="PlaidText_H6_ExtraBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h6_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/plaid_cern_extrabold</item>
+        <item name="android:lineHeight">@dimen/plaid_h6_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h6_line_size</item>
+    </style>
+    <style name="PlaidText_H6_SemiBold" parent="@style/PlaidText">
+        <item name="android:textSize">@dimen/plaid_h6_font_size</item>
+        <item name="android:textColor">?attr/plaidTextColorH</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/plaid_cern_semibold</item>
+        <item name="android:lineHeight">@dimen/plaid_h6_line_size</item>
+        <item name="lineHeight">@dimen/plaid_h6_line_size</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_BodyLarge" parent="@style/TextAppearance_AppCompat_Body2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_plain_regular</item>
+        <item name="android:letterSpacing">0.0312</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_plain_regular</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_BodyMedium" parent="@style/TextAppearance_AppCompat_Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_plain_regular</item>
+        <item name="android:letterSpacing">0.0179</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_plain_regular</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_BodySmall" parent="@style/TextAppearance_AppCompat_Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_plain_regular</item>
+        <item name="android:letterSpacing">0.0333</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_plain_regular</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_DisplayLarge" parent="@style/TextAppearance_AppCompat_Display3">
+        <item name="android:textSize">57sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="android:letterSpacing">-0.0044</item>
+        <item name="android:lineHeight">64sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="lineHeight">64sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_DisplayMedium" parent="@style/TextAppearance_AppCompat_Display2">
+        <item name="android:textSize">45sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">52sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="lineHeight">52sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_DisplaySmall" parent="@style/TextAppearance_AppCompat_Display1">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">44sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="lineHeight">44sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_HeadlineLarge" parent="@style/TextAppearance_AppCompat_Display1">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">40sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="lineHeight">40sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_HeadlineMedium" parent="@style/TextAppearance_AppCompat_Headline">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">36sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="lineHeight">36sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_HeadlineSmall" parent="@style/TextAppearance_AppCompat_Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">32sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="lineHeight">32sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_LabelLarge" parent="@style/TextAppearance_AppCompat_Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_plain_medium</item>
+        <item name="android:letterSpacing">0.0071</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_plain_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_LabelMedium" parent="@style/TextAppearance_AppCompat_Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_plain_medium</item>
+        <item name="android:letterSpacing">0.0417</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_plain_medium</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_LabelSmall" parent="@style/TextAppearance_AppCompat_Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_plain_medium</item>
+        <item name="android:letterSpacing">0.0455</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_plain_medium</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_TitleLarge" parent="@style/TextAppearance_AppCompat_Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">28sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_brand_regular</item>
+        <item name="lineHeight">28sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_TitleMedium" parent="@style/TextAppearance_AppCompat_Subhead">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_plain_medium</item>
+        <item name="android:letterSpacing">0.0094</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_plain_medium</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+    <style name="TextAppearance_M3_Sys_Typescale_TitleSmall" parent="@style/TextAppearance_AppCompat_Subhead">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/m3_ref_typeface_plain_medium</item>
+        <item name="android:letterSpacing">0.0071</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="fontFamily">@string/m3_ref_typeface_plain_medium</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="Widget_Material3_AppBarLayout" parent="@style/Widget_MaterialComponents_AppBarLayout_Surface">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="android:stateListAnimator">@animator/m3_appbar_state_list_animator</item>
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+        <item name="liftOnScroll">true</item>
+        <item name="liftOnScrollColor">?attr/colorSurfaceContainer</item>
+    </style>
+    <style name="Widget_Material3_BottomNavigationView" parent="@style/Base_Widget_Material3_BottomNavigationView">
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+    </style>
+    <style name="Widget_Material3_SearchBar" parent="@android:style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance_Material3_SearchBar</item>
+        <item name="android:minHeight">@dimen/m3_searchbar_height</item>
+        <item name="android:paddingStart">@dimen/m3_searchbar_padding_start</item>
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+        <item name="backgroundTint">?attr/colorSurfaceContainerHigh</item>
+        <item name="defaultMarginsEnabled">true</item>
+        <item name="defaultScrollFlagsEnabled">true</item>
+        <item name="elevation">@dimen/m3_searchbar_elevation</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="hideNavigationIcon">false</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay_Material3_Search</item>
+        <item name="maxButtonHeight">@dimen/m3_searchbar_height</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceMediumComponent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_Material3_SearchBar</item>
+    </style>
+    <style name="Widget_Material3_Toolbar" parent="@style/Widget_AppCompat_Toolbar">
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="subtitleTextAppearance">?attr/textAppearanceTitleMedium</item>
+        <item name="titleTextAppearance">?attr/textAppearanceTitleLarge</item>
+    </style>
+    <style name="Widget_Robinhood_DesignSystem_TextView_SectionHeader" parent="">
+        <item name="android:textAppearance">?attr/textAppearanceRegularMediumBold</item>
+        <item name="android:paddingTop">@dimen/rds_spacing_xlarge</item>
+        <item name="android:paddingBottom">@dimen/rds_spacing_xsmall</item>
+        <item name="android:paddingStart">@dimen/rds_row_horizontal_spacing</item>
+        <item name="android:paddingEnd">@dimen/rds_row_horizontal_spacing</item>
+        <item name="android:accessibilityHeading">true</item>
+    </style>
+</resources>

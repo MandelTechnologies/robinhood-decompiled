@@ -1,0 +1,20 @@
+package identi.service.p471v1.models_workflow.p472v1;
+
+import com.robinhood.android.idl.common.MultibindingShard;
+import kotlin.Metadata;
+
+/* compiled from: PlaidAuthDto.kt */
+@Metadata(m3635d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000f\u0010\u0005\u001a\u00020\u0004H\u0007¢\u0006\u0004\b\u0005\u0010\u0006¨\u0006\u0007"}, m3636d2 = {"identi/service/v1/models_workflow/v1/PlaidAuthDto$MultibindingModule", "", "<init>", "()V", "", "provideIntoMap", "()Ljava/lang/String;", "identi.v1.models_workflow.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* renamed from: identi.service.v1.models_workflow.v1.PlaidAuthDto$MultibindingModule, reason: use source file name */
+/* loaded from: classes21.dex */
+public final class PlaidAuthDto6 {
+    public static final PlaidAuthDto6 INSTANCE = new PlaidAuthDto6();
+
+    private PlaidAuthDto6() {
+    }
+
+    @MultibindingShard(number = MultibindingShard.Number.f4188_4)
+    public final String provideIntoMap() {
+        return "identi.service.v1.models_workflow.v1.PlaidAuthDto";
+    }
+}

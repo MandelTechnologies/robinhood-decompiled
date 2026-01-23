@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="@dimen/rds_spacing_medium"
+    android:paddingTop="@dimen/rds_spacing_default"
+    android:paddingRight="@dimen/rds_spacing_medium"
+    android:paddingBottom="@dimen/rds_spacing_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/rds_spacing_medium"
+    android:paddingVertical="@dimen/rds_spacing_default">
+    <com.robinhood.android.designsystem.banner.RdsInfoBannerView
+        android:id="@+id/tax_certification_banner"
+        android:text="@string/documents_tax_certification_prompt"
+        style="?attr/infoBannerStyle"/>
+</FrameLayout>

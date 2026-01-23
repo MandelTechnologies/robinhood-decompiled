@@ -1,0 +1,44 @@
+package com.robinhood.librobinhood.data.store.costbasis;
+
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.ContinuationImpl7;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.jvm.functions.Function2;
+import nummus.p512v1.CreateCostBasisLotResponseDto;
+
+/* compiled from: CryptoCostBasisStore.kt */
+@Metadata(m3635d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n"}, m3636d2 = {"<anonymous>", "", "it", "Lnummus/v1/CreateCostBasisLotResponseDto;"}, m3637k = 3, m3638mv = {2, 1, 0}, m3640xi = 48)
+@DebugMetadata(m3644c = "com.robinhood.librobinhood.data.store.costbasis.CryptoCostBasisStore$saveLotEndpoint$2", m3645f = "CryptoCostBasisStore.kt", m3646l = {}, m3647m = "invokeSuspend")
+/* renamed from: com.robinhood.librobinhood.data.store.costbasis.CryptoCostBasisStore$saveLotEndpoint$2, reason: use source file name */
+/* loaded from: classes13.dex */
+final class CryptoCostBasisStore8 extends ContinuationImpl7 implements Function2<CreateCostBasisLotResponseDto, Continuation<? super Unit>, Object> {
+    int label;
+
+    CryptoCostBasisStore8(Continuation<? super CryptoCostBasisStore8> continuation) {
+        super(2, continuation);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.ContinuationImpl2
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new CryptoCostBasisStore8(continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CreateCostBasisLotResponseDto createCostBasisLotResponseDto, Continuation<? super Unit> continuation) {
+        return ((CryptoCostBasisStore8) create(createCostBasisLotResponseDto, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.ContinuationImpl2
+    public final Object invokeSuspend(Object obj) {
+        IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        if (this.label != 0) {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        ResultKt.throwOnFailure(obj);
+        return Unit.INSTANCE;
+    }
+}

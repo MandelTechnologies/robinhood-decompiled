@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/disclosure_item"
+        android:title="@string/options_rolling_menu_disclosure_text"
+        app:actionLayout="@layout/menu_item_risk_disclosure"
+        app:showAsAction="always"/>
+</menu>

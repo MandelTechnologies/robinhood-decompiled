@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="options_chart_screen_is_small_device">false</bool>
+</resources>

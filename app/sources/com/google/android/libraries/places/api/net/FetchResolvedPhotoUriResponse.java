@@ -1,0 +1,17 @@
+package com.google.android.libraries.places.api.net;
+
+import android.net.Uri;
+import androidx.annotation.RecentlyNonNull;
+import androidx.annotation.RecentlyNullable;
+
+/* compiled from: com.google.android.libraries.places:places@@3.5.0 */
+/* loaded from: classes27.dex */
+public abstract class FetchResolvedPhotoUriResponse {
+    @RecentlyNonNull
+    public static FetchResolvedPhotoUriResponse newInstance(@RecentlyNonNull Uri uri) {
+        return new zzl(uri);
+    }
+
+    @RecentlyNullable
+    public abstract Uri getUri();
+}

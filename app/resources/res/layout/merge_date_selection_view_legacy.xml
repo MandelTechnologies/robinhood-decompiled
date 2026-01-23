@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:textColor="?attr/colorPrimary"
+        android:id="@+id/date_selection_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/rds_spacing_xsmall"
+        android:drawableEnd="@drawable/svg_ic_caret_down_8dp"
+        android:drawableTint="?attr/colorPrimary"/>
+</merge>

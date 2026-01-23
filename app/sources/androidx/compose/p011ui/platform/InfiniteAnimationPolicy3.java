@@ -1,0 +1,70 @@
+package androidx.compose.p011ui.platform;
+
+import androidx.compose.runtime.MonotonicFrameClock2;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.ContinuationImpl7;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.jvm.functions.Function1;
+
+/* compiled from: InfiniteAnimationPolicy.kt */
+@Metadata(m3635d1 = {"\u0000\u0014\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a7\u0010\u0000\u001a\u0002H\u0001\"\u0004\b\u0000\u0010\u00012!\u0010\u0002\u001a\u001d\u0012\u0013\u0012\u00110\u0004¢\u0006\f\b\u0005\u0012\b\b\u0006\u0012\u0004\b\b(\u0007\u0012\u0004\u0012\u0002H\u00010\u0003H\u0080@¢\u0006\u0002\u0010\b¨\u0006\t"}, m3636d2 = {"withInfiniteAnimationFrameNanos", "R", "onFrame", "Lkotlin/Function1;", "", "Lkotlin/ParameterName;", "name", "frameTimeNanos", "(Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "ui_release"}, m3637k = 2, m3638mv = {1, 9, 0}, m3640xi = 48)
+/* renamed from: androidx.compose.ui.platform.InfiniteAnimationPolicyKt, reason: use source file name */
+/* loaded from: classes4.dex */
+public final class InfiniteAnimationPolicy3 {
+    public static final <R> Object withInfiniteAnimationFrameNanos(Function1<? super Long, ? extends R> function1, Continuation<? super R> continuation) {
+        InfiniteAnimationPolicy infiniteAnimationPolicy = (InfiniteAnimationPolicy) continuation.get$context().get(InfiniteAnimationPolicy.INSTANCE);
+        if (infiniteAnimationPolicy == null) {
+            return MonotonicFrameClock2.withFrameNanos(function1, continuation);
+        }
+        return infiniteAnimationPolicy.onInfiniteOperation(new C19442(function1, null), continuation);
+    }
+
+    /* JADX INFO: Add missing generic type declarations: [R] */
+    /* compiled from: InfiniteAnimationPolicy.kt */
+    @Metadata(m3635d1 = {"\u0000\u0004\n\u0002\b\u0002\u0010\u0000\u001a\u0002H\u0001\"\u0004\b\u0000\u0010\u0001H\u008a@"}, m3636d2 = {"<anonymous>", "R"}, m3637k = 3, m3638mv = {1, 9, 0}, m3640xi = 48)
+    @DebugMetadata(m3644c = "androidx.compose.ui.platform.InfiniteAnimationPolicyKt$withInfiniteAnimationFrameNanos$2", m3645f = "InfiniteAnimationPolicy.kt", m3646l = {66}, m3647m = "invokeSuspend")
+    /* renamed from: androidx.compose.ui.platform.InfiniteAnimationPolicyKt$withInfiniteAnimationFrameNanos$2 */
+    static final class C19442<R> extends ContinuationImpl7 implements Function1<Continuation<? super R>, Object> {
+        final /* synthetic */ Function1<Long, R> $onFrame;
+        int label;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* JADX WARN: Multi-variable type inference failed */
+        C19442(Function1<? super Long, ? extends R> function1, Continuation<? super C19442> continuation) {
+            super(1, continuation);
+            this.$onFrame = function1;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.ContinuationImpl2
+        public final Continuation<Unit> create(Continuation<?> continuation) {
+            return new C19442(this.$onFrame, continuation);
+        }
+
+        @Override // kotlin.jvm.functions.Function1
+        public final Object invoke(Continuation<? super R> continuation) {
+            return ((C19442) create(continuation)).invokeSuspend(Unit.INSTANCE);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.ContinuationImpl2
+        public final Object invokeSuspend(Object obj) {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i != 0) {
+                if (i != 1) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                ResultKt.throwOnFailure(obj);
+                return obj;
+            }
+            ResultKt.throwOnFailure(obj);
+            Function1<Long, R> function1 = this.$onFrame;
+            this.label = 1;
+            Object objWithFrameNanos = MonotonicFrameClock2.withFrameNanos(function1, this);
+            return objWithFrameNanos == coroutine_suspended ? coroutine_suspended : objWithFrameNanos;
+        }
+    }
+}

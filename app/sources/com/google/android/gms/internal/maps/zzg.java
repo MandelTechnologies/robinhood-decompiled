@@ -1,0 +1,35 @@
+package com.google.android.gms.internal.maps;
+
+import android.graphics.Bitmap;
+import android.os.IBinder;
+import android.os.Parcel;
+import android.os.RemoteException;
+import com.google.android.gms.dynamic.IObjectWrapper;
+
+/* compiled from: com.google.android.gms:play-services-maps@@19.0.0 */
+/* loaded from: classes27.dex */
+public final class zzg extends zza implements zzi {
+    zzg(IBinder iBinder) {
+        super(iBinder, "com.google.android.gms.maps.model.internal.IBitmapDescriptorFactoryDelegate");
+    }
+
+    @Override // com.google.android.gms.internal.maps.zzi
+    public final IObjectWrapper zze(float f) throws RemoteException {
+        Parcel parcelZza = zza();
+        parcelZza.writeFloat(f);
+        Parcel parcelZzJ = zzJ(5, parcelZza);
+        IObjectWrapper iObjectWrapperAsInterface = IObjectWrapper.Stub.asInterface(parcelZzJ.readStrongBinder());
+        parcelZzJ.recycle();
+        return iObjectWrapperAsInterface;
+    }
+
+    @Override // com.google.android.gms.internal.maps.zzi
+    public final IObjectWrapper zzg(Bitmap bitmap) throws RemoteException {
+        Parcel parcelZza = zza();
+        zzc.zze(parcelZza, bitmap);
+        Parcel parcelZzJ = zzJ(6, parcelZza);
+        IObjectWrapper iObjectWrapperAsInterface = IObjectWrapper.Stub.asInterface(parcelZzJ.readStrongBinder());
+        parcelZzJ.recycle();
+        return iObjectWrapperAsInterface;
+    }
+}

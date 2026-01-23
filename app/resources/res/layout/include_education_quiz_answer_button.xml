@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.shared.education.p377ui.quiz.EducationQuizAnswerButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textColor="?android:attr/textColorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/rds_spacing_small"
+    app:iconGravity="end"
+    app:iconTint="@color/mobius_white"
+    app:strokeColor="?android:attr/textColorPrimary"
+    style="?attr/secondaryButtonStyle"/>

@@ -1,0 +1,29 @@
+package com.robinhood.android.equitydetail.p123ui;
+
+import com.robinhood.models.api.bonfire.ApiStockDetail;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* compiled from: DetailData.kt */
+@Metadata(m3635d1 = {"\u0000Ú\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b7\u0018\u00002\u00020\u0001B\t\b\u0004¢\u0006\u0004\b\u0002\u0010\u0003R\u0016\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0016\u0010\b\u001a\u0004\u0018\u00010\u0000X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n\u0082\u00011\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*+,-./0123456789:;¨\u0006<"}, m3636d2 = {"Lcom/robinhood/android/equitydetail/ui/DetailData;", "", "<init>", "()V", "section", "Lcom/robinhood/models/api/bonfire/ApiStockDetail$Section;", "getSection", "()Lcom/robinhood/models/api/bonfire/ApiStockDetail$Section;", "headerData", "getHeaderData", "()Lcom/robinhood/android/equitydetail/ui/DetailData;", "Lcom/robinhood/android/equitydetail/ui/AboutV2ViewData;", "Lcom/robinhood/android/equitydetail/ui/AnalystReportViewData;", "Lcom/robinhood/android/equitydetail/ui/AnchorViewData;", "Lcom/robinhood/android/equitydetail/ui/AssetDigestPreviewData;", "Lcom/robinhood/android/equitydetail/ui/BreakingNewsData;", "Lcom/robinhood/android/equitydetail/ui/ClosedPnlViewData;", "Lcom/robinhood/android/equitydetail/ui/CompanyFinancialsViewData;", "Lcom/robinhood/android/equitydetail/ui/DisclosureData;", "Lcom/robinhood/android/equitydetail/ui/EarningsV2ViewData;", "Lcom/robinhood/android/equitydetail/ui/EarningsViewData;", "Lcom/robinhood/android/equitydetail/ui/EducationTourTickerSymbolData;", "Lcom/robinhood/android/equitydetail/ui/EquityEventUpdatesViewData;", "Lcom/robinhood/android/equitydetail/ui/EtpCompositionV2Data;", "Lcom/robinhood/android/equitydetail/ui/EtpCompositionViewData;", "Lcom/robinhood/android/equitydetail/ui/FaqData;", "Lcom/robinhood/android/equitydetail/ui/GoldHeaderData;", "Lcom/robinhood/android/equitydetail/ui/HeaderData;", "Lcom/robinhood/android/equitydetail/ui/HistoryViewData;", "Lcom/robinhood/android/equitydetail/ui/IacHeroCardData;", "Lcom/robinhood/android/equitydetail/ui/InfoBannerViewData;", "Lcom/robinhood/android/equitydetail/ui/IpoGraphLayoutData;", "Lcom/robinhood/android/equitydetail/ui/IpoResultsSectionViewData;", "Lcom/robinhood/android/equitydetail/ui/MarginDefinitionsViewData;", "Lcom/robinhood/android/equitydetail/ui/MilestonesViewData;", "Lcom/robinhood/android/equitydetail/ui/NewsFeedViewData;", "Lcom/robinhood/android/equitydetail/ui/OptionEntryPoint;", "Lcom/robinhood/android/equitydetail/ui/OptionStrategyHeaderData;", "Lcom/robinhood/android/equitydetail/ui/OptionStrategyViewData;", "Lcom/robinhood/android/equitydetail/ui/OptionsPortfolioRiskAnalyzerEntryPointData;", "Lcom/robinhood/android/equitydetail/ui/PerformanceViewData;", "Lcom/robinhood/android/equitydetail/ui/PositionViewData;", "Lcom/robinhood/android/equitydetail/ui/PreIpoHeaderData;", "Lcom/robinhood/android/equitydetail/ui/PreIpoHeaderDataV2;", "Lcom/robinhood/android/equitydetail/ui/RatingsV2ViewData;", "Lcom/robinhood/android/equitydetail/ui/RecentPriceAlertTriggeredData;", "Lcom/robinhood/android/equitydetail/ui/RecurringInvestmentNuxData;", "Lcom/robinhood/android/equitydetail/ui/RecurringInvestmentViewData;", "Lcom/robinhood/android/equitydetail/ui/RelatedIndustryViewData;", "Lcom/robinhood/android/equitydetail/ui/S1SectionViewData;", "Lcom/robinhood/android/equitydetail/ui/ServerDrivenChartData;", "Lcom/robinhood/android/equitydetail/ui/ShareholderQaEventViewData;", "Lcom/robinhood/android/equitydetail/ui/ShareholderQaEventsSectionViewData;", "Lcom/robinhood/android/equitydetail/ui/ShortInterestViewData;", "Lcom/robinhood/android/equitydetail/ui/SimilarInstrumentsData;", "Lcom/robinhood/android/equitydetail/ui/SimilarInstrumentsV2Data;", "Lcom/robinhood/android/equitydetail/ui/SlipData;", "Lcom/robinhood/android/equitydetail/ui/StatsViewData;", "Lcom/robinhood/android/equitydetail/ui/TradingTrendsViewData;", "Lcom/robinhood/android/equitydetail/ui/UpcomingActivityViewData;", "feature-equity-detail_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes3.dex */
+public abstract class DetailData {
+    public static final int $stable = 8;
+    private final DetailData headerData;
+    private final ApiStockDetail.Section section;
+
+    public /* synthetic */ DetailData(DefaultConstructorMarker defaultConstructorMarker) {
+        this();
+    }
+
+    private DetailData() {
+    }
+
+    public ApiStockDetail.Section getSection() {
+        return this.section;
+    }
+
+    public DetailData getHeaderData() {
+        return this.headerData;
+    }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="?attr/monochromeSurfaceTheme"
+    android:paddingBottom="@dimen/rds_spacing_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.pog.RdsPogView
+        android:id="@+id/survey_complete_pog"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?attr/heroPogStyle"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularLarge"
+        android:gravity="center_horizontal"
+        android:id="@+id/survey_complete_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survey_complete_pog"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/survey_complete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+        app:layout_constraintTop_toBottomOf="@+id/survey_complete_title_txt"
+        style="?attr/primaryMonochromeButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

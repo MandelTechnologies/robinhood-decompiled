@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/rds_spacing_medium"
+    android:paddingTop="@dimen/rds_spacing_medium"
+    android:paddingRight="@dimen/rds_spacing_medium"
+    android:paddingBottom="@dimen/rds_spacing_xxlarge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/rds_spacing_medium">
+    <ImageButton
+        android:layout_gravity="center"
+        android:id="@+id/next_question_button"
+        android:background="@drawable/circle_bg"
+        android:layout_width="@dimen/pog_size"
+        android:layout_height="@dimen/pog_size"
+        android:contentDescription="@string/cd_next_question"
+        android:backgroundTint="?attr/colorForeground1"
+        app:srcCompat="@drawable/ic_rds_arrow_down_24dp"/>
+</FrameLayout>

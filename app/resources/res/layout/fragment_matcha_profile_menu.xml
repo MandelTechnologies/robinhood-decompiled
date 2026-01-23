@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rds_spacing_default"/>
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:id="@+id/view_profile_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:primaryText="@string/matcha_transfer_detail_view_profile"
+        app:showBottomDivider="true"
+        style="?attr/rowContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:id="@+id/block_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showBottomDivider="true"
+        style="?attr/rowContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:id="@+id/report_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:primaryText="@string/matcha_profile_report_action"
+        app:showBottomDivider="true"
+        style="?attr/rowContainerStyle"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/close_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginTop="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:text="@string/general_label_close"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+        style="?attr/primaryMonochromeButtonStyle"/>
+</LinearLayout>

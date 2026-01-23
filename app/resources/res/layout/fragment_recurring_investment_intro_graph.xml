@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/rds_spacing_default"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/rds_spacing_default"
+    android:paddingEnd="@dimen/rds_spacing_default">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recurring_investment_graph_title"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_small"
+        android:text="@string/recurring_investment_graph_subtitle"/>
+    <com.robinhood.android.common.recurring.intro.RecurringInvestmentGraphLayout
+        android:id="@+id/recurring_investment_graph"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:layout_weight="1"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:textColor="@color/text_color_secondary"
+        android:textColorLink="?attr/colorPrimary"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/disclosure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:useLinkMovementMethod="true"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/cta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:text="@string/recurring_investment_graph_button_primary"
+        style="?attr/primaryButtonStyle"/>
+</LinearLayout>

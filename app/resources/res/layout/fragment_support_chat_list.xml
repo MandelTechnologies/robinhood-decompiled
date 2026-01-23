@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:backgroundTint="?attr/colorBackground1">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/support_chat_list_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/support_chat_list_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/rds_spacing_default"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.robinhood.android.common.p088ui.ShimmerLoadingView
+        android:id="@+id/support_chat_list_loading_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.robinhood.android.common.view.ErrorView
+        android:theme="@style/ThemeOverlay.Robinhood.DesignSystem.Achromatic"
+        android:id="@+id/support_chat_list_error_view"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="?attr/colorBackground1"
+        app:errorDescriptionText="@string/support_chat_list_generic_error_no_support_chat_description"
+        app:errorIconImage="@drawable/svg_caution_tube_white_with_shadow"
+        app:errorTitleText="@string/support_chat_list_generic_error_title"
+        app:primaryButtonText="@string/support_chat_list_generic_error_positive_text"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

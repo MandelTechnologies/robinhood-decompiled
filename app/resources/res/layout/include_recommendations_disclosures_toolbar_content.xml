@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recs_disclosures_toolbar_content"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/textAppearanceRegularMedium"/>
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_curated_list_user_list_recycler_view"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fragment_curated_list_user_list_sticky_sort_options_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.lists.p173ui.listitemsort.CuratedListUserSortOptionsView
+            android:id="@+id/curated_list_user_list_sticky_sort_options_view"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorBackground1"/>
+        <View
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:backgroundTint="?attr/colorBackground3"/>
+    </LinearLayout>
+</FrameLayout>

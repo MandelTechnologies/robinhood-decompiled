@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:id="@+id/notification_title_txt"
+        android:text="@string/setting_notifications_type_label"
+        style="@style/NotificationSectionHeader"/>
+    <include layout="@layout/include_divider"/>
+    <RadioGroup
+        android:orientation="vertical"
+        android:id="@+id/notification_choice_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</merge>

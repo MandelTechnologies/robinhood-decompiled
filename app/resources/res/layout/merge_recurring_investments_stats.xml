@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:rowCount="2">
+        <com.robinhood.android.designsystem.row.RdsDataRowView
+            android:id="@+id/next_investment_date_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:labelText="@string/investment_schedule_next_investment_date_label"
+            app:layout_columnWeight="1"
+            style="?attr/dataRowContainerStyle"/>
+        <com.robinhood.android.designsystem.row.RdsDataRowView
+            android:id="@+id/total_invested_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            app:labelText="@string/investment_schedule_total_invested_label"
+            app:layout_columnWeight="1"
+            style="?attr/dataRowContainerStyle"/>
+        <com.robinhood.android.designsystem.row.RdsDataRowView
+            android:id="@+id/active_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:labelText="@string/investment_schedule_active_label"
+            app:layout_columnWeight="1"
+            style="?attr/dataRowContainerStyle"/>
+        <com.robinhood.android.designsystem.row.RdsDataRowView
+            android:id="@+id/paused_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            app:labelText="@string/investment_schedule_paused_label"
+            app:layout_columnWeight="1"
+            style="?attr/dataRowContainerStyle"/>
+    </androidx.gridlayout.widget.GridLayout>
+</merge>

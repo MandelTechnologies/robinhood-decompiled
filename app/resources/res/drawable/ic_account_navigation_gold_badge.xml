@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="56dp"
+    android:width="56dp"
+    android:viewportWidth="56"
+    android:viewportHeight="56">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M28,28m-27,0a27,27 0,1 1,54 0a27,27 0,1 1,-54 0"
+        android:strokeColor="@drawable/_ic_account_navigation_gold_badge__0_res_0x7f080036"
+        android:strokeWidth="2"/>
+    <path
+        android:fillColor="@drawable/_ic_account_navigation_gold_badge__1_res_0x7f080037"
+        android:pathData="M37.9999,16.8022C37.9999,18.3498 36.7596,19.6044 35.2296,19.6044C33.6995,19.6044 32.4592,18.3498 32.4592,16.8022C32.4592,15.2546 33.6995,14 35.2296,14C36.7596,14 37.9999,15.2546 37.9999,16.8022ZM26.3489,17.3048C21.737,17.3048 18,21.0848 18,25.7497C18,30.4145 21.737,34.1945 26.3489,34.1945C30.9607,34.1945 34.6977,30.4145 34.6977,25.7497C34.6977,21.0848 30.9607,17.3048 26.3489,17.3048ZM37.0659,42.3332H24.7181C21.4321,42.3332 18.767,39.6375 18.767,36.3136H31.1148C34.4009,36.3136 37.0659,39.0093 37.0659,42.3332Z"
+        android:fillType="evenOdd"/>
+</vector>

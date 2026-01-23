@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.trade.options.profitloss.OptionsProfitLossInfoBar
+        android:id="@+id/multileg_shopping_cart_profit_loss_info_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.robinhood.android.trade.options.profitloss.OptionsProfitLossChartView
+        android:id="@+id/multileg_shopping_cart_profit_loss_chart"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/rds_button_top_spacing"
+        android:elevation="-2dp"
+        app:layout_constraintBottom_toTopOf="@+id/multileg_shopping_cart_profit_loss_learn_more"
+        app:layout_constraintTop_toTopOf="@+id/multileg_shopping_cart_profit_loss_spacer"
+        style="@style/OptionsProfitLossChartStyle"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:layout_gravity="center"
+        android:id="@+id/multileg_shopping_cart_profit_loss_learn_more"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/OptionsProfitLossChartLearnMoreStyle"/>
+    <FrameLayout
+        android:id="@+id/multileg_shopping_cart_profit_loss_spacer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multileg_shopping_cart_profit_loss_info_bar"/>
+</merge>

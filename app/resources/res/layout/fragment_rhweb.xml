@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/webview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <WebView
+        android:id="@+id/new_window_webview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.robinhood.android.lib.webview.view.WebLoadingView
+        android:id="@+id/web_loading_view"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/web_loading"
+        android:backgroundTint="?attr/colorBackground1"/>
+    <com.robinhood.android.lib.webview.view.WebErrorView
+        android:id="@+id/web_error_view"
+        android:background="#fff"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="?attr/colorBackground1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

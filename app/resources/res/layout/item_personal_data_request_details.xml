@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.securitycenter.p251ui.data.personal.PersonalDataRequestDetailsItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="?attr/colorBackground1">
+    <com.robinhood.android.designsystem.row.component.RdsRowTextContainerView
+        android:id="@+id/details_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/details_toggle_image"
+        app:layout_constraintHeight_min="@dimen/row_default_min_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?attr/rowTextContainerStyle"/>
+    <ImageView
+        android:id="@+id/details_toggle_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="?attr/colorForeground3"
+        app:layout_constraintBottom_toBottomOf="@+id/details_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/details_header"
+        app:srcCompat="?attr/iconCaretDown16dp"/>
+    <include
+        android:id="@+id/row_bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/details_header"
+        layout="@layout/include_rds_divider"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:id="@+id/details_body"
+        android:paddingTop="@dimen/rds_spacing_default"
+        android:paddingBottom="@dimen/rds_spacing_default"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/rds_spacing_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row_bottom_divider"/>
+</com.robinhood.android.securitycenter.p251ui.data.personal.PersonalDataRequestDetailsItemView>

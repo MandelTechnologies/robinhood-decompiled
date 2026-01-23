@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical"
+    android:paddingTop="@dimen/rds_spacing_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/rds_spacing_medium"
+    android:layout_marginEnd="@dimen/rds_spacing_medium">
+    <com.robinhood.android.designsystem.inlinedefinition.RdsInlineDefinitionTextView
+        android:textColor="?attr/colorForeground2"
+        android:textColorHighlight="?attr/colorForeground2"
+        android:textColorLink="?attr/colorForeground2"
+        android:id="@+id/summary_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?attr/textAppearanceRegularSmall"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textColor="?attr/colorForeground1"
+        android:gravity="end"
+        android:id="@+id/summary_value_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        app:layout_constraintBaseline_toBaselineOf="@+id/summary_name_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/summary_name_text"
+        style="?attr/textAppearanceRegularMedium"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/progress_checklist_card_completed"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?attr/rhBackgroundColorSecondary"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/progress_checklist_card_completed_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/progress_checklist_card_pending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        app:cardBackgroundColor="?attr/rhBackgroundColorSecondary"
+        app:layout_constraintTop_toBottomOf="@+id/progress_checklist_card_completed"
+        app:layout_goneMarginTop="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/progress_checklist_card_pending_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+</merge>

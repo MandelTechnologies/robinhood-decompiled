@@ -1,0 +1,23 @@
+
+)
+#cash_merchant_rewards_welcome_title
+,
+&cash_merchant_rewards_welcome_subtitle
+*
+$cash_merchant_rewards_overview_title
+-
+'cash_merchant_rewards_overview_subtitle
+<
+6cash_merchant_rewards_overview_subtitle_reward_history
+8
+2cash_merchant_rewards_overview_view_history_button
+,
+&cash_merchant_rewards_history_subtitle
+)
+#cash_merchant_rewards_overview_info
+&
+ cash_merchant_rewards_disclosure
+'
+!cash_merchant_rhy_upsell_get_card
+*
+$cash_merchant_rhy_upsell_view_offers

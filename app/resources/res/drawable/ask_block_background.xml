@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="@dimen/option_bid_ask_block_border"
+        android:color="?attr/colorNegative"/>
+    <padding
+        android:left="@dimen/option_bid_ask_block_border"
+        android:top="@dimen/option_bid_ask_block_border"
+        android:right="@dimen/option_bid_ask_block_border"
+        android:bottom="@dimen/option_bid_ask_block_border"/>
+    <solid android:color="?attr/colorNegativeGhost"/>
+</shape>

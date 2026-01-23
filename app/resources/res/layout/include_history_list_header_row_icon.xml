@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/rds_spacing_medium"
+    android:layout_marginTop="@dimen/rds_spacing_large"
+    android:layout_marginRight="@dimen/rds_spacing_medium"
+    android:layout_marginBottom="@dimen/rds_spacing_default"
+    android:layout_marginHorizontal="@dimen/rds_spacing_medium">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/textAppearanceDisplayMedium"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/header_icon"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="?android:attr/textColorPrimary"
+        android:contentDescription="@string/investment_schedule_help_icon_content_description"
+        android:layout_marginStart="@dimen/rds_spacing_small"
+        app:srcCompat="?attr/iconQuestion24dp"/>
+</LinearLayout>

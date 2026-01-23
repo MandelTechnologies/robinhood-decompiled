@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.common.view.AnimatedRhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:layout_gravity="center"
+        android:id="@+id/invested_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:textColor="@color/mobius_foreground_2_day"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recurring_investment_graph_column_invested"
+        android:maxLines="1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_xsmall"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/recurring_investment_graph_column_line"/>
+    <ImageView
+        android:id="@+id/column_bar"
+        android:layout_width="@dimen/recurring_investment_graph_column_image_width"
+        android:layout_height="0dp"
+        android:tint="?attr/colorPrimary"
+        android:minHeight="@dimen/recurring_investment_graph_column_image_min_height"
+        android:layout_weight="0.1"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/recurring_investment_graph_column"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:ellipsize="end"
+        android:id="@+id/column_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_small"
+        android:maxLines="1"/>
+</merge>

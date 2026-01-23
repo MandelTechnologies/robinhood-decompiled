@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.mlkit_vision_face;
+
+/* compiled from: com.google.android.gms:play-services-mlkit-face-detection@@17.1.0 */
+/* loaded from: classes27.dex */
+public final class zzlo {
+    private final zzks zza;
+
+    /* synthetic */ zzlo(zzlm zzlmVar, zzln zzlnVar) {
+        this.zza = zzlmVar.zza;
+    }
+
+    @zzcu(zza = 1)
+    public final zzks zza() {
+        return this.zza;
+    }
+}

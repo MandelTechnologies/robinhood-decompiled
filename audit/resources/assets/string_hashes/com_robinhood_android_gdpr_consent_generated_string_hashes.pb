@@ -1,0 +1,51 @@
+
+/
+#privacy_settings_bottom_sheet_titleáÿÄ¨ˆıØã:
+6
+)privacy_settings_bottom_sheet_descriptionŞ½–«ªèÅÛ
+4
+(privacy_settings_bottom_sheet_accept_all¤ßµ‹¾òµ
+5
+(privacy_settings_bottom_sheet_reject_allß„™§¿â˜ˆù
+4
+'privacy_settings_bottom_manage_settingså¯—¿¶ÿ¬ÁÌ
+"
+privacy_settings_titleÚ›–ÑºÄ
+,
+ privacy_settings_subtitle_prefixØĞåòÉ…®â>
+:
+-privacy_settings_subtitle_privacy_policy_textáÌ¼ÚµÀÕ™
+/
+"privacy_settings_subtitle_and_textá€ÊÈş´‡£”
+8
+,privacy_settings_subtitle_cookie_policy_textÇÓˆ•êğ©s
+4
+'privacy_settings_privacy_policy_link_gb–²”ù‚àªÕ¾
+2
+&privacy_settings_cookie_policy_link_gbÔøÜº””şÆp
+4
+'privacy_settings_privacy_policy_link_euÜòŠ×„Ã–Á‰
+2
+&privacy_settings_cookie_policy_link_euäÅ«¡àÒş
+5
+)privacy_settings_strictly_necessary_titleêÌÒÊÓ‘É¶	
+4
+(privacy_settings_strictly_necessary_text¸Â–â¼Ìî¨]
+-
+!privacy_settings_functional_titleùûŸøŞ·b
+,
+ privacy_settings_functional_text¯€Ò‹÷ß­õ
+-
+ privacy_settings_marketing_title•¡¢ãûŸ£‚
+,
+privacy_settings_marketing_textŒÌ¨´¦ÖÌ»
+/
+"privacy_settings_performance_titleÀ§ô„³Üµ¶
+-
+!privacy_settings_performance_textİ­Š¹ˆÀ›û^
+3
+'privacy_settings_accept_all_button_text¤ßµ‹¾òµ
+4
+'privacy_settings_reject_all_button_textß„™§¿â˜ˆù
+;
+.privacy_settings_save_and_continue_button_text—ôıìñŸ­‘­

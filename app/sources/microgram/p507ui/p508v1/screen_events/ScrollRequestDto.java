@@ -1,0 +1,546 @@
+package microgram.p507ui.p508v1.screen_events;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.robinhood.android.idl.common.MultibindingShard;
+import com.robinhood.idl.Dto2;
+import com.robinhood.idl.Dto3;
+import com.robinhood.idl.DtoParcelableCreator;
+import com.robinhood.idl.DtoParcelableCreator2;
+import com.robinhood.idl.RhGenerated;
+import com.robinhood.idl.serialization.BinaryBase64DtoSerializer;
+import com.robinhood.idl.serialization.EnumDtoSerializer;
+import com.squareup.wire.ProtoAdapter;
+import kotlin.Lazy;
+import kotlin.LazyKt;
+import kotlin.Metadata;
+import kotlin.NoWhenBranchMatchedException;
+import kotlin.enums.EnumEntries;
+import kotlin.enums.EnumEntries2;
+import kotlin.jvm.JvmField;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.Serializable;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.descriptors.SerialDescriptors3;
+import kotlinx.serialization.encoding.Decoding2;
+import kotlinx.serialization.encoding.Encoding3;
+import kotlinx.serialization.encoding.Encoding4;
+import kotlinx.serialization.internal.SerializationConstructorMarker;
+import microgram.p507ui.p508v1.screen_events.ScrollRequest;
+import microgram.p507ui.p508v1.screen_events.ScrollRequestDto;
+
+/* compiled from: ScrollRequestDto.kt */
+@Metadata(m3635d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\r\b\u0007\u0018\u0000 $2\b\u0012\u0004\u0012\u00020\u00020\u00012\u00020\u0003:\u0005%$&'(B\u0011\b\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007B\u001d\b\u0016\u0012\b\b\u0002\u0010\t\u001a\u00020\b\u0012\b\b\u0002\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b\u0006\u0010\fJ\u000f\u0010\r\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u000f\u0010\u000f\u001a\u00020\bH\u0016¢\u0006\u0004\b\u000f\u0010\u0010J\u001a\u0010\u0014\u001a\u00020\u00132\b\u0010\u0012\u001a\u0004\u0018\u00010\u0011H\u0096\u0002¢\u0006\u0004\b\u0014\u0010\u0015J\u000f\u0010\u0017\u001a\u00020\u0016H\u0016¢\u0006\u0004\b\u0017\u0010\u0018J\u001f\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u001b\u001a\u00020\u0016H\u0016¢\u0006\u0004\b\u001d\u0010\u001eJ\u000f\u0010\u001f\u001a\u00020\u0016H\u0016¢\u0006\u0004\b\u001f\u0010\u0018R\u0014\u0010\u0005\u001a\u00020\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0005\u0010 R\u0011\u0010\t\u001a\u00020\b8F¢\u0006\u0006\u001a\u0004\b!\u0010\u0010R\u0011\u0010\u000b\u001a\u00020\n8F¢\u0006\u0006\u001a\u0004\b\"\u0010#¨\u0006)"}, m3636d2 = {"Lmicrogram/ui/v1/screen_events/ScrollRequestDto;", "Lcom/robinhood/idl/MessageDto;", "Lmicrogram/ui/v1/screen_events/ScrollRequest;", "Landroid/os/Parcelable;", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$Surrogate;", "surrogate", "<init>", "(Lmicrogram/ui/v1/screen_events/ScrollRequestDto$Surrogate;)V", "", "identifier", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "alignment", "(Ljava/lang/String;Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;)V", "toProto", "()Lmicrogram/ui/v1/screen_events/ScrollRequest;", "toString", "()Ljava/lang/String;", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "hashCode", "()I", "Landroid/os/Parcel;", "dest", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$Surrogate;", "getIdentifier", "getAlignment", "()Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "Companion", "Surrogate", "AlignmentDto", "Serializer", "MultibindingModule", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+@Serializable(with = Serializer.class)
+@RhGenerated
+/* loaded from: classes14.dex */
+public final class ScrollRequestDto implements Dto3<ScrollRequest>, Parcelable {
+
+    @JvmField
+    public static final Parcelable.Creator<ScrollRequestDto> CREATOR;
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE;
+    private static final Lazy<BinaryBase64DtoSerializer<ScrollRequestDto, ScrollRequest>> binaryBase64Serializer$delegate;
+    private static final ScrollRequestDto zeroValue;
+    private final Surrogate surrogate;
+
+    public /* synthetic */ ScrollRequestDto(Surrogate surrogate, DefaultConstructorMarker defaultConstructorMarker) {
+        this(surrogate);
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    private ScrollRequestDto(Surrogate surrogate) {
+        this.surrogate = surrogate;
+    }
+
+    public final String getIdentifier() {
+        return this.surrogate.getIdentifier();
+    }
+
+    public final AlignmentDto getAlignment() {
+        return this.surrogate.getAlignment();
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public ScrollRequestDto(String identifier, AlignmentDto alignment) {
+        this(new Surrogate(identifier, alignment));
+        Intrinsics.checkNotNullParameter(identifier, "identifier");
+        Intrinsics.checkNotNullParameter(alignment, "alignment");
+    }
+
+    public /* synthetic */ ScrollRequestDto(String str, AlignmentDto alignmentDto, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i & 1) != 0 ? "" : str, (i & 2) != 0 ? AlignmentDto.INSTANCE.getZeroValue() : alignmentDto);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // com.robinhood.idl.Dto
+    public ScrollRequest toProto() {
+        return new ScrollRequest(this.surrogate.getIdentifier(), (ScrollRequest.Alignment) this.surrogate.getAlignment().toProto(), null, 4, null);
+    }
+
+    public String toString() {
+        return "[ScrollRequestDto]:" + toProto();
+    }
+
+    public boolean equals(Object other) {
+        if (other != this) {
+            return (other instanceof ScrollRequestDto) && Intrinsics.areEqual(((ScrollRequestDto) other).surrogate, this.surrogate);
+        }
+        return true;
+    }
+
+    public int hashCode() {
+        return this.surrogate.hashCode();
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel dest, int flags) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        DtoParcelableCreator2.writeToParcel(INSTANCE, this, dest);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* compiled from: ScrollRequestDto.kt */
+    @Metadata(m3635d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\b\n\u0002\u0010\u000b\n\u0002\b\r\b\u0083\b\u0018\u0000 &2\u00020\u0001:\u0002'&B\u001b\u0012\b\b\u0002\u0010\u0003\u001a\u00020\u0002\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007B/\b\u0010\u0012\u0006\u0010\t\u001a\u00020\b\u0012\b\u0010\u0003\u001a\u0004\u0018\u00010\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\n¢\u0006\u0004\b\u0006\u0010\fJ'\u0010\u0015\u001a\u00020\u00122\u0006\u0010\r\u001a\u00020\u00002\u0006\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0011\u001a\u00020\u0010H\u0001¢\u0006\u0004\b\u0013\u0010\u0014J\u0010\u0010\u0016\u001a\u00020\u0002HÖ\u0001¢\u0006\u0004\b\u0016\u0010\u0017J\u0010\u0010\u0018\u001a\u00020\bHÖ\u0001¢\u0006\u0004\b\u0018\u0010\u0019J\u001a\u0010\u001c\u001a\u00020\u001b2\b\u0010\u001a\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\u001c\u0010\u001dR \u0010\u0003\u001a\u00020\u00028\u0006X\u0087\u0004¢\u0006\u0012\n\u0004\b\u0003\u0010\u001e\u0012\u0004\b \u0010!\u001a\u0004\b\u001f\u0010\u0017R \u0010\u0005\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u0012\n\u0004\b\u0005\u0010\"\u0012\u0004\b%\u0010!\u001a\u0004\b#\u0010$¨\u0006("}, m3636d2 = {"Lmicrogram/ui/v1/screen_events/ScrollRequestDto$Surrogate;", "", "", "identifier", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "alignment", "<init>", "(Ljava/lang/String;Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;)V", "", "seen0", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "serializationConstructorMarker", "(ILjava/lang/String;Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "self", "Lkotlinx/serialization/encoding/CompositeEncoder;", "output", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "serialDesc", "", "write$Self$microgram_ui_v1_screen_events_externalRelease", "(Lmicrogram/ui/v1/screen_events/ScrollRequestDto$Surrogate;Lkotlinx/serialization/encoding/CompositeEncoder;Lkotlinx/serialization/descriptors/SerialDescriptor;)V", "write$Self", "toString", "()Ljava/lang/String;", "hashCode", "()I", "other", "", "equals", "(Ljava/lang/Object;)Z", "Ljava/lang/String;", "getIdentifier", "getIdentifier$annotations", "()V", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "getAlignment", "()Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "getAlignment$annotations", "Companion", "$serializer", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    @Serializable
+    static final /* data */ class Surrogate {
+
+        /* renamed from: Companion, reason: from kotlin metadata */
+        public static final Companion INSTANCE = new Companion(null);
+        private final AlignmentDto alignment;
+        private final String identifier;
+
+        /* JADX WARN: Multi-variable type inference failed */
+        public Surrogate() {
+            this((String) null, (AlignmentDto) (0 == true ? 1 : 0), 3, (DefaultConstructorMarker) (0 == true ? 1 : 0));
+        }
+
+        public boolean equals(Object other) {
+            if (this == other) {
+                return true;
+            }
+            if (!(other instanceof Surrogate)) {
+                return false;
+            }
+            Surrogate surrogate = (Surrogate) other;
+            return Intrinsics.areEqual(this.identifier, surrogate.identifier) && this.alignment == surrogate.alignment;
+        }
+
+        public int hashCode() {
+            return (this.identifier.hashCode() * 31) + this.alignment.hashCode();
+        }
+
+        public String toString() {
+            return "Surrogate(identifier=" + this.identifier + ", alignment=" + this.alignment + ")";
+        }
+
+        /* compiled from: ScrollRequestDto.kt */
+        @Metadata(m3635d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, m3636d2 = {"Lmicrogram/ui/v1/screen_events/ScrollRequestDto$Surrogate$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$Surrogate;", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+        public static final class Companion {
+            private Companion() {
+            }
+
+            public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+
+            public final KSerializer<Surrogate> serializer() {
+                return ScrollRequestDto2.INSTANCE;
+            }
+        }
+
+        public /* synthetic */ Surrogate(int i, String str, AlignmentDto alignmentDto, SerializationConstructorMarker serializationConstructorMarker) {
+            this.identifier = (i & 1) == 0 ? "" : str;
+            if ((i & 2) == 0) {
+                this.alignment = AlignmentDto.INSTANCE.getZeroValue();
+            } else {
+                this.alignment = alignmentDto;
+            }
+        }
+
+        @JvmStatic
+        public static final /* synthetic */ void write$Self$microgram_ui_v1_screen_events_externalRelease(Surrogate self, Encoding3 output, SerialDescriptor serialDesc) {
+            if (!Intrinsics.areEqual(self.identifier, "")) {
+                output.encodeStringElement(serialDesc, 0, self.identifier);
+            }
+            if (self.alignment != AlignmentDto.INSTANCE.getZeroValue()) {
+                output.encodeSerializableElement(serialDesc, 1, AlignmentDto.Serializer.INSTANCE, self.alignment);
+            }
+        }
+
+        public Surrogate(String identifier, AlignmentDto alignment) {
+            Intrinsics.checkNotNullParameter(identifier, "identifier");
+            Intrinsics.checkNotNullParameter(alignment, "alignment");
+            this.identifier = identifier;
+            this.alignment = alignment;
+        }
+
+        public final String getIdentifier() {
+            return this.identifier;
+        }
+
+        public /* synthetic */ Surrogate(String str, AlignmentDto alignmentDto, int i, DefaultConstructorMarker defaultConstructorMarker) {
+            this((i & 1) != 0 ? "" : str, (i & 2) != 0 ? AlignmentDto.INSTANCE.getZeroValue() : alignmentDto);
+        }
+
+        public final AlignmentDto getAlignment() {
+            return this.alignment;
+        }
+    }
+
+    /* compiled from: ScrollRequestDto.kt */
+    @Metadata(m3635d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\t\b\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\u0017\u001a\u00020\u00022\u0006\u0010\u0018\u001a\u00020\u0003H\u0016J\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00020\u0007R\u001a\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00020\u00078VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR!\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00020\u00078VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\f\u0010\r\u001a\u0004\b\u000b\u0010\tR\u001a\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00030\u000f8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\u00020\u0002X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0016\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00020\u00168\u0006X\u0087\u0004¢\u0006\u0002\n\u0000¨\u0006\u001a"}, m3636d2 = {"Lmicrogram/ui/v1/screen_events/ScrollRequestDto$Companion;", "Lcom/robinhood/idl/MessageDto$Creator;", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto;", "Lmicrogram/ui/v1/screen_events/ScrollRequest;", "<init>", "()V", "defaultSerializer", "Lkotlinx/serialization/KSerializer;", "getDefaultSerializer", "()Lkotlinx/serialization/KSerializer;", "binaryBase64Serializer", "getBinaryBase64Serializer", "binaryBase64Serializer$delegate", "Lkotlin/Lazy;", "protoAdapter", "Lcom/squareup/wire/ProtoAdapter;", "getProtoAdapter", "()Lcom/squareup/wire/ProtoAdapter;", "zeroValue", "getZeroValue", "()Lmicrogram/ui/v1/screen_events/ScrollRequestDto;", "CREATOR", "Landroid/os/Parcelable$Creator;", "fromProto", "proto", "serializer", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class Companion implements Dto3.Creator<ScrollRequestDto, ScrollRequest> {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        public final KSerializer<ScrollRequestDto> serializer() {
+            return Serializer.INSTANCE;
+        }
+
+        @Override // com.robinhood.idl.Dto.SerializableCreator
+        public KSerializer<ScrollRequestDto> getDefaultSerializer() {
+            return serializer();
+        }
+
+        @Override // com.robinhood.idl.Dto.SerializableCreator
+        public KSerializer<ScrollRequestDto> getBinaryBase64Serializer() {
+            return (KSerializer) ScrollRequestDto.binaryBase64Serializer$delegate.getValue();
+        }
+
+        @Override // com.robinhood.idl.Dto.Creator
+        public ProtoAdapter<ScrollRequest> getProtoAdapter() {
+            return ScrollRequest.ADAPTER;
+        }
+
+        @Override // com.robinhood.idl.Dto.Creator
+        public ScrollRequestDto getZeroValue() {
+            return ScrollRequestDto.zeroValue;
+        }
+
+        @Override // com.robinhood.idl.Dto.Creator
+        public ScrollRequestDto fromProto(ScrollRequest proto) {
+            Intrinsics.checkNotNullParameter(proto, "proto");
+            return new ScrollRequestDto(new Surrogate(proto.getIdentifier(), AlignmentDto.INSTANCE.fromProto(proto.getAlignment())), (DefaultConstructorMarker) null);
+        }
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    static {
+        Companion companion = new Companion(null);
+        INSTANCE = companion;
+        binaryBase64Serializer$delegate = LazyKt.lazy(new Function0() { // from class: microgram.ui.v1.screen_events.ScrollRequestDto$$ExternalSyntheticLambda0
+            @Override // kotlin.jvm.functions.Function0
+            public final Object invoke() {
+                return ScrollRequestDto.binaryBase64Serializer_delegate$lambda$0();
+            }
+        });
+        zeroValue = new ScrollRequestDto(0 == true ? 1 : 0, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+        CREATOR = new DtoParcelableCreator(companion);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final BinaryBase64DtoSerializer binaryBase64Serializer_delegate$lambda$0() {
+        return new BinaryBase64DtoSerializer(INSTANCE);
+    }
+
+    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* compiled from: ScrollRequestDto.kt */
+    @Metadata(m3635d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\b\u0087\u0081\u0002\u0018\u0000 \u00122\b\u0012\u0004\u0012\u00020\u00020\u00012\u00020\u00032\b\u0012\u0004\u0012\u00020\u00000\u0004:\u0002\u0012\u0013B\t\b\u0002¢\u0006\u0004\b\u0005\u0010\u0006J\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0016J\b\u0010\u0011\u001a\u00020\u0010H\u0016j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\n¨\u0006\u0014"}, m3636d2 = {"Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "Lcom/robinhood/idl/EnumDto;", "Lmicrogram/ui/v1/screen_events/ScrollRequest$Alignment;", "Landroid/os/Parcelable;", "", "<init>", "(Ljava/lang/String;I)V", "ALIGNMENT_UNSPECIFIED", "ALIGNMENT_TOP", "ALIGNMENT_CENTER", "ALIGNMENT_BOTTOM", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "", "describeContents", "Companion", "Serializer", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    @Serializable(with = Serializer.class)
+    @RhGenerated
+    public static final class AlignmentDto implements Dto2<ScrollRequest.Alignment>, Parcelable {
+        private static final /* synthetic */ EnumEntries $ENTRIES;
+        private static final /* synthetic */ AlignmentDto[] $VALUES;
+
+        @JvmField
+        public static final Parcelable.Creator<AlignmentDto> CREATOR;
+
+        /* renamed from: Companion, reason: from kotlin metadata */
+        public static final Companion INSTANCE;
+        private static final Lazy<BinaryBase64DtoSerializer<AlignmentDto, ScrollRequest.Alignment>> binaryBase64Serializer$delegate;
+        public static final AlignmentDto ALIGNMENT_UNSPECIFIED = new ALIGNMENT_UNSPECIFIED("ALIGNMENT_UNSPECIFIED", 0);
+        public static final AlignmentDto ALIGNMENT_TOP = new ALIGNMENT_TOP("ALIGNMENT_TOP", 1);
+        public static final AlignmentDto ALIGNMENT_CENTER = new ALIGNMENT_CENTER("ALIGNMENT_CENTER", 2);
+        public static final AlignmentDto ALIGNMENT_BOTTOM = new ALIGNMENT_BOTTOM("ALIGNMENT_BOTTOM", 3);
+
+        private static final /* synthetic */ AlignmentDto[] $values() {
+            return new AlignmentDto[]{ALIGNMENT_UNSPECIFIED, ALIGNMENT_TOP, ALIGNMENT_CENTER, ALIGNMENT_BOTTOM};
+        }
+
+        public /* synthetic */ AlignmentDto(String str, int i, DefaultConstructorMarker defaultConstructorMarker) {
+            this(str, i);
+        }
+
+        public static EnumEntries<AlignmentDto> getEntries() {
+            return $ENTRIES;
+        }
+
+        @Override // android.os.Parcelable
+        public int describeContents() {
+            return 0;
+        }
+
+        /* compiled from: ScrollRequestDto.kt */
+        @Metadata(m3635d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\bÊ\u0001\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016¨\u0006\u0004"}, m3636d2 = {"microgram/ui/v1/screen_events/ScrollRequestDto.AlignmentDto.ALIGNMENT_UNSPECIFIED", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "toProto", "Lmicrogram/ui/v1/screen_events/ScrollRequest$Alignment;", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+        static final class ALIGNMENT_UNSPECIFIED extends AlignmentDto {
+            ALIGNMENT_UNSPECIFIED(String str, int i) {
+                super(str, i, null);
+            }
+
+            @Override // com.robinhood.idl.Dto
+            public ScrollRequest.Alignment toProto() {
+                return ScrollRequest.Alignment.ALIGNMENT_UNSPECIFIED;
+            }
+        }
+
+        private AlignmentDto(String str, int i) {
+        }
+
+        static {
+            AlignmentDto[] alignmentDtoArr$values = $values();
+            $VALUES = alignmentDtoArr$values;
+            $ENTRIES = EnumEntries2.enumEntries(alignmentDtoArr$values);
+            Companion companion = new Companion(null);
+            INSTANCE = companion;
+            binaryBase64Serializer$delegate = LazyKt.lazy(new Function0() { // from class: microgram.ui.v1.screen_events.ScrollRequestDto$AlignmentDto$$ExternalSyntheticLambda0
+                @Override // kotlin.jvm.functions.Function0
+                public final Object invoke() {
+                    return ScrollRequestDto.AlignmentDto.binaryBase64Serializer_delegate$lambda$0();
+                }
+            });
+            CREATOR = new DtoParcelableCreator(companion);
+        }
+
+        /* compiled from: ScrollRequestDto.kt */
+        @Metadata(m3635d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\bÊ\u0001\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016¨\u0006\u0004"}, m3636d2 = {"microgram/ui/v1/screen_events/ScrollRequestDto.AlignmentDto.ALIGNMENT_TOP", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "toProto", "Lmicrogram/ui/v1/screen_events/ScrollRequest$Alignment;", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+        static final class ALIGNMENT_TOP extends AlignmentDto {
+            ALIGNMENT_TOP(String str, int i) {
+                super(str, i, null);
+            }
+
+            @Override // com.robinhood.idl.Dto
+            public ScrollRequest.Alignment toProto() {
+                return ScrollRequest.Alignment.ALIGNMENT_TOP;
+            }
+        }
+
+        /* compiled from: ScrollRequestDto.kt */
+        @Metadata(m3635d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\bÊ\u0001\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016¨\u0006\u0004"}, m3636d2 = {"microgram/ui/v1/screen_events/ScrollRequestDto.AlignmentDto.ALIGNMENT_CENTER", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "toProto", "Lmicrogram/ui/v1/screen_events/ScrollRequest$Alignment;", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+        static final class ALIGNMENT_CENTER extends AlignmentDto {
+            ALIGNMENT_CENTER(String str, int i) {
+                super(str, i, null);
+            }
+
+            @Override // com.robinhood.idl.Dto
+            public ScrollRequest.Alignment toProto() {
+                return ScrollRequest.Alignment.ALIGNMENT_CENTER;
+            }
+        }
+
+        /* compiled from: ScrollRequestDto.kt */
+        @Metadata(m3635d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\bÊ\u0001\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016¨\u0006\u0004"}, m3636d2 = {"microgram/ui/v1/screen_events/ScrollRequestDto.AlignmentDto.ALIGNMENT_BOTTOM", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "toProto", "Lmicrogram/ui/v1/screen_events/ScrollRequest$Alignment;", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+        static final class ALIGNMENT_BOTTOM extends AlignmentDto {
+            ALIGNMENT_BOTTOM(String str, int i) {
+                super(str, i, null);
+            }
+
+            @Override // com.robinhood.idl.Dto
+            public ScrollRequest.Alignment toProto() {
+                return ScrollRequest.Alignment.ALIGNMENT_BOTTOM;
+            }
+        }
+
+        @Override // android.os.Parcelable
+        public void writeToParcel(Parcel dest, int flags) {
+            Intrinsics.checkNotNullParameter(dest, "dest");
+            DtoParcelableCreator2.writeToParcel(INSTANCE, this, dest);
+        }
+
+        /* compiled from: ScrollRequestDto.kt */
+        @Metadata(m3635d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\t\b\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\u0017\u001a\u00020\u00022\u0006\u0010\u0018\u001a\u00020\u0003H\u0016J\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00020\u0007R\u001a\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00020\u00078VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR!\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00020\u00078VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\f\u0010\r\u001a\u0004\b\u000b\u0010\tR\u001a\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00030\u000f8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\u00020\u00028VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0014R\u0016\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00020\u00168\u0006X\u0087\u0004¢\u0006\u0002\n\u0000¨\u0006\u001a"}, m3636d2 = {"Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto$Companion;", "Lcom/robinhood/idl/EnumDto$Creator;", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "Lmicrogram/ui/v1/screen_events/ScrollRequest$Alignment;", "<init>", "()V", "defaultSerializer", "Lkotlinx/serialization/KSerializer;", "getDefaultSerializer", "()Lkotlinx/serialization/KSerializer;", "binaryBase64Serializer", "getBinaryBase64Serializer", "binaryBase64Serializer$delegate", "Lkotlin/Lazy;", "protoAdapter", "Lcom/squareup/wire/ProtoAdapter;", "getProtoAdapter", "()Lcom/squareup/wire/ProtoAdapter;", "zeroValue", "getZeroValue", "()Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "CREATOR", "Landroid/os/Parcelable$Creator;", "fromProto", "proto", "serializer", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+        public static final class Companion implements Dto2.Creator<AlignmentDto, ScrollRequest.Alignment> {
+
+            /* compiled from: ScrollRequestDto.kt */
+            @Metadata(m3637k = 3, m3638mv = {2, 1, 0}, m3640xi = 48)
+            public /* synthetic */ class WhenMappings {
+                public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+
+                static {
+                    int[] iArr = new int[ScrollRequest.Alignment.values().length];
+                    try {
+                        iArr[ScrollRequest.Alignment.ALIGNMENT_UNSPECIFIED.ordinal()] = 1;
+                    } catch (NoSuchFieldError unused) {
+                    }
+                    try {
+                        iArr[ScrollRequest.Alignment.ALIGNMENT_TOP.ordinal()] = 2;
+                    } catch (NoSuchFieldError unused2) {
+                    }
+                    try {
+                        iArr[ScrollRequest.Alignment.ALIGNMENT_CENTER.ordinal()] = 3;
+                    } catch (NoSuchFieldError unused3) {
+                    }
+                    try {
+                        iArr[ScrollRequest.Alignment.ALIGNMENT_BOTTOM.ordinal()] = 4;
+                    } catch (NoSuchFieldError unused4) {
+                    }
+                    $EnumSwitchMapping$0 = iArr;
+                }
+            }
+
+            public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+                this();
+            }
+
+            private Companion() {
+            }
+
+            public final KSerializer<AlignmentDto> serializer() {
+                return Serializer.INSTANCE;
+            }
+
+            @Override // com.robinhood.idl.Dto.SerializableCreator
+            public KSerializer<AlignmentDto> getDefaultSerializer() {
+                return serializer();
+            }
+
+            @Override // com.robinhood.idl.Dto.SerializableCreator
+            public KSerializer<AlignmentDto> getBinaryBase64Serializer() {
+                return (KSerializer) AlignmentDto.binaryBase64Serializer$delegate.getValue();
+            }
+
+            @Override // com.robinhood.idl.Dto.Creator
+            public ProtoAdapter<ScrollRequest.Alignment> getProtoAdapter() {
+                return ScrollRequest.Alignment.ADAPTER;
+            }
+
+            @Override // com.robinhood.idl.Dto.Creator
+            public AlignmentDto getZeroValue() {
+                return AlignmentDto.ALIGNMENT_UNSPECIFIED;
+            }
+
+            @Override // com.robinhood.idl.Dto.Creator
+            public AlignmentDto fromProto(ScrollRequest.Alignment proto) {
+                Intrinsics.checkNotNullParameter(proto, "proto");
+                int i = WhenMappings.$EnumSwitchMapping$0[proto.ordinal()];
+                if (i == 1) {
+                    return AlignmentDto.ALIGNMENT_UNSPECIFIED;
+                }
+                if (i == 2) {
+                    return AlignmentDto.ALIGNMENT_TOP;
+                }
+                if (i == 3) {
+                    return AlignmentDto.ALIGNMENT_CENTER;
+                }
+                if (i != 4) {
+                    throw new NoWhenBranchMatchedException();
+                }
+                return AlignmentDto.ALIGNMENT_BOTTOM;
+            }
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final BinaryBase64DtoSerializer binaryBase64Serializer_delegate$lambda$0() {
+            return new BinaryBase64DtoSerializer(INSTANCE);
+        }
+
+        /* compiled from: ScrollRequestDto.kt */
+        @Metadata(m3635d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\bÀ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u0011\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0007H\u0096\u0001J\u0019\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\u0002H\u0096\u0001R\u0012\u0010\r\u001a\u00020\u000eX\u0096\u0005¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0010¨\u0006\u0011"}, m3636d2 = {"Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto$Serializer;", "Lkotlinx/serialization/KSerializer;", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$AlignmentDto;", "<init>", "()V", "deserialize", "decoder", "Lkotlinx/serialization/encoding/Decoder;", "serialize", "", "encoder", "Lkotlinx/serialization/encoding/Encoder;", "value", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+        public static final class Serializer implements KSerializer<AlignmentDto> {
+            public static final Serializer INSTANCE = new Serializer();
+            private final /* synthetic */ EnumDtoSerializer<AlignmentDto, ScrollRequest.Alignment> $$delegate_0 = new EnumDtoSerializer<>("type.googleapis.com/microgram.ui.v1.screen_events.ScrollRequest.Alignment", AlignmentDto.getEntries(), AlignmentDto.INSTANCE.getZeroValue());
+
+            @Override // kotlinx.serialization.KSerializer2
+            public AlignmentDto deserialize(Decoding2 decoder) {
+                Intrinsics.checkNotNullParameter(decoder, "decoder");
+                return (AlignmentDto) this.$$delegate_0.deserialize(decoder);
+            }
+
+            @Override // kotlinx.serialization.KSerializer, kotlinx.serialization.KSerializer3, kotlinx.serialization.KSerializer2
+            public SerialDescriptor getDescriptor() {
+                return this.$$delegate_0.getDescriptor();
+            }
+
+            @Override // kotlinx.serialization.KSerializer3
+            public void serialize(Encoding4 encoder, AlignmentDto value) {
+                Intrinsics.checkNotNullParameter(encoder, "encoder");
+                Intrinsics.checkNotNullParameter(value, "value");
+                this.$$delegate_0.serialize(encoder, (Enum) value);
+            }
+
+            private Serializer() {
+            }
+        }
+
+        public static AlignmentDto valueOf(String str) {
+            return (AlignmentDto) Enum.valueOf(AlignmentDto.class, str);
+        }
+
+        public static AlignmentDto[] values() {
+            return (AlignmentDto[]) $VALUES.clone();
+        }
+    }
+
+    /* compiled from: ScrollRequestDto.kt */
+    @Metadata(m3635d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\bÀ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0002H\u0016J\u0010\u0010\u0010\u001a\u00020\u00022\u0006\u0010\u0011\u001a\u00020\u0012H\u0016R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00060\u0001X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0007\u001a\u00020\bX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n¨\u0006\u0013"}, m3636d2 = {"Lmicrogram/ui/v1/screen_events/ScrollRequestDto$Serializer;", "Lkotlinx/serialization/KSerializer;", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto;", "<init>", "()V", "surrogateSerializer", "Lmicrogram/ui/v1/screen_events/ScrollRequestDto$Surrogate;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "serialize", "", "encoder", "Lkotlinx/serialization/encoding/Encoder;", "value", "deserialize", "decoder", "Lkotlinx/serialization/encoding/Decoder;", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class Serializer implements KSerializer<ScrollRequestDto> {
+        public static final Serializer INSTANCE = new Serializer();
+        private static final SerialDescriptor descriptor;
+        private static final KSerializer<Surrogate> surrogateSerializer;
+
+        private Serializer() {
+        }
+
+        static {
+            KSerializer<Surrogate> kSerializerSerializer = Surrogate.INSTANCE.serializer();
+            surrogateSerializer = kSerializerSerializer;
+            descriptor = SerialDescriptors3.SerialDescriptor("type.googleapis.com/microgram.ui.v1.screen_events.ScrollRequest", kSerializerSerializer.getDescriptor());
+        }
+
+        @Override // kotlinx.serialization.KSerializer, kotlinx.serialization.KSerializer3, kotlinx.serialization.KSerializer2
+        public SerialDescriptor getDescriptor() {
+            return descriptor;
+        }
+
+        @Override // kotlinx.serialization.KSerializer3
+        public void serialize(Encoding4 encoder, ScrollRequestDto value) {
+            Intrinsics.checkNotNullParameter(encoder, "encoder");
+            Intrinsics.checkNotNullParameter(value, "value");
+            encoder.encodeSerializableValue(surrogateSerializer, value.surrogate);
+        }
+
+        @Override // kotlinx.serialization.KSerializer2
+        public ScrollRequestDto deserialize(Decoding2 decoder) {
+            Intrinsics.checkNotNullParameter(decoder, "decoder");
+            return new ScrollRequestDto((Surrogate) decoder.decodeSerializableValue(surrogateSerializer), (DefaultConstructorMarker) null);
+        }
+    }
+
+    /* compiled from: ScrollRequestDto.kt */
+    @Metadata(m3635d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\b\u0010\u0004\u001a\u00020\u0005H\u0007¨\u0006\u0006"}, m3636d2 = {"Lmicrogram/ui/v1/screen_events/ScrollRequestDto$MultibindingModule;", "", "<init>", "()V", "provideIntoMap", "", "microgram.ui.v1.screen_events_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class MultibindingModule {
+        public static final MultibindingModule INSTANCE = new MultibindingModule();
+
+        private MultibindingModule() {
+        }
+
+        @MultibindingShard(number = MultibindingShard.Number.f4186_2)
+        public final String provideIntoMap() {
+            return "microgram.ui.v1.screen_events.ScrollRequestDto";
+        }
+    }
+}

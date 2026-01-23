@@ -1,0 +1,74 @@
+package com.robinhood.android.options.portfolioriskanalyzer.components.position;
+
+import com.plaid.internal.EnumC7081g;
+import com.robinhood.librobinhood.data.store.OptionSimulatedReturnMarketDataParamsRequestV4;
+import com.robinhood.models.api.simulatedreturns.ApiOptionSimulatedReturnsConfigurationV4Request;
+import io.reactivex.Observable;
+import java.util.concurrent.TimeUnit;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.ContinuationImpl7;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlinx.coroutines.flow.Context7;
+import kotlinx.coroutines.flow.Flow;
+import kotlinx.coroutines.flow.FlowCollector;
+import kotlinx.coroutines.flow.FlowKt;
+import kotlinx.coroutines.rx2.RxConvert;
+
+/* compiled from: Merge.kt */
+@Metadata(m3635d1 = {"\u0000\u0016\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\u0010\b\u001a\u00020\u0007\"\u0004\b\u0000\u0010\u0000\"\u0004\b\u0001\u0010\u0001*\b\u0012\u0004\u0012\u00028\u00000\u00022\u0015\u0010\u0006\u001a\u00118\u0001¢\u0006\f\b\u0003\u0012\b\b\u0004\u0012\u0004\b\b(\u0005H\n"}, m3636d2 = {"R", "T", "Lkotlinx/coroutines/flow/FlowCollector;", "Lkotlin/ParameterName;", "name", "value", "it", "", "<anonymous>"}, m3637k = 3, m3638mv = {2, 1, 0})
+@DebugMetadata(m3644c = "com.robinhood.android.options.portfolioriskanalyzer.components.position.OptionsPortfolioRiskAnalyzerPositionDuxo$bind$7$invokeSuspend$$inlined$flatMapLatest$1", m3645f = "OptionsPortfolioRiskAnalyzerPositionDuxo.kt", m3646l = {EnumC7081g.SDK_ASSET_ILLUSTRATION_CODE_ACCOUNT_VERIFICATION_2_VALUE}, m3647m = "invokeSuspend")
+@SourceDebugExtension
+/* renamed from: com.robinhood.android.options.portfolioriskanalyzer.components.position.OptionsPortfolioRiskAnalyzerPositionDuxo$bind$7$invokeSuspend$$inlined$flatMapLatest$1 */
+/* loaded from: classes11.dex */
+public final class C23547xbbbc5ffa extends ContinuationImpl7 implements Function3<FlowCollector<? super ApiOptionSimulatedReturnsConfigurationV4Request>, OptionSimulatedReturnMarketDataParamsRequestV4, Continuation<? super Unit>, Object> {
+    private /* synthetic */ Object L$0;
+    /* synthetic */ Object L$1;
+    int label;
+    final /* synthetic */ OptionsPortfolioRiskAnalyzerPositionDuxo this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C23547xbbbc5ffa(Continuation continuation, OptionsPortfolioRiskAnalyzerPositionDuxo optionsPortfolioRiskAnalyzerPositionDuxo) {
+        super(3, continuation);
+        this.this$0 = optionsPortfolioRiskAnalyzerPositionDuxo;
+    }
+
+    @Override // kotlin.jvm.functions.Function3
+    public final Object invoke(FlowCollector<? super ApiOptionSimulatedReturnsConfigurationV4Request> flowCollector, OptionSimulatedReturnMarketDataParamsRequestV4 optionSimulatedReturnMarketDataParamsRequestV4, Continuation<? super Unit> continuation) {
+        C23547xbbbc5ffa c23547xbbbc5ffa = new C23547xbbbc5ffa(continuation, this.this$0);
+        c23547xbbbc5ffa.L$0 = flowCollector;
+        c23547xbbbc5ffa.L$1 = optionSimulatedReturnMarketDataParamsRequestV4;
+        return c23547xbbbc5ffa.invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.ContinuationImpl2
+    public final Object invokeSuspend(Object obj) {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            FlowCollector flowCollector = (FlowCollector) this.L$0;
+            OptionSimulatedReturnMarketDataParamsRequestV4 optionSimulatedReturnMarketDataParamsRequestV4 = (OptionSimulatedReturnMarketDataParamsRequestV4) this.L$1;
+            OptionsPortfolioRiskAnalyzerPositionDuxo optionsPortfolioRiskAnalyzerPositionDuxo = this.this$0;
+            Observable observableThrottleFirst = optionsPortfolioRiskAnalyzerPositionDuxo.asObservable(FlowKt.filterNotNull(optionsPortfolioRiskAnalyzerPositionDuxo.optionSimulatedReturnsStore.streamMarketDataParamsV4(optionSimulatedReturnMarketDataParamsRequestV4, true))).throttleFirst(5L, TimeUnit.SECONDS);
+            Intrinsics.checkNotNullExpressionValue(observableThrottleFirst, "throttleFirst(...)");
+            Flow flowBuffer$default = Context7.buffer$default(RxConvert.asFlow(observableThrottleFirst), Integer.MAX_VALUE, null, 2, null);
+            this.label = 1;
+            if (FlowKt.emitAll(flowCollector, flowBuffer$default, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else {
+            if (i != 1) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.throwOnFailure(obj);
+        }
+        return Unit.INSTANCE;
+    }
+}

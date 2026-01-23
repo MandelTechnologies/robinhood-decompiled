@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColor="?android:attr/textColorSecondary"
+        android:id="@+id/recurring_nux_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instrument_detail_recurring_investments_nux"
+        style="@style/DetailSection"/>
+    <com.robinhood.android.designsystem.button.RdsTextButton
+        android:textColor="?attr/colorPrimary"
+        android:layout_gravity="start"
+        android:id="@+id/launch_recurring_flow_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_medium"
+        android:layout_marginRight="@dimen/rds_spacing_medium"
+        android:layout_marginHorizontal="@dimen/rds_spacing_medium"
+        style="?attr/textButtonStyle"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="?attr/colorBackground3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textColor="?attr/colorForeground2"
+        android:id="@+id/total_questions_text"
+        android:paddingLeft="@dimen/rds_spacing_medium"
+        android:paddingTop="@dimen/rds_spacing_small"
+        android:paddingRight="@dimen/rds_spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/rds_spacing_medium"
+        style="?attr/textAppearanceRegular"/>
+</LinearLayout>

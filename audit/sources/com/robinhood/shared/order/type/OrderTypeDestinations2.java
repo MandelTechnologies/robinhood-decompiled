@@ -1,0 +1,46 @@
+package com.robinhood.shared.order.type;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.robinhood.android.navigation.compose.destination.ComposableDestination;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: OrderTypeDestinations.kt */
+@Metadata(m3635d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\bÁ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0016\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t¨\u0006\n"}, m3636d2 = {"Lcom/robinhood/shared/order/type/OrderTypeNavGraphDest;", "Lcom/robinhood/android/navigation/compose/destination/ComposableDestination;", "<init>", "()V", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "", "lib-order-type_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* renamed from: com.robinhood.shared.order.type.OrderTypeNavGraphDest, reason: use source file name */
+/* loaded from: classes6.dex */
+public final class OrderTypeDestinations2 extends ComposableDestination {
+    public static final OrderTypeDestinations2 INSTANCE = new OrderTypeDestinations2();
+    public static final int $stable = ComposableDestination.$stable;
+    public static final Parcelable.Creator<OrderTypeDestinations2> CREATOR = new Creator();
+
+    /* compiled from: OrderTypeDestinations.kt */
+    @Metadata(m3637k = 3, m3638mv = {2, 1, 0}, m3640xi = 48)
+    /* renamed from: com.robinhood.shared.order.type.OrderTypeNavGraphDest$Creator */
+    public static final class Creator implements Parcelable.Creator<OrderTypeDestinations2> {
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public final OrderTypeDestinations2 createFromParcel(Parcel parcel) {
+            Intrinsics.checkNotNullParameter(parcel, "parcel");
+            parcel.readInt();
+            return OrderTypeDestinations2.INSTANCE;
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public final OrderTypeDestinations2[] newArray(int i) {
+            return new OrderTypeDestinations2[i];
+        }
+    }
+
+    @Override // com.robinhood.android.navigation.compose.destination.ComposableDestination, android.os.Parcelable
+    public final void writeToParcel(Parcel dest, int flags) {
+        Intrinsics.checkNotNullParameter(dest, "dest");
+        dest.writeInt(1);
+    }
+
+    private OrderTypeDestinations2() {
+        super("order_type_nav_graph_dest", null, null, 6, null);
+    }
+}

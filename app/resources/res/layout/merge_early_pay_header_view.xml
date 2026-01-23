@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/svg_early_pay"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:textColor="?attr/colorBlack"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/rds_spacing_default"
+        android:paddingBottom="@dimen/rds_spacing_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/early_pay_title"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegular"
+        android:textColor="?attr/colorBlack"
+        android:gravity="center"
+        android:paddingLeft="@dimen/rds_spacing_default"
+        android:paddingRight="@dimen/rds_spacing_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/early_pay_description"
+        android:paddingHorizontal="@dimen/rds_spacing_default"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:textColor="?attr/paletteColorExos"
+        android:gravity="center"
+        android:id="@+id/early_pay_enrollment_disclosure"
+        android:paddingTop="@dimen/rds_spacing_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/early_pay_disclosure_label"
+        android:drawablePadding="@dimen/rds_spacing_xsmall"
+        android:drawableEnd="@drawable/ic_rds_pop_out_16dp"
+        android:drawableTint="?attr/paletteColorExos"/>
+</merge>

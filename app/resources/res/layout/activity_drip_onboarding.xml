@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1">
+    <com.robinhood.android.common.p088ui.view.FragmentContainerLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.robinhood.android.common.p088ui.view.RhToolbar
+        android:id="@+id/toolbar_wrapper"
+        android:background="@null"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/toolbarStyle"/>
+    <androidx.compose.p011ui.platform.ComposeView
+        android:id="@+id/shimmer_loading_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.compose.p011ui.platform.ComposeView
+        android:id="@+id/compose_dialog_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

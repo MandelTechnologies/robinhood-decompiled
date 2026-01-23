@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size
+                android:height="@dimen/brokerage_logo_base_height"
+                android:width="@dimen/brokerage_logo_base_width"/>
+            <corners android:radius="@dimen/brokerage_logo_corner_radius"/>
+            <solid android:color="?attr/colorPositive"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@+id/rh_icon"
+        android:drawable="@drawable/ic_rds_robinhood_24dp"/>
+</layer-list>

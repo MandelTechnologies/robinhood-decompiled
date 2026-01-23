@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.account.p060ui.documents.RhyStatementPlaceholderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?attr/rowContainerStyle">
+    <View
+        android:id="@+id/settings_row_loading_primary"
+        android:background="@drawable/rhy_statement_placeholder_background"
+        android:layout_width="@dimen/rhy_statement_primary_text_width"
+        android:layout_height="@dimen/rhy_statement_primary_text_height"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:backgroundTint="?attr/colorBackground3"/>
+    <View
+        android:id="@+id/settings_row_loading_secondary"
+        android:background="@drawable/rhy_statement_placeholder_background"
+        android:layout_width="@dimen/rhy_statement_secondary_text_width"
+        android:layout_height="@dimen/rhy_statement_secondary_text_height"
+        android:layout_marginTop="@dimen/rds_spacing_small"
+        android:backgroundTint="?attr/colorBackground3"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        layout="@layout/include_rds_divider"/>
+</com.robinhood.android.account.p060ui.documents.RhyStatementPlaceholderView>

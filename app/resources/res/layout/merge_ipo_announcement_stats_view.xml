@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginHorizontal="0dp"
+        layout="@layout/include_rds_divider"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ipo_announcement_stats_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginHorizontal="0dp"
+        layout="@layout/include_rds_divider"/>
+</merge>

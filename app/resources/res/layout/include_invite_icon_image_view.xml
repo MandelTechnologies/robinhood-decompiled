@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/profile_emotion_img_background"
+    android:padding="@dimen/invite_emotion_icon_border_size"
+    android:layout_width="26dp"
+    android:layout_height="26dp"
+    android:tint="@color/mobius_background_3_day"
+    android:contentDescription="@null"
+    android:backgroundTint="?attr/colorBackground1"
+    app:srcCompat="@drawable/svg_ic_profile_photo_happy"/>

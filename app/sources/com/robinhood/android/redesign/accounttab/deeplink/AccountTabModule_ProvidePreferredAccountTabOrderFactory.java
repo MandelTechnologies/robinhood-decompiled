@@ -1,0 +1,80 @@
+package com.robinhood.android.redesign.accounttab.deeplink;
+
+import android.content.SharedPreferences;
+import com.robinhood.android.common.util.analytics.AnalyticsStrings;
+import com.robinhood.prefs.StringToLongMapPreference;
+import com.robinhood.prefs.dagger.SharedPreferencesModule;
+import com.robinhood.utils.moshi.LazyMoshi;
+import dagger.internal.Factory;
+import dagger.internal.Preconditions;
+import javax.inject.Provider;
+import kotlin.Metadata;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: AccountTabModule_ProvidePreferredAccountTabOrderFactory.kt */
+@Metadata(m3635d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0007\u0018\u0000 \u000b2\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u000bB#\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00070\u0004¢\u0006\u0004\b\b\u0010\tJ\b\u0010\n\u001a\u00020\u0002H\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00070\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, m3636d2 = {"Lcom/robinhood/android/redesign/accounttab/deeplink/AccountTabModule_ProvidePreferredAccountTabOrderFactory;", "Ldagger/internal/Factory;", "Lcom/robinhood/prefs/StringToLongMapPreference;", SharedPreferencesModule.USER_PREFS_NAME, "Ljavax/inject/Provider;", "Landroid/content/SharedPreferences;", "moshi", "Lcom/robinhood/utils/moshi/LazyMoshi;", "<init>", "(Ljavax/inject/Provider;Ljavax/inject/Provider;)V", "get", "Companion", "lib-account-tab_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes5.dex */
+public final class AccountTabModule_ProvidePreferredAccountTabOrderFactory implements Factory<StringToLongMapPreference> {
+    private final Provider<LazyMoshi> moshi;
+    private final Provider<SharedPreferences> userPrefs;
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    public static final int $stable = 8;
+
+    @JvmStatic
+    public static final AccountTabModule_ProvidePreferredAccountTabOrderFactory create(Provider<SharedPreferences> provider, Provider<LazyMoshi> provider2) {
+        return INSTANCE.create(provider, provider2);
+    }
+
+    @JvmStatic
+    public static final StringToLongMapPreference providePreferredAccountTabOrder(SharedPreferences sharedPreferences, LazyMoshi lazyMoshi) {
+        return INSTANCE.providePreferredAccountTabOrder(sharedPreferences, lazyMoshi);
+    }
+
+    public AccountTabModule_ProvidePreferredAccountTabOrderFactory(Provider<SharedPreferences> userPrefs, Provider<LazyMoshi> moshi) {
+        Intrinsics.checkNotNullParameter(userPrefs, "userPrefs");
+        Intrinsics.checkNotNullParameter(moshi, "moshi");
+        this.userPrefs = userPrefs;
+        this.moshi = moshi;
+    }
+
+    @Override // javax.inject.Provider
+    public StringToLongMapPreference get() {
+        Companion companion = INSTANCE;
+        SharedPreferences sharedPreferences = this.userPrefs.get();
+        Intrinsics.checkNotNullExpressionValue(sharedPreferences, "get(...)");
+        LazyMoshi lazyMoshi = this.moshi.get();
+        Intrinsics.checkNotNullExpressionValue(lazyMoshi, "get(...)");
+        return companion.providePreferredAccountTabOrder(sharedPreferences, lazyMoshi);
+    }
+
+    /* compiled from: AccountTabModule_ProvidePreferredAccountTabOrderFactory.kt */
+    @Metadata(m3635d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J$\u0010\u0004\u001a\u00020\u00052\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\n0\u0007H\u0007J\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0006\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0007¨\u0006\r"}, m3636d2 = {"Lcom/robinhood/android/redesign/accounttab/deeplink/AccountTabModule_ProvidePreferredAccountTabOrderFactory$Companion;", "", "<init>", "()V", AnalyticsStrings.BUTTON_NEW_LIST_CREATE, "Lcom/robinhood/android/redesign/accounttab/deeplink/AccountTabModule_ProvidePreferredAccountTabOrderFactory;", SharedPreferencesModule.USER_PREFS_NAME, "Ljavax/inject/Provider;", "Landroid/content/SharedPreferences;", "moshi", "Lcom/robinhood/utils/moshi/LazyMoshi;", "providePreferredAccountTabOrder", "Lcom/robinhood/prefs/StringToLongMapPreference;", "lib-account-tab_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        @JvmStatic
+        public final AccountTabModule_ProvidePreferredAccountTabOrderFactory create(Provider<SharedPreferences> userPrefs, Provider<LazyMoshi> moshi) {
+            Intrinsics.checkNotNullParameter(userPrefs, "userPrefs");
+            Intrinsics.checkNotNullParameter(moshi, "moshi");
+            return new AccountTabModule_ProvidePreferredAccountTabOrderFactory(userPrefs, moshi);
+        }
+
+        @JvmStatic
+        public final StringToLongMapPreference providePreferredAccountTabOrder(SharedPreferences userPrefs, LazyMoshi moshi) {
+            Intrinsics.checkNotNullParameter(userPrefs, "userPrefs");
+            Intrinsics.checkNotNullParameter(moshi, "moshi");
+            Object objCheckNotNull = Preconditions.checkNotNull(AccountTabModule.INSTANCE.providePreferredAccountTabOrder(userPrefs, moshi), "Cannot return null from a non-@Nullable @Provides method");
+            Intrinsics.checkNotNullExpressionValue(objCheckNotNull, "checkNotNull(...)");
+            return (StringToLongMapPreference) objCheckNotNull;
+        }
+    }
+}

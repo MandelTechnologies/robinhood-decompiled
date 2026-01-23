@@ -1,0 +1,94 @@
+package com.robinhood.shared.crypto.staking.staking.navigation;
+
+import androidx.compose.foundation.layout.SizeKt;
+import androidx.compose.p011ui.Modifier;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.RecomposeScopeImpl4;
+import androidx.compose.runtime.ScopeUpdateScope;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.NavGraphBuilder;
+import androidx.navigation.NavHostController;
+import com.robinhood.compose.app.composeNavigation.BaseComposeNavHostFragment;
+import com.robinhood.shared.staking.contracts.CryptoStakingIntentKey;
+import com.robinhood.utils.p409ui.fragment.FragmentWithArgsCompanion;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.collections.immutable.ImmutableSet;
+
+/* compiled from: CryptoStakingNavParentFragment.kt */
+@Metadata(m3635d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0007\u0018\u0000 \u00112\u00020\u0001:\u0001\u0011B\u0007¢\u0006\u0004\b\u0002\u0010\u0003JE\u0010\u0004\u001a\u00020\u000526\u0010\u0006\u001a2\u0012.\u0012,\u0012\u0004\u0012\u00020\t\u0012\u0013\u0012\u00110\n¢\u0006\f\b\u000b\u0012\b\b\f\u0012\u0004\b\b(\r\u0012\u0004\u0012\u00020\u00050\bj\u0002`\u000f¢\u0006\u0002\b\u000e0\u0007H\u0017¢\u0006\u0002\u0010\u0010¨\u0006\u0012"}, m3636d2 = {"Lcom/robinhood/shared/crypto/staking/staking/navigation/CryptoStakingNavParentFragment;", "Lcom/robinhood/compose/app/composeNavigation/BaseComposeNavHostFragment;", "<init>", "()V", "NavHostComposeContent", "", "navGraphsBuilders", "Lkotlinx/collections/immutable/ImmutableSet;", "Lkotlin/Function2;", "Landroidx/navigation/NavGraphBuilder;", "Landroidx/navigation/NavHostController;", "Lkotlin/ParameterName;", "name", "navController", "Lkotlin/ExtensionFunctionType;", "Lcom/robinhood/android/navigation/compose/NavGraphBuilderFn;", "(Lkotlinx/collections/immutable/ImmutableSet;Landroidx/compose/runtime/Composer;I)V", "Companion", "feature-crypto-staking_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes6.dex */
+public final class CryptoStakingNavParentFragment extends BaseComposeNavHostFragment {
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    public static final int $stable = BaseComposeNavHostFragment.$stable;
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit NavHostComposeContent$lambda$0(CryptoStakingNavParentFragment cryptoStakingNavParentFragment, ImmutableSet immutableSet, int i, Composer composer, int i2) {
+        cryptoStakingNavParentFragment.NavHostComposeContent(immutableSet, composer, RecomposeScopeImpl4.updateChangedFlags(i | 1));
+        return Unit.INSTANCE;
+    }
+
+    @Override // com.robinhood.compose.app.composeNavigation.BaseComposeNavHostFragment
+    public void NavHostComposeContent(final ImmutableSet<? extends Function2<? super NavGraphBuilder, ? super NavHostController, Unit>> navGraphsBuilders, Composer composer, final int i) {
+        int i2;
+        Intrinsics.checkNotNullParameter(navGraphsBuilders, "navGraphsBuilders");
+        Composer composerStartRestartGroup = composer.startRestartGroup(251746309);
+        if ((i & 48) == 0) {
+            i2 = ((i & 64) == 0 ? composerStartRestartGroup.changed(this) : composerStartRestartGroup.changedInstance(this) ? 32 : 16) | i;
+        } else {
+            i2 = i;
+        }
+        if ((i2 & 17) != 16 || !composerStartRestartGroup.getSkipping()) {
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventStart(251746309, i2, -1, "com.robinhood.shared.crypto.staking.staking.navigation.CryptoStakingNavParentFragment.NavHostComposeContent (CryptoStakingNavParentFragment.kt:19)");
+            }
+            CryptoStakingParentComposable.CryptoStakingParentComposable((CryptoStakingIntentKey) INSTANCE.getArgs((Fragment) this), SizeKt.fillMaxSize$default(Modifier.INSTANCE, 0.0f, 1, null), composerStartRestartGroup, 48, 0);
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventEnd();
+            }
+        } else {
+            composerStartRestartGroup.skipToGroupEnd();
+        }
+        ScopeUpdateScope scopeUpdateScopeEndRestartGroup = composerStartRestartGroup.endRestartGroup();
+        if (scopeUpdateScopeEndRestartGroup != null) {
+            scopeUpdateScopeEndRestartGroup.updateScope(new Function2() { // from class: com.robinhood.shared.crypto.staking.staking.navigation.CryptoStakingNavParentFragment$$ExternalSyntheticLambda0
+                @Override // kotlin.jvm.functions.Function2
+                public final Object invoke(Object obj, Object obj2) {
+                    return CryptoStakingNavParentFragment.NavHostComposeContent$lambda$0(this.f$0, navGraphsBuilders, i, (Composer) obj, ((Integer) obj2).intValue());
+                }
+            });
+        }
+    }
+
+    /* compiled from: CryptoStakingNavParentFragment.kt */
+    @Metadata(m3635d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\t\b\u0002¢\u0006\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, m3636d2 = {"Lcom/robinhood/shared/crypto/staking/staking/navigation/CryptoStakingNavParentFragment$Companion;", "Lcom/robinhood/utils/ui/fragment/FragmentWithArgsCompanion;", "Lcom/robinhood/shared/crypto/staking/staking/navigation/CryptoStakingNavParentFragment;", "Lcom/robinhood/shared/staking/contracts/CryptoStakingIntentKey;", "<init>", "()V", "feature-crypto-staking_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class Companion implements FragmentWithArgsCompanion<CryptoStakingNavParentFragment, CryptoStakingIntentKey> {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        @Override // com.robinhood.utils.p409ui.fragment.FragmentWithArgsCompanion, com.robinhood.utils.p409ui.fragment.FragmentCompanion
+        public CryptoStakingIntentKey getArgs(CryptoStakingNavParentFragment cryptoStakingNavParentFragment) {
+            return (CryptoStakingIntentKey) FragmentWithArgsCompanion.DefaultImpls.getArgs(this, cryptoStakingNavParentFragment);
+        }
+
+        @Override // com.robinhood.utils.p409ui.fragment.FragmentWithArgsCreator
+        public CryptoStakingNavParentFragment newInstance(CryptoStakingIntentKey cryptoStakingIntentKey) {
+            return (CryptoStakingNavParentFragment) FragmentWithArgsCompanion.DefaultImpls.newInstance(this, cryptoStakingIntentKey);
+        }
+
+        @Override // com.robinhood.utils.p409ui.fragment.FragmentWithArgsCompanion
+        public void setArgs(CryptoStakingNavParentFragment cryptoStakingNavParentFragment, CryptoStakingIntentKey cryptoStakingIntentKey) {
+            FragmentWithArgsCompanion.DefaultImpls.setArgs(this, cryptoStakingNavParentFragment, cryptoStakingIntentKey);
+        }
+    }
+}

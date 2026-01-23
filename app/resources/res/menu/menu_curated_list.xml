@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/button_spinner"
+        android:id="@+id/curated_list_loading"
+        android:visible="false"
+        android:title="@string/lists_menu_loading"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/svg_ic_action_add_24dp"
+        android:id="@+id/curated_list_action_add_to_list"
+        android:visible="false"
+        android:title="@string/lists_menu_add_to_list"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/svg_ic_action_add_24dp"
+        android:id="@+id/curated_list_action_follow_list"
+        android:visible="false"
+        android:title="@string/lists_menu_follow_list"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/svg_ic_action_remove_24dp"
+        android:id="@+id/curated_list_action_unfollow_list"
+        android:visible="false"
+        android:title="@string/lists_menu_unfollow_list"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_rds_dots_android_24dp"
+        android:id="@+id/curated_list_action_overflow"
+        android:visible="false"
+        android:title="@string/general_label_more"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/curated_list_done"
+        android:visible="false"
+        android:title="@string/general_label_done"
+        app:showAsAction="always"/>
+</menu>

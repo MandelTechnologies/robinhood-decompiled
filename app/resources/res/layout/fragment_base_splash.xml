@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/splash_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:layout_weight="1"/>
+    <com.robinhood.android.common.p088ui.view.DotIndicators
+        android:layout_gravity="center"
+        android:id="@+id/splash_indicators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/legacy_spacing_xxlarge"
+        app:drawStyle="pageIndicator"
+        style="?attr/dotIndicatorStyle"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:layout_gravity="center"
+        android:id="@+id/splash_link_txt"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        style="?attr/legacyGhostButtonStyle"/>
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:layout_gravity="center"
+        android:id="@+id/splash_action_btn"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/rds_spacing_default"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"
+        style="?attr/primaryPositiveButtonStyle"/>
+</LinearLayout>

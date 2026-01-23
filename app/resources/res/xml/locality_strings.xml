@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<locality-strings>
+    <locality-string name="phone_value_prop_subtitle">
+        <item localities="$RHSG_COUNTRIES">@string/phone_value_prop_subtitle_rhsg
+        </item>
+        <item
+            default="true"
+            localities="US">@string/phone_value_prop_subtitle 
+        </item>
+    </locality-string>
+    <locality-string name="phone_value_prop_one_primary">
+        <item localities="$RHSG_COUNTRIES">@string/phone_value_prop_one_primary_rhsg
+        </item>
+        <item
+            default="true"
+            localities="US">@string/phone_value_prop_one_primary 
+        </item>
+    </locality-string>
+    <locality-string name="phone_value_prop_one_secondary">
+        <item localities="$RHSG_COUNTRIES">@string/phone_value_prop_one_secondary_rhsg
+        </item>
+        <item
+            default="true"
+            localities="US">@string/phone_value_prop_one_secondary 
+        </item>
+    </locality-string>
+    <locality-string name="phone_value_prop_two_secondary">
+        <item localities="$RHSG_COUNTRIES">@string/phone_value_prop_two_secondary_rhsg
+        </item>
+        <item
+            default="true"
+            localities="US">@string/phone_value_prop_two_secondary 
+        </item>
+    </locality-string>
+</locality-strings>

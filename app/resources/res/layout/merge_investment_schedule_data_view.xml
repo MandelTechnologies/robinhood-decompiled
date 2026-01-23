@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:textColor="?android:attr/textColorSecondary"
+        android:id="@+id/row_label_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularLarge"
+        android:id="@+id/row_value_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</merge>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/spread_comparison_page_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginStart="@dimen/rds_spacing_xlarge"
+        android:layout_marginEnd="@dimen/rds_spacing_xlarge"
+        app:lottie_autoPlay="true"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:gravity="center"
+        android:id="@+id/spread_comparison_page_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:layout_marginBottom="@dimen/rds_spacing_medium"
+        android:layout_marginStart="@dimen/rds_spacing_xlarge"
+        android:layout_marginEnd="@dimen/rds_spacing_xlarge"/>
+</LinearLayout>

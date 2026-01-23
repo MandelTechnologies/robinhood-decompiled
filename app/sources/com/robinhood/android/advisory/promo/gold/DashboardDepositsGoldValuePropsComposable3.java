@@ -1,0 +1,1217 @@
+package com.robinhood.android.advisory.promo.gold;
+
+import androidx.compose.foundation.ScrollKt;
+import androidx.compose.foundation.layout.Arrangement;
+import androidx.compose.foundation.layout.Column2;
+import androidx.compose.foundation.layout.Column5;
+import androidx.compose.foundation.layout.Column6;
+import androidx.compose.foundation.layout.PaddingKt;
+import androidx.compose.foundation.layout.PaddingValues;
+import androidx.compose.foundation.layout.SizeKt;
+import androidx.compose.foundation.shape.RoundedCornerShape2;
+import androidx.compose.material3.ScaffoldKt;
+import androidx.compose.p011ui.Alignment;
+import androidx.compose.p011ui.ComposedModifier2;
+import androidx.compose.p011ui.Modifier;
+import androidx.compose.p011ui.graphics.Color;
+import androidx.compose.p011ui.layout.MeasurePolicy;
+import androidx.compose.p011ui.node.ComposeUiNode;
+import androidx.compose.p011ui.text.TextStyle;
+import androidx.compose.p011ui.text.style.TextAlign;
+import androidx.compose.p011ui.unit.C2002Dp;
+import androidx.compose.runtime.Composables;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.CompositionLocalMap;
+import androidx.compose.runtime.DisposableEffectResult;
+import androidx.compose.runtime.DisposableEffectScope;
+import androidx.compose.runtime.EffectsKt;
+import androidx.compose.runtime.RecomposeScopeImpl4;
+import androidx.compose.runtime.ScopeUpdateScope;
+import androidx.compose.runtime.SnapshotState4;
+import androidx.compose.runtime.Updater;
+import androidx.compose.runtime.internal.ComposableLambda3;
+import androidx.lifecycle.HasDefaultViewModelProviderFactory;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelStoreOwner;
+import androidx.lifecycle.compose.FlowExtKt;
+import androidx.lifecycle.compose.LocalLifecycleOwnerKt;
+import androidx.lifecycle.viewmodel.CreationExtras;
+import androidx.lifecycle.viewmodel.compose.LocalViewModelStoreOwner;
+import androidx.lifecycle.viewmodel.compose.ViewModelKt;
+import coil.compose.SingletonAsyncImagePainter;
+import com.robinhood.android.advisory.promo.gold.AdvisoryGoldValuePropsEvent;
+import com.robinhood.android.autoeventlogging.UserInteractionEventDescriptor;
+import com.robinhood.android.compose.autoeventlogging.AutoLoggingCompositionLocals;
+import com.robinhood.android.compose.autoeventlogging.ModifiersKt;
+import com.robinhood.android.compose.autoeventlogging.UserInteractionEventDescriptors;
+import com.robinhood.android.gold.sparkle.bento.BentoSparkleInfoTag;
+import com.robinhood.android.markdown.compose.MarkdownStyle;
+import com.robinhood.android.udf.BaseDuxo;
+import com.robinhood.android.udf.DuxoLifecycleObserver;
+import com.robinhood.android.udf.event.Event;
+import com.robinhood.android.udf.event.EventConsumer;
+import com.robinhood.compose.bento.component.BentoAppBarKt;
+import com.robinhood.compose.bento.component.BentoAppBarScope;
+import com.robinhood.compose.bento.component.BentoButtonKt;
+import com.robinhood.compose.bento.component.BentoImage;
+import com.robinhood.compose.bento.component.BentoText2;
+import com.robinhood.compose.bento.component.rows.BentoValuePropRow;
+import com.robinhood.compose.bento.component.rows.BentoValuePropRow2;
+import com.robinhood.compose.bento.component.rows.BentoValuePropRow3;
+import com.robinhood.compose.bento.component.text.BentoMarkdownText;
+import com.robinhood.compose.bento.component.text.BentoMarkdownText2;
+import com.robinhood.compose.bento.theme.BentoTheme;
+import com.robinhood.compose.common.LoadingScreenComposablesKt;
+import com.robinhood.compose.duxo.DuxosKt;
+import com.robinhood.models.advisory.p304db.deposit.AdvisoryDepositGoldValueProps;
+import com.robinhood.rosetta.eventlogging.Screen;
+import kotlin.Metadata;
+import kotlin.NoWhenBranchMatchedException;
+import kotlin.Unit;
+import kotlin.coroutines.CoroutineContext;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Reflection;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlin.reflect.KClass;
+import okhttp3.HttpUrl;
+
+/* compiled from: DashboardDepositsGoldValuePropsComposable.kt */
+@Metadata(m3635d1 = {"\u0000B\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u001a/\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u0007H\u0007¢\u0006\u0002\u0010\b\u001a-\u0010\t\u001a\u00020\u00012\u0006\u0010\n\u001a\u00020\u000b2\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005H\u0001¢\u0006\u0002\u0010\f\u001a5\u0010\r\u001a\u00020\u00012\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u000f2\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005H\u0003¢\u0006\u0002\u0010\u0012\u001a-\u0010\u0013\u001a\u00020\u00012\u0006\u0010\n\u001a\u00020\u00142\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005H\u0003¢\u0006\u0002\u0010\u0015¨\u0006\u0016²\u0006\n\u0010\u0017\u001a\u00020\u0018X\u008a\u0084\u0002²\u0006\u0012\u0010\u0019\u001a\n\u0012\u0004\u0012\u00020\u001b\u0018\u00010\u001aX\u008a\u0084\u0002"}, m3636d2 = {"AdvisoryGoldValuePropsScreen", "", "onClose", "Lkotlin/Function0;", "modifier", "Landroidx/compose/ui/Modifier;", "duxo", "Lcom/robinhood/android/advisory/promo/gold/AdvisoryGoldValuePropsDuxo;", "(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lcom/robinhood/android/advisory/promo/gold/AdvisoryGoldValuePropsDuxo;Landroidx/compose/runtime/Composer;II)V", "ValuePropListScreen", "content", "Lcom/robinhood/models/advisory/db/deposit/AdvisoryDepositGoldValueProps$Content$ValuePropList;", "(Lcom/robinhood/models/advisory/db/deposit/AdvisoryDepositGoldValueProps$Content$ValuePropList;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "ValuePropsFooter", "disclosureMarkdown", "", "ctaText", "onCtaClicked", "(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "ValuePropsHeroScreen", "Lcom/robinhood/models/advisory/db/deposit/AdvisoryDepositGoldValueProps$Content$Hero;", "(Lcom/robinhood/models/advisory/db/deposit/AdvisoryDepositGoldValueProps$Content$Hero;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V", "feature-advisory-promo_externalDebug", "viewState", "Lcom/robinhood/android/advisory/promo/gold/AdvisoryGoldValuePropsViewState;", "event", "Lcom/robinhood/android/udf/event/Event;", "Lcom/robinhood/android/advisory/promo/gold/AdvisoryGoldValuePropsEvent;"}, m3637k = 2, m3638mv = {2, 1, 0}, m3640xi = 48)
+@SourceDebugExtension
+/* renamed from: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt, reason: use source file name */
+/* loaded from: classes7.dex */
+public final class DashboardDepositsGoldValuePropsComposable3 {
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit AdvisoryGoldValuePropsScreen$lambda$3(Function0 function0, Modifier modifier, AdvisoryGoldValuePropsDuxo advisoryGoldValuePropsDuxo, int i, int i2, Composer composer, int i3) {
+        AdvisoryGoldValuePropsScreen(function0, modifier, advisoryGoldValuePropsDuxo, composer, RecomposeScopeImpl4.updateChangedFlags(i | 1), i2);
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit ValuePropListScreen$lambda$7(AdvisoryDepositGoldValueProps.Content.ValuePropList valuePropList, Function0 function0, Modifier modifier, int i, int i2, Composer composer, int i3) {
+        ValuePropListScreen(valuePropList, function0, modifier, composer, RecomposeScopeImpl4.updateChangedFlags(i | 1), i2);
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit ValuePropsFooter$lambda$9(String str, String str2, Function0 function0, Modifier modifier, int i, int i2, Composer composer, int i3) {
+        ValuePropsFooter(str, str2, function0, modifier, composer, RecomposeScopeImpl4.updateChangedFlags(i | 1), i2);
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit ValuePropsHeroScreen$lambda$12(AdvisoryDepositGoldValueProps.Content.Hero hero, Function0 function0, Modifier modifier, int i, int i2, Composer composer, int i3) {
+        ValuePropsHeroScreen(hero, function0, modifier, composer, RecomposeScopeImpl4.updateChangedFlags(i | 1), i2);
+        return Unit.INSTANCE;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:26:0x0048  */
+    /* JADX WARN: Removed duplicated region for block: B:34:0x005d  */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x0074  */
+    /* JADX WARN: Removed duplicated region for block: B:51:0x0091  */
+    /* JADX WARN: Removed duplicated region for block: B:52:0x0093  */
+    /* JADX WARN: Removed duplicated region for block: B:53:0x0096  */
+    /* JADX WARN: Removed duplicated region for block: B:56:0x009b  */
+    /* JADX WARN: Removed duplicated region for block: B:70:0x0126  */
+    /* JADX WARN: Removed duplicated region for block: B:73:0x0132  */
+    /* JADX WARN: Removed duplicated region for block: B:83:0x01b0  */
+    /* JADX WARN: Removed duplicated region for block: B:87:0x01bc  */
+    /* JADX WARN: Removed duplicated region for block: B:89:? A[RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static final void AdvisoryGoldValuePropsScreen(final Function0<Unit> onClose, Modifier modifier, AdvisoryGoldValuePropsDuxo advisoryGoldValuePropsDuxo, Composer composer, final int i, final int i2) {
+        int i3;
+        Modifier modifier2;
+        AdvisoryGoldValuePropsDuxo advisoryGoldValuePropsDuxo2;
+        Modifier modifier3;
+        Composer composer2;
+        int i4;
+        AdvisoryGoldValuePropsDuxo advisoryGoldValuePropsDuxo3;
+        CreationExtras defaultViewModelCreationExtras;
+        Composer composer3;
+        final Event<AdvisoryGoldValuePropsEvent> eventAdvisoryGoldValuePropsScreen$lambda$1;
+        final AdvisoryGoldValuePropsDuxo advisoryGoldValuePropsDuxo4;
+        EventConsumer<AdvisoryGoldValuePropsEvent> eventConsumerInvoke;
+        ScopeUpdateScope scopeUpdateScopeEndRestartGroup;
+        Intrinsics.checkNotNullParameter(onClose, "onClose");
+        Composer composerStartRestartGroup = composer.startRestartGroup(-749133322);
+        if ((i2 & 1) != 0) {
+            i3 = i | 6;
+        } else if ((i & 6) == 0) {
+            i3 = (composerStartRestartGroup.changedInstance(onClose) ? 4 : 2) | i;
+        } else {
+            i3 = i;
+        }
+        int i5 = i2 & 2;
+        if (i5 == 0) {
+            if ((i & 48) == 0) {
+                modifier2 = modifier;
+                i3 |= composerStartRestartGroup.changed(modifier2) ? 32 : 16;
+            }
+            if ((i & 384) != 0) {
+                if ((i2 & 4) == 0) {
+                    advisoryGoldValuePropsDuxo2 = advisoryGoldValuePropsDuxo;
+                    int i6 = composerStartRestartGroup.changedInstance(advisoryGoldValuePropsDuxo2) ? 256 : 128;
+                    i3 |= i6;
+                } else {
+                    advisoryGoldValuePropsDuxo2 = advisoryGoldValuePropsDuxo;
+                }
+                i3 |= i6;
+            } else {
+                advisoryGoldValuePropsDuxo2 = advisoryGoldValuePropsDuxo;
+            }
+            if ((i3 & 147) == 146 || !composerStartRestartGroup.getSkipping()) {
+                composerStartRestartGroup.startDefaults();
+                if ((i & 1) == 0 && !composerStartRestartGroup.getDefaultsInvalid()) {
+                    composerStartRestartGroup.skipToGroupEnd();
+                    if ((i2 & 4) != 0) {
+                        i3 &= -897;
+                    }
+                    i4 = i3;
+                    modifier3 = modifier2;
+                    advisoryGoldValuePropsDuxo3 = advisoryGoldValuePropsDuxo2;
+                    composer2 = composerStartRestartGroup;
+                } else {
+                    modifier3 = i5 == 0 ? Modifier.INSTANCE : modifier2;
+                    if ((i2 & 4) == 0) {
+                        composerStartRestartGroup.startReplaceGroup(-747520797);
+                        ViewModelStoreOwner current = LocalViewModelStoreOwner.INSTANCE.getCurrent(composerStartRestartGroup, LocalViewModelStoreOwner.$stable);
+                        if (current == null) {
+                            throw new IllegalStateException("No ViewModelStoreOwner was provided via LocalViewModelStoreOwner");
+                        }
+                        ViewModelProvider.Factory factoryCreateViewModelFactory = DuxosKt.createViewModelFactory(current, composerStartRestartGroup, 0);
+                        composerStartRestartGroup.startReplaceableGroup(1729797275);
+                        if (current instanceof HasDefaultViewModelProviderFactory) {
+                            defaultViewModelCreationExtras = ((HasDefaultViewModelProviderFactory) current).getDefaultViewModelCreationExtras();
+                        } else {
+                            defaultViewModelCreationExtras = CreationExtras.Empty.INSTANCE;
+                        }
+                        composer2 = composerStartRestartGroup;
+                        ViewModel viewModel = ViewModelKt.viewModel((KClass<ViewModel>) Reflection.getOrCreateKotlinClass(AdvisoryGoldValuePropsDuxo.class), current, (String) null, factoryCreateViewModelFactory, defaultViewModelCreationExtras, composer2, 0, 0);
+                        composer2.endReplaceableGroup();
+                        final BaseDuxo baseDuxo = (BaseDuxo) viewModel;
+                        final Lifecycle lifecycle = ((LifecycleOwner) composer2.consume(LocalLifecycleOwnerKt.getLocalLifecycleOwner())).getLifecycle();
+                        composer2.startReplaceGroup(-1633490746);
+                        boolean zChangedInstance = composer2.changedInstance(baseDuxo) | composer2.changedInstance(lifecycle);
+                        Object objRememberedValue = composer2.rememberedValue();
+                        if (zChangedInstance || objRememberedValue == Composer.INSTANCE.getEmpty()) {
+                            objRememberedValue = new Function1<DisposableEffectScope, DisposableEffectResult>() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt$AdvisoryGoldValuePropsScreen$$inlined$duxo$1
+                                @Override // kotlin.jvm.functions.Function1
+                                public final DisposableEffectResult invoke(DisposableEffectScope DisposableEffect) {
+                                    Intrinsics.checkNotNullParameter(DisposableEffect, "$this$DisposableEffect");
+                                    final DuxoLifecycleObserver duxoLifecycleObserver = new DuxoLifecycleObserver(baseDuxo);
+                                    lifecycle.addObserver(duxoLifecycleObserver);
+                                    final Lifecycle lifecycle2 = lifecycle;
+                                    return new DisposableEffectResult() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt$AdvisoryGoldValuePropsScreen$$inlined$duxo$1.1
+                                        @Override // androidx.compose.runtime.DisposableEffectResult
+                                        public void dispose() {
+                                            lifecycle2.removeObserver(duxoLifecycleObserver);
+                                        }
+                                    };
+                                }
+                            };
+                            composer2.updateRememberedValue(objRememberedValue);
+                        }
+                        composer2.endReplaceGroup();
+                        EffectsKt.DisposableEffect(lifecycle, (Function1<? super DisposableEffectScope, ? extends DisposableEffectResult>) objRememberedValue, composer2, 0);
+                        composer2.endReplaceGroup();
+                        i4 = i3 & (-897);
+                        advisoryGoldValuePropsDuxo3 = (AdvisoryGoldValuePropsDuxo) baseDuxo;
+                    } else {
+                        composer2 = composerStartRestartGroup;
+                        i4 = i3;
+                        advisoryGoldValuePropsDuxo3 = advisoryGoldValuePropsDuxo2;
+                    }
+                }
+                composer2.endDefaults();
+                if (ComposerKt.isTraceInProgress()) {
+                    ComposerKt.traceEventStart(-749133322, i4, -1, "com.robinhood.android.advisory.promo.gold.AdvisoryGoldValuePropsScreen (DashboardDepositsGoldValuePropsComposable.kt:49)");
+                }
+                Composer composer4 = composer2;
+                final SnapshotState4 snapshotState4CollectAsStateWithLifecycle = FlowExtKt.collectAsStateWithLifecycle(advisoryGoldValuePropsDuxo3.getStateFlow(), (LifecycleOwner) null, (Lifecycle.State) null, (CoroutineContext) null, composer4, 0, 7);
+                SnapshotState4 snapshotState4CollectAsStateWithLifecycle2 = FlowExtKt.collectAsStateWithLifecycle(advisoryGoldValuePropsDuxo3.getEventFlow(), (LifecycleOwner) null, (Lifecycle.State) null, (CoroutineContext) null, composer4, 0, 7);
+                modifier2 = modifier3;
+                ScaffoldKt.m5939ScaffoldTvnljyQ(modifier2, ComposableLambda3.rememberComposableLambda(1346977210, true, new Function2<Composer, Integer, Unit>() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt.AdvisoryGoldValuePropsScreen.1
+                    @Override // kotlin.jvm.functions.Function2
+                    public /* bridge */ /* synthetic */ Unit invoke(Composer composer5, Integer num) {
+                        invoke(composer5, num.intValue());
+                        return Unit.INSTANCE;
+                    }
+
+                    public final void invoke(Composer composer5, int i7) {
+                        if ((i7 & 3) == 2 && composer5.getSkipping()) {
+                            composer5.skipToGroupEnd();
+                            return;
+                        }
+                        if (ComposerKt.isTraceInProgress()) {
+                            ComposerKt.traceEventStart(1346977210, i7, -1, "com.robinhood.android.advisory.promo.gold.AdvisoryGoldValuePropsScreen.<anonymous> (DashboardDepositsGoldValuePropsComposable.kt:56)");
+                        }
+                        Function2<Composer, Integer, Unit> lambda$817312231$feature_advisory_promo_externalDebug = DashboardDepositsGoldValuePropsComposable.INSTANCE.getLambda$817312231$feature_advisory_promo_externalDebug();
+                        final Function0<Unit> function0 = onClose;
+                        BentoAppBarKt.m20573BentoAppBarSGdaT3c(lambda$817312231$feature_advisory_promo_externalDebug, null, ComposableLambda3.rememberComposableLambda(-803378629, true, new Function3<BentoAppBarScope, Composer, Integer, Unit>() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt.AdvisoryGoldValuePropsScreen.1.1
+                            @Override // kotlin.jvm.functions.Function3
+                            public /* bridge */ /* synthetic */ Unit invoke(BentoAppBarScope bentoAppBarScope, Composer composer6, Integer num) {
+                                invoke(bentoAppBarScope, composer6, num.intValue());
+                                return Unit.INSTANCE;
+                            }
+
+                            public final void invoke(BentoAppBarScope BentoAppBar, Composer composer6, int i8) {
+                                Intrinsics.checkNotNullParameter(BentoAppBar, "$this$BentoAppBar");
+                                if ((i8 & 6) == 0) {
+                                    i8 |= (i8 & 8) == 0 ? composer6.changed(BentoAppBar) : composer6.changedInstance(BentoAppBar) ? 4 : 2;
+                                }
+                                if ((i8 & 19) == 18 && composer6.getSkipping()) {
+                                    composer6.skipToGroupEnd();
+                                    return;
+                                }
+                                if (ComposerKt.isTraceInProgress()) {
+                                    ComposerKt.traceEventStart(-803378629, i8, -1, "com.robinhood.android.advisory.promo.gold.AdvisoryGoldValuePropsScreen.<anonymous>.<anonymous> (DashboardDepositsGoldValuePropsComposable.kt:59)");
+                                }
+                                BentoAppBar.m20576BentoCloseButtoncf5BqRc(null, false, 0L, function0, composer6, (BentoAppBarScope.$stable << 12) | ((i8 << 12) & 57344), 7);
+                                if (ComposerKt.isTraceInProgress()) {
+                                    ComposerKt.traceEventEnd();
+                                }
+                            }
+                        }, composer5, 54), null, null, false, false, null, null, 0L, null, composer5, 390, 0, 2042);
+                        if (ComposerKt.isTraceInProgress()) {
+                            ComposerKt.traceEventEnd();
+                        }
+                    }
+                }, composer4, 54), null, null, null, 0, 0L, 0L, null, ComposableLambda3.rememberComposableLambda(-1854852155, true, new Function3<PaddingValues, Composer, Integer, Unit>() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt.AdvisoryGoldValuePropsScreen.2
+                    @Override // kotlin.jvm.functions.Function3
+                    public /* bridge */ /* synthetic */ Unit invoke(PaddingValues paddingValues, Composer composer5, Integer num) {
+                        invoke(paddingValues, composer5, num.intValue());
+                        return Unit.INSTANCE;
+                    }
+
+                    public final void invoke(final PaddingValues paddingValues, Composer composer5, int i7) {
+                        Intrinsics.checkNotNullParameter(paddingValues, "paddingValues");
+                        if ((i7 & 6) == 0) {
+                            i7 |= composer5.changed(paddingValues) ? 4 : 2;
+                        }
+                        if ((i7 & 19) == 18 && composer5.getSkipping()) {
+                            composer5.skipToGroupEnd();
+                            return;
+                        }
+                        if (ComposerKt.isTraceInProgress()) {
+                            ComposerKt.traceEventStart(-1854852155, i7, -1, "com.robinhood.android.advisory.promo.gold.AdvisoryGoldValuePropsScreen.<anonymous> (DashboardDepositsGoldValuePropsComposable.kt:66)");
+                        }
+                        UserInteractionEventDescriptor userInteractionEventDescriptorUpdateWith = UserInteractionEventDescriptors.updateWith((UserInteractionEventDescriptor) composer5.consume(AutoLoggingCompositionLocals.getLocalUserInteractionEventDescriptor()), new UserInteractionEventDescriptor(null, new Screen(Screen.Name.ADVISORY_GOLD_PERKS, null, null, null, 14, null), null, null, null, null, 61, null));
+                        final Function0<Unit> function0 = onClose;
+                        final SnapshotState4<AdvisoryGoldValuePropsViewState> snapshotState4 = snapshotState4CollectAsStateWithLifecycle;
+                        AutoLoggingCompositionLocals.EventLoggable(userInteractionEventDescriptorUpdateWith, ComposableLambda3.rememberComposableLambda(1354965114, true, new Function2<Composer, Integer, Unit>() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt.AdvisoryGoldValuePropsScreen.2.1
+                            @Override // kotlin.jvm.functions.Function2
+                            public /* bridge */ /* synthetic */ Unit invoke(Composer composer6, Integer num) {
+                                invoke(composer6, num.intValue());
+                                return Unit.INSTANCE;
+                            }
+
+                            public final void invoke(Composer composer6, int i8) {
+                                if ((i8 & 3) == 2 && composer6.getSkipping()) {
+                                    composer6.skipToGroupEnd();
+                                    return;
+                                }
+                                if (ComposerKt.isTraceInProgress()) {
+                                    ComposerKt.traceEventStart(1354965114, i8, -1, "com.robinhood.android.advisory.promo.gold.AdvisoryGoldValuePropsScreen.<anonymous>.<anonymous> (DashboardDepositsGoldValuePropsComposable.kt:75)");
+                                }
+                                AdvisoryDepositGoldValueProps.Content content = DashboardDepositsGoldValuePropsComposable3.AdvisoryGoldValuePropsScreen$lambda$0(snapshotState4).getContent();
+                                if (content instanceof AdvisoryDepositGoldValueProps.Content.Hero) {
+                                    composer6.startReplaceGroup(1663189755);
+                                    DashboardDepositsGoldValuePropsComposable3.ValuePropsHeroScreen((AdvisoryDepositGoldValueProps.Content.Hero) content, function0, PaddingKt.padding(Modifier.INSTANCE, paddingValues), composer6, 0, 0);
+                                    composer6.endReplaceGroup();
+                                } else if (content instanceof AdvisoryDepositGoldValueProps.Content.ValuePropList) {
+                                    composer6.startReplaceGroup(1663500220);
+                                    DashboardDepositsGoldValuePropsComposable3.ValuePropListScreen((AdvisoryDepositGoldValueProps.Content.ValuePropList) content, function0, PaddingKt.padding(Modifier.INSTANCE, paddingValues), composer6, 0, 0);
+                                    composer6.endReplaceGroup();
+                                } else {
+                                    if (content != null) {
+                                        composer6.startReplaceGroup(746385307);
+                                        composer6.endReplaceGroup();
+                                        throw new NoWhenBranchMatchedException();
+                                    }
+                                    composer6.startReplaceGroup(1663762046);
+                                    LoadingScreenComposablesKt.ListLoadingScreenComposable(PaddingKt.padding(Modifier.INSTANCE, paddingValues), true, true, 2, composer6, 3504, 0);
+                                    composer6.endReplaceGroup();
+                                }
+                                if (ComposerKt.isTraceInProgress()) {
+                                    ComposerKt.traceEventEnd();
+                                }
+                            }
+                        }, composer5, 54), composer5, 48);
+                        if (ComposerKt.isTraceInProgress()) {
+                            ComposerKt.traceEventEnd();
+                        }
+                    }
+                }, composer4, 54), composer4, ((i4 >> 3) & 14) | 805306416, 508);
+                composer3 = composer4;
+                eventAdvisoryGoldValuePropsScreen$lambda$1 = AdvisoryGoldValuePropsScreen$lambda$1(snapshotState4CollectAsStateWithLifecycle2);
+                if (eventAdvisoryGoldValuePropsScreen$lambda$1 != null && (eventAdvisoryGoldValuePropsScreen$lambda$1.getData() instanceof AdvisoryGoldValuePropsEvent.Exit) && (eventConsumerInvoke = eventAdvisoryGoldValuePropsScreen$lambda$1.getGetEventConsumer().invoke()) != null) {
+                    eventConsumerInvoke.consume(eventAdvisoryGoldValuePropsScreen$lambda$1, new Function1() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt$AdvisoryGoldValuePropsScreen$$inlined$consumeIfType$1
+                        @Override // kotlin.jvm.functions.Function1
+                        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                            m11244invoke(obj);
+                            return Unit.INSTANCE;
+                        }
+
+                        /* renamed from: invoke, reason: collision with other method in class */
+                        public final void m11244invoke(Object it) {
+                            Intrinsics.checkNotNullParameter(it, "it");
+                            onClose.invoke();
+                        }
+                    });
+                }
+                if (ComposerKt.isTraceInProgress()) {
+                    ComposerKt.traceEventEnd();
+                }
+                advisoryGoldValuePropsDuxo4 = advisoryGoldValuePropsDuxo3;
+            } else {
+                composerStartRestartGroup.skipToGroupEnd();
+                advisoryGoldValuePropsDuxo4 = advisoryGoldValuePropsDuxo2;
+                composer3 = composerStartRestartGroup;
+            }
+            final Modifier modifier4 = modifier2;
+            scopeUpdateScopeEndRestartGroup = composer3.endRestartGroup();
+            if (scopeUpdateScopeEndRestartGroup == null) {
+                scopeUpdateScopeEndRestartGroup.updateScope(new Function2() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt$$ExternalSyntheticLambda3
+                    @Override // kotlin.jvm.functions.Function2
+                    public final Object invoke(Object obj, Object obj2) {
+                        return DashboardDepositsGoldValuePropsComposable3.AdvisoryGoldValuePropsScreen$lambda$3(onClose, modifier4, advisoryGoldValuePropsDuxo4, i, i2, (Composer) obj, ((Integer) obj2).intValue());
+                    }
+                });
+                return;
+            }
+            return;
+        }
+        i3 |= 48;
+        modifier2 = modifier;
+        if ((i & 384) != 0) {
+        }
+        if ((i3 & 147) == 146) {
+            composerStartRestartGroup.startDefaults();
+            if ((i & 1) == 0) {
+                if (i5 == 0) {
+                }
+                if ((i2 & 4) == 0) {
+                }
+                composer2.endDefaults();
+                if (ComposerKt.isTraceInProgress()) {
+                }
+                Composer composer42 = composer2;
+                final SnapshotState4<AdvisoryGoldValuePropsViewState> snapshotState4CollectAsStateWithLifecycle3 = FlowExtKt.collectAsStateWithLifecycle(advisoryGoldValuePropsDuxo3.getStateFlow(), (LifecycleOwner) null, (Lifecycle.State) null, (CoroutineContext) null, composer42, 0, 7);
+                SnapshotState4 snapshotState4CollectAsStateWithLifecycle22 = FlowExtKt.collectAsStateWithLifecycle(advisoryGoldValuePropsDuxo3.getEventFlow(), (LifecycleOwner) null, (Lifecycle.State) null, (CoroutineContext) null, composer42, 0, 7);
+                modifier2 = modifier3;
+                ScaffoldKt.m5939ScaffoldTvnljyQ(modifier2, ComposableLambda3.rememberComposableLambda(1346977210, true, new Function2<Composer, Integer, Unit>() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt.AdvisoryGoldValuePropsScreen.1
+                    @Override // kotlin.jvm.functions.Function2
+                    public /* bridge */ /* synthetic */ Unit invoke(Composer composer5, Integer num) {
+                        invoke(composer5, num.intValue());
+                        return Unit.INSTANCE;
+                    }
+
+                    public final void invoke(Composer composer5, int i7) {
+                        if ((i7 & 3) == 2 && composer5.getSkipping()) {
+                            composer5.skipToGroupEnd();
+                            return;
+                        }
+                        if (ComposerKt.isTraceInProgress()) {
+                            ComposerKt.traceEventStart(1346977210, i7, -1, "com.robinhood.android.advisory.promo.gold.AdvisoryGoldValuePropsScreen.<anonymous> (DashboardDepositsGoldValuePropsComposable.kt:56)");
+                        }
+                        Function2<Composer, Integer, Unit> lambda$817312231$feature_advisory_promo_externalDebug = DashboardDepositsGoldValuePropsComposable.INSTANCE.getLambda$817312231$feature_advisory_promo_externalDebug();
+                        final Function0<Unit> function0 = onClose;
+                        BentoAppBarKt.m20573BentoAppBarSGdaT3c(lambda$817312231$feature_advisory_promo_externalDebug, null, ComposableLambda3.rememberComposableLambda(-803378629, true, new Function3<BentoAppBarScope, Composer, Integer, Unit>() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt.AdvisoryGoldValuePropsScreen.1.1
+                            @Override // kotlin.jvm.functions.Function3
+                            public /* bridge */ /* synthetic */ Unit invoke(BentoAppBarScope bentoAppBarScope, Composer composer6, Integer num) {
+                                invoke(bentoAppBarScope, composer6, num.intValue());
+                                return Unit.INSTANCE;
+                            }
+
+                            public final void invoke(BentoAppBarScope BentoAppBar, Composer composer6, int i8) {
+                                Intrinsics.checkNotNullParameter(BentoAppBar, "$this$BentoAppBar");
+                                if ((i8 & 6) == 0) {
+                                    i8 |= (i8 & 8) == 0 ? composer6.changed(BentoAppBar) : composer6.changedInstance(BentoAppBar) ? 4 : 2;
+                                }
+                                if ((i8 & 19) == 18 && composer6.getSkipping()) {
+                                    composer6.skipToGroupEnd();
+                                    return;
+                                }
+                                if (ComposerKt.isTraceInProgress()) {
+                                    ComposerKt.traceEventStart(-803378629, i8, -1, "com.robinhood.android.advisory.promo.gold.AdvisoryGoldValuePropsScreen.<anonymous>.<anonymous> (DashboardDepositsGoldValuePropsComposable.kt:59)");
+                                }
+                                BentoAppBar.m20576BentoCloseButtoncf5BqRc(null, false, 0L, function0, composer6, (BentoAppBarScope.$stable << 12) | ((i8 << 12) & 57344), 7);
+                                if (ComposerKt.isTraceInProgress()) {
+                                    ComposerKt.traceEventEnd();
+                                }
+                            }
+                        }, composer5, 54), null, null, false, false, null, null, 0L, null, composer5, 390, 0, 2042);
+                        if (ComposerKt.isTraceInProgress()) {
+                            ComposerKt.traceEventEnd();
+                        }
+                    }
+                }, composer42, 54), null, null, null, 0, 0L, 0L, null, ComposableLambda3.rememberComposableLambda(-1854852155, true, new Function3<PaddingValues, Composer, Integer, Unit>() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt.AdvisoryGoldValuePropsScreen.2
+                    @Override // kotlin.jvm.functions.Function3
+                    public /* bridge */ /* synthetic */ Unit invoke(PaddingValues paddingValues, Composer composer5, Integer num) {
+                        invoke(paddingValues, composer5, num.intValue());
+                        return Unit.INSTANCE;
+                    }
+
+                    public final void invoke(final PaddingValues paddingValues, Composer composer5, int i7) {
+                        Intrinsics.checkNotNullParameter(paddingValues, "paddingValues");
+                        if ((i7 & 6) == 0) {
+                            i7 |= composer5.changed(paddingValues) ? 4 : 2;
+                        }
+                        if ((i7 & 19) == 18 && composer5.getSkipping()) {
+                            composer5.skipToGroupEnd();
+                            return;
+                        }
+                        if (ComposerKt.isTraceInProgress()) {
+                            ComposerKt.traceEventStart(-1854852155, i7, -1, "com.robinhood.android.advisory.promo.gold.AdvisoryGoldValuePropsScreen.<anonymous> (DashboardDepositsGoldValuePropsComposable.kt:66)");
+                        }
+                        UserInteractionEventDescriptor userInteractionEventDescriptorUpdateWith = UserInteractionEventDescriptors.updateWith((UserInteractionEventDescriptor) composer5.consume(AutoLoggingCompositionLocals.getLocalUserInteractionEventDescriptor()), new UserInteractionEventDescriptor(null, new Screen(Screen.Name.ADVISORY_GOLD_PERKS, null, null, null, 14, null), null, null, null, null, 61, null));
+                        final Function0<Unit> function0 = onClose;
+                        final SnapshotState4<AdvisoryGoldValuePropsViewState> snapshotState4 = snapshotState4CollectAsStateWithLifecycle3;
+                        AutoLoggingCompositionLocals.EventLoggable(userInteractionEventDescriptorUpdateWith, ComposableLambda3.rememberComposableLambda(1354965114, true, new Function2<Composer, Integer, Unit>() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt.AdvisoryGoldValuePropsScreen.2.1
+                            @Override // kotlin.jvm.functions.Function2
+                            public /* bridge */ /* synthetic */ Unit invoke(Composer composer6, Integer num) {
+                                invoke(composer6, num.intValue());
+                                return Unit.INSTANCE;
+                            }
+
+                            public final void invoke(Composer composer6, int i8) {
+                                if ((i8 & 3) == 2 && composer6.getSkipping()) {
+                                    composer6.skipToGroupEnd();
+                                    return;
+                                }
+                                if (ComposerKt.isTraceInProgress()) {
+                                    ComposerKt.traceEventStart(1354965114, i8, -1, "com.robinhood.android.advisory.promo.gold.AdvisoryGoldValuePropsScreen.<anonymous>.<anonymous> (DashboardDepositsGoldValuePropsComposable.kt:75)");
+                                }
+                                AdvisoryDepositGoldValueProps.Content content = DashboardDepositsGoldValuePropsComposable3.AdvisoryGoldValuePropsScreen$lambda$0(snapshotState4).getContent();
+                                if (content instanceof AdvisoryDepositGoldValueProps.Content.Hero) {
+                                    composer6.startReplaceGroup(1663189755);
+                                    DashboardDepositsGoldValuePropsComposable3.ValuePropsHeroScreen((AdvisoryDepositGoldValueProps.Content.Hero) content, function0, PaddingKt.padding(Modifier.INSTANCE, paddingValues), composer6, 0, 0);
+                                    composer6.endReplaceGroup();
+                                } else if (content instanceof AdvisoryDepositGoldValueProps.Content.ValuePropList) {
+                                    composer6.startReplaceGroup(1663500220);
+                                    DashboardDepositsGoldValuePropsComposable3.ValuePropListScreen((AdvisoryDepositGoldValueProps.Content.ValuePropList) content, function0, PaddingKt.padding(Modifier.INSTANCE, paddingValues), composer6, 0, 0);
+                                    composer6.endReplaceGroup();
+                                } else {
+                                    if (content != null) {
+                                        composer6.startReplaceGroup(746385307);
+                                        composer6.endReplaceGroup();
+                                        throw new NoWhenBranchMatchedException();
+                                    }
+                                    composer6.startReplaceGroup(1663762046);
+                                    LoadingScreenComposablesKt.ListLoadingScreenComposable(PaddingKt.padding(Modifier.INSTANCE, paddingValues), true, true, 2, composer6, 3504, 0);
+                                    composer6.endReplaceGroup();
+                                }
+                                if (ComposerKt.isTraceInProgress()) {
+                                    ComposerKt.traceEventEnd();
+                                }
+                            }
+                        }, composer5, 54), composer5, 48);
+                        if (ComposerKt.isTraceInProgress()) {
+                            ComposerKt.traceEventEnd();
+                        }
+                    }
+                }, composer42, 54), composer42, ((i4 >> 3) & 14) | 805306416, 508);
+                composer3 = composer42;
+                eventAdvisoryGoldValuePropsScreen$lambda$1 = AdvisoryGoldValuePropsScreen$lambda$1(snapshotState4CollectAsStateWithLifecycle22);
+                if (eventAdvisoryGoldValuePropsScreen$lambda$1 != null) {
+                    eventConsumerInvoke.consume(eventAdvisoryGoldValuePropsScreen$lambda$1, new Function1() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt$AdvisoryGoldValuePropsScreen$$inlined$consumeIfType$1
+                        @Override // kotlin.jvm.functions.Function1
+                        public /* bridge */ /* synthetic */ Object invoke(Object obj) {
+                            m11244invoke(obj);
+                            return Unit.INSTANCE;
+                        }
+
+                        /* renamed from: invoke, reason: collision with other method in class */
+                        public final void m11244invoke(Object it) {
+                            Intrinsics.checkNotNullParameter(it, "it");
+                            onClose.invoke();
+                        }
+                    });
+                }
+                if (ComposerKt.isTraceInProgress()) {
+                }
+                advisoryGoldValuePropsDuxo4 = advisoryGoldValuePropsDuxo3;
+            }
+        }
+        final Modifier modifier42 = modifier2;
+        scopeUpdateScopeEndRestartGroup = composer3.endRestartGroup();
+        if (scopeUpdateScopeEndRestartGroup == null) {
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final AdvisoryGoldValuePropsViewState AdvisoryGoldValuePropsScreen$lambda$0(SnapshotState4<AdvisoryGoldValuePropsViewState> snapshotState4) {
+        return snapshotState4.getValue();
+    }
+
+    private static final Event<AdvisoryGoldValuePropsEvent> AdvisoryGoldValuePropsScreen$lambda$1(SnapshotState4<Event<AdvisoryGoldValuePropsEvent>> snapshotState4) {
+        return snapshotState4.getValue();
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:40:0x0077  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x0079  */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x007c  */
+    /* JADX WARN: Removed duplicated region for block: B:45:0x0083  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x00b8  */
+    /* JADX WARN: Removed duplicated region for block: B:51:0x00c4  */
+    /* JADX WARN: Removed duplicated region for block: B:52:0x00c8  */
+    /* JADX WARN: Removed duplicated region for block: B:57:0x00f5  */
+    /* JADX WARN: Removed duplicated region for block: B:60:0x0151  */
+    /* JADX WARN: Removed duplicated region for block: B:63:0x015d  */
+    /* JADX WARN: Removed duplicated region for block: B:64:0x0161  */
+    /* JADX WARN: Removed duplicated region for block: B:69:0x018e  */
+    /* JADX WARN: Removed duplicated region for block: B:73:0x01fe A[LOOP:0: B:71:0x01f8->B:73:0x01fe, LOOP_END] */
+    /* JADX WARN: Removed duplicated region for block: B:76:0x0262  */
+    /* JADX WARN: Removed duplicated region for block: B:80:0x026d  */
+    /* JADX WARN: Removed duplicated region for block: B:83:? A[RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static final void ValuePropListScreen(final AdvisoryDepositGoldValueProps.Content.ValuePropList content, final Function0<Unit> onClose, Modifier modifier, Composer composer, final int i, final int i2) {
+        int i3;
+        Modifier modifier2;
+        int currentCompositeKeyHash;
+        Composer composerM6388constructorimpl;
+        Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash;
+        int currentCompositeKeyHash2;
+        Composer composerM6388constructorimpl2;
+        Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash2;
+        Composer composer2;
+        final Modifier modifier3;
+        ScopeUpdateScope scopeUpdateScopeEndRestartGroup;
+        Intrinsics.checkNotNullParameter(content, "content");
+        Intrinsics.checkNotNullParameter(onClose, "onClose");
+        Composer composerStartRestartGroup = composer.startRestartGroup(1848188100);
+        if ((i2 & 1) != 0) {
+            i3 = i | 6;
+        } else if ((i & 6) == 0) {
+            i3 = (composerStartRestartGroup.changedInstance(content) ? 4 : 2) | i;
+        } else {
+            i3 = i;
+        }
+        if ((i2 & 2) != 0) {
+            i3 |= 48;
+        } else if ((i & 48) == 0) {
+            i3 |= composerStartRestartGroup.changedInstance(onClose) ? 32 : 16;
+        }
+        int i4 = i2 & 4;
+        if (i4 == 0) {
+            if ((i & 384) == 0) {
+                modifier2 = modifier;
+                i3 |= composerStartRestartGroup.changed(modifier2) ? 256 : 128;
+            }
+            if ((i3 & 147) == 146 || !composerStartRestartGroup.getSkipping()) {
+                Modifier modifier4 = i4 == 0 ? Modifier.INSTANCE : modifier2;
+                if (ComposerKt.isTraceInProgress()) {
+                    ComposerKt.traceEventStart(1848188100, i3, -1, "com.robinhood.android.advisory.promo.gold.ValuePropListScreen (DashboardDepositsGoldValuePropsComposable.kt:114)");
+                }
+                Modifier modifierLogScreenTransitions$default = ModifiersKt.logScreenTransitions$default(modifier4, null, 1, null);
+                Arrangement arrangement = Arrangement.INSTANCE;
+                Arrangement.Vertical top = arrangement.getTop();
+                Alignment.Companion companion = Alignment.INSTANCE;
+                MeasurePolicy measurePolicyColumnMeasurePolicy = Column2.columnMeasurePolicy(top, companion.getStart(), composerStartRestartGroup, 0);
+                currentCompositeKeyHash = Composables.getCurrentCompositeKeyHash(composerStartRestartGroup, 0);
+                CompositionLocalMap currentCompositionLocalMap = composerStartRestartGroup.getCurrentCompositionLocalMap();
+                Modifier modifierMaterializeModifier = ComposedModifier2.materializeModifier(composerStartRestartGroup, modifierLogScreenTransitions$default);
+                ComposeUiNode.Companion companion2 = ComposeUiNode.INSTANCE;
+                Function0<ComposeUiNode> constructor = companion2.getConstructor();
+                if (composerStartRestartGroup.getApplier() == null) {
+                    Composables.invalidApplier();
+                }
+                composerStartRestartGroup.startReusableNode();
+                if (composerStartRestartGroup.getInserting()) {
+                    composerStartRestartGroup.useNode();
+                } else {
+                    composerStartRestartGroup.createNode(constructor);
+                }
+                composerM6388constructorimpl = Updater.m6388constructorimpl(composerStartRestartGroup);
+                Updater.m6390setimpl(composerM6388constructorimpl, measurePolicyColumnMeasurePolicy, companion2.getSetMeasurePolicy());
+                Updater.m6390setimpl(composerM6388constructorimpl, currentCompositionLocalMap, companion2.getSetResolvedCompositionLocals());
+                setCompositeKeyHash = companion2.getSetCompositeKeyHash();
+                if (!composerM6388constructorimpl.getInserting() || !Intrinsics.areEqual(composerM6388constructorimpl.rememberedValue(), Integer.valueOf(currentCompositeKeyHash))) {
+                    composerM6388constructorimpl.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash));
+                    composerM6388constructorimpl.apply(Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+                }
+                Updater.m6390setimpl(composerM6388constructorimpl, modifierMaterializeModifier, companion2.getSetModifier());
+                Column6 column6 = Column6.INSTANCE;
+                Modifier.Companion companion3 = Modifier.INSTANCE;
+                Modifier modifierVerticalScroll$default = ScrollKt.verticalScroll$default(Column5.weight$default(column6, companion3, 1.0f, false, 2, null), ScrollKt.rememberScrollState(0, composerStartRestartGroup, 0, 1), false, null, false, 14, null);
+                MeasurePolicy measurePolicyColumnMeasurePolicy2 = Column2.columnMeasurePolicy(arrangement.getTop(), companion.getStart(), composerStartRestartGroup, 0);
+                currentCompositeKeyHash2 = Composables.getCurrentCompositeKeyHash(composerStartRestartGroup, 0);
+                CompositionLocalMap currentCompositionLocalMap2 = composerStartRestartGroup.getCurrentCompositionLocalMap();
+                Modifier modifierMaterializeModifier2 = ComposedModifier2.materializeModifier(composerStartRestartGroup, modifierVerticalScroll$default);
+                Function0<ComposeUiNode> constructor2 = companion2.getConstructor();
+                if (composerStartRestartGroup.getApplier() == null) {
+                    Composables.invalidApplier();
+                }
+                composerStartRestartGroup.startReusableNode();
+                if (composerStartRestartGroup.getInserting()) {
+                    composerStartRestartGroup.useNode();
+                } else {
+                    composerStartRestartGroup.createNode(constructor2);
+                }
+                composerM6388constructorimpl2 = Updater.m6388constructorimpl(composerStartRestartGroup);
+                Updater.m6390setimpl(composerM6388constructorimpl2, measurePolicyColumnMeasurePolicy2, companion2.getSetMeasurePolicy());
+                Updater.m6390setimpl(composerM6388constructorimpl2, currentCompositionLocalMap2, companion2.getSetResolvedCompositionLocals());
+                setCompositeKeyHash2 = companion2.getSetCompositeKeyHash();
+                if (!composerM6388constructorimpl2.getInserting() || !Intrinsics.areEqual(composerM6388constructorimpl2.rememberedValue(), Integer.valueOf(currentCompositeKeyHash2))) {
+                    composerM6388constructorimpl2.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash2));
+                    composerM6388constructorimpl2.apply(Integer.valueOf(currentCompositeKeyHash2), setCompositeKeyHash2);
+                }
+                Updater.m6390setimpl(composerM6388constructorimpl2, modifierMaterializeModifier2, companion2.getSetModifier());
+                BentoTheme bentoTheme = BentoTheme.INSTANCE;
+                int i5 = BentoTheme.$stable;
+                int i6 = i3;
+                Modifier modifier5 = modifier4;
+                BentoText2.m20747BentoText38GnDrw(content.getTitle(), com.robinhood.compose.bento.util.PaddingKt.m21618defaultFillMaxWidthPadding3ABfNKs(companion3, bentoTheme.getSpacing(composerStartRestartGroup, i5).m21592getMediumD9Ej5fM()), null, null, null, null, null, 0, false, 0, 0, null, 0, bentoTheme.getTypography(composerStartRestartGroup, i5).getDisplayCapsuleMedium(), composerStartRestartGroup, 0, 0, 8188);
+                Composer composer3 = composerStartRestartGroup;
+                composer3.startReplaceGroup(1775666988);
+                for (AdvisoryDepositGoldValueProps.Row row : content.getRows()) {
+                    Composer composer4 = composer3;
+                    BentoValuePropRow3.BentoValuePropRow(row.getTitle(), row.getSubtitle(), new BentoValuePropRow2.Icon(row.getIcon(), Color.m6701boximpl(BentoTheme.INSTANCE.getColors(composer3, BentoTheme.$stable).m21425getFg0d7_KjU()), null), BentoValuePropRow.Center, (Modifier) null, composer4, (BentoValuePropRow2.Icon.$stable << 6) | 3072, 16);
+                    composer3 = composer4;
+                }
+                composer2 = composer3;
+                composer2.endReplaceGroup();
+                composer2.endNode();
+                ValuePropsFooter(content.getDisclosureMarkdown(), content.getDoneCtaTitle(), onClose, null, composer3, (i6 << 3) & 896, 8);
+                composer2.endNode();
+                if (ComposerKt.isTraceInProgress()) {
+                    ComposerKt.traceEventEnd();
+                }
+                modifier3 = modifier5;
+            } else {
+                composerStartRestartGroup.skipToGroupEnd();
+                composer2 = composerStartRestartGroup;
+                modifier3 = modifier2;
+            }
+            scopeUpdateScopeEndRestartGroup = composer2.endRestartGroup();
+            if (scopeUpdateScopeEndRestartGroup == null) {
+                scopeUpdateScopeEndRestartGroup.updateScope(new Function2() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt$$ExternalSyntheticLambda0
+                    @Override // kotlin.jvm.functions.Function2
+                    public final Object invoke(Object obj, Object obj2) {
+                        return DashboardDepositsGoldValuePropsComposable3.ValuePropListScreen$lambda$7(content, onClose, modifier3, i, i2, (Composer) obj, ((Integer) obj2).intValue());
+                    }
+                });
+                return;
+            }
+            return;
+        }
+        i3 |= 384;
+        modifier2 = modifier;
+        if ((i3 & 147) == 146) {
+            if (i4 == 0) {
+            }
+            if (ComposerKt.isTraceInProgress()) {
+            }
+            Modifier modifierLogScreenTransitions$default2 = ModifiersKt.logScreenTransitions$default(modifier4, null, 1, null);
+            Arrangement arrangement2 = Arrangement.INSTANCE;
+            Arrangement.Vertical top2 = arrangement2.getTop();
+            Alignment.Companion companion4 = Alignment.INSTANCE;
+            MeasurePolicy measurePolicyColumnMeasurePolicy3 = Column2.columnMeasurePolicy(top2, companion4.getStart(), composerStartRestartGroup, 0);
+            currentCompositeKeyHash = Composables.getCurrentCompositeKeyHash(composerStartRestartGroup, 0);
+            CompositionLocalMap currentCompositionLocalMap3 = composerStartRestartGroup.getCurrentCompositionLocalMap();
+            Modifier modifierMaterializeModifier3 = ComposedModifier2.materializeModifier(composerStartRestartGroup, modifierLogScreenTransitions$default2);
+            ComposeUiNode.Companion companion22 = ComposeUiNode.INSTANCE;
+            Function0<ComposeUiNode> constructor3 = companion22.getConstructor();
+            if (composerStartRestartGroup.getApplier() == null) {
+            }
+            composerStartRestartGroup.startReusableNode();
+            if (composerStartRestartGroup.getInserting()) {
+            }
+            composerM6388constructorimpl = Updater.m6388constructorimpl(composerStartRestartGroup);
+            Updater.m6390setimpl(composerM6388constructorimpl, measurePolicyColumnMeasurePolicy3, companion22.getSetMeasurePolicy());
+            Updater.m6390setimpl(composerM6388constructorimpl, currentCompositionLocalMap3, companion22.getSetResolvedCompositionLocals());
+            setCompositeKeyHash = companion22.getSetCompositeKeyHash();
+            if (!composerM6388constructorimpl.getInserting()) {
+                composerM6388constructorimpl.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash));
+                composerM6388constructorimpl.apply(Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+                Updater.m6390setimpl(composerM6388constructorimpl, modifierMaterializeModifier3, companion22.getSetModifier());
+                Column6 column62 = Column6.INSTANCE;
+                Modifier.Companion companion32 = Modifier.INSTANCE;
+                Modifier modifierVerticalScroll$default2 = ScrollKt.verticalScroll$default(Column5.weight$default(column62, companion32, 1.0f, false, 2, null), ScrollKt.rememberScrollState(0, composerStartRestartGroup, 0, 1), false, null, false, 14, null);
+                MeasurePolicy measurePolicyColumnMeasurePolicy22 = Column2.columnMeasurePolicy(arrangement2.getTop(), companion4.getStart(), composerStartRestartGroup, 0);
+                currentCompositeKeyHash2 = Composables.getCurrentCompositeKeyHash(composerStartRestartGroup, 0);
+                CompositionLocalMap currentCompositionLocalMap22 = composerStartRestartGroup.getCurrentCompositionLocalMap();
+                Modifier modifierMaterializeModifier22 = ComposedModifier2.materializeModifier(composerStartRestartGroup, modifierVerticalScroll$default2);
+                Function0<ComposeUiNode> constructor22 = companion22.getConstructor();
+                if (composerStartRestartGroup.getApplier() == null) {
+                }
+                composerStartRestartGroup.startReusableNode();
+                if (composerStartRestartGroup.getInserting()) {
+                }
+                composerM6388constructorimpl2 = Updater.m6388constructorimpl(composerStartRestartGroup);
+                Updater.m6390setimpl(composerM6388constructorimpl2, measurePolicyColumnMeasurePolicy22, companion22.getSetMeasurePolicy());
+                Updater.m6390setimpl(composerM6388constructorimpl2, currentCompositionLocalMap22, companion22.getSetResolvedCompositionLocals());
+                setCompositeKeyHash2 = companion22.getSetCompositeKeyHash();
+                if (!composerM6388constructorimpl2.getInserting()) {
+                    composerM6388constructorimpl2.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash2));
+                    composerM6388constructorimpl2.apply(Integer.valueOf(currentCompositeKeyHash2), setCompositeKeyHash2);
+                    Updater.m6390setimpl(composerM6388constructorimpl2, modifierMaterializeModifier22, companion22.getSetModifier());
+                    BentoTheme bentoTheme2 = BentoTheme.INSTANCE;
+                    int i52 = BentoTheme.$stable;
+                    int i62 = i3;
+                    Modifier modifier52 = modifier4;
+                    BentoText2.m20747BentoText38GnDrw(content.getTitle(), com.robinhood.compose.bento.util.PaddingKt.m21618defaultFillMaxWidthPadding3ABfNKs(companion32, bentoTheme2.getSpacing(composerStartRestartGroup, i52).m21592getMediumD9Ej5fM()), null, null, null, null, null, 0, false, 0, 0, null, 0, bentoTheme2.getTypography(composerStartRestartGroup, i52).getDisplayCapsuleMedium(), composerStartRestartGroup, 0, 0, 8188);
+                    Composer composer32 = composerStartRestartGroup;
+                    composer32.startReplaceGroup(1775666988);
+                    while (r3.hasNext()) {
+                    }
+                    composer2 = composer32;
+                    composer2.endReplaceGroup();
+                    composer2.endNode();
+                    ValuePropsFooter(content.getDisclosureMarkdown(), content.getDoneCtaTitle(), onClose, null, composer32, (i62 << 3) & 896, 8);
+                    composer2.endNode();
+                    if (ComposerKt.isTraceInProgress()) {
+                    }
+                    modifier3 = modifier52;
+                }
+            }
+        }
+        scopeUpdateScopeEndRestartGroup = composer2.endRestartGroup();
+        if (scopeUpdateScopeEndRestartGroup == null) {
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:26:0x0048  */
+    /* JADX WARN: Removed duplicated region for block: B:28:0x004d  */
+    /* JADX WARN: Removed duplicated region for block: B:37:0x0063  */
+    /* JADX WARN: Removed duplicated region for block: B:39:0x0068  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x0080  */
+    /* JADX WARN: Removed duplicated region for block: B:52:0x008e  */
+    /* JADX WARN: Removed duplicated region for block: B:53:0x0090  */
+    /* JADX WARN: Removed duplicated region for block: B:54:0x0093  */
+    /* JADX WARN: Removed duplicated region for block: B:57:0x009a  */
+    /* JADX WARN: Removed duplicated region for block: B:60:0x00e3  */
+    /* JADX WARN: Removed duplicated region for block: B:63:0x00ef  */
+    /* JADX WARN: Removed duplicated region for block: B:64:0x00f3  */
+    /* JADX WARN: Removed duplicated region for block: B:69:0x0120  */
+    /* JADX WARN: Removed duplicated region for block: B:72:0x01df  */
+    /* JADX WARN: Removed duplicated region for block: B:76:0x01ea  */
+    /* JADX WARN: Removed duplicated region for block: B:78:? A[RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private static final void ValuePropsFooter(final String str, final String str2, final Function0<Unit> function0, Modifier modifier, Composer composer, final int i, final int i2) {
+        int i3;
+        String str3;
+        Function0<Unit> function02;
+        int i4;
+        Modifier modifier2;
+        int currentCompositeKeyHash;
+        Composer composerM6388constructorimpl;
+        Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash;
+        Composer composer2;
+        final Modifier modifier3;
+        ScopeUpdateScope scopeUpdateScopeEndRestartGroup;
+        Composer composerStartRestartGroup = composer.startRestartGroup(-50540906);
+        if ((i2 & 1) != 0) {
+            i3 = i | 6;
+        } else if ((i & 6) == 0) {
+            i3 = (composerStartRestartGroup.changed(str) ? 4 : 2) | i;
+        } else {
+            i3 = i;
+        }
+        if ((i2 & 2) != 0) {
+            i3 |= 48;
+        } else {
+            if ((i & 48) == 0) {
+                str3 = str2;
+                i3 |= composerStartRestartGroup.changed(str3) ? 32 : 16;
+            }
+            if ((i2 & 4) == 0) {
+                i3 |= 384;
+            } else {
+                if ((i & 384) == 0) {
+                    function02 = function0;
+                    i3 |= composerStartRestartGroup.changedInstance(function02) ? 256 : 128;
+                }
+                i4 = i2 & 8;
+                if (i4 == 0) {
+                    if ((i & 3072) == 0) {
+                        modifier2 = modifier;
+                        i3 |= composerStartRestartGroup.changed(modifier2) ? 2048 : 1024;
+                    }
+                    if ((i3 & 1171) != 1170 && composerStartRestartGroup.getSkipping()) {
+                        composerStartRestartGroup.skipToGroupEnd();
+                        modifier3 = modifier2;
+                        composer2 = composerStartRestartGroup;
+                    } else {
+                        Modifier modifier4 = i4 == 0 ? Modifier.INSTANCE : modifier2;
+                        if (ComposerKt.isTraceInProgress()) {
+                            ComposerKt.traceEventStart(-50540906, i3, -1, "com.robinhood.android.advisory.promo.gold.ValuePropsFooter (DashboardDepositsGoldValuePropsComposable.kt:156)");
+                        }
+                        BentoTheme bentoTheme = BentoTheme.INSTANCE;
+                        int i5 = BentoTheme.$stable;
+                        Modifier modifierM21618defaultFillMaxWidthPadding3ABfNKs = com.robinhood.compose.bento.util.PaddingKt.m21618defaultFillMaxWidthPadding3ABfNKs(modifier4, bentoTheme.getSpacing(composerStartRestartGroup, i5).m21590getDefaultD9Ej5fM());
+                        MeasurePolicy measurePolicyColumnMeasurePolicy = Column2.columnMeasurePolicy(Arrangement.INSTANCE.m5089spacedBy0680j_4(bentoTheme.getSpacing(composerStartRestartGroup, i5).m21590getDefaultD9Ej5fM()), Alignment.INSTANCE.getCenterHorizontally(), composerStartRestartGroup, 48);
+                        currentCompositeKeyHash = Composables.getCurrentCompositeKeyHash(composerStartRestartGroup, 0);
+                        CompositionLocalMap currentCompositionLocalMap = composerStartRestartGroup.getCurrentCompositionLocalMap();
+                        Modifier modifierMaterializeModifier = ComposedModifier2.materializeModifier(composerStartRestartGroup, modifierM21618defaultFillMaxWidthPadding3ABfNKs);
+                        ComposeUiNode.Companion companion = ComposeUiNode.INSTANCE;
+                        Function0<ComposeUiNode> constructor = companion.getConstructor();
+                        if (composerStartRestartGroup.getApplier() == null) {
+                            Composables.invalidApplier();
+                        }
+                        composerStartRestartGroup.startReusableNode();
+                        if (!composerStartRestartGroup.getInserting()) {
+                            composerStartRestartGroup.createNode(constructor);
+                        } else {
+                            composerStartRestartGroup.useNode();
+                        }
+                        composerM6388constructorimpl = Updater.m6388constructorimpl(composerStartRestartGroup);
+                        Updater.m6390setimpl(composerM6388constructorimpl, measurePolicyColumnMeasurePolicy, companion.getSetMeasurePolicy());
+                        Updater.m6390setimpl(composerM6388constructorimpl, currentCompositionLocalMap, companion.getSetResolvedCompositionLocals());
+                        setCompositeKeyHash = companion.getSetCompositeKeyHash();
+                        if (!composerM6388constructorimpl.getInserting() || !Intrinsics.areEqual(composerM6388constructorimpl.rememberedValue(), Integer.valueOf(currentCompositeKeyHash))) {
+                            composerM6388constructorimpl.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash));
+                            composerM6388constructorimpl.apply(Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+                        }
+                        Updater.m6390setimpl(composerM6388constructorimpl, modifierMaterializeModifier, companion.getSetModifier());
+                        Column6 column6 = Column6.INSTANCE;
+                        Modifier modifier5 = modifier4;
+                        BentoMarkdownText2.BentoMarkdownText(str, (Modifier) null, BentoMarkdownText.INSTANCE.m21100withTextStylesYhh7B2I(bentoTheme.getTypography(composerStartRestartGroup, i5).getTextS(), TextAlign.INSTANCE.m7919getCentere0LSkKk(), bentoTheme.getColors(composerStartRestartGroup, i5).m21426getFg20d7_KjU(), bentoTheme.getColors(composerStartRestartGroup, i5).m21426getFg20d7_KjU(), false, composerStartRestartGroup, BentoMarkdownText.$stable << 15, 16), (Function0<Unit>) null, (Function1<? super String, Unit>) null, composerStartRestartGroup, (i3 & 14) | (MarkdownStyle.$stable << 6), 26);
+                        Function0<Unit> function03 = function02;
+                        BentoButtonKt.m20586BentoButtonEikTQX8(function03, str3, BentoSparkleInfoTag.sparkleBackground(SizeKt.fillMaxWidth$default(Modifier.INSTANCE, 0.0f, 1, null), RoundedCornerShape2.getCircleShape()), null, null, false, false, Color.m6701boximpl(Color.INSTANCE.m6725getTransparent0d7_KjU()), Color.m6701boximpl(bentoTheme.getColors(composerStartRestartGroup, i5).getJet()), null, null, false, null, composerStartRestartGroup, ((i3 >> 6) & 14) | 12582912 | (i3 & 112), 0, 7800);
+                        composer2 = composerStartRestartGroup;
+                        composer2.endNode();
+                        if (ComposerKt.isTraceInProgress()) {
+                            ComposerKt.traceEventEnd();
+                        }
+                        modifier3 = modifier5;
+                    }
+                    scopeUpdateScopeEndRestartGroup = composer2.endRestartGroup();
+                    if (scopeUpdateScopeEndRestartGroup == null) {
+                        scopeUpdateScopeEndRestartGroup.updateScope(new Function2() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt$$ExternalSyntheticLambda1
+                            @Override // kotlin.jvm.functions.Function2
+                            public final Object invoke(Object obj, Object obj2) {
+                                return DashboardDepositsGoldValuePropsComposable3.ValuePropsFooter$lambda$9(str, str2, function0, modifier3, i, i2, (Composer) obj, ((Integer) obj2).intValue());
+                            }
+                        });
+                        return;
+                    }
+                    return;
+                }
+                i3 |= 3072;
+                modifier2 = modifier;
+                if ((i3 & 1171) != 1170) {
+                    if (i4 == 0) {
+                    }
+                    if (ComposerKt.isTraceInProgress()) {
+                    }
+                    BentoTheme bentoTheme2 = BentoTheme.INSTANCE;
+                    int i52 = BentoTheme.$stable;
+                    Modifier modifierM21618defaultFillMaxWidthPadding3ABfNKs2 = com.robinhood.compose.bento.util.PaddingKt.m21618defaultFillMaxWidthPadding3ABfNKs(modifier4, bentoTheme2.getSpacing(composerStartRestartGroup, i52).m21590getDefaultD9Ej5fM());
+                    MeasurePolicy measurePolicyColumnMeasurePolicy2 = Column2.columnMeasurePolicy(Arrangement.INSTANCE.m5089spacedBy0680j_4(bentoTheme2.getSpacing(composerStartRestartGroup, i52).m21590getDefaultD9Ej5fM()), Alignment.INSTANCE.getCenterHorizontally(), composerStartRestartGroup, 48);
+                    currentCompositeKeyHash = Composables.getCurrentCompositeKeyHash(composerStartRestartGroup, 0);
+                    CompositionLocalMap currentCompositionLocalMap2 = composerStartRestartGroup.getCurrentCompositionLocalMap();
+                    Modifier modifierMaterializeModifier2 = ComposedModifier2.materializeModifier(composerStartRestartGroup, modifierM21618defaultFillMaxWidthPadding3ABfNKs2);
+                    ComposeUiNode.Companion companion2 = ComposeUiNode.INSTANCE;
+                    Function0<ComposeUiNode> constructor2 = companion2.getConstructor();
+                    if (composerStartRestartGroup.getApplier() == null) {
+                    }
+                    composerStartRestartGroup.startReusableNode();
+                    if (!composerStartRestartGroup.getInserting()) {
+                    }
+                    composerM6388constructorimpl = Updater.m6388constructorimpl(composerStartRestartGroup);
+                    Updater.m6390setimpl(composerM6388constructorimpl, measurePolicyColumnMeasurePolicy2, companion2.getSetMeasurePolicy());
+                    Updater.m6390setimpl(composerM6388constructorimpl, currentCompositionLocalMap2, companion2.getSetResolvedCompositionLocals());
+                    setCompositeKeyHash = companion2.getSetCompositeKeyHash();
+                    if (!composerM6388constructorimpl.getInserting()) {
+                        composerM6388constructorimpl.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash));
+                        composerM6388constructorimpl.apply(Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+                        Updater.m6390setimpl(composerM6388constructorimpl, modifierMaterializeModifier2, companion2.getSetModifier());
+                        Column6 column62 = Column6.INSTANCE;
+                        Modifier modifier52 = modifier4;
+                        BentoMarkdownText2.BentoMarkdownText(str, (Modifier) null, BentoMarkdownText.INSTANCE.m21100withTextStylesYhh7B2I(bentoTheme2.getTypography(composerStartRestartGroup, i52).getTextS(), TextAlign.INSTANCE.m7919getCentere0LSkKk(), bentoTheme2.getColors(composerStartRestartGroup, i52).m21426getFg20d7_KjU(), bentoTheme2.getColors(composerStartRestartGroup, i52).m21426getFg20d7_KjU(), false, composerStartRestartGroup, BentoMarkdownText.$stable << 15, 16), (Function0<Unit>) null, (Function1<? super String, Unit>) null, composerStartRestartGroup, (i3 & 14) | (MarkdownStyle.$stable << 6), 26);
+                        Function0<Unit> function032 = function02;
+                        BentoButtonKt.m20586BentoButtonEikTQX8(function032, str3, BentoSparkleInfoTag.sparkleBackground(SizeKt.fillMaxWidth$default(Modifier.INSTANCE, 0.0f, 1, null), RoundedCornerShape2.getCircleShape()), null, null, false, false, Color.m6701boximpl(Color.INSTANCE.m6725getTransparent0d7_KjU()), Color.m6701boximpl(bentoTheme2.getColors(composerStartRestartGroup, i52).getJet()), null, null, false, null, composerStartRestartGroup, ((i3 >> 6) & 14) | 12582912 | (i3 & 112), 0, 7800);
+                        composer2 = composerStartRestartGroup;
+                        composer2.endNode();
+                        if (ComposerKt.isTraceInProgress()) {
+                        }
+                        modifier3 = modifier52;
+                    }
+                }
+                scopeUpdateScopeEndRestartGroup = composer2.endRestartGroup();
+                if (scopeUpdateScopeEndRestartGroup == null) {
+                }
+            }
+            function02 = function0;
+            i4 = i2 & 8;
+            if (i4 == 0) {
+            }
+            modifier2 = modifier;
+            if ((i3 & 1171) != 1170) {
+            }
+            scopeUpdateScopeEndRestartGroup = composer2.endRestartGroup();
+            if (scopeUpdateScopeEndRestartGroup == null) {
+            }
+        }
+        str3 = str2;
+        if ((i2 & 4) == 0) {
+        }
+        function02 = function0;
+        i4 = i2 & 8;
+        if (i4 == 0) {
+        }
+        modifier2 = modifier;
+        if ((i3 & 1171) != 1170) {
+        }
+        scopeUpdateScopeEndRestartGroup = composer2.endRestartGroup();
+        if (scopeUpdateScopeEndRestartGroup == null) {
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* JADX WARN: Removed duplicated region for block: B:26:0x0048  */
+    /* JADX WARN: Removed duplicated region for block: B:28:0x004d  */
+    /* JADX WARN: Removed duplicated region for block: B:37:0x0065  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x0072  */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x0074  */
+    /* JADX WARN: Removed duplicated region for block: B:43:0x0078  */
+    /* JADX WARN: Removed duplicated region for block: B:46:0x007f  */
+    /* JADX WARN: Removed duplicated region for block: B:49:0x0093  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x0098  */
+    /* JADX WARN: Removed duplicated region for block: B:53:0x00cb  */
+    /* JADX WARN: Removed duplicated region for block: B:56:0x00d7  */
+    /* JADX WARN: Removed duplicated region for block: B:57:0x00db  */
+    /* JADX WARN: Removed duplicated region for block: B:62:0x0108  */
+    /* JADX WARN: Removed duplicated region for block: B:65:0x0167  */
+    /* JADX WARN: Removed duplicated region for block: B:68:0x0173  */
+    /* JADX WARN: Removed duplicated region for block: B:69:0x0177  */
+    /* JADX WARN: Removed duplicated region for block: B:74:0x01a4  */
+    /* JADX WARN: Removed duplicated region for block: B:77:0x0298  */
+    /* JADX WARN: Removed duplicated region for block: B:81:0x02a3  */
+    /* JADX WARN: Removed duplicated region for block: B:83:? A[RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static final void ValuePropsHeroScreen(final AdvisoryDepositGoldValueProps.Content.Hero hero, final Function0<Unit> function0, Modifier modifier, Composer composer, final int i, final int i2) {
+        AdvisoryDepositGoldValueProps.Content.Hero hero2;
+        int i3;
+        int i4;
+        Modifier modifier2;
+        int currentCompositeKeyHash;
+        Composer composerM6388constructorimpl;
+        Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash;
+        int currentCompositeKeyHash2;
+        Composer composerM6388constructorimpl2;
+        Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash2;
+        final Modifier modifier3;
+        ScopeUpdateScope scopeUpdateScopeEndRestartGroup;
+        Composer composerStartRestartGroup = composer.startRestartGroup(1002053785);
+        if ((i2 & 1) != 0) {
+            i3 = i | 6;
+            hero2 = hero;
+        } else if ((i & 6) == 0) {
+            hero2 = hero;
+            i3 = (composerStartRestartGroup.changedInstance(hero2) ? 4 : 2) | i;
+        } else {
+            hero2 = hero;
+            i3 = i;
+        }
+        if ((i2 & 2) != 0) {
+            i3 |= 48;
+        } else {
+            if ((i & 48) == 0) {
+                i3 |= composerStartRestartGroup.changedInstance(function0) ? 32 : 16;
+            }
+            i4 = i2 & 4;
+            if (i4 != 0) {
+                if ((i & 384) == 0) {
+                    modifier2 = modifier;
+                    i3 |= composerStartRestartGroup.changed(modifier2) ? 256 : 128;
+                }
+                if ((i3 & 147) == 146 && composerStartRestartGroup.getSkipping()) {
+                    composerStartRestartGroup.skipToGroupEnd();
+                    modifier3 = modifier2;
+                } else {
+                    Modifier modifier4 = i4 == 0 ? Modifier.INSTANCE : modifier2;
+                    if (ComposerKt.isTraceInProgress()) {
+                        ComposerKt.traceEventStart(1002053785, i3, -1, "com.robinhood.android.advisory.promo.gold.ValuePropsHeroScreen (DashboardDepositsGoldValuePropsComposable.kt:193)");
+                    }
+                    BentoTheme bentoTheme = BentoTheme.INSTANCE;
+                    int i5 = BentoTheme.$stable;
+                    String imageUrlLight = !bentoTheme.getColors(composerStartRestartGroup, i5).getIsDay() ? hero2.getImageUrlLight() : hero2.getImageUrlDark();
+                    Modifier modifierLogScreenTransitions$default = ModifiersKt.logScreenTransitions$default(modifier4, null, 1, null);
+                    Arrangement arrangement = Arrangement.INSTANCE;
+                    Arrangement.Vertical top = arrangement.getTop();
+                    Alignment.Companion companion = Alignment.INSTANCE;
+                    MeasurePolicy measurePolicyColumnMeasurePolicy = Column2.columnMeasurePolicy(top, companion.getStart(), composerStartRestartGroup, 0);
+                    currentCompositeKeyHash = Composables.getCurrentCompositeKeyHash(composerStartRestartGroup, 0);
+                    CompositionLocalMap currentCompositionLocalMap = composerStartRestartGroup.getCurrentCompositionLocalMap();
+                    Modifier modifierMaterializeModifier = ComposedModifier2.materializeModifier(composerStartRestartGroup, modifierLogScreenTransitions$default);
+                    ComposeUiNode.Companion companion2 = ComposeUiNode.INSTANCE;
+                    Function0<ComposeUiNode> constructor = companion2.getConstructor();
+                    if (composerStartRestartGroup.getApplier() == null) {
+                        Composables.invalidApplier();
+                    }
+                    composerStartRestartGroup.startReusableNode();
+                    if (composerStartRestartGroup.getInserting()) {
+                        composerStartRestartGroup.useNode();
+                    } else {
+                        composerStartRestartGroup.createNode(constructor);
+                    }
+                    composerM6388constructorimpl = Updater.m6388constructorimpl(composerStartRestartGroup);
+                    Updater.m6390setimpl(composerM6388constructorimpl, measurePolicyColumnMeasurePolicy, companion2.getSetMeasurePolicy());
+                    Updater.m6390setimpl(composerM6388constructorimpl, currentCompositionLocalMap, companion2.getSetResolvedCompositionLocals());
+                    setCompositeKeyHash = companion2.getSetCompositeKeyHash();
+                    if (!composerM6388constructorimpl.getInserting() || !Intrinsics.areEqual(composerM6388constructorimpl.rememberedValue(), Integer.valueOf(currentCompositeKeyHash))) {
+                        composerM6388constructorimpl.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash));
+                        composerM6388constructorimpl.apply(Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+                    }
+                    Updater.m6390setimpl(composerM6388constructorimpl, modifierMaterializeModifier, companion2.getSetModifier());
+                    Column6 column6 = Column6.INSTANCE;
+                    Modifier.Companion companion3 = Modifier.INSTANCE;
+                    Modifier modifierVerticalScroll$default = ScrollKt.verticalScroll$default(Column5.weight$default(column6, companion3, 1.0f, false, 2, null), ScrollKt.rememberScrollState(0, composerStartRestartGroup, 0, 1), false, null, false, 14, null);
+                    MeasurePolicy measurePolicyColumnMeasurePolicy2 = Column2.columnMeasurePolicy(arrangement.getTop(), companion.getCenterHorizontally(), composerStartRestartGroup, 48);
+                    currentCompositeKeyHash2 = Composables.getCurrentCompositeKeyHash(composerStartRestartGroup, 0);
+                    CompositionLocalMap currentCompositionLocalMap2 = composerStartRestartGroup.getCurrentCompositionLocalMap();
+                    Modifier modifierMaterializeModifier2 = ComposedModifier2.materializeModifier(composerStartRestartGroup, modifierVerticalScroll$default);
+                    Function0<ComposeUiNode> constructor2 = companion2.getConstructor();
+                    if (composerStartRestartGroup.getApplier() == null) {
+                        Composables.invalidApplier();
+                    }
+                    composerStartRestartGroup.startReusableNode();
+                    if (composerStartRestartGroup.getInserting()) {
+                        composerStartRestartGroup.useNode();
+                    } else {
+                        composerStartRestartGroup.createNode(constructor2);
+                    }
+                    composerM6388constructorimpl2 = Updater.m6388constructorimpl(composerStartRestartGroup);
+                    Updater.m6390setimpl(composerM6388constructorimpl2, measurePolicyColumnMeasurePolicy2, companion2.getSetMeasurePolicy());
+                    Updater.m6390setimpl(composerM6388constructorimpl2, currentCompositionLocalMap2, companion2.getSetResolvedCompositionLocals());
+                    setCompositeKeyHash2 = companion2.getSetCompositeKeyHash();
+                    if (!composerM6388constructorimpl2.getInserting() || !Intrinsics.areEqual(composerM6388constructorimpl2.rememberedValue(), Integer.valueOf(currentCompositeKeyHash2))) {
+                        composerM6388constructorimpl2.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash2));
+                        composerM6388constructorimpl2.apply(Integer.valueOf(currentCompositeKeyHash2), setCompositeKeyHash2);
+                    }
+                    Updater.m6390setimpl(composerM6388constructorimpl2, modifierMaterializeModifier2, companion2.getSetModifier());
+                    Modifier modifier5 = modifier4;
+                    BentoImage.BentoImage(SingletonAsyncImagePainter.m9120rememberAsyncImagePainterEHKIwbg(HttpUrl.INSTANCE.get(imageUrlLight), null, null, null, 0, null, composerStartRestartGroup, 0, 62), null, SizeKt.m5158heightInVpY3zN4$default(com.robinhood.compose.bento.util.PaddingKt.m21623defaultHorizontalPaddingrAjV9yQ(companion3, 0.0f, composerStartRestartGroup, 6, 1), 0.0f, C2002Dp.m7995constructorimpl(400), 1, null), null, null, 0.0f, null, composerStartRestartGroup, 48, 120);
+                    Modifier modifierM21618defaultFillMaxWidthPadding3ABfNKs = com.robinhood.compose.bento.util.PaddingKt.m21618defaultFillMaxWidthPadding3ABfNKs(companion3, bentoTheme.getSpacing(composerStartRestartGroup, i5).m21590getDefaultD9Ej5fM());
+                    String title = hero.getTitle();
+                    TextStyle displayCapsuleMedium = bentoTheme.getTypography(composerStartRestartGroup, i5).getDisplayCapsuleMedium();
+                    TextAlign.Companion companion4 = TextAlign.INSTANCE;
+                    BentoText2.m20747BentoText38GnDrw(title, modifierM21618defaultFillMaxWidthPadding3ABfNKs, null, null, null, null, TextAlign.m7912boximpl(companion4.m7919getCentere0LSkKk()), 0, false, 0, 0, null, 0, displayCapsuleMedium, composerStartRestartGroup, 0, 0, 8124);
+                    BentoText2.m20747BentoText38GnDrw(hero.getSubtitle(), com.robinhood.compose.bento.util.PaddingKt.m21621defaultFillMaxWidthPaddingVpY3zN4$default(companion3, 0.0f, bentoTheme.getSpacing(composerStartRestartGroup, i5).m21590getDefaultD9Ej5fM(), 1, null), null, null, null, null, TextAlign.m7912boximpl(companion4.m7919getCentere0LSkKk()), 0, false, 0, 0, null, 0, null, composerStartRestartGroup, 0, 0, 16316);
+                    composerStartRestartGroup.endNode();
+                    ValuePropsFooter(hero.getDisclosureMarkdown(), hero.getDoneCtaTitle(), function0, null, composerStartRestartGroup, (i3 << 3) & 896, 8);
+                    composerStartRestartGroup = composerStartRestartGroup;
+                    composerStartRestartGroup.endNode();
+                    if (ComposerKt.isTraceInProgress()) {
+                        ComposerKt.traceEventEnd();
+                    }
+                    modifier3 = modifier5;
+                }
+                scopeUpdateScopeEndRestartGroup = composerStartRestartGroup.endRestartGroup();
+                if (scopeUpdateScopeEndRestartGroup != null) {
+                    scopeUpdateScopeEndRestartGroup.updateScope(new Function2() { // from class: com.robinhood.android.advisory.promo.gold.DashboardDepositsGoldValuePropsComposableKt$$ExternalSyntheticLambda2
+                        @Override // kotlin.jvm.functions.Function2
+                        public final Object invoke(Object obj, Object obj2) {
+                            return DashboardDepositsGoldValuePropsComposable3.ValuePropsHeroScreen$lambda$12(hero, function0, modifier3, i, i2, (Composer) obj, ((Integer) obj2).intValue());
+                        }
+                    });
+                    return;
+                }
+                return;
+            }
+            i3 |= 384;
+            modifier2 = modifier;
+            if ((i3 & 147) == 146) {
+                if (i4 == 0) {
+                }
+                if (ComposerKt.isTraceInProgress()) {
+                }
+                BentoTheme bentoTheme2 = BentoTheme.INSTANCE;
+                int i52 = BentoTheme.$stable;
+                if (!bentoTheme2.getColors(composerStartRestartGroup, i52).getIsDay()) {
+                }
+                Modifier modifierLogScreenTransitions$default2 = ModifiersKt.logScreenTransitions$default(modifier4, null, 1, null);
+                Arrangement arrangement2 = Arrangement.INSTANCE;
+                Arrangement.Vertical top2 = arrangement2.getTop();
+                Alignment.Companion companion5 = Alignment.INSTANCE;
+                MeasurePolicy measurePolicyColumnMeasurePolicy3 = Column2.columnMeasurePolicy(top2, companion5.getStart(), composerStartRestartGroup, 0);
+                currentCompositeKeyHash = Composables.getCurrentCompositeKeyHash(composerStartRestartGroup, 0);
+                CompositionLocalMap currentCompositionLocalMap3 = composerStartRestartGroup.getCurrentCompositionLocalMap();
+                Modifier modifierMaterializeModifier3 = ComposedModifier2.materializeModifier(composerStartRestartGroup, modifierLogScreenTransitions$default2);
+                ComposeUiNode.Companion companion22 = ComposeUiNode.INSTANCE;
+                Function0<ComposeUiNode> constructor3 = companion22.getConstructor();
+                if (composerStartRestartGroup.getApplier() == null) {
+                }
+                composerStartRestartGroup.startReusableNode();
+                if (composerStartRestartGroup.getInserting()) {
+                }
+                composerM6388constructorimpl = Updater.m6388constructorimpl(composerStartRestartGroup);
+                Updater.m6390setimpl(composerM6388constructorimpl, measurePolicyColumnMeasurePolicy3, companion22.getSetMeasurePolicy());
+                Updater.m6390setimpl(composerM6388constructorimpl, currentCompositionLocalMap3, companion22.getSetResolvedCompositionLocals());
+                setCompositeKeyHash = companion22.getSetCompositeKeyHash();
+                if (!composerM6388constructorimpl.getInserting()) {
+                    composerM6388constructorimpl.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash));
+                    composerM6388constructorimpl.apply(Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+                    Updater.m6390setimpl(composerM6388constructorimpl, modifierMaterializeModifier3, companion22.getSetModifier());
+                    Column6 column62 = Column6.INSTANCE;
+                    Modifier.Companion companion32 = Modifier.INSTANCE;
+                    Modifier modifierVerticalScroll$default2 = ScrollKt.verticalScroll$default(Column5.weight$default(column62, companion32, 1.0f, false, 2, null), ScrollKt.rememberScrollState(0, composerStartRestartGroup, 0, 1), false, null, false, 14, null);
+                    MeasurePolicy measurePolicyColumnMeasurePolicy22 = Column2.columnMeasurePolicy(arrangement2.getTop(), companion5.getCenterHorizontally(), composerStartRestartGroup, 48);
+                    currentCompositeKeyHash2 = Composables.getCurrentCompositeKeyHash(composerStartRestartGroup, 0);
+                    CompositionLocalMap currentCompositionLocalMap22 = composerStartRestartGroup.getCurrentCompositionLocalMap();
+                    Modifier modifierMaterializeModifier22 = ComposedModifier2.materializeModifier(composerStartRestartGroup, modifierVerticalScroll$default2);
+                    Function0<ComposeUiNode> constructor22 = companion22.getConstructor();
+                    if (composerStartRestartGroup.getApplier() == null) {
+                    }
+                    composerStartRestartGroup.startReusableNode();
+                    if (composerStartRestartGroup.getInserting()) {
+                    }
+                    composerM6388constructorimpl2 = Updater.m6388constructorimpl(composerStartRestartGroup);
+                    Updater.m6390setimpl(composerM6388constructorimpl2, measurePolicyColumnMeasurePolicy22, companion22.getSetMeasurePolicy());
+                    Updater.m6390setimpl(composerM6388constructorimpl2, currentCompositionLocalMap22, companion22.getSetResolvedCompositionLocals());
+                    setCompositeKeyHash2 = companion22.getSetCompositeKeyHash();
+                    if (!composerM6388constructorimpl2.getInserting()) {
+                        composerM6388constructorimpl2.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash2));
+                        composerM6388constructorimpl2.apply(Integer.valueOf(currentCompositeKeyHash2), setCompositeKeyHash2);
+                        Updater.m6390setimpl(composerM6388constructorimpl2, modifierMaterializeModifier22, companion22.getSetModifier());
+                        Modifier modifier52 = modifier4;
+                        BentoImage.BentoImage(SingletonAsyncImagePainter.m9120rememberAsyncImagePainterEHKIwbg(HttpUrl.INSTANCE.get(imageUrlLight), null, null, null, 0, null, composerStartRestartGroup, 0, 62), null, SizeKt.m5158heightInVpY3zN4$default(com.robinhood.compose.bento.util.PaddingKt.m21623defaultHorizontalPaddingrAjV9yQ(companion32, 0.0f, composerStartRestartGroup, 6, 1), 0.0f, C2002Dp.m7995constructorimpl(400), 1, null), null, null, 0.0f, null, composerStartRestartGroup, 48, 120);
+                        Modifier modifierM21618defaultFillMaxWidthPadding3ABfNKs2 = com.robinhood.compose.bento.util.PaddingKt.m21618defaultFillMaxWidthPadding3ABfNKs(companion32, bentoTheme2.getSpacing(composerStartRestartGroup, i52).m21590getDefaultD9Ej5fM());
+                        String title2 = hero.getTitle();
+                        TextStyle displayCapsuleMedium2 = bentoTheme2.getTypography(composerStartRestartGroup, i52).getDisplayCapsuleMedium();
+                        TextAlign.Companion companion42 = TextAlign.INSTANCE;
+                        BentoText2.m20747BentoText38GnDrw(title2, modifierM21618defaultFillMaxWidthPadding3ABfNKs2, null, null, null, null, TextAlign.m7912boximpl(companion42.m7919getCentere0LSkKk()), 0, false, 0, 0, null, 0, displayCapsuleMedium2, composerStartRestartGroup, 0, 0, 8124);
+                        BentoText2.m20747BentoText38GnDrw(hero.getSubtitle(), com.robinhood.compose.bento.util.PaddingKt.m21621defaultFillMaxWidthPaddingVpY3zN4$default(companion32, 0.0f, bentoTheme2.getSpacing(composerStartRestartGroup, i52).m21590getDefaultD9Ej5fM(), 1, null), null, null, null, null, TextAlign.m7912boximpl(companion42.m7919getCentere0LSkKk()), 0, false, 0, 0, null, 0, null, composerStartRestartGroup, 0, 0, 16316);
+                        composerStartRestartGroup.endNode();
+                        ValuePropsFooter(hero.getDisclosureMarkdown(), hero.getDoneCtaTitle(), function0, null, composerStartRestartGroup, (i3 << 3) & 896, 8);
+                        composerStartRestartGroup = composerStartRestartGroup;
+                        composerStartRestartGroup.endNode();
+                        if (ComposerKt.isTraceInProgress()) {
+                        }
+                        modifier3 = modifier52;
+                    }
+                }
+            }
+            scopeUpdateScopeEndRestartGroup = composerStartRestartGroup.endRestartGroup();
+            if (scopeUpdateScopeEndRestartGroup != null) {
+            }
+        }
+        i4 = i2 & 4;
+        if (i4 != 0) {
+        }
+        modifier2 = modifier;
+        if ((i3 & 147) == 146) {
+        }
+        scopeUpdateScopeEndRestartGroup = composerStartRestartGroup.endRestartGroup();
+        if (scopeUpdateScopeEndRestartGroup != null) {
+        }
+    }
+}

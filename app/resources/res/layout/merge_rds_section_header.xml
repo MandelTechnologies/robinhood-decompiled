@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:id="@+id/header_row_text"
+        android:paddingTop="@dimen/rds_spacing_xlarge"
+        android:paddingBottom="@dimen/rds_spacing_xsmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/rds_row_horizontal_spacing"
+        android:paddingEnd="@dimen/rds_row_horizontal_spacing"/>
+</merge>

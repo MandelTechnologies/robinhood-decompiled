@@ -1,0 +1,81 @@
+package com.google.crypto.tink.aead;
+
+import com.google.crypto.tink.KeyTypeManager;
+import com.google.crypto.tink.proto.AesCtrKey;
+import com.google.crypto.tink.proto.AesCtrKeyFormat;
+import com.google.crypto.tink.proto.AesCtrParams;
+import com.google.crypto.tink.proto.KeyData;
+import com.google.crypto.tink.shaded.protobuf.ByteString;
+import com.google.crypto.tink.shaded.protobuf.ExtensionRegistryLite;
+import com.google.crypto.tink.shaded.protobuf.InvalidProtocolBufferException;
+import com.google.crypto.tink.subtle.AesCtrJceCipher;
+import com.google.crypto.tink.subtle.IndCpaCipher;
+import com.google.crypto.tink.subtle.Random;
+import com.google.crypto.tink.subtle.Validators;
+import java.security.GeneralSecurityException;
+
+/* loaded from: classes27.dex */
+public class AesCtrKeyManager extends KeyTypeManager<AesCtrKey> {
+    public int getVersion() {
+        return 0;
+    }
+
+    AesCtrKeyManager() {
+        super(AesCtrKey.class, new KeyTypeManager.PrimitiveFactory<IndCpaCipher, AesCtrKey>(IndCpaCipher.class) { // from class: com.google.crypto.tink.aead.AesCtrKeyManager.1
+            @Override // com.google.crypto.tink.KeyTypeManager.PrimitiveFactory
+            public IndCpaCipher getPrimitive(AesCtrKey key) throws GeneralSecurityException {
+                return new AesCtrJceCipher(key.getKeyValue().toByteArray(), key.getParams().getIvSize());
+            }
+        });
+    }
+
+    @Override // com.google.crypto.tink.KeyTypeManager
+    public String getKeyType() {
+        return "type.googleapis.com/google.crypto.tink.AesCtrKey";
+    }
+
+    @Override // com.google.crypto.tink.KeyTypeManager
+    public KeyData.KeyMaterialType keyMaterialType() {
+        return KeyData.KeyMaterialType.SYMMETRIC;
+    }
+
+    @Override // com.google.crypto.tink.KeyTypeManager
+    public void validateKey(AesCtrKey key) throws GeneralSecurityException {
+        Validators.validateVersion(key.getVersion(), getVersion());
+        Validators.validateAesKeySize(key.getKeyValue().size());
+        validateParams(key.getParams());
+    }
+
+    @Override // com.google.crypto.tink.KeyTypeManager
+    public AesCtrKey parseKey(ByteString byteString) throws InvalidProtocolBufferException {
+        return AesCtrKey.parseFrom(byteString, ExtensionRegistryLite.getEmptyRegistry());
+    }
+
+    @Override // com.google.crypto.tink.KeyTypeManager
+    public KeyTypeManager.KeyFactory<AesCtrKeyFormat, AesCtrKey> keyFactory() {
+        return new KeyTypeManager.KeyFactory<AesCtrKeyFormat, AesCtrKey>(AesCtrKeyFormat.class) { // from class: com.google.crypto.tink.aead.AesCtrKeyManager.2
+            @Override // com.google.crypto.tink.KeyTypeManager.KeyFactory
+            public void validateKeyFormat(AesCtrKeyFormat format2) throws GeneralSecurityException {
+                Validators.validateAesKeySize(format2.getKeySize());
+                AesCtrKeyManager.this.validateParams(format2.getParams());
+            }
+
+            @Override // com.google.crypto.tink.KeyTypeManager.KeyFactory
+            public AesCtrKeyFormat parseKeyFormat(ByteString byteString) throws InvalidProtocolBufferException {
+                return AesCtrKeyFormat.parseFrom(byteString, ExtensionRegistryLite.getEmptyRegistry());
+            }
+
+            @Override // com.google.crypto.tink.KeyTypeManager.KeyFactory
+            public AesCtrKey createKey(AesCtrKeyFormat format2) throws GeneralSecurityException {
+                return AesCtrKey.newBuilder().setParams(format2.getParams()).setKeyValue(ByteString.copyFrom(Random.randBytes(format2.getKeySize()))).setVersion(AesCtrKeyManager.this.getVersion()).build();
+            }
+        };
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void validateParams(AesCtrParams params) throws GeneralSecurityException {
+        if (params.getIvSize() < 12 || params.getIvSize() > 16) {
+            throw new GeneralSecurityException("invalid IV size");
+        }
+    }
+}

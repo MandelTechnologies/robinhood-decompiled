@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/widget_root"
+    android:background="@drawable/widget_rounded"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/mobius_white">
+    <ImageButton
+        android:layout_gravity="end|top"
+        android:id="@+id/widget_refresh_btn"
+        android:background="@null"
+        android:layout_width="@dimen/widget_refresh_button_size"
+        android:layout_height="@dimen/widget_refresh_button_size"
+        android:contentDescription="@string/general_label_refresh"
+        app:srcCompat="0x7f0807bc"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="@color/mobius_prime"
+        android:gravity="center"
+        android:id="@+id/widget_error_txt"
+        android:padding="@dimen/rds_spacing_default"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/widget_portfolio_error_unauthenticated"/>
+</FrameLayout>

@@ -1,0 +1,32 @@
+package com.robinhood.android.cash.rewards.p074ui.onboarding;
+
+import com.robinhood.android.udf.OldBaseDuxo_MembersInjector;
+import com.robinhood.coroutines.p287rx.RxFactory;
+import com.robinhood.utils.RxGlobalErrorHandler;
+import dagger.MembersInjector;
+import dagger.internal.Provider;
+import dispatch.core.DispatcherProvider;
+
+/* loaded from: classes7.dex */
+public final class RewardsOnboardingActivityDuxo_MembersInjector implements MembersInjector<RewardsOnboardingActivityDuxo> {
+    private final Provider<DispatcherProvider> dispatcherProvider;
+    private final Provider<RxFactory> rxFactoryProvider;
+    private final Provider<RxGlobalErrorHandler> rxGlobalErrorHandlerProvider;
+
+    private RewardsOnboardingActivityDuxo_MembersInjector(Provider<DispatcherProvider> provider, Provider<RxFactory> provider2, Provider<RxGlobalErrorHandler> provider3) {
+        this.dispatcherProvider = provider;
+        this.rxFactoryProvider = provider2;
+        this.rxGlobalErrorHandlerProvider = provider3;
+    }
+
+    @Override // dagger.MembersInjector
+    public void injectMembers(RewardsOnboardingActivityDuxo rewardsOnboardingActivityDuxo) {
+        OldBaseDuxo_MembersInjector.injectDispatcherProvider(rewardsOnboardingActivityDuxo, this.dispatcherProvider.get());
+        OldBaseDuxo_MembersInjector.injectRxFactory(rewardsOnboardingActivityDuxo, this.rxFactoryProvider.get());
+        OldBaseDuxo_MembersInjector.injectRxGlobalErrorHandler(rewardsOnboardingActivityDuxo, this.rxGlobalErrorHandlerProvider.get());
+    }
+
+    public static MembersInjector<RewardsOnboardingActivityDuxo> create(Provider<DispatcherProvider> provider, Provider<RxFactory> provider2, Provider<RxGlobalErrorHandler> provider3) {
+        return new RewardsOnboardingActivityDuxo_MembersInjector(provider, provider2, provider3);
+    }
+}

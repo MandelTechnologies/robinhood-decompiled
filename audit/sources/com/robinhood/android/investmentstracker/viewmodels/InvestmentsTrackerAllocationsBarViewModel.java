@@ -1,0 +1,139 @@
+package com.robinhood.android.investmentstracker.viewmodels;
+
+import bff_money_movement.service.p019v1.InvestmentsTrackerComponentAllocationsBarDetailsDto;
+import com.robinhood.android.investmentstracker.security.SecurityFilter;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import org.bouncycastle.i18n.ErrorBundle;
+
+/* compiled from: InvestmentsTrackerAllocationsBarViewModel.kt */
+@Metadata(m3635d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0087\b\u0018\u00002\u00020\u0001B3\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\n¢\u0006\u0004\b\u000b\u0010\fJ\b\u0010\u0016\u001a\u00020\u0000H\u0016J\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0018\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010\u0019\u001a\u00020\u0007HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0005HÆ\u0003J\t\u0010\u001b\u001a\u00020\nHÆ\u0003J=\u0010\u001c\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\nHÆ\u0001J\u0013\u0010\u001d\u001a\u00020\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010 HÖ\u0003J\t\u0010!\u001a\u00020\"HÖ\u0001J\t\u0010#\u001a\u00020\u0005HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0006\u001a\u00020\u0007X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0014\u0010\b\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0010R\u0014\u0010\t\u001a\u00020\nX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015¨\u0006$"}, m3636d2 = {"Lcom/robinhood/android/investmentstracker/viewmodels/InvestmentsTrackerAllocationsBarViewModel;", "Lcom/robinhood/android/investmentstracker/viewmodels/InvestmentsTrackerComponent;", ErrorBundle.DETAIL_ENTRY, "Lbff_money_movement/service/v1/InvestmentsTrackerComponentAllocationsBarDetailsDto;", "activeId", "", "type", "Lcom/robinhood/android/investmentstracker/viewmodels/InvestmentsTrackerComponentType;", "id", "securityFilter", "Lcom/robinhood/android/investmentstracker/security/SecurityFilter;", "<init>", "(Lbff_money_movement/service/v1/InvestmentsTrackerComponentAllocationsBarDetailsDto;Ljava/lang/String;Lcom/robinhood/android/investmentstracker/viewmodels/InvestmentsTrackerComponentType;Ljava/lang/String;Lcom/robinhood/android/investmentstracker/security/SecurityFilter;)V", "getDetails", "()Lbff_money_movement/service/v1/InvestmentsTrackerComponentAllocationsBarDetailsDto;", "getActiveId", "()Ljava/lang/String;", "getType", "()Lcom/robinhood/android/investmentstracker/viewmodels/InvestmentsTrackerComponentType;", "getId", "getSecurityFilter", "()Lcom/robinhood/android/investmentstracker/security/SecurityFilter;", "copyForView", "component1", "component2", "component3", "component4", "component5", "copy", "equals", "", "other", "", "hashCode", "", "toString", "feature-investments-tracker_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes10.dex */
+public final /* data */ class InvestmentsTrackerAllocationsBarViewModel implements InvestmentsTrackerComponent {
+    public static final int $stable = 8;
+    private final String activeId;
+    private final InvestmentsTrackerComponentAllocationsBarDetailsDto details;
+    private final String id;
+    private final SecurityFilter securityFilter;
+    private final InvestmentsTrackerComponentType type;
+
+    public static /* synthetic */ InvestmentsTrackerAllocationsBarViewModel copy$default(InvestmentsTrackerAllocationsBarViewModel investmentsTrackerAllocationsBarViewModel, InvestmentsTrackerComponentAllocationsBarDetailsDto investmentsTrackerComponentAllocationsBarDetailsDto, String str, InvestmentsTrackerComponentType investmentsTrackerComponentType, String str2, SecurityFilter securityFilter, int i, Object obj) {
+        if ((i & 1) != 0) {
+            investmentsTrackerComponentAllocationsBarDetailsDto = investmentsTrackerAllocationsBarViewModel.details;
+        }
+        if ((i & 2) != 0) {
+            str = investmentsTrackerAllocationsBarViewModel.activeId;
+        }
+        if ((i & 4) != 0) {
+            investmentsTrackerComponentType = investmentsTrackerAllocationsBarViewModel.type;
+        }
+        if ((i & 8) != 0) {
+            str2 = investmentsTrackerAllocationsBarViewModel.id;
+        }
+        if ((i & 16) != 0) {
+            securityFilter = investmentsTrackerAllocationsBarViewModel.securityFilter;
+        }
+        SecurityFilter securityFilter2 = securityFilter;
+        InvestmentsTrackerComponentType investmentsTrackerComponentType2 = investmentsTrackerComponentType;
+        return investmentsTrackerAllocationsBarViewModel.copy(investmentsTrackerComponentAllocationsBarDetailsDto, str, investmentsTrackerComponentType2, str2, securityFilter2);
+    }
+
+    /* renamed from: component1, reason: from getter */
+    public final InvestmentsTrackerComponentAllocationsBarDetailsDto getDetails() {
+        return this.details;
+    }
+
+    /* renamed from: component2, reason: from getter */
+    public final String getActiveId() {
+        return this.activeId;
+    }
+
+    /* renamed from: component3, reason: from getter */
+    public final InvestmentsTrackerComponentType getType() {
+        return this.type;
+    }
+
+    /* renamed from: component4, reason: from getter */
+    public final String getId() {
+        return this.id;
+    }
+
+    /* renamed from: component5, reason: from getter */
+    public final SecurityFilter getSecurityFilter() {
+        return this.securityFilter;
+    }
+
+    public final InvestmentsTrackerAllocationsBarViewModel copy(InvestmentsTrackerComponentAllocationsBarDetailsDto details, String activeId, InvestmentsTrackerComponentType type2, String id, SecurityFilter securityFilter) {
+        Intrinsics.checkNotNullParameter(details, "details");
+        Intrinsics.checkNotNullParameter(type2, "type");
+        Intrinsics.checkNotNullParameter(id, "id");
+        Intrinsics.checkNotNullParameter(securityFilter, "securityFilter");
+        return new InvestmentsTrackerAllocationsBarViewModel(details, activeId, type2, id, securityFilter);
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof InvestmentsTrackerAllocationsBarViewModel)) {
+            return false;
+        }
+        InvestmentsTrackerAllocationsBarViewModel investmentsTrackerAllocationsBarViewModel = (InvestmentsTrackerAllocationsBarViewModel) other;
+        return Intrinsics.areEqual(this.details, investmentsTrackerAllocationsBarViewModel.details) && Intrinsics.areEqual(this.activeId, investmentsTrackerAllocationsBarViewModel.activeId) && this.type == investmentsTrackerAllocationsBarViewModel.type && Intrinsics.areEqual(this.id, investmentsTrackerAllocationsBarViewModel.id) && Intrinsics.areEqual(this.securityFilter, investmentsTrackerAllocationsBarViewModel.securityFilter);
+    }
+
+    public int hashCode() {
+        int iHashCode = this.details.hashCode() * 31;
+        String str = this.activeId;
+        return ((((((iHashCode + (str == null ? 0 : str.hashCode())) * 31) + this.type.hashCode()) * 31) + this.id.hashCode()) * 31) + this.securityFilter.hashCode();
+    }
+
+    public String toString() {
+        return "InvestmentsTrackerAllocationsBarViewModel(details=" + this.details + ", activeId=" + this.activeId + ", type=" + this.type + ", id=" + this.id + ", securityFilter=" + this.securityFilter + ")";
+    }
+
+    public InvestmentsTrackerAllocationsBarViewModel(InvestmentsTrackerComponentAllocationsBarDetailsDto details, String str, InvestmentsTrackerComponentType type2, String id, SecurityFilter securityFilter) {
+        Intrinsics.checkNotNullParameter(details, "details");
+        Intrinsics.checkNotNullParameter(type2, "type");
+        Intrinsics.checkNotNullParameter(id, "id");
+        Intrinsics.checkNotNullParameter(securityFilter, "securityFilter");
+        this.details = details;
+        this.activeId = str;
+        this.type = type2;
+        this.id = id;
+        this.securityFilter = securityFilter;
+    }
+
+    public /* synthetic */ InvestmentsTrackerAllocationsBarViewModel(InvestmentsTrackerComponentAllocationsBarDetailsDto investmentsTrackerComponentAllocationsBarDetailsDto, String str, InvestmentsTrackerComponentType investmentsTrackerComponentType, String str2, SecurityFilter securityFilter, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this(investmentsTrackerComponentAllocationsBarDetailsDto, (i & 2) != 0 ? null : str, investmentsTrackerComponentType, str2, securityFilter);
+    }
+
+    public final InvestmentsTrackerComponentAllocationsBarDetailsDto getDetails() {
+        return this.details;
+    }
+
+    public final String getActiveId() {
+        return this.activeId;
+    }
+
+    @Override // com.robinhood.android.investmentstracker.viewmodels.InvestmentsTrackerComponent
+    public InvestmentsTrackerComponentType getType() {
+        return this.type;
+    }
+
+    @Override // com.robinhood.android.investmentstracker.viewmodels.InvestmentsTrackerComponent
+    public String getId() {
+        return this.id;
+    }
+
+    @Override // com.robinhood.android.investmentstracker.viewmodels.InvestmentsTrackerComponent
+    public SecurityFilter getSecurityFilter() {
+        return this.securityFilter;
+    }
+
+    @Override // com.robinhood.android.investmentstracker.viewmodels.InvestmentsTrackerComponent
+    public InvestmentsTrackerAllocationsBarViewModel copyForView() {
+        return copy$default(this, null, null, null, null, null, 31, null);
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/pog_pictogram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textColor="?attr/colorPogText"
+        android:gravity="center"
+        android:id="@+id/pog_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:maxLength="5"
+        app:autoSizeTextType="uniform"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmallBold"
+        android:textColor="?attr/colorPogText"
+        android:gravity="center"
+        android:id="@+id/pog_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</merge>

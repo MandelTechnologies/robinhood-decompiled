@@ -1,0 +1,23 @@
+
+F
+:direct_deposit_paycheck_recurring_investment_success_title¦ö÷œ‰ÃÒÊP
+O
+Cdirect_deposit_switcher_paycheck_recurring_investment_success_titleÂúÄÑ®™öÇ6
+U
+Ialready_set_up_direct_deposit_paycheck_recurring_investment_success_title‘öœôÃ³İè
+b
+Ualready_set_up_direct_deposit_confirmation_paycheck_recurring_investments_description†Í¼¾µ¯ÙÆÌ
+n
+bdirect_deposit_switcher_confirmation_paycheck_recurring_investments_with_dollar_amount_descriptionÆÌ’ç´‚²#
+k
+_direct_deposit_switcher_confirmation_paycheck_recurring_investments_with_percentage_descriptionõ±Íú÷ì †A
+e
+Ydirect_deposit_confirmation_paycheck_recurring_investments_with_dollar_amount_descriptionˆó˜†ê£Ğ«6
+c
+Vdirect_deposit_confirmation_paycheck_recurring_investments_with_percentage_description¨ù°¨’ßùŒ­
+*
+paycheck_recurring_investmentsÀõæıœºÒş8
+"
+set_up_direct_depositµæ»ÃÌÕê‡à
+*
+already_set_up_direct_deposit²Æ‘Ø–Ç„èÀ

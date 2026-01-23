@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="exercise_psa_list_top_margin">@dimen/rds_spacing_xlarge</dimen>
+    <dimen name="exercise_warning_icon_top_margin">@dimen/rds_spacing_xlarge</dimen>
+    <dimen name="exercise_warning_visualization_top_margin">@dimen/rds_spacing_xlarge</dimen>
+</resources>

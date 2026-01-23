@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmallBold"
+        android:textColor="?attr/colorForeground2"
+        android:id="@+id/header_text"
+        android:paddingTop="@dimen/rds_spacing_xlarge"
+        android:paddingBottom="@dimen/rds_spacing_xsmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/rds_row_horizontal_spacing"
+        android:paddingEnd="@dimen/rds_spacing_small"/>
+    <ImageView
+        android:id="@+id/header_icon"
+        android:paddingTop="@dimen/rds_spacing_xlarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="?android:attr/textColorSecondary"
+        android:contentDescription="@string/search_recurring_icon_content_description"/>
+</LinearLayout>

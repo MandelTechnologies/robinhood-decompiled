@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="32dp"
+    android:layout_height="32dp">
+    <ImageView
+        android:id="@+id/atm_map_cluster_icon_image"
+        android:background="@drawable/circle_bg"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="@null"
+        android:backgroundTint="#6f787e"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textColor="@color/mobius_white"
+        android:layout_gravity="center"
+        android:id="@+id/atm_map_cluster_icon_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

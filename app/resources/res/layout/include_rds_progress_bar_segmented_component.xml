@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.progress.RdsProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="@dimen/progress_bar_horizontal_height"
+    android:max="100"
+    android:layout_weight="1"
+    android:layout_marginEnd="@dimen/rds_spacing_xsmall"
+    android:progressTint="?attr/colorForeground1"
+    android:progressBackgroundTint="?attr/colorForeground3"
+    android:progressBackgroundTintMode="src_over"
+    style="?attr/progressBarHorizontalStyle"/>

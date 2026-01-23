@@ -1,0 +1,30 @@
+package com.google.android.gms.internal.mlkit_vision_text_common;
+
+import com.google.firebase.encoders.FieldDescriptor;
+import com.google.firebase.encoders.ObjectEncoder;
+import java.io.IOException;
+
+/* compiled from: com.google.android.gms:play-services-mlkit-text-recognition-common@@19.1.0 */
+/* loaded from: classes27.dex */
+final class zzmo implements ObjectEncoder {
+    static final zzmo zza = new zzmo();
+
+    static {
+        FieldDescriptor.Builder builder = FieldDescriptor.builder("result");
+        zzct zzctVar = new zzct();
+        zzctVar.zza(1);
+        builder.withProperty(zzctVar.zzb()).build();
+        FieldDescriptor.Builder builder2 = FieldDescriptor.builder("ok");
+        zzct zzctVar2 = new zzct();
+        zzctVar2.zza(2);
+        builder2.withProperty(zzctVar2.zzb()).build();
+    }
+
+    private zzmo() {
+    }
+
+    @Override // com.google.firebase.encoders.ObjectEncoder
+    public final /* bridge */ /* synthetic */ void encode(Object obj, Object obj2) throws IOException {
+        throw null;
+    }
+}

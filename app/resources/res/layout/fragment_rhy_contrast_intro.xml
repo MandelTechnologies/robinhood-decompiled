@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorTransparent">
+    <include layout="@layout/merge_rhy_intro_guides"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:gravity="center_horizontal"
+        android:id="@+id/rhy_contrast_intro_title"
+        android:paddingBottom="@dimen/rds_spacing_small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/rhy_intro_content_end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/rhy_intro_content_start_guideline"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:gravity="center_horizontal"
+        android:id="@+id/rhy_contrast_intro_subtitle"
+        android:paddingBottom="@dimen/rds_spacing_medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/rhy_contrast_combined_text_btn"
+        app:layout_constraintEnd_toEndOf="@+id/rhy_intro_content_end_guideline"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/rhy_intro_content_start_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/rhy_contrast_intro_title"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:useLinkMovementMethod="true"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rhy_contrast_intro_animation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/rhy_contrast_animation_top_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/rhy_intro_contrast_bottom_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rhy_contrast_intro_subtitle"
+        app:lottie_ignoreDisabledSystemAnimations="true"/>
+    <com.robinhood.android.designsystem.button.RdsTextButton
+        android:textColor="?attr/colorForeground2"
+        android:id="@+id/rhy_contrast_replay_btn"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contrast_replay"
+        android:alpha="0"
+        android:drawableStart="@drawable/ic_rds_recurring_12dp"
+        android:drawableTint="?attr/colorForeground2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rhy_contrast_intro_animation"
+        style="?attr/textButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

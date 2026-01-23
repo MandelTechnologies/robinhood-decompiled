@@ -1,0 +1,99 @@
+package com.robinhood.android.acatsin.agreement;
+
+import androidx.lifecycle.SavedStateHandle;
+import bonfire.proto.idl.acats.p027v1.AcatsService;
+import com.robinhood.android.agreements.AgreementsStore;
+import com.robinhood.android.common.util.analytics.AnalyticsStrings;
+import com.robinhood.android.udf.DuxoBundle;
+import com.robinhood.librobinhood.data.store.bonfire.slip.SlipAgreementsStore;
+import dagger.internal.Factory;
+import javax.inject.Provider;
+import kotlin.Metadata;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: AcatsInAgreementDuxo_Factory.kt */
+@Metadata(m3635d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0007\u0018\u0000 \u00112\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0011BM\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00070\u0004\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u0004\u0012\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0004\u0012\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u0004¢\u0006\u0004\b\u000e\u0010\u000fJ\b\u0010\u0010\u001a\u00020\u0002H\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00070\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\f\u001a\b\u0012\u0004\u0012\u00020\r0\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0012"}, m3636d2 = {"Lcom/robinhood/android/acatsin/agreement/AcatsInAgreementDuxo_Factory;", "Ldagger/internal/Factory;", "Lcom/robinhood/android/acatsin/agreement/AcatsInAgreementDuxo;", "slipAgreementsStore", "Ljavax/inject/Provider;", "Lcom/robinhood/librobinhood/data/store/bonfire/slip/SlipAgreementsStore;", "agreementsStore", "Lcom/robinhood/android/agreements/AgreementsStore;", "acatsService", "Lbonfire/proto/idl/acats/v1/AcatsService;", "savedStateHandle", "Landroidx/lifecycle/SavedStateHandle;", "duxoBundle", "Lcom/robinhood/android/udf/DuxoBundle;", "<init>", "(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V", "get", "Companion", "lib-acats-ui_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes17.dex */
+public final class AcatsInAgreementDuxo_Factory implements Factory<AcatsInAgreementDuxo> {
+    private final Provider<AcatsService> acatsService;
+    private final Provider<AgreementsStore> agreementsStore;
+    private final Provider<DuxoBundle> duxoBundle;
+    private final Provider<SavedStateHandle> savedStateHandle;
+    private final Provider<SlipAgreementsStore> slipAgreementsStore;
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    public static final int $stable = 8;
+
+    @JvmStatic
+    public static final AcatsInAgreementDuxo_Factory create(Provider<SlipAgreementsStore> provider, Provider<AgreementsStore> provider2, Provider<AcatsService> provider3, Provider<SavedStateHandle> provider4, Provider<DuxoBundle> provider5) {
+        return INSTANCE.create(provider, provider2, provider3, provider4, provider5);
+    }
+
+    @JvmStatic
+    public static final AcatsInAgreementDuxo newInstance(SlipAgreementsStore slipAgreementsStore, AgreementsStore agreementsStore, AcatsService acatsService, SavedStateHandle savedStateHandle, DuxoBundle duxoBundle) {
+        return INSTANCE.newInstance(slipAgreementsStore, agreementsStore, acatsService, savedStateHandle, duxoBundle);
+    }
+
+    public AcatsInAgreementDuxo_Factory(Provider<SlipAgreementsStore> slipAgreementsStore, Provider<AgreementsStore> agreementsStore, Provider<AcatsService> acatsService, Provider<SavedStateHandle> savedStateHandle, Provider<DuxoBundle> duxoBundle) {
+        Intrinsics.checkNotNullParameter(slipAgreementsStore, "slipAgreementsStore");
+        Intrinsics.checkNotNullParameter(agreementsStore, "agreementsStore");
+        Intrinsics.checkNotNullParameter(acatsService, "acatsService");
+        Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
+        Intrinsics.checkNotNullParameter(duxoBundle, "duxoBundle");
+        this.slipAgreementsStore = slipAgreementsStore;
+        this.agreementsStore = agreementsStore;
+        this.acatsService = acatsService;
+        this.savedStateHandle = savedStateHandle;
+        this.duxoBundle = duxoBundle;
+    }
+
+    @Override // javax.inject.Provider
+    public AcatsInAgreementDuxo get() {
+        Companion companion = INSTANCE;
+        SlipAgreementsStore slipAgreementsStore = this.slipAgreementsStore.get();
+        Intrinsics.checkNotNullExpressionValue(slipAgreementsStore, "get(...)");
+        AgreementsStore agreementsStore = this.agreementsStore.get();
+        Intrinsics.checkNotNullExpressionValue(agreementsStore, "get(...)");
+        AcatsService acatsService = this.acatsService.get();
+        Intrinsics.checkNotNullExpressionValue(acatsService, "get(...)");
+        SavedStateHandle savedStateHandle = this.savedStateHandle.get();
+        Intrinsics.checkNotNullExpressionValue(savedStateHandle, "get(...)");
+        DuxoBundle duxoBundle = this.duxoBundle.get();
+        Intrinsics.checkNotNullExpressionValue(duxoBundle, "get(...)");
+        return companion.newInstance(slipAgreementsStore, agreementsStore, acatsService, savedStateHandle, duxoBundle);
+    }
+
+    /* compiled from: AcatsInAgreementDuxo_Factory.kt */
+    @Metadata(m3635d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003JN\u0010\u0004\u001a\u00020\u00052\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\n0\u00072\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\f0\u00072\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000e0\u00072\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00100\u0007H\u0007J0\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0006\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0007¨\u0006\u0013"}, m3636d2 = {"Lcom/robinhood/android/acatsin/agreement/AcatsInAgreementDuxo_Factory$Companion;", "", "<init>", "()V", AnalyticsStrings.BUTTON_NEW_LIST_CREATE, "Lcom/robinhood/android/acatsin/agreement/AcatsInAgreementDuxo_Factory;", "slipAgreementsStore", "Ljavax/inject/Provider;", "Lcom/robinhood/librobinhood/data/store/bonfire/slip/SlipAgreementsStore;", "agreementsStore", "Lcom/robinhood/android/agreements/AgreementsStore;", "acatsService", "Lbonfire/proto/idl/acats/v1/AcatsService;", "savedStateHandle", "Landroidx/lifecycle/SavedStateHandle;", "duxoBundle", "Lcom/robinhood/android/udf/DuxoBundle;", "newInstance", "Lcom/robinhood/android/acatsin/agreement/AcatsInAgreementDuxo;", "lib-acats-ui_externalDebug"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        @JvmStatic
+        public final AcatsInAgreementDuxo_Factory create(Provider<SlipAgreementsStore> slipAgreementsStore, Provider<AgreementsStore> agreementsStore, Provider<AcatsService> acatsService, Provider<SavedStateHandle> savedStateHandle, Provider<DuxoBundle> duxoBundle) {
+            Intrinsics.checkNotNullParameter(slipAgreementsStore, "slipAgreementsStore");
+            Intrinsics.checkNotNullParameter(agreementsStore, "agreementsStore");
+            Intrinsics.checkNotNullParameter(acatsService, "acatsService");
+            Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
+            Intrinsics.checkNotNullParameter(duxoBundle, "duxoBundle");
+            return new AcatsInAgreementDuxo_Factory(slipAgreementsStore, agreementsStore, acatsService, savedStateHandle, duxoBundle);
+        }
+
+        @JvmStatic
+        public final AcatsInAgreementDuxo newInstance(SlipAgreementsStore slipAgreementsStore, AgreementsStore agreementsStore, AcatsService acatsService, SavedStateHandle savedStateHandle, DuxoBundle duxoBundle) {
+            Intrinsics.checkNotNullParameter(slipAgreementsStore, "slipAgreementsStore");
+            Intrinsics.checkNotNullParameter(agreementsStore, "agreementsStore");
+            Intrinsics.checkNotNullParameter(acatsService, "acatsService");
+            Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
+            Intrinsics.checkNotNullParameter(duxoBundle, "duxoBundle");
+            return new AcatsInAgreementDuxo(slipAgreementsStore, agreementsStore, acatsService, savedStateHandle, duxoBundle);
+        }
+    }
+}

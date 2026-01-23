@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:paddingLeft="@dimen/rds_spacing_medium"
+    android:paddingRight="@dimen/rds_spacing_medium"
+    android:paddingBottom="@dimen/rds_spacing_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="?attr/colorBackground2"
+    style="?attr/bottomSheetStyle">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplaySmall"
+        android:gravity="center_horizontal"
+        android:id="@+id/mute_notifications_title_text"
+        android:padding="@dimen/rds_spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.robinhood.android.designsystem.selectioncontrol.RdsToggleView
+        android:id="@+id/mute_notifications_toggle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?attr/toggleStyle"/>
+</LinearLayout>

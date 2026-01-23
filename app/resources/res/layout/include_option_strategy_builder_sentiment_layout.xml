@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/options_strategy_builder_sentiment_layout"
+    android:layout_width="@dimen/options_strategy_builder_sentiment_icon_dimen"
+    android:layout_height="@dimen/options_strategy_builder_sentiment_icon_dimen"
+    android:layout_marginLeft="@dimen/rds_spacing_small"
+    android:layout_marginRight="@dimen/rds_spacing_small"
+    android:layout_marginHorizontal="@dimen/rds_spacing_small">
+    <View
+        android:id="@+id/options_strategy_builder_sentiment_background"
+        android:background="@drawable/strategy_builder_sentiment_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/strategy_builder_sentiment_background_selector"/>
+    <View
+        android:id="@+id/options_strategy_builder_sentiment_foreground"
+        android:background="@drawable/strategy_builder_sentiment_outline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/strategy_builder_sentiment_outline_selector"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/options_strategy_builder_sentiment_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:tint="@color/strategy_builder_sentiment_icon_selector"
+        android:contentDescription="@null"/>
+</FrameLayout>

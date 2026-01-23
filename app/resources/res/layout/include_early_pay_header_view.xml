@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.earlypay.enrollment.p110ui.EarlyPayHeaderView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:paddingTop="@dimen/rds_spacing_xxlarge"
+    android:paddingBottom="@dimen/rds_spacing_medium"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/rds_spacing_medium"
+    android:paddingEnd="@dimen/rds_spacing_medium"
+    android:backgroundTint="?attr/paletteColorDotLight"/>

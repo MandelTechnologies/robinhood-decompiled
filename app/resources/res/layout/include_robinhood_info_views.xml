@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leadingIcon="@drawable/ic_action_stopwatch_half_scale"
+        app:primaryText="@string/robinhood_instant_info_funds_summary"
+        app:showBottomDivider="false"
+        style="?attr/rowAvatarContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leadingIcon="@drawable/svg_ic_deposit_24dp_half_scale"
+        app:primaryText="@string/robinhood_instant_info_deposit_summary"
+        app:showBottomDivider="false"
+        style="?attr/rowAvatarContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leadingIcon="@drawable/ic_action_zero_half_scale"
+        app:primaryText="@string/robinhood_instant_info_commission_summary"
+        app:showBottomDivider="false"
+        style="?attr/rowAvatarContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leadingIcon="@drawable/svg_ic_bank_24dp_half_scale"
+        app:primaryText="@string/robinhood_instant_info_minimums_summary"
+        app:showBottomDivider="false"
+        style="?attr/rowAvatarContainerStyle"/>
+</merge>

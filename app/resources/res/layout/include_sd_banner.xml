@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.odyssey.lib.view.SdBanner xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/sd_banner"
+    android:background="@drawable/banner_background"
+    android:paddingTop="@dimen/rds_spacing_default"
+    android:paddingBottom="@dimen/rds_spacing_default"
+    android:clickable="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/rds_spacing_medium"
+    android:paddingStart="0dp"
+    android:paddingEnd="@dimen/rds_spacing_default"
+    android:paddingVertical="@dimen/rds_spacing_default"/>

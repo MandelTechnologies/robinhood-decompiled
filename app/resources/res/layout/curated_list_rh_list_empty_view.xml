@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/list_empty_view_vertical_padding"
+    android:paddingBottom="@dimen/list_empty_view_vertical_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMediumBold"
+        android:textColor="?attr/colorForeground2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/curated_list_rh_list_empty_title"
+        android:paddingStart="@dimen/rds_spacing_xlarge"
+        android:paddingEnd="@dimen/rds_spacing_xlarge"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColor="?attr/colorForeground2"
+        android:gravity="center"
+        android:paddingTop="@dimen/rds_spacing_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/curated_list_rh_list_empty_subtitle"
+        android:paddingStart="@dimen/rds_spacing_xlarge"
+        android:paddingEnd="@dimen/rds_spacing_xlarge"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/debit_card_user_status_banner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.banking.p065ui.DebitCardUserStatusBannerView
+        android:id="@+id/debit_card_user_status_banner_view"
+        android:paddingLeft="@dimen/rds_spacing_medium"
+        android:paddingTop="@dimen/rds_spacing_small"
+        android:paddingRight="@dimen/rds_spacing_medium"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/rds_spacing_medium"
+        style="?attr/infoBannerStyle"/>
+</FrameLayout>

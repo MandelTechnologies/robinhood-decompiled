@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.robinhood.android.designsystem.chip.RdsChip
+        android:layout_gravity="end"
+        android:id="@+id/inbox_thread_response_txt"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/actionChipStyle"/>
+</merge>

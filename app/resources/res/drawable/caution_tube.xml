@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="72dp"
+    android:width="78dp"
+    android:viewportWidth="78"
+    android:viewportHeight="72">
+    <item
+        android:height="72dp"
+        android:drawable="@drawable/caution_tube_icon"/>
+</layer-list>

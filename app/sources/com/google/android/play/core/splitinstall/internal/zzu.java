@@ -1,0 +1,43 @@
+package com.google.android.play.core.splitinstall.internal;
+
+import android.os.Process;
+import android.text.TextUtils;
+import android.util.Log;
+import java.util.IllegalFormatException;
+import java.util.Locale;
+
+/* compiled from: com.google.android.play:feature-delivery@@2.1.0 */
+/* loaded from: classes27.dex */
+public final class zzu {
+    private final String zza;
+
+    public zzu(String str) {
+        this.zza = ("UID: [" + Process.myUid() + "]  PID: [" + Process.myPid() + "] ").concat(str);
+    }
+
+    private static String zzf(String str, String str2, Object... objArr) {
+        if (objArr.length > 0) {
+            try {
+                str2 = String.format(Locale.US, str2, objArr);
+            } catch (IllegalFormatException e) {
+                Log.e("PlayCore", "Unable to format ".concat(str2), e);
+                str2 = str2 + " [" + TextUtils.join(", ", objArr) + "]";
+            }
+        }
+        return str + " : " + str2;
+    }
+
+    public final int zza(String str, Object... objArr) {
+        if (Log.isLoggable("PlayCore", 3)) {
+            return Log.d("PlayCore", zzf(this.zza, str, objArr));
+        }
+        return 0;
+    }
+
+    public final int zzb(String str, Object... objArr) {
+        if (Log.isLoggable("PlayCore", 6)) {
+            return Log.e("PlayCore", zzf(this.zza, str, objArr));
+        }
+        return 0;
+    }
+}

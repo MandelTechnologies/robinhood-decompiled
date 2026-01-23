@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.shared.education.p377ui.lessons.cardstack.EducationLessonCardStackInfoCard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/ThemeOverlay.Robinhood.DesignSystem.Education"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/education_card_stack_card_height"
+    android:outlineProvider="none"
+    app:cardBackgroundColor="?attr/colorBackground1"
+    app:cardCornerRadius="@dimen/education_card_stack_card_radius"
+    app:contentPadding="@dimen/education_card_content_padding"
+    app:strokeColor="?attr/colorForeground3"
+    app:strokeWidth="0.5dp"/>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_button_spinner__4_res_0x7f080016">
+    <target
+        android:name="progressBar"
+        android:animation="@drawable/_button_spinner__0_res_0x7f080012"/>
+    <target
+        android:name="progressBarContainer"
+        android:animation="@drawable/_button_spinner__3_res_0x7f080015"/>
+</animated-vector>

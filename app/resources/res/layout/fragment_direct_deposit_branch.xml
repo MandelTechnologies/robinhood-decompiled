@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceDisplayMedium"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/direct_deposit_branch_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_default"
+        android:text="@string/direct_deposit_branch_title"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:gravity="center_horizontal"
+        android:id="@+id/direct_deposit_branch_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rds_spacing_small"
+        android:layout_marginBottom="@dimen/rds_spacing_medium"
+        android:text="@string/direct_deposit_branch_summary"
+        android:layout_marginStart="@dimen/rds_spacing_medium"
+        android:layout_marginEnd="@dimen/rds_spacing_medium"/>
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:id="@+id/direct_deposit_account_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leadingIcon="@drawable/svg_direct_deposit_online"
+        app:primaryText="@string/direct_deposit_branch_account_info_title"
+        app:secondaryText="@string/direct_deposit_branch_account_info_summary"
+        app:showBottomDivider="true"
+        style="?attr/rowAvatarContainerStyle"/>
+    <com.robinhood.android.designsystem.row.RdsRowView
+        android:id="@+id/direct_deposit_pre_filled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leadingIcon="@drawable/svg_direct_deposit_form"
+        app:primaryText="@string/direct_deposit_branch_pre_filled_title"
+        app:secondaryText="@string/direct_deposit_branch_pre_filled_summary"
+        app:showBottomDivider="true"
+        style="?attr/rowAvatarContainerStyle"/>
+</LinearLayout>

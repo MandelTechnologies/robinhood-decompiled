@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.robinhood.shared.common.agreementview.RdsAgreementView
+        android:id="@+id/rhs_conversion_agreement_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:acceptButtonText="@string/rhs_conversion_agreement_confirm"
+        app:rawResId="@raw/rhs_conversion_disclosure"
+        app:reviewButtonText="@string/rhs_conversion_agreement_review"/>
+</LinearLayout>

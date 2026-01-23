@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:duplicateParentState="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:duplicateParentState="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/compound_button_color_selector"
+            android:layout_marginEnd="@dimen/rds_spacing_default"
+            app:srcCompat="@drawable/legacy_radio_button"
+            style="?attr/rowLeadingIconStyle"/>
+        <com.robinhood.android.designsystem.row.component.RdsRowTextContainerView
+            android:id="@+id/radio_button_text_container"
+            android:duplicateParentState="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?attr/rowTextContainerStyle"/>
+    </LinearLayout>
+    <include
+        android:layout_gravity="bottom"
+        android:id="@+id/radio_button_bottom_divider"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        layout="@layout/include_rds_divider"/>
+</merge>

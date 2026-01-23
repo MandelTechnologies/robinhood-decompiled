@@ -1,0 +1,26 @@
+package com.nimbusds.jose.crypto.impl;
+
+/* loaded from: classes27.dex */
+public final class AuthenticatedCipherText {
+    private final byte[] authenticationTag;
+    private final byte[] cipherText;
+
+    public AuthenticatedCipherText(byte[] bArr, byte[] bArr2) {
+        if (bArr == null) {
+            throw new IllegalArgumentException("The cipher text must not be null");
+        }
+        this.cipherText = bArr;
+        if (bArr2 == null) {
+            throw new IllegalArgumentException("The authentication tag must not be null");
+        }
+        this.authenticationTag = bArr2;
+    }
+
+    public byte[] getCipherText() {
+        return this.cipherText;
+    }
+
+    public byte[] getAuthenticationTag() {
+        return this.authenticationTag;
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.button.RdsIconButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/merchantrewards_overview_info_button"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:layout_margin="@dimen/rds_spacing_small"
+    android:tint="?attr/colorForeground1"
+    android:contentDescription="@string/cash_merchant_rewards_overview_info"
+    android:backgroundTint="?attr/colorBackground1"
+    app:srcCompat="@drawable/ic_rds_question_24dp"/>

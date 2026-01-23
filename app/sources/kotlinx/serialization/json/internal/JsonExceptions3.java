@@ -1,0 +1,17 @@
+package kotlinx.serialization.json.internal;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.SerializationExceptions2;
+
+/* compiled from: JsonExceptions.kt */
+@Metadata(m3635d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\b\u0010\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, m3636d2 = {"Lkotlinx/serialization/json/internal/JsonException;", "Lkotlinx/serialization/SerializationException;", "message", "", "<init>", "(Ljava/lang/String;)V", "kotlinx-serialization-json"}, m3637k = 1, m3638mv = {2, 0, 0}, m3640xi = 48)
+/* renamed from: kotlinx.serialization.json.internal.JsonException, reason: use source file name */
+/* loaded from: classes14.dex */
+public class JsonExceptions3 extends SerializationExceptions2 {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public JsonExceptions3(String message) {
+        super(message);
+        Intrinsics.checkNotNullParameter(message, "message");
+    }
+}

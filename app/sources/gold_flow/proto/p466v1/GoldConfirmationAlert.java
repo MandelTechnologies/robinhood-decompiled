@@ -1,0 +1,216 @@
+package gold_flow.proto.p466v1;
+
+import com.robinhood.android.account.p060ui.AccountOverviewOptionsSettingCard4;
+import com.squareup.wire.FieldEncoding;
+import com.squareup.wire.Message;
+import com.squareup.wire.ProtoAdapter;
+import com.squareup.wire.ProtoReader;
+import com.squareup.wire.ProtoWriter;
+import com.squareup.wire.ReverseProtoWriter;
+import com.squareup.wire.Syntax;
+import com.squareup.wire.WireField;
+import com.squareup.wire.internal.Internal;
+import java.io.IOException;
+import java.util.ArrayList;
+import kotlin.Deprecated;
+import kotlin.Metadata;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.JvmField;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Reflection;
+import kotlin.reflect.KClass;
+import okio.ByteString;
+
+/* compiled from: GoldConfirmationAlert.kt */
+@Metadata(m3635d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\u0018\u0000 \u001a2\u000e\u0012\u0004\u0012\u00020\u0000\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001aB5\u0012\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\t¢\u0006\u0004\b\n\u0010\u000bJ\b\u0010\u0011\u001a\u00020\u0002H\u0017J\u0013\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0015H\u0096\u0002J\b\u0010\u0016\u001a\u00020\u0017H\u0016J\b\u0010\u0018\u001a\u00020\u0004H\u0016J4\u0010\u0019\u001a\u00020\u00002\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\b\u001a\u00020\tR\u0018\u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0018\u0010\u0005\u001a\u0004\u0018\u00010\u00048\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\rR\u0018\u0010\u0006\u001a\u0004\u0018\u00010\u00078\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010¨\u0006\u001b"}, m3636d2 = {"Lgold_flow/proto/v1/GoldConfirmationAlert;", "Lcom/squareup/wire/Message;", "", "title", "", "description", AccountOverviewOptionsSettingCard4.CTA, "Lgold_flow/proto/v1/Cta;", "unknownFields", "Lokio/ByteString;", "<init>", "(Ljava/lang/String;Ljava/lang/String;Lgold_flow/proto/v1/Cta;Lokio/ByteString;)V", "getTitle", "()Ljava/lang/String;", "getDescription", "getCta", "()Lgold_flow/proto/v1/Cta;", "newBuilder", "equals", "", "other", "", "hashCode", "", "toString", "copy", "Companion", "gold_flow.v1_externalRelease"}, m3637k = 1, m3638mv = {2, 1, 0}, m3640xi = 48)
+/* loaded from: classes21.dex */
+public final class GoldConfirmationAlert extends Message {
+
+    @JvmField
+    public static final ProtoAdapter<GoldConfirmationAlert> ADAPTER;
+
+    @WireField(adapter = "gold_flow.proto.v1.Cta#ADAPTER", schemaIndex = 2, tag = 3)
+    private final Cta cta;
+
+    @WireField(adapter = "com.squareup.wire.ProtoAdapter#STRING", schemaIndex = 1, tag = 2)
+    private final String description;
+
+    @WireField(adapter = "com.squareup.wire.ProtoAdapter#STRING", schemaIndex = 0, tag = 1)
+    private final String title;
+
+    public GoldConfirmationAlert() {
+        this(null, null, null, null, 15, null);
+    }
+
+    @Override // com.squareup.wire.Message
+    public /* bridge */ /* synthetic */ Message.Builder newBuilder() {
+        return (Message.Builder) m28153newBuilder();
+    }
+
+    public final String getTitle() {
+        return this.title;
+    }
+
+    public final String getDescription() {
+        return this.description;
+    }
+
+    public final Cta getCta() {
+        return this.cta;
+    }
+
+    public /* synthetic */ GoldConfirmationAlert(String str, String str2, Cta cta, ByteString byteString, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i & 1) != 0 ? null : str, (i & 2) != 0 ? null : str2, (i & 4) != 0 ? null : cta, (i & 8) != 0 ? ByteString.EMPTY : byteString);
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public GoldConfirmationAlert(String str, String str2, Cta cta, ByteString unknownFields) {
+        super(ADAPTER, unknownFields);
+        Intrinsics.checkNotNullParameter(unknownFields, "unknownFields");
+        this.title = str;
+        this.description = str2;
+        this.cta = cta;
+    }
+
+    @Deprecated
+    /* renamed from: newBuilder, reason: collision with other method in class */
+    public /* synthetic */ Void m28153newBuilder() {
+        throw new AssertionError("Builders are deprecated and only available in a javaInterop build; see https://square.github.io/wire/wire_compiler/#kotlin");
+    }
+
+    public boolean equals(Object other) {
+        if (other == this) {
+            return true;
+        }
+        if (!(other instanceof GoldConfirmationAlert)) {
+            return false;
+        }
+        GoldConfirmationAlert goldConfirmationAlert = (GoldConfirmationAlert) other;
+        return Intrinsics.areEqual(unknownFields(), goldConfirmationAlert.unknownFields()) && Intrinsics.areEqual(this.title, goldConfirmationAlert.title) && Intrinsics.areEqual(this.description, goldConfirmationAlert.description) && Intrinsics.areEqual(this.cta, goldConfirmationAlert.cta);
+    }
+
+    public int hashCode() {
+        int i = this.hashCode;
+        if (i != 0) {
+            return i;
+        }
+        int iHashCode = unknownFields().hashCode() * 37;
+        String str = this.title;
+        int iHashCode2 = (iHashCode + (str != null ? str.hashCode() : 0)) * 37;
+        String str2 = this.description;
+        int iHashCode3 = (iHashCode2 + (str2 != null ? str2.hashCode() : 0)) * 37;
+        Cta cta = this.cta;
+        int iHashCode4 = iHashCode3 + (cta != null ? cta.hashCode() : 0);
+        this.hashCode = iHashCode4;
+        return iHashCode4;
+    }
+
+    @Override // com.squareup.wire.Message
+    public String toString() {
+        ArrayList arrayList = new ArrayList();
+        String str = this.title;
+        if (str != null) {
+            arrayList.add("title=" + Internal.sanitize(str));
+        }
+        String str2 = this.description;
+        if (str2 != null) {
+            arrayList.add("description=" + Internal.sanitize(str2));
+        }
+        Cta cta = this.cta;
+        if (cta != null) {
+            arrayList.add("cta=" + cta);
+        }
+        return CollectionsKt.joinToString$default(arrayList, ", ", "GoldConfirmationAlert{", "}", 0, null, null, 56, null);
+    }
+
+    public static /* synthetic */ GoldConfirmationAlert copy$default(GoldConfirmationAlert goldConfirmationAlert, String str, String str2, Cta cta, ByteString byteString, int i, Object obj) {
+        if ((i & 1) != 0) {
+            str = goldConfirmationAlert.title;
+        }
+        if ((i & 2) != 0) {
+            str2 = goldConfirmationAlert.description;
+        }
+        if ((i & 4) != 0) {
+            cta = goldConfirmationAlert.cta;
+        }
+        if ((i & 8) != 0) {
+            byteString = goldConfirmationAlert.unknownFields();
+        }
+        return goldConfirmationAlert.copy(str, str2, cta, byteString);
+    }
+
+    public final GoldConfirmationAlert copy(String title, String description, Cta cta, ByteString unknownFields) {
+        Intrinsics.checkNotNullParameter(unknownFields, "unknownFields");
+        return new GoldConfirmationAlert(title, description, cta, unknownFields);
+    }
+
+    static {
+        final FieldEncoding fieldEncoding = FieldEncoding.LENGTH_DELIMITED;
+        final KClass orCreateKotlinClass = Reflection.getOrCreateKotlinClass(GoldConfirmationAlert.class);
+        final Syntax syntax = Syntax.PROTO_3;
+        ADAPTER = new ProtoAdapter<GoldConfirmationAlert>(fieldEncoding, orCreateKotlinClass, syntax) { // from class: gold_flow.proto.v1.GoldConfirmationAlert$Companion$ADAPTER$1
+            @Override // com.squareup.wire.ProtoAdapter
+            public int encodedSize(GoldConfirmationAlert value) {
+                Intrinsics.checkNotNullParameter(value, "value");
+                int size = value.unknownFields().size();
+                ProtoAdapter<String> protoAdapter = ProtoAdapter.STRING;
+                return size + protoAdapter.encodedSizeWithTag(1, value.getTitle()) + protoAdapter.encodedSizeWithTag(2, value.getDescription()) + Cta.ADAPTER.encodedSizeWithTag(3, value.getCta());
+            }
+
+            @Override // com.squareup.wire.ProtoAdapter
+            public void encode(ProtoWriter writer, GoldConfirmationAlert value) throws IOException {
+                Intrinsics.checkNotNullParameter(writer, "writer");
+                Intrinsics.checkNotNullParameter(value, "value");
+                ProtoAdapter<String> protoAdapter = ProtoAdapter.STRING;
+                protoAdapter.encodeWithTag(writer, 1, (int) value.getTitle());
+                protoAdapter.encodeWithTag(writer, 2, (int) value.getDescription());
+                Cta.ADAPTER.encodeWithTag(writer, 3, (int) value.getCta());
+                writer.writeBytes(value.unknownFields());
+            }
+
+            @Override // com.squareup.wire.ProtoAdapter
+            public void encode(ReverseProtoWriter writer, GoldConfirmationAlert value) throws IOException {
+                Intrinsics.checkNotNullParameter(writer, "writer");
+                Intrinsics.checkNotNullParameter(value, "value");
+                writer.writeBytes(value.unknownFields());
+                Cta.ADAPTER.encodeWithTag(writer, 3, (int) value.getCta());
+                ProtoAdapter<String> protoAdapter = ProtoAdapter.STRING;
+                protoAdapter.encodeWithTag(writer, 2, (int) value.getDescription());
+                protoAdapter.encodeWithTag(writer, 1, (int) value.getTitle());
+            }
+
+            @Override // com.squareup.wire.ProtoAdapter
+            public GoldConfirmationAlert redact(GoldConfirmationAlert value) {
+                Intrinsics.checkNotNullParameter(value, "value");
+                Cta cta = value.getCta();
+                return GoldConfirmationAlert.copy$default(value, null, null, cta != null ? Cta.ADAPTER.redact(cta) : null, ByteString.EMPTY, 3, null);
+            }
+
+            /* JADX WARN: Can't rename method to resolve collision */
+            @Override // com.squareup.wire.ProtoAdapter
+            public GoldConfirmationAlert decode(ProtoReader reader) throws IOException {
+                Intrinsics.checkNotNullParameter(reader, "reader");
+                long jBeginMessage = reader.beginMessage();
+                String strDecode = null;
+                String strDecode2 = null;
+                Cta ctaDecode = null;
+                while (true) {
+                    int iNextTag = reader.nextTag();
+                    if (iNextTag == -1) {
+                        return new GoldConfirmationAlert(strDecode, strDecode2, ctaDecode, reader.endMessageAndGetUnknownFields(jBeginMessage));
+                    }
+                    if (iNextTag == 1) {
+                        strDecode = ProtoAdapter.STRING.decode(reader);
+                    } else if (iNextTag == 2) {
+                        strDecode2 = ProtoAdapter.STRING.decode(reader);
+                    } else if (iNextTag == 3) {
+                        ctaDecode = Cta.ADAPTER.decode(reader);
+                    } else {
+                        reader.readUnknownField(iNextTag);
+                    }
+                }
+            }
+        };
+    }
+}

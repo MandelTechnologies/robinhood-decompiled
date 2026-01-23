@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Space
+            android:id="@+id/chips_top_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/rds_spacing_default"
+            app:layout_constraintBottom_toTopOf="@+id/chips_title_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularMediumBold"
+            android:id="@+id/chips_title_txt"
+            android:paddingLeft="@dimen/rds_row_horizontal_spacing"
+            android:paddingRight="@dimen/rds_row_horizontal_spacing"
+            android:paddingBottom="@dimen/rds_spacing_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingHorizontal="@dimen/rds_row_horizontal_spacing"
+            app:layout_constraintBottom_toTopOf="@+id/chips_recycler_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chips_top_divider"/>
+        <com.robinhood.android.common.p088ui.CuratedListChipRecyclerView
+            android:id="@+id/chips_recycler_view"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/rds_spacing_medium"
+            android:paddingEnd="@dimen/rds_spacing_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chips_title_txt"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

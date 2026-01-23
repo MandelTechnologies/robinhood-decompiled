@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.robinhood.android.optionsstrategybuilder.pills.StrategyBuilderChip
+        android:id="@+id/start_pill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_xsmall"
+        android:layout_marginRight="@dimen/rds_spacing_xsmall"
+        android:backgroundTint="@color/strategy_chip_background_color_selector"
+        android:foregroundTint="@color/strategy_chip_foreground_color_selector"
+        android:layout_marginHorizontal="@dimen/rds_spacing_xsmall"
+        app:rippleColor="?attr/colorRipple"
+        style="?attr/dropdownChipStyle"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularSmall"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_xsmall"
+        android:layout_marginRight="@dimen/rds_spacing_xsmall"
+        android:text="@string/general_label_long_dash"
+        android:layout_marginHorizontal="@dimen/rds_spacing_xsmall"/>
+    <com.robinhood.android.optionsstrategybuilder.pills.StrategyBuilderChip
+        android:id="@+id/end_pill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/rds_spacing_xsmall"
+        android:layout_marginRight="@dimen/rds_spacing_xsmall"
+        android:backgroundTint="@color/strategy_chip_background_color_selector"
+        android:foregroundTint="@color/strategy_chip_foreground_color_selector"
+        android:layout_marginHorizontal="@dimen/rds_spacing_xsmall"
+        app:rippleColor="?attr/colorRipple"
+        style="?attr/dropdownChipStyle"/>
+</merge>

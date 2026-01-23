@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/overlay_container"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/primary_layer"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="?attr/colorBackground1">
+            <com.robinhood.android.common.p088ui.view.FragmentContainerLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <include layout="@layout/include_toolbar"/>
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.compose.p011ui.platform.ComposeView
+        android:id="@+id/compose_overlay_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/onboarding_layer"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.robinhood.android.common.p088ui.view.FragmentContainerLayout
+                android:id="@+id/onboarding_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

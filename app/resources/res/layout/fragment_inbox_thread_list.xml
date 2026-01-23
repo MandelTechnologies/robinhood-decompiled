@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="?attr/colorBackground1">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.robinhood.android.common.p088ui.view.LoggedRecyclerView
+            android:id="@+id/recycler_view"
+            android:paddingBottom="@dimen/rds_spacing_small"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:analyticsScrollEvent="scroll"
+            app:analyticsScrollUserAction="threads_list_browse"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.robinhood.android.designsystem.progress.RdsProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        style="@style/Widget.AppCompat.ProgressBar"/>
+    <com.robinhood.android.common.view.ErrorView
+        android:id="@+id/error_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:errorDescriptionText="@string/inbox_thread_list_error_description"
+        app:errorIconImage="@drawable/svg_caution_tube_white_with_shadow"
+        app:errorTitleText="@string/inbox_thread_list_error_title"
+        app:primaryButtonText="@string/error_try_again"/>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.robinhood.android.odyssey.lib.view.SdFlexibleComponentListLayout
+        android:id="@+id/sd_generic_template_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_weight="1">
+        <com.robinhood.android.odyssey.lib.view.SdFlexibleComponentListLayout
+            android:id="@+id/sd_generic_template_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+    <com.robinhood.android.odyssey.lib.view.SdFlexibleComponentListLayout
+        android:id="@+id/sd_generic_template_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

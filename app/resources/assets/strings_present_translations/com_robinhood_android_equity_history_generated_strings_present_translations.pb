@@ -1,0 +1,47 @@
+
+
+account_used_title
+
+adr_fee_detail_title
+&
+ adr_fee_detail_record_date_label
+'
+!adr_fee_detail_process_date_label
+.
+(adr_fee_detail_timeline_status_confirmed
+,
+&adr_fee_detail_timeline_status_pending
+)
+#adr_fee_detail_timeline_status_paid
+(
+"adr_fee_detail_num_of_shares_label
++
+%adr_fee_detail_amount_per_share_label
+'
+!adr_fee_detail_total_amount_label
+0
+*adr_fee_detail_menu_item_title_view_symbol
+ 
+borrow_charge_detail_title
+'
+!borrow_charge_charge_amount_title
+%
+borrow_charge_charge_date_title
+'
+!borrow_charge_charge_period_title
+*
+$borrow_charge_charge_period_subtitle
+'
+!borrow_charge_charge_status_title
+,
+&borrow_charge_charge_instruments_title
+)
+#borrow_charge_charge_status_pending
+%
+borrow_charge_charge_status_new
+,
+&borrow_charge_charge_status_processing
++
+%borrow_charge_charge_status_completed
+.
+(borrow_charge_charge_status_inconsistent

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="?attr/actionBarSize">
+    <com.robinhood.android.designsystem.button.RdsIconButton
+        android:id="@+id/top_nav_icon_button"
+        android:padding="@dimen/rds_spacing_small"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="?attr/colorForeground1"
+        android:backgroundTint="?attr/colorBackground1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?attr/primaryIconButtonStyle"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/top_nav_badge_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.5dp"
+        android:contentDescription="@null"
+        android:layout_marginEnd="3.5dp"
+        app:layout_constraintEnd_toEndOf="@+id/top_nav_icon_button"
+        app:layout_constraintTop_toTopOf="@+id/top_nav_icon_button"
+        app:scarlet_affectedAttributes="srcCompat"
+        app:srcCompat="@drawable/tab_badge"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/top_nav_critical_badge_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="@+id/top_nav_icon_button"
+        app:layout_constraintTop_toTopOf="@+id/top_nav_icon_button"
+        app:scarlet_affectedAttributes="srcCompat"
+        app:srcCompat="@drawable/svg_ic_critical_badge"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

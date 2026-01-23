@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.progress.RdsSegmentedProgressBar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rds_segmented_progress_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/progress_bar_horizontal_height"
+    android:layout_marginBottom="@dimen/rds_spacing_default"
+    android:progressTint="?attr/colorForeground1"
+    android:progressBackgroundTint="?attr/colorForeground3"
+    app:millisPerSegment="@integer/progress_bar_millis_per_segment"
+    style="?attr/progressBarHorizontalStyle"/>

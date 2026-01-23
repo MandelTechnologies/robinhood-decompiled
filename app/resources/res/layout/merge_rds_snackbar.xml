@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/rds_snackbar_leading_icon"
+        android:visibility="gone"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:tint="?android:attr/textColorPrimary"
+        android:contentDescription="@null"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textColor="?android:attr/textColorPrimary"
+        android:ellipsize="end"
+        android:id="@+id/rds_snackbar_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:maxLines="3"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rds_snackbar_action_txt"
+        app:layout_constraintStart_toEndOf="@+id/rds_snackbar_leading_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_goneMarginEnd="@dimen/rds_spacing_default"
+        app:layout_goneMarginStart="@dimen/rds_spacing_default"
+        style="?attr/textAppearanceRegular"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textColor="?attr/colorPrimary"
+        android:id="@+id/rds_snackbar_action_txt"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?attr/textAppearanceRegularMediumBold"/>
+</merge>

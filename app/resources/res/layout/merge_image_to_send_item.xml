@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/image_to_send_img"
+        android:background="@drawable/image_to_send_background"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <FrameLayout
+        android:id="@+id/image_to_send_close_btn"
+        android:paddingBottom="@dimen/rds_spacing_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/rds_spacing_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:background="@drawable/circle_background"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="center"
+            android:tint="?attr/colorForeground1Inverse"
+            android:contentDescription="@string/inbox_remove_image_content_description"
+            android:backgroundTint="?attr/colorBackground1Inverse"
+            app:srcCompat="@drawable/ic_rds_close_12dp"/>
+    </FrameLayout>
+</merge>

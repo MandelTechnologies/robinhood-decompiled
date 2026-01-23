@@ -1,0 +1,25 @@
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*~
+
+# Language/tool caches
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+
+# Local scratch/output
+/tmp/
+/out/
+/dist/
+/build/
+
+# Keep accidental reorg leftovers out of commits
+/archive/

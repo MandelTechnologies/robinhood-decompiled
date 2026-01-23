@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/svg_ic_info_24dp"
+        android:id="@+id/action_education"
+        android:title="@string/option_order_view_education_action"
+        app:showAsAction="always"/>
+</menu>

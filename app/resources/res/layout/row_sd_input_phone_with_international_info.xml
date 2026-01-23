@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.odyssey.lib.view.SdPhoneInputRowWithInternationalInfo xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/sd_phone_input_row_with_international_info"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.robinhood.android.odyssey.lib.view.SdPhoneInputRow
+        android:id="@+id/sd_phone_input_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alwaysShowErrorText="true"
+        style="?attr/inputContainerHeroStyle">
+        <com.robinhood.android.designsystem.textinput.RdsFormattedEditText
+            android:id="@+id/sd_input_row_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            app:preFormattedCharacterTextColor="?attr/colorForeground1"
+            app:useCustomNumpad="true"
+            style="?attr/inputHeroStyle"/>
+    </com.robinhood.android.odyssey.lib.view.SdPhoneInputRow>
+    <com.robinhood.android.designsystem.button.RdsTextButton
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/sd_phone_input_international_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/sd_phone_number_change_country_code_prompt"
+        style="?attr/textButtonStyle"/>
+</com.robinhood.android.odyssey.lib.view.SdPhoneInputRowWithInternationalInfo>

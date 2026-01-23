@@ -1,0 +1,9 @@
+package com.google.android.material;
+
+/* loaded from: classes27.dex */
+public final class R$animator {
+    public static int mtrl_fab_hide_motion_spec = 2130837536;
+    public static int mtrl_fab_show_motion_spec = 2130837537;
+    public static int mtrl_fab_transformation_sheet_collapse_spec = 2130837538;
+    public static int mtrl_fab_transformation_sheet_expand_spec = 2130837539;
+}

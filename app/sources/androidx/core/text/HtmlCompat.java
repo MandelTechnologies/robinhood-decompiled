@@ -1,0 +1,19 @@
+package androidx.core.text;
+
+import android.annotation.SuppressLint;
+import android.text.Html;
+import android.text.Spanned;
+
+@SuppressLint({"InlinedApi"})
+/* loaded from: classes.dex */
+public final class HtmlCompat {
+    public static Spanned fromHtml(String str, int i) {
+        return Api24Impl.fromHtml(str, i);
+    }
+
+    static class Api24Impl {
+        static Spanned fromHtml(String str, int i) {
+            return Html.fromHtml(str, i);
+        }
+    }
+}

@@ -1,0 +1,27 @@
+
+$
+stock_reward_claim_title¯şüó¾×Í-
+-
+!stock_reward_detail_toolbar_titleàí¼æšÅöH
+,
+ cash_reward_detail_toolbar_title¿“ĞèÜä£ı
+5
+(gated_crypto_reward_detail_toolbar_titleÒ£”‰‰›ßß­
+4
+'crypto_gold_reward_detail_toolbar_title’ÂŠõ…Ì€úè
+'
+referral_detail_state_label±‰ë”ï÷
+'
+referral_detail_date_label³ëıÚß—‰ÏĞ
+%
+referral_detail_subtitle’ÂŠõ…Ì€úè
+.
+"referral_detail_reward_value_labelÄáê•®şŞ8
+4
+(referral_detail_backup_withholding_label÷ÿÙÜÎŞ²Ñ7
+,
+ referral_detail_net_credit_label‰µ´õ«¨Ô–h
+'
+referral_detail_cost_labelŸ°©ˆ´®¤‰
+%
+referral_detail_cost_freeŸ¡è©šØéĞg

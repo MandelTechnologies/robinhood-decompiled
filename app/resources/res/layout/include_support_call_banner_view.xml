@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.support.call.banner.SupportCallBannerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/support_call_banner_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:transitionName="@string/transition_support_call_banner"/>

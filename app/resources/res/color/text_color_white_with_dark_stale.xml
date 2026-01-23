@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:color="@color/disabled_black"
+        app:state_stale="true"/>
+    <item android:color="@color/rh_white_1"/>
+</selector>

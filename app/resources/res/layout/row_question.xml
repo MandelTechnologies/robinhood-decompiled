@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="16sp"
+    android:textColor="@color/themed_question_selector"
+    android:ellipsize="end"
+    android:id="@android:id/text1"
+    android:paddingTop="@dimen/rds_spacing_default"
+    android:paddingBottom="@dimen/rds_spacing_default"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:lines="1"
+    android:fontFamily="@font/capsule_sans_medium"
+    android:paddingStart="@dimen/rds_spacing_large"
+    android:paddingEnd="@dimen/rds_spacing_large"/>

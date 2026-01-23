@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.robinhood.android.designsystem.card.RdsCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/rds_spacing_small"
+    android:minHeight="@dimen/card_height"
+    android:layout_marginStart="@dimen/rds_spacing_small"
+    android:layout_marginEnd="@dimen/rds_spacing_small"
+    app:cardBackgroundColor="?attr/colorPrimary"
+    style="?attr/cardStyle">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/animation_icon"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/cat_wink_reveal"/>
+</com.robinhood.android.designsystem.card.RdsCardView>

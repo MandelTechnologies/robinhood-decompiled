@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.robinhood.android.designsystem.button.RdsButton
+        android:id="@+id/add_alert_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/advanced_alert_add_alert_btn_height"
+        android:layout_margin="@dimen/rds_spacing_medium"
+        android:text="@string/add_alert_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?attr/secondaryMonochromeButtonStyle"/>
+    <com.robinhood.android.designsystem.text.RhTextView
+        android:textAppearance="?attr/textAppearanceRegularMedium"
+        android:textColor="?attr/colorForeground2"
+        android:id="@+id/add_alert_subtitle"
+        android:paddingLeft="@dimen/rds_spacing_medium"
+        android:paddingTop="@dimen/rds_spacing_small"
+        android:paddingRight="@dimen/rds_spacing_medium"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/rds_spacing_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_alert_btn"/>
+</merge>

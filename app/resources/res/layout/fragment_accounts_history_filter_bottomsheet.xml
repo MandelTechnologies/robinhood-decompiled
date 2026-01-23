@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:theme="@style/ThemeOverlay.Robinhood.DesignSystem.Monochrome.BottomSheet"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/rds_spacing_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceDisplayMedium"
+            android:gravity="center"
+            android:id="@+id/accounts_history_bottomsheet_title"
+            android:paddingTop="@dimen/rds_spacing_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.robinhood.android.designsystem.selectioncontrol.NewRdsRadioGroup
+            android:orientation="vertical"
+            android:id="@+id/accounts_history_bottomsheet_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

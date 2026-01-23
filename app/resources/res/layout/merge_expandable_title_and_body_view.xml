@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularMedium"
+            android:id="@+id/title_txt"
+            android:paddingTop="@dimen/rds_spacing_default"
+            android:paddingBottom="@dimen/rds_spacing_default"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingVertical="@dimen/rds_spacing_default"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/expand_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/title_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title_txt"
+            app:srcCompat="@drawable/ic_rds_caret_down_16dp"
+            app:tint="?attr/colorBackground3"/>
+        <com.robinhood.android.designsystem.text.RhTextView
+            android:textAppearance="?attr/textAppearanceRegularSmall"
+            android:id="@+id/body_txt"
+            android:paddingBottom="@dimen/rds_spacing_default"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_txt"
+            app:useLinkMovementMethod="true"/>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginHorizontal="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            layout="@layout/include_rds_divider"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>
