@@ -125,3 +125,5 @@ Note: names here are inferred from package paths; decompiled code is not always 
 
 - Decompiled sources are not buildable as-is.
 - Decompilers are not fully deterministic; naming/numbering differences can exist across runs even when behavior is unchanged.
+
+"Codex, extract the trading api from the java code, only the trading api and write it in [whatever language]."
