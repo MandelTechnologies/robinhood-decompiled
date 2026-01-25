@@ -1,7 +1,5 @@
 # robinhood-decompiled
 
-This repo is a consolidated view of a decompiled Robinhood Android app plus an audit bundle.
-
 ## Quick map (start here)
 
 - Decompiled app tree:
